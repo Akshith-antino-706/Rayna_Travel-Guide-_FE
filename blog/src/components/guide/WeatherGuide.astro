@@ -1,0 +1,66 @@
+---
+interface Season {
+  season: string;
+  tempRange: string;
+  description: string;
+  icon: 'snowflake' | 'leaf' | 'sun' | 'cloud-sun';
+}
+
+interface Props {
+  seasons: Season[];
+  cityName: string;
+}
+
+const { seasons, cityName } = Astro.props;
+
+const iconColors: Record<string, string> = {
+  snowflake: 'text-blue-500',
+  leaf: 'text-green-500',
+  sun: 'text-yellow-500',
+  'cloud-sun': 'text-orange-500',
+};
+---
+
+<section class="py-8 sm:py-12">
+  <div class="container-wide">
+    <p class="text-orange-500 text-xs sm:text-sm font-medium mb-2">Climate</p>
+    <h2 class="text-xl sm:text-2xl font-bold text-gray-900 guide-section-header">
+      {cityName} Weather Guide
+    </h2>
+    <p class="text-gray-500 mb-6 sm:mb-8 text-sm sm:text-base">
+      Understanding the seasons helps you plan the perfect trip to {cityName}.
+    </p>
+
+    <div class="scroll-row sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-4 sm:overflow-visible sm:pb-0">
+      {seasons.map((s) => (
+        <div class="bg-white p-4 sm:p-5 rounded-xl border border-gray-100 text-center min-w-[240px] sm:min-w-0">
+          <div class="mb-3">
+            {s.icon === 'snowflake' && (
+              <svg class={`w-8 h-8 mx-auto ${iconColors[s.icon]}`} fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18m-4.5-4.5L12 21l4.5-4.5M7.5 7.5L12 3l4.5 4.5M3 12h18m-4.5-4.5L21 12l-4.5 4.5M7.5 7.5L3 12l4.5 4.5" />
+              </svg>
+            )}
+            {s.icon === 'leaf' && (
+              <svg class={`w-8 h-8 mx-auto ${iconColors[s.icon]}`} fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 3.03v.568c0 2.849.702 5.653 2.044 8.152A17.96 17.96 0 0019.5 18.75a.75.75 0 01-.262.544c-1.753 1.429-3.913 2.206-6.238 2.206-4.97 0-9-4.03-9-9s4.03-9 9-9c.357 0 .71.02 1.058.06" />
+              </svg>
+            )}
+            {s.icon === 'sun' && (
+              <svg class={`w-8 h-8 mx-auto ${iconColors[s.icon]}`} fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+              </svg>
+            )}
+            {s.icon === 'cloud-sun' && (
+              <svg class={`w-8 h-8 mx-auto ${iconColors[s.icon]}`} fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z" />
+              </svg>
+            )}
+          </div>
+          <h3 class="font-semibold text-gray-900 mb-1 text-sm sm:text-base">{s.season}</h3>
+          <p class="text-orange-500 font-semibold text-sm mb-2">{s.tempRange}</p>
+          <p class="text-xs sm:text-sm text-gray-500">{s.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

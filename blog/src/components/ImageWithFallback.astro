@@ -1,0 +1,27 @@
+---
+/**
+ * ImageWithFallback — tries AI-generated image first, falls back to Unsplash.
+ * Uses an onerror handler in the browser to swap in the fallback URL.
+ */
+interface Props {
+  src: string;
+  fallback: string;
+  alt: string;
+  class?: string;
+  width?: number;
+  height?: number;
+  loading?: 'lazy' | 'eager';
+}
+
+const { src, fallback, alt, class: className = '', width, height, loading = 'lazy' } = Astro.props;
+---
+
+<img
+  src={src}
+  alt={alt}
+  class={className}
+  width={width}
+  height={height}
+  loading={loading}
+  onerror={`this.onerror=null;this.src='${fallback}';`}
+/>

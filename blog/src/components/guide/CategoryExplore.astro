@@ -1,0 +1,49 @@
+---
+interface CategoryCard {
+  label: string;
+  icon: string;
+  count: number;
+  image: string;
+  anchor: string;
+}
+
+interface Props {
+  categories: CategoryCard[];
+  cityName: string;
+}
+
+const { categories, cityName } = Astro.props;
+---
+
+<section id="explore" class="py-8 sm:py-12 bg-gray-50">
+  <div class="container-wide">
+    <p class="text-orange-500 text-xs sm:text-sm font-medium mb-2">Categories</p>
+    <h2 class="text-xl sm:text-2xl font-bold text-gray-900 guide-section-header">
+      There's plenty to explore in {cityName}
+    </h2>
+    <p class="text-gray-500 mb-6 sm:mb-8 text-sm sm:text-base">
+      Discover {cityName}'s culture, heritage, and attractions. Adventure awaits at every corner.
+    </p>
+
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+      {categories.map((cat) => (
+        <a
+          href={`#${cat.anchor}`}
+          class="relative rounded-xl overflow-hidden h-36 sm:h-48 category-card cursor-pointer group block"
+        >
+          <img
+            src={cat.image}
+            alt={cat.label}
+            class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+            loading="lazy"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+          <div class="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 text-white">
+            <p class="font-semibold text-sm sm:text-base">{cat.icon} {cat.label}</p>
+            <p class="text-xs opacity-80">{cat.count} articles</p>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

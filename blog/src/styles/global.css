@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    @apply font-sans text-gray-800 bg-white;
+  }
+
+  ::selection {
+    @apply bg-orange-100 text-orange-900;
+  }
+}
+
+@layer components {
+  .container-narrow {
+    @apply max-w-4xl mx-auto px-4 sm:px-6;
+  }
+
+  .container-wide {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Buttons matching Figma orange accent */
+  .btn-primary {
+    @apply inline-flex items-center px-6 py-2.5 bg-orange-500 text-white rounded-full
+           hover:bg-orange-600 transition-colors font-semibold text-sm;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center px-6 py-2.5 bg-white text-gray-700 border border-gray-200
+           rounded-full hover:bg-gray-50 transition-colors font-medium text-sm;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center px-5 py-2 text-orange-500 border border-orange-500 rounded-full
+           hover:bg-orange-50 transition-colors font-medium text-sm;
+  }
+
+  /* Badges */
+  .badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium;
+  }
+
+  .badge-category {
+    @apply badge bg-orange-50 text-orange-600;
+  }
+
+  .badge-city {
+    @apply badge bg-blue-50 text-blue-600;
+  }
+
+  /* Card styles matching Figma */
+  .card {
+    @apply bg-white rounded-2xl overflow-hidden transition-all duration-300;
+  }
+
+  .card-elevated {
+    @apply card shadow-sm hover:shadow-md;
+  }
+
+  .card-bordered {
+    @apply card border border-gray-100 hover:border-gray-200;
+  }
+
+  /* Horizontal scroll container (for Figma card rows) */
+  .scroll-row {
+    @apply flex gap-4 overflow-x-auto pb-4;
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scroll-row::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scroll-row > * {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+  }
+
+  /* Table of Contents sidebar */
+  .toc-link {
+    @apply block py-1.5 pl-4 border-l-2 border-gray-100 text-sm text-gray-400
+           hover:text-orange-500 hover:border-orange-400 transition-colors;
+  }
+
+  .toc-link.active {
+    @apply text-orange-500 border-orange-500 font-medium;
+  }
+
+  /* Article prose */
+  .prose img {
+    @apply rounded-xl;
+  }
+
+  .prose h2 {
+    @apply scroll-mt-24 text-xl font-bold text-gray-900;
+  }
+
+  .prose h3 {
+    @apply scroll-mt-24 text-lg font-semibold text-gray-800;
+  }
+
+  /* Breadcrumb */
+  .breadcrumb {
+    @apply flex items-center gap-2 text-sm text-gray-400;
+  }
+
+  .breadcrumb a {
+    @apply hover:text-orange-500 transition-colors;
+  }
+
+  .breadcrumb .sep {
+    @apply text-gray-300;
+  }
+
+  /* Section heading style from Figma */
+  .section-title {
+    @apply text-2xl font-bold text-gray-900 mb-1;
+  }
+
+  .section-subtitle {
+    @apply text-sm text-gray-500 mb-6;
+  }
+
+  /* Image grid for article sidebar (Figma pattern) */
+  .image-grid-sidebar {
+    @apply grid grid-cols-2 gap-2;
+  }
+
+  .image-grid-sidebar img {
+    @apply w-full aspect-square object-cover rounded-lg;
+  }
+
+  /* Quick info pills (Figma city guide icons) */
+  .quick-info-item {
+    @apply flex flex-col items-center gap-2 px-4 py-3;
+  }
+
+  .quick-info-icon {
+    @apply w-10 h-10 rounded-full bg-green-50 flex items-center justify-center text-green-600;
+  }
+
+  .quick-info-label {
+    @apply text-xs text-gray-500 text-center;
+  }
+
+  .quick-info-value {
+    @apply text-sm font-semibold text-gray-900 text-center;
+  }
+
+  /* Guide page utilities */
+  .guide-nav-pill.active {
+    @apply bg-orange-50 text-orange-600 font-medium;
+  }
+
+  .guide-stat-card {
+    @apply flex flex-col items-center gap-2 p-4 bg-white rounded-xl border border-gray-100 text-center;
+    min-width: 140px;
+  }
+
+  .guide-section-header {
+    @apply border-b border-gray-100 pb-3 mb-6;
+  }
+
+  .category-card {
+    transition: all 0.3s ease;
+  }
+
+  .category-card:hover {
+    transform: translateY(-4px);
+  }
+}

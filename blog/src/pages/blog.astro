@@ -1,0 +1,145 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BlogFilterPage from '../components/BlogFilterPage.tsx';
+import SearchBar from '../components/SearchBar.tsx';
+import { getCollection } from 'astro:content';
+import { CATEGORIES, POSTS_PER_PAGE } from '../utils/constants';
+import { CITIES } from '../../scripts/cities';
+
+// Fetch all posts at build time and serialize for client-side filtering
+const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+
+const postsData = allPosts.map(p => ({
+  title: p.data.title,
+  description: p.data.description,
+  slug: p.slug,
+  city: p.data.city,
+  category: p.data.category,
+  pubDate: p.data.pubDate.toISOString(),
+  heroImage: p.data.heroImage,
+  readingTime: p.data.readingTime,
+  tags: p.data.tags,
+  keywords: p.data.keywords,
+  featured: p.data.featured,
+}));
+
+const searchData = postsData.map(p => ({
+  title: p.title,
+  description: p.description,
+  slug: p.slug,
+  city: p.city,
+  category: p.category,
+  tags: p.tags,
+  readingTime: p.readingTime,
+}));
+
+const categories = CATEGORIES.map(c => ({ id: c.id, label: c.label, icon: c.icon }));
+
+// Featured cities for carousel
+const featuredSlugs = ['dubai', 'singapore', 'delhi', 'bangkok', 'paris', 'london', 'tokyo', 'bali', 'istanbul', 'new-york'];
+const featuredCities = featuredSlugs
+  .map(slug => CITIES.find(c => c.slug === slug))
+  .filter(Boolean);
+---
+
+<BaseLayout
+  title="Travel Blog - All Articles"
+  description="Browse our comprehensive collection of travel guides, tips, and itineraries for destinations worldwide."
+>
+  <!-- HERO BANNER -->
+  <section class="relative h-[360px] md:h-[440px] overflow-hidden">
+    <img
+      src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1600&h=600&fit=crop&q=80"
+      alt="Travel destinations"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20"></div>
+    <div class="container-wide relative h-full flex flex-col justify-center items-center text-center px-4">
+      <h1 class="text-white text-3xl md:text-5xl font-bold mb-6 max-w-3xl leading-tight font-heading">
+        Discover More: Insights, Stories,<br class="hidden sm:block" /> and Behind-the-Scenes Exclusives
+      </h1>
+      <div class="w-full max-w-2xl">
+        <SearchBar articles={searchData} client:load />
+      </div>
+    </div>
+  </section>
+
+  <!-- MOST POPULAR TRAVEL GUIDE -->
+  <section class="bg-gray-50 py-10 md:py-14">
+    <div class="container-wide">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-xl md:text-2xl font-bold text-gray-900">Most Popular Travel Guide</h2>
+        <div class="flex items-center gap-2 text-sm text-gray-500">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10" stroke-width="2"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+          </svg>
+          <span class="hidden sm:inline">Select Country</span>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <!-- Left arrow -->
+        <button
+          id="carousel-left"
+          class="absolute -left-3 md:left-0 top-1/2 -translate-y-1/2 z-10 w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-gray-50 transition-colors opacity-0 group-hover:opacity-100"
+          aria-label="Scroll left"
+        >
+          <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+
+        <div id="city-carousel" class="scroll-row gap-4">
+          {featuredCities.map(city => (
+            <a
+              href={`/${city!.slug}-travel-guide`}
+              class="group/card relative w-48 sm:w-56 aspect-[4/5] rounded-2xl overflow-hidden flex-shrink-0"
+            >
+              <img
+                src={`https://images.unsplash.com/${city!.unsplashId}?w=400&h=500&fit=crop&q=70`}
+                alt={`${city!.name} Travel Guide`}
+                class="w-full h-full object-cover group-hover/card:scale-110 transition-transform duration-500"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+              <div class="absolute bottom-4 left-4 right-4">
+                <p class="text-white/70 text-xs font-medium uppercase tracking-wider mb-1">{city!.country}</p>
+                <h3 class="text-white font-bold text-base leading-snug">{city!.name}<br/>Travel Guide</h3>
+              </div>
+            </a>
+          ))}
+        </div>
+
+        <!-- Right arrow -->
+        <button
+          id="carousel-right"
+          class="absolute -right-3 md:right-0 top-1/2 -translate-y-1/2 z-10 w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-gray-50 transition-colors opacity-0 group-hover:opacity-100"
+          aria-label="Scroll right"
+        >
+          <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG POSTS (React interactive section) -->
+  <BlogFilterPage
+    posts={postsData}
+    categories={categories}
+    postsPerPage={POSTS_PER_PAGE}
+    client:load
+  />
+</BaseLayout>
+
+<script>
+  const carousel = document.getElementById('city-carousel');
+  document.getElementById('carousel-left')?.addEventListener('click', () => {
+    carousel?.scrollBy({ left: -300, behavior: 'smooth' });
+  });
+  document.getElementById('carousel-right')?.addEventListener('click', () => {
+    carousel?.scrollBy({ left: 300, behavior: 'smooth' });
+  });
+</script>

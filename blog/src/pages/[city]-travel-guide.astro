@@ -1,0 +1,403 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BlogCard from '../components/BlogCard.astro';
+import GuideHero from '../components/guide/GuideHero.astro';
+import QuickStats from '../components/guide/QuickStats.astro';
+import WeatherGuide from '../components/guide/WeatherGuide.astro';
+import BudgetGuide from '../components/guide/BudgetGuide.astro';
+import TransportGuide from '../components/guide/TransportGuide.astro';
+import CategoryExplore from '../components/guide/CategoryExplore.astro';
+import EssentialInfo from '../components/guide/EssentialInfo.astro';
+import { getCollection } from 'astro:content';
+import { CATEGORIES, SITE_URL } from '../utils/constants';
+import { getCityMeta, getCityGuideData } from '../utils/city-guide-data';
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+  const cities = [...new Set(allPosts.map(p => p.data.city))];
+
+  return cities.map(city => {
+    const citySlug = city.toLowerCase().replace(/\s+/g, '-');
+    const cityPosts = allPosts.filter(p => p.data.city === city);
+    const country = cityPosts[0]?.data.country || '';
+
+    return {
+      params: { city: citySlug },
+      props: { cityName: city, country, posts: cityPosts },
+    };
+  });
+}
+
+const { cityName, country, posts } = Astro.props;
+const citySlug = cityName.toLowerCase().replace(/\s+/g, '-');
+
+// City data
+const cityMeta = getCityMeta(citySlug);
+const guideData = getCityGuideData(citySlug);
+
+// Group posts by category
+const postsByCategory = CATEGORIES.reduce((acc, cat) => {
+  const catPosts = posts.filter(p => p.data.category === cat.id);
+  if (catPosts.length > 0) {
+    acc.push({ ...cat, posts: catPosts });
+  }
+  return acc;
+}, [] as any[]);
+
+// Top 4 categories for explore section
+const topCategories = postsByCategory
+  .sort((a, b) => b.posts.length - a.posts.length)
+  .slice(0, 4)
+  .map(cat => ({
+    label: cat.label,
+    icon: cat.icon,
+    count: cat.posts.length,
+    image: cat.posts[0]?.data.heroImage || `https://images.unsplash.com/${cityMeta?.unsplashId || 'photo-1512453979798-5ea266f8880c'}?w=400&h=300&fit=crop&q=80`,
+    anchor: cat.id.toLowerCase().replace(/\s+/g, '-').replace(/&/g, ''),
+  }));
+
+// Itinerary posts
+const itineraryPosts = posts.filter(p => p.data.category === 'Itineraries');
+
+// Build quick stats
+const quickStats = guideData
+  ? [
+      { label: 'Currency', value: guideData.quickStats.currency.code, icon: 'currency' },
+      { label: 'Timezone', value: guideData.quickStats.timezone, icon: 'clock' },
+      { label: 'Language', value: guideData.quickStats.language, icon: 'globe' },
+      { label: 'Plug Type', value: guideData.quickStats.plugType, icon: 'plug' },
+      { label: 'Best Time', value: guideData.quickStats.bestTime, icon: 'calendar' },
+      { label: 'Visa', value: guideData.quickStats.visa, icon: 'passport' },
+    ]
+  : cityMeta
+    ? [
+        { label: 'Currency', value: cityMeta.currency, icon: 'currency' },
+        { label: 'Language', value: cityMeta.language, icon: 'globe' },
+        { label: 'Region', value: cityMeta.continent, icon: 'map' },
+        { label: 'Must See', value: cityMeta.famousAttraction, icon: 'star' },
+      ]
+    : [];
+
+// Essential info cards — link to relevant blog posts if they exist
+const essentialTopics = [
+  { slug: `currency-exchange-payments-money-tips-${citySlug}`, title: 'Currency & Money', description: `Exchange rates, ATMs, and payment tips for ${cityName}.`, icon: 'money', color: 'green' },
+  { slug: `internet-sim-cards-${citySlug}`, title: 'SIM Cards & Internet', description: `Stay connected with local SIM cards and WiFi options.`, icon: 'sim', color: 'blue' },
+  { slug: `emergency-numbers-${citySlug}`, title: 'Emergency Numbers', description: `Important emergency contacts and helplines in ${cityName}.`, icon: 'phone', color: 'red' },
+  { slug: `${citySlug}-tourist-visa-guide`, title: 'Visa Information', description: `Visa requirements and entry procedures for ${cityName}.`, icon: 'passport', color: 'purple' },
+  { slug: `${citySlug}-airport-arrival-guide`, title: 'Airport Guide', description: `Airport arrival, transfers, and transport to the city center.`, icon: 'plane', color: 'cyan' },
+  { slug: `cultural-etiquette-local-customs-${citySlug}`, title: 'Local Etiquette', description: `Cultural customs and etiquette tips for visitors to ${cityName}.`, icon: 'heart', color: 'pink' },
+];
+
+const postSlugs = new Set(posts.map(p => p.slug.split('/').pop()));
+const essentialCards = essentialTopics
+  .map(t => ({
+    title: t.title,
+    description: t.description,
+    icon: t.icon,
+    color: t.color,
+    href: postSlugs.has(t.slug) ? `/blog/${citySlug}/${t.slug}` : undefined,
+  }))
+  .filter(c => c.href);
+
+// Hero data
+const fallbackImage = cityMeta
+  ? `https://images.unsplash.com/${cityMeta.unsplashId}?w=800&h=600&fit=crop&q=80`
+  : 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&h=600&fit=crop&q=80';
+
+const heroDescription = guideData?.heroDescription
+  || `Your complete guide to ${cityName}, ${country}. Explore ${posts.length} expert articles covering attractions, food, hotels, budgets, visas, and insider tips.`;
+
+// JSON-LD
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'TravelGuide',
+  name: `${cityName} Travel Guide`,
+  description: `Complete travel guide to ${cityName}, ${country}. ${posts.length} expert articles covering things to do, food, hotels, visa info, and more.`,
+  about: {
+    '@type': 'City',
+    name: cityName,
+    containedInPlace: { '@type': 'Country', name: country },
+  },
+  author: { '@type': 'Organization', name: 'TravelScope' },
+  publisher: {
+    '@type': 'Organization',
+    name: 'TravelScope',
+    logo: { '@type': 'ImageObject', url: `${SITE_URL}/favicon.svg` },
+  },
+};
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+    { '@type': 'ListItem', position: 2, name: 'Travel Guides', item: `${SITE_URL}/blog` },
+    { '@type': 'ListItem', position: 3, name: `${cityName} Travel Guide` },
+  ],
+};
+
+const attractionPosts = posts.filter(p => p.data.category === 'Attractions').slice(0, 5);
+const attractionListLd = attractionPosts.length > 0 ? {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: `Top ${cityName} Attractions`,
+  itemListElement: attractionPosts.map((p, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    item: {
+      '@type': 'TouristAttraction',
+      name: p.data.title,
+      description: p.data.description,
+    },
+  })),
+} : null;
+---
+
+<BaseLayout
+  title={`${cityName} Travel Guide - Complete City Guide`}
+  description={`Your complete guide to ${cityName}, ${country}. ${posts.length} expert articles covering attractions, food, hotels, budgets, visas, and insider tips.`}
+  jsonLd={jsonLd}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+  {attractionListLd && (
+    <script type="application/ld+json" set:html={JSON.stringify(attractionListLd)} />
+  )}
+
+  <!-- Breadcrumb Strip -->
+  <div class="bg-gray-50 border-b border-gray-100">
+    <div class="container-wide py-3">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span class="sep">/</span>
+        <a href="/blog">Travel Guides</a>
+        <span class="sep">/</span>
+        <span class="text-gray-600">{cityName}</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <GuideHero
+    cityName={cityName}
+    country={country}
+    tagline={guideData?.tagline}
+    description={heroDescription}
+    postCount={posts.length}
+    categoryCount={postsByCategory.length}
+    heroImages={guideData?.heroImages}
+    fallbackImage={fallbackImage}
+  />
+
+  <!-- Quick Stats -->
+  {quickStats.length > 0 && (
+    <QuickStats stats={quickStats} cityName={cityName} />
+  )}
+
+  <!-- Weather Guide (Tier 1 only) -->
+  {guideData?.weather && (
+    <WeatherGuide seasons={guideData.weather} cityName={cityName} />
+  )}
+
+  <!-- Explore Categories -->
+  {topCategories.length >= 4 && (
+    <CategoryExplore categories={topCategories} cityName={cityName} />
+  )}
+
+  <!-- Sticky Quick Navigation -->
+  <section class="bg-white border-b border-gray-200 sticky top-14 z-40">
+    <div class="container-wide">
+      <nav class="scroll-row py-3 gap-1 !pb-3" id="guide-nav">
+        {postsByCategory.map(cat => (
+          <a
+            href={`#${cat.id.toLowerCase().replace(/\s+/g, '-').replace(/&/g, '')}`}
+            class="guide-nav-pill flex-shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5
+                   rounded-full text-sm text-gray-600 hover:bg-orange-50 hover:text-orange-600
+                   transition-colors whitespace-nowrap"
+            data-section={cat.id.toLowerCase().replace(/\s+/g, '-').replace(/&/g, '')}
+          >
+            <span>{cat.icon}</span>
+            {cat.label}
+            <span class="text-xs text-gray-400 ml-0.5">({cat.posts.length})</span>
+          </a>
+        ))}
+      </nav>
+    </div>
+  </section>
+
+  <!-- Blog Posts by Category -->
+  {postsByCategory.map((cat, index) => {
+    const catSlug = cat.id.toLowerCase().replace(/\s+/g, '-').replace(/&/g, '');
+    return (
+      <section
+        id={catSlug}
+        class:list={[
+          'py-10 sm:py-12 scroll-mt-32',
+          index % 2 === 1 ? 'bg-gray-50' : 'bg-white',
+        ]}
+      >
+        <div class="container-wide">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="text-2xl">{cat.icon}</span>
+            <h2 class="text-xl sm:text-2xl font-bold text-gray-900">{cat.label}</h2>
+            <span class="badge-category">{cat.posts.length} articles</span>
+          </div>
+
+          {index === 0 && cat.posts.length >= 4 ? (
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <BlogCard
+                title={cat.posts[0].data.title}
+                description={cat.posts[0].data.description}
+                slug={cat.posts[0].slug}
+                city={cat.posts[0].data.city}
+                category={cat.posts[0].data.category}
+                pubDate={cat.posts[0].data.pubDate}
+                heroImage={cat.posts[0].data.heroImage}
+                readingTime={cat.posts[0].data.readingTime}
+                featured={true}
+              />
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {cat.posts.slice(1, 5).map(post => (
+                  <BlogCard
+                    title={post.data.title}
+                    description={post.data.description}
+                    slug={post.slug}
+                    city={post.data.city}
+                    category={post.data.category}
+                    pubDate={post.data.pubDate}
+                    heroImage={post.data.heroImage}
+                    readingTime={post.data.readingTime}
+                  />
+                ))}
+              </div>
+            </div>
+          ) : (
+            <div class="scroll-row sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-6 sm:overflow-visible sm:pb-0">
+              {cat.posts.slice(0, 6).map(post => (
+                <div class="min-w-[280px] sm:min-w-0">
+                  <BlogCard
+                    title={post.data.title}
+                    description={post.data.description}
+                    slug={post.slug}
+                    city={post.data.city}
+                    category={post.data.category}
+                    pubDate={post.data.pubDate}
+                    heroImage={post.data.heroImage}
+                    readingTime={post.data.readingTime}
+                  />
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      </section>
+    );
+  })}
+
+  <!-- Getting Around (Tier 1 only) -->
+  {guideData?.transport && (
+    <TransportGuide
+      modes={guideData.transport}
+      cityName={cityName}
+      cityImage={fallbackImage}
+    />
+  )}
+
+  <!-- Budget Guide (Tier 1 only) -->
+  {guideData?.budget && (
+    <BudgetGuide tiers={guideData.budget} cityName={cityName} />
+  )}
+
+  <!-- Sample Itineraries -->
+  {itineraryPosts.length > 0 && (
+    <section id="itineraries" class="py-8 sm:py-12 scroll-mt-32">
+      <div class="container-wide">
+        <p class="text-orange-500 text-xs sm:text-sm font-medium mb-2">Itineraries</p>
+        <h2 class="text-xl sm:text-2xl font-bold text-gray-900 guide-section-header">
+          Sample {cityName} Itineraries
+        </h2>
+
+        <div class="scroll-row sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-6 sm:overflow-visible sm:pb-0">
+          {itineraryPosts.slice(0, 6).map(post => (
+            <div class="min-w-[280px] sm:min-w-0">
+              <BlogCard
+                title={post.data.title}
+                description={post.data.description}
+                slug={post.slug}
+                city={post.data.city}
+                category={post.data.category}
+                pubDate={post.data.pubDate}
+                heroImage={post.data.heroImage}
+                readingTime={post.data.readingTime}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Essential Information -->
+  {essentialCards.length >= 2 && (
+    <EssentialInfo cards={essentialCards} cityName={cityName} />
+  )}
+
+  <!-- CTA Section -->
+  <section class="py-12 sm:py-16 bg-gradient-to-br from-orange-500 to-orange-600">
+    <div class="container-narrow text-center text-white">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-4">
+        Ready to Explore {cityName}?
+      </h2>
+      <p class="text-orange-100 mb-6 sm:mb-8 max-w-xl mx-auto">
+        Plan your perfect trip with our comprehensive guides covering every aspect of visiting {cityName}.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+        <a
+          href={`/blog?city=${encodeURIComponent(cityName)}`}
+          class="bg-white text-orange-600 px-6 sm:px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors"
+        >
+          Browse All Articles
+        </a>
+        {itineraryPosts.length > 0 && (
+          <a
+            href="#itineraries"
+            class="border-2 border-white text-white px-6 sm:px-8 py-3 rounded-full font-semibold hover:bg-white/10 transition-colors"
+          >
+            View Itineraries
+          </a>
+        )}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  // IntersectionObserver for active nav pill highlighting
+  document.addEventListener('DOMContentLoaded', () => {
+    const nav = document.getElementById('guide-nav');
+    if (!nav) return;
+
+    const pills = nav.querySelectorAll('.guide-nav-pill');
+    const sections = document.querySelectorAll('section[id]');
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const id = entry.target.id;
+            pills.forEach((pill) => {
+              const pillSection = pill.getAttribute('data-section');
+              if (pillSection === id) {
+                pill.classList.add('active');
+              } else {
+                pill.classList.remove('active');
+              }
+            });
+          }
+        });
+      },
+      { rootMargin: '-20% 0px -70% 0px' }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+  });
+</script>

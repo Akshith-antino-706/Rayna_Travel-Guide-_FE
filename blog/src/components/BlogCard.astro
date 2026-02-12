@@ -1,0 +1,110 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  slug: string;
+  city: string;
+  category: string;
+  pubDate: Date;
+  heroImage?: string;
+  readingTime: number;
+  featured?: boolean;
+  variant?: 'default' | 'horizontal' | 'compact';
+}
+
+const {
+  title, description, slug, city, category, pubDate,
+  heroImage, readingTime, featured, variant = 'default'
+} = Astro.props;
+
+const formattedDate = pubDate.toLocaleDateString('en-US', {
+  year: 'numeric', month: 'short', day: 'numeric',
+});
+
+const placeholderImage = `https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&h=400&fit=crop&q=70`;
+const imgSrc = heroImage || placeholderImage;
+const fallbackSrc = placeholderImage;
+// Add onerror fallback for AI-generated images that may not exist yet
+const onerrorHandler = `this.onerror=null;this.src='${fallbackSrc}';`;
+---
+
+{/* Default card: Figma vertical card with rounded image */}
+{variant === 'default' && (
+  <a href={`/blog/${slug}`} class:list={['group block', featured && 'md:col-span-2']}>
+    <div class:list={['relative overflow-hidden rounded-2xl', featured ? 'aspect-[3/1]' : 'aspect-[16/10]']}>
+      <img
+        src={imgSrc}
+        alt={title}
+        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+        loading="lazy"
+        onerror={onerrorHandler}
+      />
+    </div>
+    <div class="pt-3">
+      <div class="flex items-center gap-2 mb-1.5">
+        <span class="text-xs text-orange-500 font-medium">{category}</span>
+        <span class="text-gray-200">&middot;</span>
+        <span class="text-xs text-gray-400">{readingTime} min read</span>
+      </div>
+      <h3 class="text-sm font-bold text-gray-900 group-hover:text-orange-500 transition-colors leading-snug line-clamp-2 mb-1">
+        {title}
+      </h3>
+      <p class="text-xs text-gray-400 line-clamp-2">
+        {description}
+      </p>
+    </div>
+  </a>
+)}
+
+{/* Horizontal card: Figma row layout with image left, text right */}
+{variant === 'horizontal' && (
+  <a href={`/blog/${slug}`} class="group flex gap-4 items-start">
+    <div class="flex-shrink-0 w-28 h-20 sm:w-36 sm:h-24 rounded-xl overflow-hidden">
+      <img
+        src={imgSrc}
+        alt={title}
+        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+        loading="lazy"
+        onerror={onerrorHandler}
+      />
+    </div>
+    <div class="flex-1 min-w-0">
+      <span class="text-xs text-orange-500 font-medium">{category}</span>
+      <h3 class="text-sm font-bold text-gray-900 group-hover:text-orange-500 transition-colors leading-snug line-clamp-2 mt-0.5 mb-1">
+        {title}
+      </h3>
+      <div class="flex items-center gap-2 text-xs text-gray-400">
+        <time datetime={pubDate.toISOString()}>{formattedDate}</time>
+        <span>&middot;</span>
+        <span>{readingTime} min</span>
+      </div>
+    </div>
+  </a>
+)}
+
+{/* Compact card: Figma small square card */}
+{variant === 'compact' && (
+  <a href={`/blog/${slug}`} class="group block w-40 flex-shrink-0">
+    <div class="w-40 h-28 rounded-xl overflow-hidden mb-2">
+      <img
+        src={imgSrc}
+        alt={title}
+        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+        loading="lazy"
+        onerror={onerrorHandler}
+      />
+    </div>
+    <h3 class="text-xs font-semibold text-gray-900 group-hover:text-orange-500 transition-colors leading-snug line-clamp-2">
+      {title}
+    </h3>
+  </a>
+)}
+
+<style>
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>

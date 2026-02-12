@@ -1,0 +1,40 @@
+---
+import { getCollection } from 'astro:content';
+
+interface Props {
+  activeCity?: string;
+}
+
+const { activeCity } = Astro.props;
+
+const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+const cities = [...new Set(allPosts.map(p => p.data.city))].sort();
+---
+
+<div class="flex flex-wrap gap-2">
+  <a
+    href="/blog"
+    class:list={[
+      'inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium transition-colors',
+      !activeCity
+        ? 'bg-accent-500 text-white'
+        : 'bg-gray-100 text-gray-600 hover:bg-gray-200',
+    ]}
+  >
+    All Cities
+  </a>
+
+  {cities.map(city => (
+    <a
+      href={`/blog?city=${encodeURIComponent(city)}`}
+      class:list={[
+        'inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium transition-colors',
+        activeCity === city
+          ? 'bg-accent-500 text-white'
+          : 'bg-gray-100 text-gray-600 hover:bg-gray-200',
+      ]}
+    >
+      {city}
+    </a>
+  ))}
+</div>
