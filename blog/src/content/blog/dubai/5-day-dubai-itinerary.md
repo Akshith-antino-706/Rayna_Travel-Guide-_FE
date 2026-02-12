@@ -1,5 +1,5 @@
 ---
-title: '5 Days Dubai Itinerary, hey vaibhav how r u ?'
+title: 5 Days Dubai Itinerary
 description: >-
   Comprehensive 5-day dubai itinerary: major sights, local experiences, day
   trips, and relaxation.
@@ -34,7 +34,7 @@ relatedSlugs:
 readingTime: 12
 featured: false
 draft: false
-updatedDate: '2026-02-12T17:35:38.584Z'
+updatedDate: '2026-02-12T17:36:50.942Z'
 ---
 
 # 5-Day Dubai Itinerary: Explore the Gem of the Middle East
