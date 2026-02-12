@@ -1,22 +1,40 @@
 ---
-title: "5 Days Dubai Itinerary"
-description: "Comprehensive 5-day dubai itinerary: major sights, local experiences, day trips, and relaxation."
-city: "Dubai"
-country: "UAE"
-category: "Itineraries"
-topic: "5-day-itinerary"
-author: "Travel Writer"
-pubDate: 2026-02-11T12:56:23.265Z
-heroImage: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&h=675&fit=crop"
-heroImageAlt: "Dubai - Itineraries"
-keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","UAE"]
-tags: ["Itineraries","UAE","Asia","top-destination"]
-seoTitle: "5 Days Dubai Itinerary | Travel Guide"
-seoDescription: "Comprehensive 5-day dubai itinerary: major sights, local experiences, day trips, and relaxation."
-relatedSlugs: ["1-day-dubai-itinerary","2-day-dubai-itinerary","budget-friendly-dubai-itinerary"]
+title: '5 Days Dubai Itinerary, hey vaibhav how r u ?'
+description: >-
+  Comprehensive 5-day dubai itinerary: major sights, local experiences, day
+  trips, and relaxation.
+city: Dubai
+country: UAE
+category: Itineraries
+topic: 5-day-itinerary
+author: Travel Writer
+pubDate: '2026-02-11T12:56:23.265Z'
+heroImage: >-
+  https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&h=675&fit=crop
+heroImageAlt: Dubai - Itineraries
+keywords:
+  - Dubai travel
+  - things to do in Dubai
+  - Dubai guide
+  - visit Dubai
+  - UAE
+tags:
+  - Itineraries
+  - UAE
+  - Asia
+  - top-destination
+seoTitle: 5 Days Dubai Itinerary | Travel Guide
+seoDescription: >-
+  Comprehensive 5-day dubai itinerary: major sights, local experiences, day
+  trips, and relaxation.
+relatedSlugs:
+  - 1-day-dubai-itinerary
+  - 2-day-dubai-itinerary
+  - budget-friendly-dubai-itinerary
 readingTime: 12
 featured: false
 draft: false
+updatedDate: '2026-02-12T17:35:38.584Z'
 ---
 
 # 5-Day Dubai Itinerary: Explore the Gem of the Middle East
