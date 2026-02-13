@@ -1,22 +1,40 @@
 ---
-title: "Abu Dhabi with Kids: Travel Guide"
-description: "Traveling to Abu Dhabi with kids: family-friendly attractions, child-safe activities, and practical tips for parents."
-city: "Abu Dhabi"
-country: "United Arab Emirates"
-category: "Special Guides"
-topic: "abu-dhabi-kids-travel-guide"
-author: "Travel Writer"
-pubDate: 2026-01-22T02:13:00.000Z
-heroImage: "https://images.unsplash.com/photo-1512100356356-de1b84283e18?w=1200&h=675&fit=crop"
-heroImageAlt: "Abu Dhabi - Special Guides"
-keywords: ["Abu Dhabi travel","things to do in Abu Dhabi","Abu Dhabi guide","visit Abu Dhabi","United Arab Emirates"]
-tags: ["Special Guides","United Arab Emirates","Asia","top-destination"]
-seoTitle: "Abu Dhabi with Kids: Travel Guide | Travel Guide"
-seoDescription: "Traveling to Abu Dhabi with kids: family-friendly attractions, child-safe activities, and practical tips for parents."
-relatedSlugs: ["solo-travel-guide-abu-dhabi","abu-dhabi-travel-guide-indians","complete-abu-dhabi-travel-guide"]
+title: 'Abu Dhabi with Kids: '
+description: >-
+  Traveling to Abu Dhabi with kids: family-friendly attractions, child-safe
+  activities, and practical tips for parents.
+city: Abu Dhabi
+country: United Arab Emirates
+category: Special Guides
+topic: abu-dhabi-kids-travel-guide
+author: Travel Writer
+pubDate: '2026-01-22T02:13:00.000Z'
+heroImage: >-
+  https://images.unsplash.com/photo-1512100356356-de1b84283e18?w=1200&h=675&fit=crop
+heroImageAlt: Abu Dhabi - Special Guides
+keywords:
+  - Abu Dhabi travel
+  - things to do in Abu Dhabi
+  - Abu Dhabi guide
+  - visit Abu Dhabi
+  - United Arab Emirates
+tags:
+  - Special Guides
+  - United Arab Emirates
+  - Asia
+  - top-destination
+seoTitle: 'Abu Dhabi with Kids: Travel Guide | Travel Guide'
+seoDescription: >-
+  Traveling to Abu Dhabi with kids: family-friendly attractions, child-safe
+  activities, and practical tips for parents.
+relatedSlugs:
+  - solo-travel-guide-abu-dhabi
+  - abu-dhabi-travel-guide-indians
+  - complete-abu-dhabi-travel-guide
 readingTime: 8
 featured: false
 draft: false
+updatedDate: '2026-02-13T04:32:47.353Z'
 ---
 
 # Family Travel Guide to Abu Dhabi, United Arab Emirates
