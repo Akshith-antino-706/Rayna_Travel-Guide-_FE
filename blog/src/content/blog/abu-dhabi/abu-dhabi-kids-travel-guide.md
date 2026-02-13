@@ -1,5 +1,5 @@
 ---
-title: 'Abu Dhabi with Kids: '
+title: 'Abu Dhabi with Kids: Travel Guide'
 description: >-
   Traveling to Abu Dhabi with kids: family-friendly attractions, child-safe
   activities, and practical tips for parents.
@@ -34,7 +34,7 @@ relatedSlugs:
 readingTime: 8
 featured: false
 draft: false
-updatedDate: '2026-02-13T04:32:47.353Z'
+updatedDate: '2026-02-13T04:33:06.605Z'
 ---
 
 # Family Travel Guide to Abu Dhabi, United Arab Emirates
