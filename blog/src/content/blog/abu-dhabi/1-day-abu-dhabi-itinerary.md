@@ -1,22 +1,40 @@
 ---
-title: "1 Day Abu Dhabi Itinerary"
-description: "Best 1-day Abu Dhabi itinerary: must-see highlights, perfect day trip, and time-efficient route."
-city: "Abu Dhabi"
-country: "United Arab Emirates"
-category: "Itineraries"
-topic: "1-day-abu-dhabi-itinerary"
-author: "Travel Writer"
-pubDate: 2026-01-20T07:16:00.000Z
-heroImage: "https://images.unsplash.com/photo-1512100356356-de1b84283e18?w=1200&h=675&fit=crop"
-heroImageAlt: "Abu Dhabi - Itineraries"
-keywords: ["Abu Dhabi travel","things to do in Abu Dhabi","Abu Dhabi guide","visit Abu Dhabi","United Arab Emirates"]
-tags: ["Itineraries","United Arab Emirates","Asia","top-destination"]
-seoTitle: "1 Day Abu Dhabi Itinerary | Travel Guide"
-seoDescription: "Best 1-day Abu Dhabi itinerary: must-see highlights, perfect day trip, and time-efficient route."
-relatedSlugs: ["2-day-abu-dhabi-itinerary","3-day-abu-dhabi-itinerary","5-day-abu-dhabi-itinerary"]
+title: 1 Day Abuu Dhabi Itinerary
+description: >-
+  Best 1-day Abu Dhabi itinerary: must-see highlights, perfect day trip, and
+  time-efficient route.
+city: Abu Dhabi
+country: United Arab Emirates
+category: Itineraries
+topic: 1-day-abu-dhabi-itinerary
+author: Travel Writer
+pubDate: '2026-01-20T07:16:00.000Z'
+heroImage: >-
+  https://images.unsplash.com/photo-1512100356356-de1b84283e18?w=1200&h=675&fit=crop
+heroImageAlt: Abu Dhabi - Itineraries
+keywords:
+  - Abu Dhabi travel
+  - things to do in Abu Dhabi
+  - Abu Dhabi guide
+  - visit Abu Dhabi
+  - United Arab Emirates
+tags:
+  - Itineraries
+  - United Arab Emirates
+  - Asia
+  - top-destination
+seoTitle: 1 Day Abu Dhabi Itinerary | Travel Guide
+seoDescription: >-
+  Best 1-day Abu Dhabi itinerary: must-see highlights, perfect day trip, and
+  time-efficient route.
+relatedSlugs:
+  - 2-day-abu-dhabi-itinerary
+  - 3-day-abu-dhabi-itinerary
+  - 5-day-abu-dhabi-itinerary
 readingTime: 6
 featured: false
 draft: false
+updatedDate: '2026-02-17T09:01:22.544Z'
 ---
 
 # One-Day Itinerary for Abu Dhabi, United Arab Emirates
