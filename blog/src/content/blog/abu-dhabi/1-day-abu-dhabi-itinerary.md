@@ -1,5 +1,5 @@
 ---
-title: 1 Day Abuu Dhabi Itinerary
+title: 1 Day Abu Dhabi Itinerary
 description: >-
   Best 1-day Abu Dhabi itinerary: must-see highlights, perfect day trip, and
   time-efficient route.
@@ -34,7 +34,7 @@ relatedSlugs:
 readingTime: 6
 featured: false
 draft: false
-updatedDate: '2026-02-17T09:01:22.544Z'
+updatedDate: '2026-02-17T09:27:03.759Z'
 ---
 
 # One-Day Itinerary for Abu Dhabi, United Arab Emirates
