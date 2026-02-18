@@ -8,6 +8,8 @@ import BudgetGuide from '../components/guide/BudgetGuide.astro';
 import TransportGuide from '../components/guide/TransportGuide.astro';
 import CategoryExplore from '../components/guide/CategoryExplore.astro';
 import EssentialInfo from '../components/guide/EssentialInfo.astro';
+import ActivitiesSection from '../components/guide/ActivitiesSection.astro';
+import LocationSpotsSection from '../components/guide/LocationSpotsSection.astro';
 import { getCollection } from 'astro:content';
 import { CATEGORIES, SITE_URL } from '../utils/constants';
 import { getCityMeta, getCityGuideData } from '../utils/city-guide-data';
@@ -207,6 +209,29 @@ const attractionListLd = attractionPosts.length > 0 ? {
   <!-- Explore Categories -->
   {topCategories.length >= 4 && (
     <CategoryExplore categories={topCategories} cityName={cityName} />
+  )}
+
+  <!-- Activities Section -->
+  {guideData?.activities && (
+    <ActivitiesSection
+      label={guideData.activities.label}
+      heading={guideData.activities.heading}
+      description={guideData.activities.description}
+      viewAllUrl={guideData.activities.viewAllUrl}
+      items={guideData.activities.items}
+      cityName={cityName}
+    />
+  )}
+
+  <!-- Location Spots (Beaches etc.) -->
+  {guideData?.spots && (
+    <LocationSpotsSection
+      label={guideData.spots.label}
+      heading={guideData.spots.heading}
+      description={guideData.spots.description}
+      items={guideData.spots.items}
+      cityName={cityName}
+    />
   )}
 
   <!-- Sticky Quick Navigation -->

@@ -1,0 +1,50 @@
+---
+import type { LocationSpot } from '../../utils/city-guide-data';
+
+interface Props {
+  label: string;
+  heading: string;
+  description: string;
+  items: LocationSpot[];
+  cityName: string;
+}
+
+const { label, heading, description, items, cityName } = Astro.props;
+
+const badgeClasses: Record<string, string> = {
+  green:  'bg-green-100 text-green-700',
+  blue:   'bg-blue-100 text-blue-700',
+  orange: 'bg-orange-100 text-orange-600',
+};
+---
+
+<section class="py-8 sm:py-12 bg-gray-50">
+  <div class="container-wide">
+    <p class="text-orange-500 text-xs sm:text-sm font-semibold uppercase tracking-wider mb-2">{label}</p>
+    <h2 class="text-xl sm:text-2xl font-bold text-gray-900 guide-section-header">{heading}</h2>
+    <p class="text-gray-500 mb-6 sm:mb-8 text-sm sm:text-base">{description}</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-5">
+      {items.map((spot) => (
+        <div class="bg-white rounded-xl overflow-hidden border border-gray-100 hover:shadow-md transition-shadow duration-200">
+          <div class="aspect-[3/2] overflow-hidden bg-gray-100">
+            <img
+              src={spot.image}
+              alt={spot.name}
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+              onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=400&fit=crop&q=70';"
+            />
+          </div>
+          <div class="p-4">
+            <h3 class="font-bold text-gray-900 text-sm sm:text-base mb-1.5">{spot.name}</h3>
+            <p class="text-gray-500 text-xs sm:text-sm mb-3 leading-relaxed">{spot.description}</p>
+            <span class={`inline-block text-xs font-semibold px-2.5 py-1 rounded-full ${badgeClasses[spot.badgeColor]}`}>
+              {spot.badge}
+            </span>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

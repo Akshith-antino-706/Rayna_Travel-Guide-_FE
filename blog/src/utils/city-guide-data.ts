@@ -14,6 +14,22 @@ export interface CityMeta {
   hasYacht: boolean;
 }
 
+export interface Activity {
+  name: string;
+  description: string;
+  price: string; // e.g. "From AED 179" or "Free"
+  image: string;
+  url: string;
+}
+
+export interface LocationSpot {
+  name: string;
+  description: string;
+  badge: string;        // e.g. "Free Entry", "Paid Entry"
+  badgeColor: 'green' | 'blue' | 'orange';
+  image: string;
+}
+
 // Extended guide data for cities with full travel guides
 export interface CityGuideData {
   quickStats: {
@@ -46,6 +62,19 @@ export interface CityGuideData {
   heroImages: [string, string];
   tagline: string;
   heroDescription: string;
+  activities?: {
+    label: string;
+    heading: string;
+    description: string;
+    viewAllUrl: string;
+    items: Activity[];
+  };
+  spots?: {
+    label: string;
+    heading: string;
+    description: string;
+    items: LocationSpot[];
+  };
 }
 
 // Lookup table of city metadata by slug (subset of scripts/cities.ts for runtime)
@@ -112,6 +141,28 @@ export const CITY_GUIDE_DATA: Record<string, CityGuideData> = {
     ],
     tagline: 'Where Modern Marvels Meet Arabian Heritage',
     heroDescription: 'Dubai blends ancient Arabian heritage with futuristic architecture. From the world\'s tallest building to golden desert dunes, this comprehensive guide covers everything first-time visitors need to know for an unforgettable trip.',
+    activities: {
+      label: 'Activities',
+      heading: 'Where fun and family come together',
+      description: 'Dubai offers world-class attractions for travelers of all ages. From theme parks to cultural experiences, there\'s something for everyone.',
+      viewAllUrl: 'https://www.raynatours.com/dubai',
+      items: [
+        { name: 'Burj Khalifa', description: "World's tallest building at 828m", price: 'From AED 179', image: 'https://images.unsplash.com/photo-1582672060674-bc2bd808a8b5?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/dubai' },
+        { name: 'Desert Safari', description: 'Dune bashing, BBQ & entertainment', price: 'From AED 120', image: 'https://images.unsplash.com/photo-1509233725247-49e657c54213?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/dubai' },
+        { name: 'Dubai Frame', description: '150m picture frame structure', price: 'From AED 50', image: 'https://images.unsplash.com/photo-1580674684081-7617fbf3d745?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/dubai' },
+        { name: 'Balloon Flights', description: 'Sunrise views over the desert', price: 'From AED 950', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/dubai' },
+      ],
+    },
+    spots: {
+      label: 'Beaches',
+      heading: 'Best Beaches in Dubai',
+      description: 'Dubai boasts pristine beaches with crystal-clear waters and world-class amenities.',
+      items: [
+        { name: 'JBR Beach (Jumeirah Beach Residence)', description: "Dubai's most popular public beach with stunning Marina views, water sports, and The Walk promenade with shops and restaurants.", badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=400&fit=crop&q=80' },
+        { name: 'Kite Beach', description: 'Perfect for kite surfing and water sports with Burj Al Arab views. Features beach libraries, food trucks, and fitness areas.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&h=400&fit=crop&q=80' },
+        { name: 'La Mer Beach', description: 'Trendy beachfront destination with street art, boutique shops, waterpark, and diverse dining options. Instagram-worthy spots everywhere.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1476673160081-cf065607f449?w=600&h=400&fit=crop&q=80' },
+      ],
+    },
   },
 };
 
