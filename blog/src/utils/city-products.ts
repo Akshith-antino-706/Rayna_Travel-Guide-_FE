@@ -40,15 +40,17 @@ export const CITY_PRODUCT_MAP: Record<string, CityProductConfig> = {
   'singapore':     { cityId: 23726, cityName: 'Singapore',      countryName: 'Singapore' },
 };
 
+export type ProductType = 'tour' | 'activities';
+
 const PRODUCTS_API = 'https://earnest-panda-e8edbd.netlify.app/api/all-products';
 
 export function getCityConfig(citySlug: string): CityProductConfig | null {
   return CITY_PRODUCT_MAP[citySlug.toLowerCase()] ?? null;
 }
 
-export function buildProductsUrl(config: CityProductConfig): string {
+export function buildProductsUrl(config: CityProductConfig, productType: ProductType = 'tour'): string {
   const params = new URLSearchParams({
-    productType: 'tour',
+    productType,
     cityId: String(config.cityId),
     cityName: config.cityName,
     countryName: config.countryName,

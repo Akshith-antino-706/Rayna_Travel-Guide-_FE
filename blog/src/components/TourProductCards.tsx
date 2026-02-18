@@ -1,12 +1,14 @@
 import { useState, useEffect } from 'react';
-import type { Product, CityProductConfig } from '../utils/city-products';
+import type { Product, CityProductConfig, ProductType } from '../utils/city-products';
 import { buildProductsUrl } from '../utils/city-products';
 
 interface Props {
   cityConfig: CityProductConfig;
+  /** 'tour' | 'activities' | 'both' — 'both' shows a tab switcher */
+  productType?: ProductType | 'both';
   /** Filter to a specific item_group_id (optional) */
   groupId?: string;
-  /** Max cards to show */
+  /** Max cards to show per tab */
   limit?: number;
   heading?: string;
 }
@@ -41,7 +43,6 @@ function ProductCard({ product }: { product: Product }) {
       className="group flex flex-col bg-white rounded-xl border border-gray-100 overflow-hidden
                  hover:border-gray-300 hover:shadow-md transition-all duration-200"
     >
-      {/* Image */}
       <div className="relative aspect-[4/3] overflow-hidden bg-gray-100">
         <img
           src={product.image}
@@ -59,7 +60,6 @@ function ProductCard({ product }: { product: Product }) {
         )}
       </div>
 
-      {/* Content */}
       <div className="p-3 flex flex-col flex-1">
         <p className="text-[10px] text-gray-400 uppercase tracking-wider mb-1 font-medium">
           {product.item_group_id.replace(/-/g, ' ')}
@@ -96,40 +96,60 @@ function SkeletonCard() {
   );
 }
 
-export default function TourProductCards({
-  cityConfig,
-  groupId,
+function sortProducts(items: Product[], groupId?: string, limit = 6): Product[] {
+  if (groupId) items = items.filter((p) => p.item_group_id === groupId);
+  return items
+    .sort((a, b) => {
+      const aDisc = a.salePrice < a.normalPrice ? 1 : 0;
+      const bDisc = b.salePrice < b.normalPrice ? 1 : 0;
+      return bDisc - aDisc;
+    })
+    .slice(0, limit);
+}
+
+function useProducts(
+  cityConfig: CityProductConfig,
+  type: ProductType,
+  groupId?: string,
   limit = 6,
-  heading,
-}: Props) {
+) {
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
   useEffect(() => {
-    const url = buildProductsUrl(cityConfig);
-    fetch(url)
+    setLoading(true);
+    setError(false);
+    fetch(buildProductsUrl(cityConfig, type))
       .then((r) => r.json())
-      .then((data) => {
-        let items: Product[] = data.products ?? [];
-        if (groupId) {
-          items = items.filter((p) => p.item_group_id === groupId);
-        }
-        // Prioritise discounted items, then by group diversity
-        items.sort((a, b) => {
-          const aDisc = a.salePrice < a.normalPrice ? 1 : 0;
-          const bDisc = b.salePrice < b.normalPrice ? 1 : 0;
-          return bDisc - aDisc;
-        });
-        setProducts(items.slice(0, limit));
-      })
+      .then((data) => setProducts(sortProducts(data.products ?? [], groupId, limit)))
       .catch(() => setError(true))
       .finally(() => setLoading(false));
-  }, [cityConfig.cityId, groupId, limit]);
+  }, [cityConfig.cityId, type, groupId, limit]);
+
+  return { products, loading, error };
+}
+
+// Single-type panel (used when productType !== 'both')
+function SinglePanel({
+  cityConfig,
+  type,
+  groupId,
+  limit,
+  heading,
+}: {
+  cityConfig: CityProductConfig;
+  type: ProductType;
+  groupId?: string;
+  limit: number;
+  heading?: string;
+}) {
+  const { products, loading, error } = useProducts(cityConfig, type, groupId, limit);
 
   if (error || (!loading && products.length === 0)) return null;
 
   const title = heading ?? `Things to Do in ${cityConfig.cityName}`;
+  const skeletonCount = Math.min(limit, 4);
 
   return (
     <section className="py-8 border-t border-gray-100">
@@ -149,16 +169,110 @@ export default function TourProductCards({
           View all →
         </a>
       </div>
-
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-3">
         {loading
-          ? Array.from({ length: limit > 4 ? 4 : limit }).map((_, i) => (
-              <SkeletonCard key={i} />
-            ))
-          : products.map((product) => (
-              <ProductCard key={product.url} product={product} />
-            ))}
+          ? Array.from({ length: skeletonCount }).map((_, i) => <SkeletonCard key={i} />)
+          : products.map((p) => <ProductCard key={p.url} product={p} />)}
       </div>
     </section>
+  );
+}
+
+// Tabbed panel (used when productType === 'both')
+function TabbedPanel({
+  cityConfig,
+  groupId,
+  limit,
+  heading,
+}: {
+  cityConfig: CityProductConfig;
+  groupId?: string;
+  limit: number;
+  heading?: string;
+}) {
+  const [activeTab, setActiveTab] = useState<ProductType>('activities');
+
+  const tours = useProducts(cityConfig, 'tour', groupId, limit);
+  const activities = useProducts(cityConfig, 'activities', groupId, limit);
+
+  const current = activeTab === 'activities' ? activities : tours;
+  const skeletonCount = Math.min(limit, 4);
+
+  if (tours.error && activities.error) return null;
+  if (!tours.loading && !activities.loading && tours.products.length === 0 && activities.products.length === 0) return null;
+
+  const title = heading ?? `Things to Do in ${cityConfig.cityName}`;
+
+  return (
+    <section className="py-8 border-t border-gray-100">
+      <div className="flex items-start justify-between mb-4">
+        <div>
+          <h3 className="text-lg font-bold text-gray-900">{title}</h3>
+          <p className="text-xs text-gray-400 mt-0.5">
+            Book tours &amp; activities · Prices from Rayna Tours
+          </p>
+        </div>
+        <a
+          href={`https://www.raynatours.com/${cityConfig.cityName.toLowerCase().replace(/\s+/g, '-')}`}
+          target="_blank"
+          rel="noopener noreferrer sponsored"
+          className="text-xs text-gray-500 hover:text-gray-900 transition-colors shrink-0 mt-1"
+        >
+          View all →
+        </a>
+      </div>
+
+      {/* Tab switcher */}
+      <div className="flex gap-2 mb-5">
+        {(['activities', 'tour'] as ProductType[]).map((tab) => (
+          <button
+            key={tab}
+            onClick={() => setActiveTab(tab)}
+            className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
+              activeTab === tab
+                ? 'bg-gray-900 text-white'
+                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+            }`}
+          >
+            {tab === 'activities' ? 'Activities' : 'Tours'}
+          </button>
+        ))}
+      </div>
+
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-3">
+        {current.loading
+          ? Array.from({ length: skeletonCount }).map((_, i) => <SkeletonCard key={i} />)
+          : current.products.map((p) => <ProductCard key={p.url} product={p} />)}
+      </div>
+    </section>
+  );
+}
+
+export default function TourProductCards({
+  cityConfig,
+  productType = 'both',
+  groupId,
+  limit = 6,
+  heading,
+}: Props) {
+  if (productType === 'both') {
+    return (
+      <TabbedPanel
+        cityConfig={cityConfig}
+        groupId={groupId}
+        limit={limit}
+        heading={heading}
+      />
+    );
+  }
+
+  return (
+    <SinglePanel
+      cityConfig={cityConfig}
+      type={productType}
+      groupId={groupId}
+      limit={limit}
+      heading={heading}
+    />
   );
 }
