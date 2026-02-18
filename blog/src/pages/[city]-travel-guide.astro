@@ -291,32 +291,19 @@ const attractionListLd = attractionPosts.length > 0 ? {
           </div>
 
           {index === 0 && cat.posts.length >= 4 ? (
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              <BlogCard
-                title={cat.posts[0].data.title}
-                description={cat.posts[0].data.description}
-                slug={cat.posts[0].slug}
-                city={cat.posts[0].data.city}
-                category={cat.posts[0].data.category}
-                pubDate={cat.posts[0].data.pubDate}
-                heroImage={cat.posts[0].data.heroImage}
-                readingTime={cat.posts[0].data.readingTime}
-                featured={true}
-              />
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {cat.posts.slice(1, 5).map(post => (
-                  <BlogCard
-                    title={post.data.title}
-                    description={post.data.description}
-                    slug={post.slug}
-                    city={post.data.city}
-                    category={post.data.category}
-                    pubDate={post.data.pubDate}
-                    heroImage={post.data.heroImage}
-                    readingTime={post.data.readingTime}
-                  />
-                ))}
-              </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+              {cat.posts.slice(0, 8).map(post => (
+                <BlogCard
+                  title={post.data.title}
+                  description={post.data.description}
+                  slug={post.slug}
+                  city={post.data.city}
+                  category={post.data.category}
+                  pubDate={post.data.pubDate}
+                  heroImage={post.data.heroImage}
+                  readingTime={post.data.readingTime}
+                />
+              ))}
             </div>
           ) : (
             <div class="scroll-row sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-6 sm:overflow-visible sm:pb-0">
