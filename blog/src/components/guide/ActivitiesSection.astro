@@ -15,7 +15,7 @@ const { label, heading, description, viewAllUrl, items, cityName } = Astro.props
 
 <section class="py-8 sm:py-12 bg-white">
   <div class="container-wide">
-    <p class="text-orange-500 text-xs sm:text-sm font-semibold uppercase tracking-wider mb-2">{label}</p>
+    <p class="text-gray-900 text-xs sm:text-sm font-semibold uppercase tracking-wider mb-2">{label}</p>
     <h2 class="text-xl sm:text-2xl font-bold text-gray-900 guide-section-header">{heading}</h2>
     <p class="text-gray-500 mb-6 sm:mb-8 text-sm sm:text-base">{description}</p>
 
@@ -39,7 +39,7 @@ const { label, heading, description, viewAllUrl, items, cityName } = Astro.props
           <div class="p-2.5 sm:p-3">
             <h3 class="font-bold text-gray-900 text-xs sm:text-sm mb-0.5">{item.name}</h3>
             <p class="text-gray-500 text-xs mb-1.5 line-clamp-2">{item.description}</p>
-            <p class="text-orange-500 font-semibold text-xs">{item.price}</p>
+            <p class="text-gray-900 font-semibold text-xs">{item.price}</p>
           </div>
         </a>
       ))}
@@ -50,7 +50,7 @@ const { label, heading, description, viewAllUrl, items, cityName } = Astro.props
         href={viewAllUrl}
         target="_blank"
         rel="noopener noreferrer sponsored"
-        class="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-full transition-colors text-sm"
+        class="inline-flex items-center gap-2 bg-gray-900 hover:bg-gray-800 text-white font-semibold px-6 py-3 rounded-full transition-colors text-sm"
       >
         View All Activities
         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
