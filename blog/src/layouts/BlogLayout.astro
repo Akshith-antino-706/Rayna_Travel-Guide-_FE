@@ -4,7 +4,7 @@ import TableOfContents from '../components/TableOfContents.astro';
 import RelatedArticles from '../components/RelatedArticles.astro';
 import TourProductCards from '../components/TourProductCards.tsx';
 import { SITE_URL } from '../utils/constants';
-import { getCityConfig } from '../utils/city-products';
+import { getCityConfig, getHolidayConfig, getCruiseConfig } from '../utils/city-products';
 
 interface Props {
   title: string;
@@ -34,6 +34,8 @@ const formattedDate = pubDate.toLocaleDateString('en-US', {
 
 const citySlug = city.toLowerCase().replace(/\s+/g, '-');
 const cityProductConfig = getCityConfig(citySlug);
+const cityHolidayConfig = getHolidayConfig(citySlug);
+const cityCruiseConfig  = getCruiseConfig(citySlug);
 
 // Sidebar gallery images — reduced to 4, first image uses article hero
 const sidebarImages = [
@@ -207,12 +209,13 @@ const breadcrumbLd = {
       </aside>
     </div>
 
-    <!-- Tours & Activities for this city -->
-    {cityProductConfig && (
+    <!-- Tours, Activities, Holidays & Cruises for this city -->
+    {(cityProductConfig || cityHolidayConfig || cityCruiseConfig) && (
       <div class="mt-10">
         <TourProductCards
-          cityConfig={cityProductConfig}
-          productType="both"
+          tourConfig={cityProductConfig ?? undefined}
+          holidayConfig={cityHolidayConfig ?? undefined}
+          cruiseConfig={cityCruiseConfig ?? undefined}
           limit={6}
           client:visible
         />

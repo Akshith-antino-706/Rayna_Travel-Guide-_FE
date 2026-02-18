@@ -12,7 +12,7 @@ import { getCollection } from 'astro:content';
 import { CATEGORIES, SITE_URL } from '../utils/constants';
 import { getCityMeta, getCityGuideData } from '../utils/city-guide-data';
 import TourProductCards from '../components/TourProductCards.tsx';
-import { getCityConfig } from '../utils/city-products';
+import { getCityConfig, getHolidayConfig, getCruiseConfig } from '../utils/city-products';
 
 export async function getStaticPaths() {
   const allPosts = await getCollection('blog', ({ data }) => !data.draft);
@@ -37,6 +37,8 @@ const citySlug = cityName.toLowerCase().replace(/\s+/g, '-');
 const cityMeta = getCityMeta(citySlug);
 const guideData = getCityGuideData(citySlug);
 const cityProductConfig = getCityConfig(citySlug);
+const cityHolidayConfig = getHolidayConfig(citySlug);
+const cityCruiseConfig  = getCruiseConfig(citySlug);
 
 // Group posts by category
 const postsByCategory = CATEGORIES.reduce((acc, cat) => {
@@ -227,13 +229,14 @@ const attractionListLd = attractionPosts.length > 0 ? {
     </div>
   </section>
 
-  <!-- Book Tours & Activities -->
-  {cityProductConfig && (
+  <!-- Tours, Activities, Holidays & Cruises -->
+  {(cityProductConfig || cityHolidayConfig || cityCruiseConfig) && (
     <section class="py-10 bg-white">
       <div class="container-wide">
         <TourProductCards
-          cityConfig={cityProductConfig}
-          productType="both"
+          tourConfig={cityProductConfig ?? undefined}
+          holidayConfig={cityHolidayConfig ?? undefined}
+          cruiseConfig={cityCruiseConfig ?? undefined}
           limit={6}
           heading={`Top Tours & Activities in ${cityName}`}
           client:visible

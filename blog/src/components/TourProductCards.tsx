@@ -1,17 +1,29 @@
 import { useState, useEffect } from 'react';
-import type { Product, CityProductConfig, ProductType } from '../utils/city-products';
+import type { Product, CityProductConfig } from '../utils/city-products';
 import { buildProductsUrl } from '../utils/city-products';
 
 interface Props {
-  cityConfig: CityProductConfig;
-  /** 'tour' | 'activities' | 'both' — 'both' shows a tab switcher */
-  productType?: ProductType | 'both';
-  /** Filter to a specific item_group_id (optional) */
-  groupId?: string;
-  /** Max cards to show per tab */
+  /** Config for tour + activities tabs (cities with tour/activities API coverage) */
+  tourConfig?: CityProductConfig;
+  /** Config for holiday packages tab */
+  holidayConfig?: CityProductConfig;
+  /** Config for cruise packages tab */
+  cruiseConfig?: CityProductConfig;
+  /** Max cards per tab */
   limit?: number;
   heading?: string;
 }
+
+type Tab = 'activities' | 'tours' | 'holidays' | 'cruises';
+
+const TAB_LABELS: Record<Tab, string> = {
+  activities: 'Activities',
+  tours:      'Tours',
+  holidays:   'Holidays',
+  cruises:    'Cruises',
+};
+
+// ─── Sub-components ───────────────────────────────────────────────────────────
 
 function PriceTag({ normal, sale, currency }: { normal: number; sale: number; currency: string }) {
   const hasDiscount = sale < normal;
@@ -49,9 +61,7 @@ function ProductCard({ product }: { product: Product }) {
           alt={product.name}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           loading="lazy"
-          onError={(e) => {
-            (e.target as HTMLImageElement).style.display = 'none';
-          }}
+          onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
         />
         {hasDiscount && (
           <span className="absolute top-2 left-2 bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">
@@ -68,14 +78,8 @@ function ProductCard({ product }: { product: Product }) {
           {product.name}
         </h4>
         <div className="flex items-center justify-between mt-auto pt-2 border-t border-gray-50">
-          <PriceTag
-            normal={product.normalPrice}
-            sale={product.salePrice}
-            currency={product.currency}
-          />
-          <span className="text-xs text-gray-900 font-medium group-hover:underline">
-            Book →
-          </span>
+          <PriceTag normal={product.normalPrice} sale={product.salePrice} currency={product.currency} />
+          <span className="text-xs text-gray-900 font-medium group-hover:underline">Book →</span>
         </div>
       </div>
     </a>
@@ -96,124 +100,120 @@ function SkeletonCard() {
   );
 }
 
-function sortProducts(items: Product[], groupId?: string, limit = 6): Product[] {
-  if (groupId) items = items.filter((p) => p.item_group_id === groupId);
-  return items
-    .sort((a, b) => {
-      const aDisc = a.salePrice < a.normalPrice ? 1 : 0;
-      const bDisc = b.salePrice < b.normalPrice ? 1 : 0;
-      return bDisc - aDisc;
-    })
-    .slice(0, limit);
-}
+// ─── Data hook ────────────────────────────────────────────────────────────────
 
-function useProducts(
-  cityConfig: CityProductConfig,
-  type: ProductType,
-  groupId?: string,
-  limit = 6,
+function useTabProducts(
+  config: CityProductConfig,
+  apiType: 'tour' | 'activities' | 'holiday' | 'cruise',
+  limit: number,
 ) {
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(false);
+  const [empty, setEmpty] = useState(false);
 
   useEffect(() => {
     setLoading(true);
-    setError(false);
-    fetch(buildProductsUrl(cityConfig, type))
+    setEmpty(false);
+    fetch(buildProductsUrl(config, apiType))
       .then((r) => r.json())
-      .then((data) => setProducts(sortProducts(data.products ?? [], groupId, limit)))
-      .catch(() => setError(true))
+      .then((data) => {
+        const items: Product[] = (data.products ?? [])
+          .sort((a: Product, b: Product) => {
+            const aD = a.salePrice < a.normalPrice ? 1 : 0;
+            const bD = b.salePrice < b.normalPrice ? 1 : 0;
+            return bD - aD;
+          })
+          .slice(0, limit);
+        setProducts(items);
+        setEmpty(items.length === 0);
+      })
+      .catch(() => setEmpty(true))
       .finally(() => setLoading(false));
-  }, [cityConfig.cityId, type, groupId, limit]);
+  }, [config.cityId, apiType, limit]);
 
-  return { products, loading, error };
+  return { products, loading, empty };
 }
 
-// Single-type panel (used when productType !== 'both')
-function SinglePanel({
-  cityConfig,
-  type,
-  groupId,
-  limit,
+// ─── Main component ───────────────────────────────────────────────────────────
+
+export default function TourProductCards({
+  tourConfig,
+  holidayConfig,
+  cruiseConfig,
+  limit = 6,
   heading,
-}: {
-  cityConfig: CityProductConfig;
-  type: ProductType;
-  groupId?: string;
-  limit: number;
-  heading?: string;
-}) {
-  const { products, loading, error } = useProducts(cityConfig, type, groupId, limit);
+}: Props) {
+  // Build ordered tab list based on which configs are provided
+  const tabs: Tab[] = [];
+  if (tourConfig)    tabs.push('activities', 'tours');
+  if (holidayConfig) tabs.push('holidays');
+  if (cruiseConfig)  tabs.push('cruises');
 
-  if (error || (!loading && products.length === 0)) return null;
+  const [activeTab, setActiveTab] = useState<Tab>(tabs[0] ?? 'activities');
 
-  const title = heading ?? `Things to Do in ${cityConfig.cityName}`;
-  const skeletonCount = Math.min(limit, 4);
+  // Derive the cityName for the "View all" link from whichever config is available
+  const primaryConfig = tourConfig ?? holidayConfig ?? cruiseConfig;
 
-  return (
-    <section className="py-8 border-t border-gray-100">
-      <div className="flex items-center justify-between mb-5">
-        <div>
-          <h3 className="text-lg font-bold text-gray-900">{title}</h3>
-          <p className="text-xs text-gray-400 mt-0.5">
-            Book tours &amp; activities · Prices from Rayna Tours
-          </p>
-        </div>
-        <a
-          href={`https://www.raynatours.com/${cityConfig.cityName.toLowerCase().replace(/\s+/g, '-')}`}
-          target="_blank"
-          rel="noopener noreferrer sponsored"
-          className="text-xs text-gray-500 hover:text-gray-900 transition-colors shrink-0"
-        >
-          View all →
-        </a>
-      </div>
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-3">
-        {loading
-          ? Array.from({ length: skeletonCount }).map((_, i) => <SkeletonCard key={i} />)
-          : products.map((p) => <ProductCard key={p.url} product={p} />)}
-      </div>
-    </section>
+  // Fetch all data upfront so tab switching is instant
+  const activitiesData = useTabProducts(
+    tourConfig ?? { cityId: 0, cityName: '', countryName: '' },
+    'activities',
+    limit,
   );
-}
+  const toursData = useTabProducts(
+    tourConfig ?? { cityId: 0, cityName: '', countryName: '' },
+    'tour',
+    limit,
+  );
+  const holidaysData = useTabProducts(
+    holidayConfig ?? { cityId: 0, cityName: '', countryName: '' },
+    'holiday',
+    limit,
+  );
+  const cruisesData = useTabProducts(
+    cruiseConfig ?? { cityId: 0, cityName: '', countryName: '' },
+    'cruise',
+    limit,
+  );
 
-// Tabbed panel (used when productType === 'both')
-function TabbedPanel({
-  cityConfig,
-  groupId,
-  limit,
-  heading,
-}: {
-  cityConfig: CityProductConfig;
-  groupId?: string;
-  limit: number;
-  heading?: string;
-}) {
-  const [activeTab, setActiveTab] = useState<ProductType>('activities');
+  if (tabs.length === 0 || !primaryConfig) return null;
 
-  const tours = useProducts(cityConfig, 'tour', groupId, limit);
-  const activities = useProducts(cityConfig, 'activities', groupId, limit);
+  // Map each tab to its fetched data
+  const dataMap: Record<Tab, ReturnType<typeof useTabProducts>> = {
+    activities: activitiesData,
+    tours:      toursData,
+    holidays:   holidaysData,
+    cruises:    cruisesData,
+  };
 
-  const current = activeTab === 'activities' ? activities : tours;
+  // Filter out tabs where the API returned no results (after loading)
+  const availableTabs = tabs.filter((t) => {
+    const d = dataMap[t];
+    return !(!d.loading && d.empty);
+  });
+
+  if (availableTabs.length === 0) return null;
+
+  // Keep activeTab valid
+  const currentTab = availableTabs.includes(activeTab) ? activeTab : availableTabs[0];
+  const current = dataMap[currentTab];
   const skeletonCount = Math.min(limit, 4);
 
-  if (tours.error && activities.error) return null;
-  if (!tours.loading && !activities.loading && tours.products.length === 0 && activities.products.length === 0) return null;
-
-  const title = heading ?? `Things to Do in ${cityConfig.cityName}`;
+  const title = heading ?? `Things to Do in ${primaryConfig.cityName.replace(' City', '')}`;
+  const cityPath = primaryConfig.cityName.toLowerCase().replace(/\s+/g, '-').replace('-city', '');
 
   return (
     <section className="py-8 border-t border-gray-100">
+      {/* Header */}
       <div className="flex items-start justify-between mb-4">
         <div>
           <h3 className="text-lg font-bold text-gray-900">{title}</h3>
           <p className="text-xs text-gray-400 mt-0.5">
-            Book tours &amp; activities · Prices from Rayna Tours
+            Powered by Rayna Tours
           </p>
         </div>
         <a
-          href={`https://www.raynatours.com/${cityConfig.cityName.toLowerCase().replace(/\s+/g, '-')}`}
+          href={`https://www.raynatours.com/${cityPath}`}
           target="_blank"
           rel="noopener noreferrer sponsored"
           className="text-xs text-gray-500 hover:text-gray-900 transition-colors shrink-0 mt-1"
@@ -222,57 +222,31 @@ function TabbedPanel({
         </a>
       </div>
 
-      {/* Tab switcher */}
-      <div className="flex gap-2 mb-5">
-        {(['activities', 'tour'] as ProductType[]).map((tab) => (
-          <button
-            key={tab}
-            onClick={() => setActiveTab(tab)}
-            className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
-              activeTab === tab
-                ? 'bg-gray-900 text-white'
-                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-            }`}
-          >
-            {tab === 'activities' ? 'Activities' : 'Tours'}
-          </button>
-        ))}
-      </div>
+      {/* Tabs — only show if more than one available */}
+      {availableTabs.length > 1 && (
+        <div className="flex gap-2 mb-5 flex-wrap">
+          {availableTabs.map((tab) => (
+            <button
+              key={tab}
+              onClick={() => setActiveTab(tab)}
+              className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
+                currentTab === tab
+                  ? 'bg-gray-900 text-white'
+                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+              }`}
+            >
+              {TAB_LABELS[tab]}
+            </button>
+          ))}
+        </div>
+      )}
 
+      {/* Cards grid */}
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-3">
         {current.loading
           ? Array.from({ length: skeletonCount }).map((_, i) => <SkeletonCard key={i} />)
           : current.products.map((p) => <ProductCard key={p.url} product={p} />)}
       </div>
     </section>
-  );
-}
-
-export default function TourProductCards({
-  cityConfig,
-  productType = 'both',
-  groupId,
-  limit = 6,
-  heading,
-}: Props) {
-  if (productType === 'both') {
-    return (
-      <TabbedPanel
-        cityConfig={cityConfig}
-        groupId={groupId}
-        limit={limit}
-        heading={heading}
-      />
-    );
-  }
-
-  return (
-    <SinglePanel
-      cityConfig={cityConfig}
-      type={productType}
-      groupId={groupId}
-      limit={limit}
-      heading={heading}
-    />
   );
 }
