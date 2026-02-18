@@ -150,7 +150,7 @@ export const CITY_GUIDE_DATA: Record<string, CityGuideData> = {
         { name: 'Burj Khalifa', description: "World's tallest building at 828m", price: 'From AED 179', image: 'https://images.unsplash.com/photo-1582672060674-bc2bd808a8b5?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/dubai' },
         { name: 'Desert Safari', description: 'Dune bashing, BBQ & entertainment', price: 'From AED 120', image: 'https://images.unsplash.com/photo-1509233725247-49e657c54213?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/dubai' },
         { name: 'Dubai Frame', description: '150m picture frame structure', price: 'From AED 50', image: 'https://images.unsplash.com/photo-1580674684081-7617fbf3d745?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/dubai' },
-        { name: 'Balloon Flights', description: 'Sunrise views over the desert', price: 'From AED 950', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/dubai' },
+        { name: 'Balloon Flights', description: 'Sunrise views over the desert', price: 'From AED 950', image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/dubai' },
       ],
     },
     spots: {
@@ -160,7 +160,7 @@ export const CITY_GUIDE_DATA: Record<string, CityGuideData> = {
       items: [
         { name: 'JBR Beach (Jumeirah Beach Residence)', description: "Dubai's most popular public beach with stunning Marina views, water sports, and The Walk promenade with shops and restaurants.", badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=400&fit=crop&q=80' },
         { name: 'Kite Beach', description: 'Perfect for kite surfing and water sports with Burj Al Arab views. Features beach libraries, food trucks, and fitness areas.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&h=400&fit=crop&q=80' },
-        { name: 'La Mer Beach', description: 'Trendy beachfront destination with street art, boutique shops, waterpark, and diverse dining options. Instagram-worthy spots everywhere.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1476673160081-cf065607f449?w=600&h=400&fit=crop&q=80' },
+        { name: 'La Mer Beach', description: 'Trendy beachfront destination with street art, boutique shops, waterpark, and diverse dining options. Instagram-worthy spots everywhere.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1551410224-699683e5dfc5?w=600&h=400&fit=crop&q=80' },
       ],
     },
   },
@@ -216,7 +216,7 @@ export const CITY_GUIDE_DATA: Record<string, CityGuideData> = {
       items: [
         { name: 'Corniche Beach', description: 'Abu Dhabi\'s iconic 8km waterfront promenade. Blue Flag certified beach with stunning city skyline views and excellent facilities.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=400&fit=crop&q=80' },
         { name: 'Saadiyat Beach', description: 'A pristine natural beach adjacent to world-class museums and luxury resorts. Calm, crystal-clear waters perfect for swimming.', badge: 'Paid Entry', badgeColor: 'orange', image: 'https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&h=400&fit=crop&q=80' },
-        { name: 'Yas Beach', description: 'Modern beach club on Yas Island near Ferrari World. Water sports, beach loungers, and F&B outlets in a vibrant setting.', badge: 'From AED 35', badgeColor: 'blue', image: 'https://images.unsplash.com/photo-1476673160081-cf065607f449?w=600&h=400&fit=crop&q=80' },
+        { name: 'Yas Beach', description: 'Modern beach club on Yas Island near Ferrari World. Water sports, beach loungers, and F&B outlets in a vibrant setting.', badge: 'From AED 35', badgeColor: 'blue', image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=400&fit=crop&q=80' },
       ],
     },
   },
@@ -261,8 +261,8 @@ export const CITY_GUIDE_DATA: Record<string, CityGuideData> = {
       items: [
         { name: 'Grand Palace & Wat Phra Kaew', description: 'Thailand\'s most sacred site and former royal residence', price: 'From THB 500', image: 'https://images.unsplash.com/photo-1563492065599-3520f775eeed?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/bangkok' },
         { name: 'Floating Market Tour', description: 'Damnoen Saduak or Amphawa by traditional longtail boat', price: 'From THB 800', image: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/bangkok' },
-        { name: 'Chao Phraya Dinner Cruise', description: 'Romantic evening cruise with buffet dinner and city views', price: 'From THB 1200', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/bangkok' },
-        { name: 'Muay Thai Evening Show', description: 'Live Thai boxing at Rajadamnern or Lumpinee stadium', price: 'From THB 1500', image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/bangkok' },
+        { name: 'Chao Phraya Dinner Cruise', description: 'Romantic evening cruise with buffet dinner and city views', price: 'From THB 1200', image: 'https://images.unsplash.com/photo-1562602833-0f4ab2fc46e5?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/bangkok' },
+        { name: 'Muay Thai Evening Show', description: 'Live Thai boxing at Rajadamnern or Lumpinee stadium', price: 'From THB 1500', image: 'https://images.unsplash.com/photo-1555597673-b21d5c935865?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/bangkok' },
       ],
     },
     spots: {
@@ -271,7 +271,7 @@ export const CITY_GUIDE_DATA: Record<string, CityGuideData> = {
       description: 'Beyond the temples, Bangkok\'s neighborhoods each have a distinct personality and charm to discover.',
       items: [
         { name: 'Chatuchak Weekend Market', description: 'One of the world\'s largest markets with over 15,000 stalls. Find everything from antiques to street food and clothing.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1555529902-5261145633bf?w=600&h=400&fit=crop&q=80' },
-        { name: 'Khao San Road', description: 'Bangkok\'s legendary backpacker hub lined with guesthouses, bars, street food, and unique shopping in the heart of the Old City.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1509233725247-49e657c54213?w=600&h=400&fit=crop&q=80' },
+        { name: 'Khao San Road', description: 'Bangkok\'s legendary backpacker hub lined with guesthouses, bars, street food, and unique shopping in the heart of the Old City.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=600&h=400&fit=crop&q=80' },
         { name: 'Chinatown (Yaowarat)', description: 'Bangkok\'s vibrant Chinatown bursting with gold shops, seafood restaurants, and street food stalls active until midnight.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=600&h=400&fit=crop&q=80' },
       ],
     },
@@ -317,8 +317,8 @@ export const CITY_GUIDE_DATA: Record<string, CityGuideData> = {
       items: [
         { name: 'Marina Bay Sands SkyPark', description: 'Iconic infinity pool and observation deck 57 floors up', price: 'From SGD 26', image: 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/singapore' },
         { name: 'Gardens by the Bay', description: 'Futuristic Supertrees and OCBC Skyway light show', price: 'From SGD 28', image: 'https://images.unsplash.com/photo-1565967511849-76a60a516170?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/singapore' },
-        { name: 'Universal Studios', description: 'Southeast Asia\'s only Universal Studios theme park on Sentosa', price: 'From SGD 83', image: 'https://images.unsplash.com/photo-1580674684081-7617fbf3d745?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/singapore' },
-        { name: 'Singapore Night Safari', description: 'World\'s first nocturnal wildlife park with tram rides', price: 'From SGD 49', image: 'https://images.unsplash.com/photo-1509233725247-49e657c54213?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/singapore' },
+        { name: 'Universal Studios', description: 'Southeast Asia\'s only Universal Studios theme park on Sentosa', price: 'From SGD 83', image: 'https://images.unsplash.com/photo-1541877590-a1c5db3394c6?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/singapore' },
+        { name: 'Singapore Night Safari', description: 'World\'s first nocturnal wildlife park with tram rides', price: 'From SGD 49', image: 'https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/singapore' },
       ],
     },
     spots: {
@@ -328,7 +328,7 @@ export const CITY_GUIDE_DATA: Record<string, CityGuideData> = {
       items: [
         { name: 'Siloso Beach, Sentosa', description: 'Singapore\'s most popular beach with beach bars, water sports, and easy access via cable car or monorail from VivoCity.', badge: 'From SGD 4', badgeColor: 'blue', image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=400&fit=crop&q=80' },
         { name: 'East Coast Park Beach', description: 'A 15km stretch of parkland and beach perfect for cycling, BBQs, and water sports. A beloved local weekend destination.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&h=400&fit=crop&q=80' },
-        { name: 'Palawan Beach', description: 'Home to the Southernmost Point of Continental Asia. Ideal for families with shallow waters and a floating bridge to a tiny island.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1476673160081-cf065607f449?w=600&h=400&fit=crop&q=80' },
+        { name: 'Palawan Beach', description: 'Home to the Southernmost Point of Continental Asia. Ideal for families with shallow waters and a floating bridge to a tiny island.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&h=400&fit=crop&q=80' },
       ],
     },
   },
@@ -372,9 +372,9 @@ export const CITY_GUIDE_DATA: Record<string, CityGuideData> = {
       viewAllUrl: 'https://www.raynatours.com/tokyo',
       items: [
         { name: 'Senso-ji Temple', description: 'Tokyo\'s oldest and most visited Buddhist temple in Asakusa', price: 'Free Entry', image: 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/tokyo' },
-        { name: 'TeamLab Borderless', description: 'Immersive digital art museum — a truly unique experience', price: 'From JPY 3200', image: 'https://images.unsplash.com/photo-1580674684081-7617fbf3d745?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/tokyo' },
+        { name: 'TeamLab Borderless', description: 'Immersive digital art museum — a truly unique experience', price: 'From JPY 3200', image: 'https://images.unsplash.com/photo-1531512073830-ba890ca4eba2?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/tokyo' },
         { name: 'Mt Fuji Day Trip', description: 'Iconic volcano visit with Hakone or Kawaguchiko lakes', price: 'From JPY 8000', image: 'https://images.unsplash.com/photo-1492571350019-22de08371fd3?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/tokyo' },
-        { name: 'Shibuya Crossing & Sky', description: 'World\'s busiest crossing + Shibuya Sky rooftop observation deck', price: 'From JPY 2000', image: 'https://images.unsplash.com/photo-1509233725247-49e657c54213?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/tokyo' },
+        { name: 'Shibuya Crossing & Sky', description: 'World\'s busiest crossing + Shibuya Sky rooftop observation deck', price: 'From JPY 2000', image: 'https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/tokyo' },
       ],
     },
     spots: {
@@ -382,9 +382,9 @@ export const CITY_GUIDE_DATA: Record<string, CityGuideData> = {
       heading: 'Tokyo\'s most beautiful green spaces',
       description: 'Despite its urban density, Tokyo offers stunning parks and gardens for a peaceful retreat from the city buzz.',
       items: [
-        { name: 'Shinjuku Gyoen National Garden', description: 'Tokyo\'s most beautiful park blending French formal, English landscape, and traditional Japanese garden styles. Spectacular in cherry blossom season.', badge: 'JPY 500', badgeColor: 'blue', image: 'https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=600&h=400&fit=crop&q=80' },
-        { name: 'Ueno Park', description: 'Tokyo\'s most popular park with several major museums, Ueno Zoo, Shinobazu Pond, and incredible cherry blossom parties each spring.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1555921015-5532091f6026?w=600&h=400&fit=crop&q=80' },
-        { name: 'Odaiba Seaside Park', description: 'A waterfront park on Tokyo Bay with views of Rainbow Bridge and a replica Statue of Liberty. Great for sunsets and relaxed walks.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=400&fit=crop&q=80' },
+        { name: 'Shinjuku Gyoen National Garden', description: 'Tokyo\'s most beautiful park blending French formal, English landscape, and traditional Japanese garden styles. Spectacular in cherry blossom season.', badge: 'JPY 500', badgeColor: 'blue', image: 'https://images.unsplash.com/photo-1522383225653-ed111181a951?w=600&h=400&fit=crop&q=80' },
+        { name: 'Ueno Park', description: 'Tokyo\'s most popular park with several major museums, Ueno Zoo, Shinobazu Pond, and incredible cherry blossom parties each spring.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1492571350019-22de08371fd3?w=600&h=400&fit=crop&q=80' },
+        { name: 'Odaiba Seaside Park', description: 'A waterfront park on Tokyo Bay with views of Rainbow Bridge and a replica Statue of Liberty. Great for sunsets and relaxed walks.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&h=400&fit=crop&q=80' },
       ],
     },
   },
@@ -428,9 +428,9 @@ export const CITY_GUIDE_DATA: Record<string, CityGuideData> = {
       viewAllUrl: 'https://www.raynatours.com/london',
       items: [
         { name: 'Tower of London', description: 'Crown Jewels, Beefeaters & 900 years of royal history', price: 'From GBP 34', image: 'https://images.unsplash.com/photo-1529655683826-aba9b3e77383?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/london' },
-        { name: 'British Museum', description: 'World\'s greatest collection of human history & culture', price: 'Free Entry', image: 'https://images.unsplash.com/photo-1580674684081-7617fbf3d745?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/london' },
+        { name: 'British Museum', description: 'World\'s greatest collection of human history & culture', price: 'Free Entry', image: 'https://images.unsplash.com/photo-1565060169194-19fabf63012c?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/london' },
         { name: 'London Eye', description: 'Giant Ferris wheel with panoramic views across the Thames', price: 'From GBP 28', image: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/london' },
-        { name: 'Thames River Cruise', description: 'Scenic 1-hour cruise from Westminster to Tower Bridge', price: 'From GBP 15', image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/london' },
+        { name: 'Thames River Cruise', description: 'Scenic 1-hour cruise from Westminster to Tower Bridge', price: 'From GBP 15', image: 'https://images.unsplash.com/photo-1526129318478-62ed807ebdf9?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/london' },
       ],
     },
     spots: {
@@ -438,9 +438,9 @@ export const CITY_GUIDE_DATA: Record<string, CityGuideData> = {
       heading: 'London\'s iconic green spaces',
       description: 'London has more green space per capita than almost any major city — these Royal Parks are the city\'s lungs and living rooms.',
       items: [
-        { name: 'Hyde Park', description: 'London\'s most famous Royal Park with the Serpentine lake, Speaker\'s Corner, and year-round events. Perfect for cycling, rowing, and picnics.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=600&h=400&fit=crop&q=80' },
-        { name: 'Hampstead Heath', description: 'Wild and expansive parkland in North London with swimming ponds, Parliament Hill viewpoint, and Kenwood House. A true escape from the city.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1555921015-5532091f6026?w=600&h=400&fit=crop&q=80' },
-        { name: 'South Bank & Southwark', description: 'London\'s liveliest riverside walk from Westminster Bridge to London Bridge, featuring Tate Modern, Borough Market, and Shakespeare\'s Globe Theatre.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1476673160081-cf065607f449?w=600&h=400&fit=crop&q=80' },
+        { name: 'Hyde Park', description: 'London\'s most famous Royal Park with the Serpentine lake, Speaker\'s Corner, and year-round events. Perfect for cycling, rowing, and picnics.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=600&h=400&fit=crop&q=80' },
+        { name: 'Hampstead Heath', description: 'Wild and expansive parkland in North London with swimming ponds, Parliament Hill viewpoint, and Kenwood House. A true escape from the city.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1563720223523-b3b39a5e2aa2?w=600&h=400&fit=crop&q=80' },
+        { name: 'South Bank & Southwark', description: 'London\'s liveliest riverside walk from Westminster Bridge to London Bridge, featuring Tate Modern, Borough Market, and Shakespeare\'s Globe Theatre.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1513026705753-bc3fffca8bf4?w=600&h=400&fit=crop&q=80' },
       ],
     },
   },
@@ -485,8 +485,8 @@ export const CITY_GUIDE_DATA: Record<string, CityGuideData> = {
       items: [
         { name: 'Eiffel Tower', description: 'The iron lady — summit tickets & champagne bar', price: 'From EUR 29', image: 'https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/paris' },
         { name: 'Louvre Museum', description: 'Mona Lisa, Venus de Milo & 35,000 works of art', price: 'From EUR 22', image: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/paris' },
-        { name: 'Seine River Cruise', description: '1-hour Bateaux Mouches cruise past Notre-Dame & bridges', price: 'From EUR 17', image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/paris' },
-        { name: 'Palace of Versailles', description: 'Louis XIV\'s lavish palace & 800 hectares of gardens', price: 'From EUR 21', image: 'https://images.unsplash.com/photo-1580674684081-7617fbf3d745?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/paris' },
+        { name: 'Seine River Cruise', description: '1-hour Bateaux Mouches cruise past Notre-Dame & bridges', price: 'From EUR 17', image: 'https://images.unsplash.com/photo-1549144511-f099e773c147?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/paris' },
+        { name: 'Palace of Versailles', description: 'Louis XIV\'s lavish palace & 800 hectares of gardens', price: 'From EUR 21', image: 'https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/paris' },
       ],
     },
     spots: {
@@ -494,9 +494,9 @@ export const CITY_GUIDE_DATA: Record<string, CityGuideData> = {
       heading: 'Paris\'s most iconic spots',
       description: 'Each Parisian arrondissement has its own distinct character — these are the places every visitor should experience.',
       items: [
-        { name: 'Montmartre & Sacré-Cœur', description: 'Bohemian hilltop neighborhood with the stunning white-domed basilica, artist studios, vineyard, and sweeping views across Paris.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=600&h=400&fit=crop&q=80' },
-        { name: 'Luxembourg Gardens', description: 'Paris\'s most beloved public garden. Rent a toy sailboat, watch a chess match, or relax in an iron chair beside the central fountain.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1555921015-5532091f6026?w=600&h=400&fit=crop&q=80' },
-        { name: 'Le Marais District', description: 'Paris\'s most fashionable historic quarter. Medieval streets, Jewish bakeries, galleries, and the stunning Place des Vosges.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1476673160081-cf065607f449?w=600&h=400&fit=crop&q=80' },
+        { name: 'Montmartre & Sacré-Cœur', description: 'Bohemian hilltop neighborhood with the stunning white-domed basilica, artist studios, vineyard, and sweeping views across Paris.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1478462267576-a0359bd9f38a?w=600&h=400&fit=crop&q=80' },
+        { name: 'Luxembourg Gardens', description: 'Paris\'s most beloved public garden. Rent a toy sailboat, watch a chess match, or relax in an iron chair beside the central fountain.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=600&h=400&fit=crop&q=80' },
+        { name: 'Le Marais District', description: 'Paris\'s most fashionable historic quarter. Medieval streets, Jewish bakeries, galleries, and the stunning Place des Vosges.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1570901611-4e37e9b38fa7?w=600&h=400&fit=crop&q=80' },
       ],
     },
   },
@@ -541,8 +541,8 @@ export const CITY_GUIDE_DATA: Record<string, CityGuideData> = {
       items: [
         { name: 'Colosseum & Roman Forum', description: 'Walk where gladiators fought — skip-the-line guided tour', price: 'From EUR 29', image: 'https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/rome' },
         { name: 'Vatican Museums & Sistine Chapel', description: 'Michelangelo\'s masterpiece ceiling & St Peter\'s Basilica', price: 'From EUR 34', image: 'https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/rome' },
-        { name: 'Borghese Gallery', description: 'World\'s finest Bernini sculptures in a stunning villa', price: 'From EUR 20', image: 'https://images.unsplash.com/photo-1580674684081-7617fbf3d745?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/rome' },
-        { name: 'Rome by Night Tour', description: 'Trevi Fountain, Pantheon & piazzas after dark', price: 'From EUR 35', image: 'https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/rome' },
+        { name: 'Borghese Gallery', description: 'World\'s finest Bernini sculptures in a stunning villa', price: 'From EUR 20', image: 'https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/rome' },
+        { name: 'Rome by Night Tour', description: 'Trevi Fountain, Pantheon & piazzas after dark', price: 'From EUR 35', image: 'https://images.unsplash.com/photo-1529154691717-3306083d869e?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/rome' },
       ],
     },
     spots: {
@@ -550,9 +550,9 @@ export const CITY_GUIDE_DATA: Record<string, CityGuideData> = {
       heading: 'Rome\'s iconic public spaces',
       description: 'Rome\'s piazzas are its living rooms — social hubs where history, architecture, and everyday Italian life collide.',
       items: [
-        { name: 'Trevi Fountain', description: 'The world\'s most famous fountain, immortalized in La Dolce Vita. Toss a coin to ensure your return to Rome. Magical at night.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1555921015-5532091f6026?w=600&h=400&fit=crop&q=80' },
-        { name: 'Piazza Navona', description: 'Baroque masterpiece with Bernini\'s Fountain of the Four Rivers surrounded by artists, street performers, and classic Roman cafés.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1476673160081-cf065607f449?w=600&h=400&fit=crop&q=80' },
-        { name: 'Spanish Steps & Piazza di Spagna', description: 'Rome\'s most glamorous gathering spot. 135 travertine steps leading to Trinità dei Monti church. Lined with luxury boutiques below.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=400&fit=crop&q=80' },
+        { name: 'Trevi Fountain', description: 'The world\'s most famous fountain, immortalized in La Dolce Vita. Toss a coin to ensure your return to Rome. Magical at night.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1541955193702-9ca03b7e0b32?w=600&h=400&fit=crop&q=80' },
+        { name: 'Piazza Navona', description: 'Baroque masterpiece with Bernini\'s Fountain of the Four Rivers surrounded by artists, street performers, and classic Roman cafés.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1491524062933-cb0289261700?w=600&h=400&fit=crop&q=80' },
+        { name: 'Spanish Steps & Piazza di Spagna', description: 'Rome\'s most glamorous gathering spot. 135 travertine steps leading to Trinità dei Monti church. Lined with luxury boutiques below.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?w=600&h=400&fit=crop&q=80' },
       ],
     },
   },
@@ -597,7 +597,7 @@ export const CITY_GUIDE_DATA: Record<string, CityGuideData> = {
       items: [
         { name: 'Hagia Sophia & Blue Mosque', description: 'Two of the world\'s greatest religious monuments side by side', price: 'Free Entry', image: 'https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/istanbul' },
         { name: 'Bosphorus Cruise', description: 'Scenic strait separating Europe and Asia — stunning palaces', price: 'From TRY 400', image: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/istanbul' },
-        { name: 'Topkapi Palace', description: 'Ottoman imperial palace with harem, treasury & Bosphorus views', price: 'From TRY 750', image: 'https://images.unsplash.com/photo-1580674684081-7617fbf3d745?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/istanbul' },
+        { name: 'Topkapi Palace', description: 'Ottoman imperial palace with harem, treasury & Bosphorus views', price: 'From TRY 750', image: 'https://images.unsplash.com/photo-1558618047-3e84d7c5ba02?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/istanbul' },
         { name: 'Grand Bazaar & Spice Market', description: 'The world\'s oldest covered market with 4,000 shops', price: 'Free Entry', image: 'https://images.unsplash.com/photo-1555529902-5261145633bf?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/istanbul' },
       ],
     },
@@ -606,9 +606,9 @@ export const CITY_GUIDE_DATA: Record<string, CityGuideData> = {
       heading: 'Istanbul\'s most vibrant neighborhoods',
       description: 'Istanbul\'s diverse neighborhoods each have a distinct personality — from Ottoman grandeur to bohemian arts scenes.',
       items: [
-        { name: 'Sultanahmet (Old City)', description: 'The historic heart of Istanbul with Hagia Sophia, Topkapi Palace, the Blue Mosque, and Basilica Cistern all within walking distance.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=600&h=400&fit=crop&q=80' },
-        { name: 'Beyoğlu & İstiklal Avenue', description: 'Istanbul\'s modern beating heart. 1.4km pedestrian boulevard lined with shops, galleries, historic tram, music venues, and rooftop bars.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1555921015-5532091f6026?w=600&h=400&fit=crop&q=80' },
-        { name: 'Kadıköy (Asian Side)', description: 'Istanbul\'s hippest neighborhood on the Asian shore. Vibrant food market, art galleries, live music, and a completely different local vibe.', badge: 'Ferry TRY 25', badgeColor: 'blue', image: 'https://images.unsplash.com/photo-1476673160081-cf065607f449?w=600&h=400&fit=crop&q=80' },
+        { name: 'Sultanahmet (Old City)', description: 'The historic heart of Istanbul with Hagia Sophia, Topkapi Palace, the Blue Mosque, and Basilica Cistern all within walking distance.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=600&h=400&fit=crop&q=80' },
+        { name: 'Beyoğlu & İstiklal Avenue', description: 'Istanbul\'s modern beating heart. 1.4km pedestrian boulevard lined with shops, galleries, historic tram, music venues, and rooftop bars.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=600&h=400&fit=crop&q=80' },
+        { name: 'Kadıköy (Asian Side)', description: 'Istanbul\'s hippest neighborhood on the Asian shore. Vibrant food market, art galleries, live music, and a completely different local vibe.', badge: 'Ferry TRY 25', badgeColor: 'blue', image: 'https://images.unsplash.com/photo-1559825481-12a05cc00344?w=600&h=400&fit=crop&q=80' },
       ],
     },
   },
@@ -653,8 +653,8 @@ export const CITY_GUIDE_DATA: Record<string, CityGuideData> = {
       items: [
         { name: 'Statue of Liberty & Ellis Island', description: 'America\'s most iconic monument via ferry from Battery Park', price: 'From USD 24', image: 'https://images.unsplash.com/photo-1534430480872-3498386e7856?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/new-york' },
         { name: 'Empire State Building', description: '102-floor Art Deco skyscraper with iconic NYC views', price: 'From USD 44', image: 'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/new-york' },
-        { name: 'Central Park Bike Tour', description: '843-acre urban park by guided bike or on your own', price: 'From USD 35', image: 'https://images.unsplash.com/photo-1580674684081-7617fbf3d745?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/new-york' },
-        { name: 'Broadway Show', description: 'Best live theatre in the world — Times Square is electric', price: 'From USD 79', image: 'https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/new-york' },
+        { name: 'Central Park Bike Tour', description: '843-acre urban park by guided bike or on your own', price: 'From USD 35', image: 'https://images.unsplash.com/photo-1568515387631-8b650bbcdb90?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/new-york' },
+        { name: 'Broadway Show', description: 'Best live theatre in the world — Times Square is electric', price: 'From USD 79', image: 'https://images.unsplash.com/photo-1532665767784-7e18a22e3c5e?w=400&h=300&fit=crop&q=80', url: 'https://www.raynatours.com/new-york' },
       ],
     },
     spots: {
@@ -662,9 +662,9 @@ export const CITY_GUIDE_DATA: Record<string, CityGuideData> = {
       heading: 'NYC\'s most iconic spots',
       description: 'New York\'s neighborhoods are as diverse as the city itself — each one a distinct world worth exploring.',
       items: [
-        { name: 'The High Line', description: 'A 1.45-mile elevated linear park built on a former freight rail line. Art installations, food vendors, and stunning Hudson Yards views.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=600&h=400&fit=crop&q=80' },
-        { name: 'DUMBO, Brooklyn', description: 'Under the Manhattan Bridge Overpass — Instagram\'s most photographed street. Cobblestones, galleries, and the Brooklyn Bridge Park waterfront.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1555921015-5532091f6026?w=600&h=400&fit=crop&q=80' },
-        { name: 'Times Square & Midtown', description: 'NYC\'s electrifying center. Overwhelming and unforgettable — especially after dark. Broadway shows, iconic hotels, and the buzz of Midtown.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1476673160081-cf065607f449?w=600&h=400&fit=crop&q=80' },
+        { name: 'The High Line', description: 'A 1.45-mile elevated linear park built on a former freight rail line. Art installations, food vendors, and stunning Hudson Yards views.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1555655975-3d00cfddfe1b?w=600&h=400&fit=crop&q=80' },
+        { name: 'DUMBO, Brooklyn', description: 'Under the Manhattan Bridge Overpass — Instagram\'s most photographed street. Cobblestones, galleries, and the Brooklyn Bridge Park waterfront.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1518234289127-cc862c6dc87c?w=600&h=400&fit=crop&q=80' },
+        { name: 'Times Square & Midtown', description: 'NYC\'s electrifying center. Overwhelming and unforgettable — especially after dark. Broadway shows, iconic hotels, and the buzz of Midtown.', badge: 'Free Entry', badgeColor: 'green', image: 'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=600&h=400&fit=crop&q=80' },
       ],
     },
   },
