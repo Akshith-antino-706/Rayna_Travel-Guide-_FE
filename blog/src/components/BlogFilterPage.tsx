@@ -39,8 +39,8 @@ function FeaturedBlogCard({ post }: { post: PostData }) {
   const imgSrc = post.heroImage || PLACEHOLDER_IMAGE;
 
   return (
-    <a href={`/blog/${post.slug}`} className="group flex flex-col sm:flex-row gap-3 sm:gap-5 items-start">
-      <div className="w-full h-28 sm:w-36 sm:h-24 flex-shrink-0 rounded-xl overflow-hidden">
+    <a href={`/blog/${post.slug}`} className="group flex gap-3 sm:gap-4 items-start">
+      <div className="w-24 h-16 sm:w-32 sm:h-[84px] flex-shrink-0 rounded-lg overflow-hidden">
         <img
           src={imgSrc}
           alt={post.title}
@@ -52,17 +52,17 @@ function FeaturedBlogCard({ post }: { post: PostData }) {
           }}
         />
       </div>
-      <div className="flex-1 min-w-0 py-1">
-        <div className="flex items-center gap-2 mb-2">
-          <span className="text-xs bg-gray-100 text-gray-600 px-2.5 py-1 rounded-full font-medium uppercase tracking-wider">
+      <div className="flex-1 min-w-0 py-0.5">
+        <div className="flex items-center gap-2 mb-1">
+          <span className="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full font-medium uppercase tracking-wider">
             {post.category}
           </span>
-          <span className="text-xs text-gray-400">{formattedDate}</span>
+          <span className="text-[10px] text-gray-400">{formattedDate}</span>
         </div>
-        <h3 className="text-base font-bold text-gray-900 group-hover:text-gray-900 transition-colors leading-snug line-clamp-2 mb-2">
+        <h3 className="text-sm font-bold text-gray-900 group-hover:text-gray-900 transition-colors leading-snug line-clamp-2 mb-1">
           {post.title}
         </h3>
-        <p className="text-sm text-gray-500 line-clamp-2 leading-relaxed hidden sm:block">
+        <p className="text-xs text-gray-500 line-clamp-2 leading-relaxed hidden sm:block">
           {post.description}
         </p>
       </div>
