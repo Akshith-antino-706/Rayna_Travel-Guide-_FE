@@ -9,23 +9,31 @@ interface Props {
   holidayConfig?: CityProductConfig;
   /** Config for cruise packages tab */
   cruiseConfig?: CityProductConfig;
+  /** Config for yacht rentals tab */
+  yachtConfig?: CityProductConfig;
   /** Max cards per tab */
   limit?: number;
   heading?: string;
 }
 
-type Tab = 'activities' | 'tours' | 'holidays' | 'cruises';
+type Tab = 'activities' | 'tours' | 'holidays' | 'cruises' | 'yachts';
 
 const TAB_LABELS: Record<Tab, string> = {
   activities: 'Activities',
   tours:      'Tours',
   holidays:   'Holidays',
   cruises:    'Cruises',
+  yachts:     'Yachts',
 };
 
 // ─── Sub-components ───────────────────────────────────────────────────────────
 
 function PriceTag({ normal, sale, currency }: { normal: number; sale: number; currency: string }) {
+  if (sale === 0 && normal === 0) {
+    return (
+      <span className="text-sm font-semibold text-gray-600 italic">Get Quote</span>
+    );
+  }
   const hasDiscount = sale < normal;
   return (
     <div className="flex items-baseline gap-2">
@@ -104,7 +112,7 @@ function SkeletonCard() {
 
 function useTabProducts(
   config: CityProductConfig,
-  apiType: 'tour' | 'activities' | 'holiday' | 'cruise',
+  apiType: 'tour' | 'activities' | 'holiday' | 'cruise' | 'yacht',
   limit: number,
 ) {
   const [products, setProducts] = useState<Product[]>([]);
@@ -140,6 +148,7 @@ export default function TourProductCards({
   tourConfig,
   holidayConfig,
   cruiseConfig,
+  yachtConfig,
   limit = 6,
   heading,
 }: Props) {
@@ -148,11 +157,12 @@ export default function TourProductCards({
   if (tourConfig)    tabs.push('activities', 'tours');
   if (holidayConfig) tabs.push('holidays');
   if (cruiseConfig)  tabs.push('cruises');
+  if (yachtConfig)   tabs.push('yachts');
 
   const [activeTab, setActiveTab] = useState<Tab>(tabs[0] ?? 'activities');
 
   // Derive the cityName for the "View all" link from whichever config is available
-  const primaryConfig = tourConfig ?? holidayConfig ?? cruiseConfig;
+  const primaryConfig = tourConfig ?? holidayConfig ?? cruiseConfig ?? yachtConfig;
 
   // Fetch all data upfront so tab switching is instant
   const activitiesData = useTabProducts(
@@ -175,6 +185,11 @@ export default function TourProductCards({
     'cruise',
     limit,
   );
+  const yachtsData = useTabProducts(
+    yachtConfig ?? { cityId: 0, cityName: '', countryName: '' },
+    'yacht',
+    limit,
+  );
 
   if (tabs.length === 0 || !primaryConfig) return null;
 
@@ -184,6 +199,7 @@ export default function TourProductCards({
     tours:      toursData,
     holidays:   holidaysData,
     cruises:    cruisesData,
+    yachts:     yachtsData,
   };
 
   // Filter out tabs where the API returned no results (after loading)

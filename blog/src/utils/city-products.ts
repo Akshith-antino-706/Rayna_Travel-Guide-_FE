@@ -18,7 +18,7 @@ export interface CityProductConfig {
   countryName: string;
 }
 
-export type ProductType = 'tour' | 'activities' | 'holiday' | 'cruise';
+export type ProductType = 'tour' | 'activities' | 'holiday' | 'cruise' | 'yacht';
 
 const PRODUCTS_API = 'https://earnest-panda-e8edbd.netlify.app/api/all-products';
 
@@ -109,6 +109,12 @@ export const HOLIDAY_CITY_MAP: Record<string, CityProductConfig> = {
   'mahe':           { cityId: 61146, cityName: 'Mahe',            countryName: 'Seychelles' },
 };
 
+// ─── Yacht Rentals ────────────────────────────────────────────────────────────
+/** City slug → config for productType=yacht (Dubai only) */
+export const YACHT_CITY_MAP: Record<string, CityProductConfig> = {
+  'dubai': { cityId: 13668, cityName: 'Dubai City', countryName: 'United Arab Emirates' },
+};
+
 // ─── Cruise Packages ──────────────────────────────────────────────────────────
 /** City slug → config for productType=cruise */
 export const CRUISE_CITY_MAP: Record<string, CityProductConfig> = {
@@ -139,6 +145,10 @@ export function getHolidayConfig(citySlug: string): CityProductConfig | null {
 
 export function getCruiseConfig(citySlug: string): CityProductConfig | null {
   return CRUISE_CITY_MAP[citySlug.toLowerCase()] ?? null;
+}
+
+export function getYachtConfig(citySlug: string): CityProductConfig | null {
+  return YACHT_CITY_MAP[citySlug.toLowerCase()] ?? null;
 }
 
 export function buildProductsUrl(config: CityProductConfig, productType: ProductType = 'tour'): string {
