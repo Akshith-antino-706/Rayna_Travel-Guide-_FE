@@ -27,7 +27,7 @@ const { label, heading, description, viewAllUrl, items, cityName } = Astro.props
           rel="noopener noreferrer sponsored"
           class="group block bg-white rounded-xl border border-gray-100 overflow-hidden hover:border-gray-200 hover:shadow-md transition-all duration-200"
         >
-          <div class="aspect-[4/3] overflow-hidden bg-gray-100">
+          <div class="aspect-[3/2] overflow-hidden bg-gray-100">
             <img
               src={item.image}
               alt={item.name}
@@ -36,10 +36,10 @@ const { label, heading, description, viewAllUrl, items, cityName } = Astro.props
               onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=400&h=300&fit=crop&q=70';"
             />
           </div>
-          <div class="p-3 sm:p-4">
-            <h3 class="font-bold text-gray-900 text-sm sm:text-base mb-1">{item.name}</h3>
-            <p class="text-gray-500 text-xs sm:text-sm mb-2 line-clamp-2">{item.description}</p>
-            <p class="text-orange-500 font-semibold text-sm">{item.price}</p>
+          <div class="p-2.5 sm:p-3">
+            <h3 class="font-bold text-gray-900 text-xs sm:text-sm mb-0.5">{item.name}</h3>
+            <p class="text-gray-500 text-xs mb-1.5 line-clamp-2">{item.description}</p>
+            <p class="text-orange-500 font-semibold text-xs">{item.price}</p>
           </div>
         </a>
       ))}

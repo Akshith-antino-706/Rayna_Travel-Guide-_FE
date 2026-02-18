@@ -31,7 +31,7 @@ const onerrorHandler = `this.onerror=null;this.src='${fallbackSrc}';`;
 {/* Default card: Figma vertical card with rounded image */}
 {variant === 'default' && (
   <a href={`/blog/${slug}`} class:list={['group block', featured && 'md:col-span-2']}>
-    <div class:list={['relative overflow-hidden rounded-xl', featured ? 'aspect-[5/2]' : 'aspect-[2/1]']}>
+    <div class:list={['relative overflow-hidden rounded-xl', featured ? 'aspect-[3/1]' : 'aspect-[5/2]']}>
       <img
         src={imgSrc}
         alt={title}
@@ -81,8 +81,8 @@ const onerrorHandler = `this.onerror=null;this.src='${fallbackSrc}';`;
 
 {/* Compact card: Figma small square card */}
 {variant === 'compact' && (
-  <a href={`/blog/${slug}`} class="group block w-40 flex-shrink-0">
-    <div class="w-40 h-28 rounded-xl overflow-hidden mb-2">
+  <a href={`/blog/${slug}`} class="group block w-32 flex-shrink-0">
+    <div class="w-32 h-20 rounded-xl overflow-hidden mb-1.5">
       <img
         src={imgSrc}
         alt={title}

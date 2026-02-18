@@ -117,7 +117,7 @@ const jsonLd = {
           {featuredCitiesList.map(city => (
             <a
               href={`/${city!.slug}-travel-guide`}
-              class="group/card relative w-48 sm:w-56 aspect-[4/5] rounded-2xl overflow-hidden flex-shrink-0"
+              class="group/card relative w-36 sm:w-44 aspect-[4/5] rounded-2xl overflow-hidden flex-shrink-0"
             >
               <img
                 src={`https://images.unsplash.com/${city!.unsplashId}?w=400&h=500&fit=crop&q=70`}
@@ -179,7 +179,7 @@ const jsonLd = {
           return (
             <a
               href={`/blog/${post.slug}`}
-              class="group relative block rounded-2xl overflow-hidden aspect-[3/4]"
+              class="group relative block rounded-2xl overflow-hidden aspect-[2/3]"
             >
               <img
                 src={imgSrc}
@@ -218,7 +218,7 @@ const jsonLd = {
           const cityData = CITIES.find(c => c.slug === citySlug);
           const unsplashId = cityData?.unsplashId || 'photo-1512453979798-5ea266f8880c';
           return (
-            <a href={`/${citySlug}-travel-guide`} class="group relative rounded-2xl overflow-hidden aspect-[4/5]">
+            <a href={`/${citySlug}-travel-guide`} class="group relative rounded-2xl overflow-hidden aspect-[3/4]">
               <img
                 src={`https://images.unsplash.com/${unsplashId}?w=400&h=500&fit=crop&q=70`}
                 alt={city}

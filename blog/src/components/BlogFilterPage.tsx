@@ -40,7 +40,7 @@ function FeaturedBlogCard({ post }: { post: PostData }) {
 
   return (
     <a href={`/blog/${post.slug}`} className="group flex flex-col sm:flex-row gap-3 sm:gap-5 items-start">
-      <div className="w-full h-36 sm:w-48 sm:h-28 flex-shrink-0 rounded-xl overflow-hidden">
+      <div className="w-full h-28 sm:w-36 sm:h-24 flex-shrink-0 rounded-xl overflow-hidden">
         <img
           src={imgSrc}
           alt={post.title}
