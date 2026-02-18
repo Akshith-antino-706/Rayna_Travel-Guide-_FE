@@ -10,7 +10,12 @@ export function useSaveArticle() {
     setToast(null);
     try {
       const result = await api.saveArticle(city, slug, frontmatter, body);
-      setToast({ type: 'success', message: `Saved! SEO Score: ${result.seoScore}` });
+      const deployMsg = result.git?.pushed
+        ? ` | Deployed (${result.git.commitHash})`
+        : result.git?.error
+          ? ` | Deploy failed: ${result.git.error}`
+          : '';
+      setToast({ type: 'success', message: `Saved! SEO Score: ${result.seoScore}${deployMsg}` });
       return result;
     } catch (e: any) {
       setToast({ type: 'error', message: e.message });

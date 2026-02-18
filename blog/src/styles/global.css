@@ -15,7 +15,7 @@
   }
 
   ::selection {
-    @apply bg-orange-100 text-orange-900;
+    @apply bg-gray-200 text-gray-900;
   }
 }
 
@@ -28,10 +28,10 @@
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 
-  /* Buttons matching Figma orange accent */
+  /* Buttons — black accent */
   .btn-primary {
-    @apply inline-flex items-center px-6 py-2.5 bg-orange-500 text-white rounded-full
-           hover:bg-orange-600 transition-colors font-semibold text-sm;
+    @apply inline-flex items-center px-6 py-2.5 bg-gray-900 text-white rounded-full
+           hover:bg-black transition-colors font-semibold text-sm;
   }
 
   .btn-secondary {
@@ -40,8 +40,8 @@
   }
 
   .btn-outline {
-    @apply inline-flex items-center px-5 py-2 text-orange-500 border border-orange-500 rounded-full
-           hover:bg-orange-50 transition-colors font-medium text-sm;
+    @apply inline-flex items-center px-5 py-2 text-gray-900 border border-gray-900 rounded-full
+           hover:bg-gray-100 transition-colors font-medium text-sm;
   }
 
   /* Badges */
@@ -50,14 +50,14 @@
   }
 
   .badge-category {
-    @apply badge bg-orange-50 text-orange-600;
+    @apply badge bg-gray-100 text-gray-900;
   }
 
   .badge-city {
     @apply badge bg-blue-50 text-blue-600;
   }
 
-  /* Card styles matching Figma */
+  /* Card styles */
   .card {
     @apply bg-white rounded-2xl overflow-hidden transition-all duration-300;
   }
@@ -70,7 +70,7 @@
     @apply card border border-gray-100 hover:border-gray-200;
   }
 
-  /* Horizontal scroll container (for Figma card rows) */
+  /* Horizontal scroll container */
   .scroll-row {
     @apply flex gap-4 overflow-x-auto pb-4;
     scroll-snap-type: x mandatory;
@@ -90,11 +90,11 @@
   /* Table of Contents sidebar */
   .toc-link {
     @apply block py-1.5 pl-4 border-l-2 border-gray-100 text-sm text-gray-400
-           hover:text-orange-500 hover:border-orange-400 transition-colors;
+           hover:text-gray-900 hover:border-gray-700 transition-colors;
   }
 
   .toc-link.active {
-    @apply text-orange-500 border-orange-500 font-medium;
+    @apply text-gray-900 border-gray-900 font-medium;
   }
 
   /* Article prose */
@@ -110,20 +110,26 @@
     @apply scroll-mt-24 text-lg font-semibold text-gray-800;
   }
 
+  .prose table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
   /* Breadcrumb */
   .breadcrumb {
     @apply flex items-center gap-2 text-sm text-gray-400;
   }
 
   .breadcrumb a {
-    @apply hover:text-orange-500 transition-colors;
+    @apply hover:text-gray-900 transition-colors;
   }
 
   .breadcrumb .sep {
     @apply text-gray-300;
   }
 
-  /* Section heading style from Figma */
+  /* Section heading style */
   .section-title {
     @apply text-2xl font-bold text-gray-900 mb-1;
   }
@@ -132,7 +138,7 @@
     @apply text-sm text-gray-500 mb-6;
   }
 
-  /* Image grid for article sidebar (Figma pattern) */
+  /* Image grid for article sidebar */
   .image-grid-sidebar {
     @apply grid grid-cols-2 gap-2;
   }
@@ -141,7 +147,7 @@
     @apply w-full aspect-square object-cover rounded-lg;
   }
 
-  /* Quick info pills (Figma city guide icons) */
+  /* Quick info pills */
   .quick-info-item {
     @apply flex flex-col items-center gap-2 px-4 py-3;
   }
@@ -160,7 +166,7 @@
 
   /* Guide page utilities */
   .guide-nav-pill.active {
-    @apply bg-orange-50 text-orange-600 font-medium;
+    @apply bg-gray-100 text-gray-900 font-medium;
   }
 
   .guide-stat-card {

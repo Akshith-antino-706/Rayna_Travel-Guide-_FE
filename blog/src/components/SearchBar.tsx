@@ -8,6 +8,8 @@ interface ArticleData {
   city: string;
   category: string;
   tags: string[];
+  keywords?: string[];
+  featured?: boolean;
   readingTime: number;
 }
 
@@ -24,10 +26,11 @@ export default function SearchBar({ articles }: Props) {
       new Fuse(articles, {
         keys: [
           { name: 'title', weight: 0.4 },
-          { name: 'description', weight: 0.2 },
-          { name: 'city', weight: 0.25 },
-          { name: 'tags', weight: 0.1 },
-          { name: 'category', weight: 0.05 },
+          { name: 'city', weight: 0.3 },
+          { name: 'description', weight: 0.15 },
+          { name: 'keywords', weight: 0.1 },
+          { name: 'tags', weight: 0.04 },
+          { name: 'category', weight: 0.01 },
         ],
         threshold: 0.35,
         includeScore: true,
@@ -38,7 +41,23 @@ export default function SearchBar({ articles }: Props) {
 
   const results = useMemo(() => {
     if (!query.trim()) return [];
-    return fuse.search(query).slice(0, 8);
+    const fuseResults = fuse.search(query).slice(0, 30);
+    const queryLower = query.toLowerCase().trim();
+
+    // Re-rank: city-prefix matches first → featured articles next → then by Fuse score
+    return fuseResults
+      .sort((a, b) => {
+        const aCityMatch = a.item.city.toLowerCase().startsWith(queryLower) ? 0 : 1;
+        const bCityMatch = b.item.city.toLowerCase().startsWith(queryLower) ? 0 : 1;
+        if (aCityMatch !== bCityMatch) return aCityMatch - bCityMatch;
+
+        const aFeatured = a.item.featured ? 0 : 1;
+        const bFeatured = b.item.featured ? 0 : 1;
+        if (aFeatured !== bFeatured) return aFeatured - bFeatured;
+
+        return (a.score ?? 1) - (b.score ?? 1);
+      })
+      .slice(0, 10);
   }, [query, fuse]);
 
   const handleInputChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
@@ -71,7 +90,7 @@ export default function SearchBar({ articles }: Props) {
           placeholder="Search articles... (e.g., 'Dubai food', 'visa guide')"
           className="w-full pl-12 pr-4 py-3.5 bg-white border border-gray-300 rounded-xl
                      text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2
-                     focus:ring-orange-500 focus:border-orange-500 shadow-sm text-base"
+                     focus:ring-gray-900 focus:border-gray-900 shadow-sm text-base"
         />
         {query && (
           <button
@@ -87,42 +106,36 @@ export default function SearchBar({ articles }: Props) {
 
       {/* Dropdown Results */}
       {isOpen && results.length > 0 && (
-        <div className="absolute top-full mt-2 w-full bg-white border border-gray-200 rounded-xl shadow-xl z-50 overflow-hidden">
-          {results.map(({ item }) => (
-            <a
-              key={item.slug}
-              href={`/blog/${item.slug}`}
-              className="flex items-start gap-3 p-4 hover:bg-gray-50 transition-colors border-b border-gray-100 last:border-0"
-            >
-              <div className="flex-1 min-w-0">
-                <h4 className="text-sm font-semibold text-gray-900 truncate">
-                  {item.title}
-                </h4>
-                <p className="text-xs text-gray-500 mt-0.5 truncate">
-                  {item.description}
-                </p>
-                <div className="flex items-center gap-2 mt-1.5">
-                  <span className="text-xs bg-orange-100 text-orange-700 px-2 py-0.5 rounded-full">
-                    {item.city}
-                  </span>
-                  <span className="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full">
-                    {item.category}
-                  </span>
+        <div className="absolute top-full mt-2 w-full bg-white border border-gray-200 rounded-xl shadow-xl z-50 overflow-hidden flex flex-col">
+          <div className="overflow-y-auto max-h-80 overscroll-contain">
+            {results.map(({ item }) => (
+              <a
+                key={item.slug}
+                href={`/blog/${item.slug}`}
+                className="flex items-start gap-3 p-4 hover:bg-gray-50 transition-colors border-b border-gray-100 last:border-0"
+              >
+                <div className="flex-1 min-w-0">
+                  <h4 className="text-sm font-semibold text-gray-900 truncate">
+                    {item.title}
+                  </h4>
+                  <p className="text-xs text-gray-500 mt-0.5 truncate">
+                    {item.description}
+                  </p>
+                  <div className="flex items-center gap-2 mt-1.5">
+                    <span className="text-xs bg-gray-200 text-gray-900 px-2 py-0.5 rounded-full">
+                      {item.city}
+                    </span>
+                    <span className="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full">
+                      {item.category}
+                    </span>
+                  </div>
                 </div>
-              </div>
-              <svg className="w-4 h-4 text-gray-300 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </a>
-          ))}
-          {query.trim() && (
-            <a
-              href={`/blog?q=${encodeURIComponent(query)}`}
-              className="block p-3 text-center text-sm text-orange-600 hover:bg-orange-50 font-medium transition-colors"
-            >
-              View all results for "{query}"
-            </a>
-          )}
+                <svg className="w-4 h-4 text-gray-300 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            ))}
+          </div>
         </div>
       )}
 

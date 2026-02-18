@@ -4,6 +4,7 @@ import { parseArticle, saveArticle, listCityDirs, listArticleFiles } from '../li
 import { computeSeoScore } from '../lib/seo-scorer.js';
 import { analyzeContent } from '../lib/content-analyzer.js';
 import { validateFrontmatter } from '../lib/schema.js';
+import { gitCommitAndPush } from '../lib/git.js';
 import { marked } from 'marked';
 
 const router = Router();
@@ -116,11 +117,16 @@ router.put('/articles/:city/:slug', (req, res) => {
     const filePath = path.join(CONTENT_DIR, city, `${slug}.md`);
     saveArticle(filePath, frontmatter, body);
 
-    // Return updated SEO score
     const seo = computeSeoScore(frontmatter, body);
     const stats = analyzeContent(body, frontmatter);
 
-    res.json({ success: true, seoScore: seo.score, seo, stats });
+    // Auto-deploy: commit & push the changed file
+    const git = gitCommitAndPush(
+      `blog/src/content/blog/${city}/${slug}.md`,
+      `Update ${city}/${slug}: SEO score ${seo.score}`,
+    );
+
+    res.json({ success: true, seoScore: seo.score, seo, stats, git });
   } catch (err: any) {
     res.status(500).json({ error: err.message });
   }

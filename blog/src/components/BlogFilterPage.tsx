@@ -39,8 +39,8 @@ function FeaturedBlogCard({ post }: { post: PostData }) {
   const imgSrc = post.heroImage || PLACEHOLDER_IMAGE;
 
   return (
-    <a href={`/blog/${post.slug}`} className="group flex gap-5 items-start">
-      <div className="w-56 h-36 sm:w-60 sm:h-40 flex-shrink-0 rounded-xl overflow-hidden">
+    <a href={`/blog/${post.slug}`} className="group flex flex-col sm:flex-row gap-3 sm:gap-5 items-start">
+      <div className="w-full h-44 sm:w-56 sm:h-36 flex-shrink-0 rounded-xl overflow-hidden">
         <img
           src={imgSrc}
           alt={post.title}
@@ -59,7 +59,7 @@ function FeaturedBlogCard({ post }: { post: PostData }) {
           </span>
           <span className="text-xs text-gray-400">{formattedDate}</span>
         </div>
-        <h3 className="text-base font-bold text-gray-900 group-hover:text-orange-500 transition-colors leading-snug line-clamp-2 mb-2">
+        <h3 className="text-base font-bold text-gray-900 group-hover:text-gray-900 transition-colors leading-snug line-clamp-2 mb-2">
           {post.title}
         </h3>
         <p className="text-sm text-gray-500 line-clamp-2 leading-relaxed hidden sm:block">
@@ -88,7 +88,7 @@ function CompactBlogCard({ post }: { post: PostData }) {
         />
       </div>
       <div className="flex-1 min-w-0">
-        <h4 className="text-sm font-semibold text-gray-900 group-hover:text-orange-500 transition-colors line-clamp-2 leading-snug mb-1">
+        <h4 className="text-sm font-semibold text-gray-900 group-hover:text-gray-900 transition-colors line-clamp-2 leading-snug mb-1">
           {post.title}
         </h4>
         <p className="text-xs text-gray-400 line-clamp-2">{post.description}</p>
@@ -144,7 +144,7 @@ export default function BlogFilterPage({ posts, categories, postsPerPage }: Prop
     if (categoryFilter) params.set('category', categoryFilter);
     if (currentPage > 1) params.set('page', String(currentPage));
     const qs = params.toString();
-    const newUrl = qs ? `/blog?${qs}` : '/blog';
+    const newUrl = qs ? `/?${qs}` : '/';
     window.history.replaceState(null, '', newUrl);
   }, [searchQuery, cityFilter, categoryFilter, currentPage]);
 
@@ -205,7 +205,7 @@ export default function BlogFilterPage({ posts, categories, postsPerPage }: Prop
   const hasActiveFilters = searchQuery || cityFilter || categoryFilter;
 
   return (
-    <div className="bg-white">
+    <div id="all-posts" className="bg-white">
       {/* Compact filter bar */}
       <div className="sticky top-14 z-40 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
@@ -237,14 +237,14 @@ export default function BlogFilterPage({ posts, categories, postsPerPage }: Prop
                 placeholder="Search articles..."
                 className="w-full pl-9 pr-3 py-2 bg-gray-50 border border-gray-200 rounded-lg
                            text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2
-                           focus:ring-orange-500 focus:border-orange-500 text-sm"
+                           focus:ring-gray-900 focus:border-gray-900 text-sm"
               />
             </form>
 
             <select
               value={cityFilter}
               onChange={(e) => setCityFilter(e.target.value)}
-              className="px-3 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 min-w-[140px]"
+              className="px-3 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-900 min-w-[140px]"
             >
               <option value="">All Cities</option>
               {cities.map((city) => (
@@ -255,7 +255,7 @@ export default function BlogFilterPage({ posts, categories, postsPerPage }: Prop
             <select
               value={categoryFilter}
               onChange={(e) => setCategoryFilter(e.target.value)}
-              className="px-3 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-500 min-w-[160px]"
+              className="px-3 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-900 min-w-[160px]"
             >
               <option value="">All Categories</option>
               {categories.map((cat) => (
@@ -271,7 +271,7 @@ export default function BlogFilterPage({ posts, categories, postsPerPage }: Prop
               </span>
               <button
                 onClick={clearFilters}
-                className="text-orange-600 hover:text-orange-700 font-medium"
+                className="text-gray-900 hover:text-gray-900 font-medium"
               >
                 Clear filters
               </button>
@@ -347,7 +347,7 @@ export default function BlogFilterPage({ posts, categories, postsPerPage }: Prop
                     onClick={() => setCurrentPage(p)}
                     className={`px-4 py-2 rounded-lg text-sm font-medium ${
                       p === safePage
-                        ? 'bg-orange-500 text-white'
+                        ? 'bg-gray-900 text-white'
                         : 'border border-gray-300 text-gray-600 hover:bg-gray-50'
                     }`}
                   >

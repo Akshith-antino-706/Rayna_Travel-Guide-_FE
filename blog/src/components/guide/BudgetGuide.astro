@@ -16,14 +16,14 @@ const { tiers, cityName } = Astro.props;
 
 const badgeColors: Record<string, string> = {
   green: 'bg-green-100 text-green-700',
-  orange: 'bg-orange-500 text-white',
+  orange: 'bg-gray-900 text-white',
   purple: 'bg-purple-100 text-purple-700',
 };
 ---
 
 <section class="py-8 sm:py-12 bg-gray-50">
   <div class="container-wide">
-    <p class="text-orange-500 text-xs sm:text-sm font-medium mb-2">Budget</p>
+    <p class="text-gray-900 text-xs sm:text-sm font-medium mb-2">Budget</p>
     <h2 class="text-xl sm:text-2xl font-bold text-gray-900 guide-section-header">
       {cityName} Budget Guide
     </h2>
@@ -32,7 +32,7 @@ const badgeColors: Record<string, string> = {
       {tiers.map((t) => (
         <div class:list={[
           'bg-white rounded-2xl p-5 sm:p-6 min-w-[260px] sm:min-w-0',
-          t.featured ? 'border-2 border-orange-300 shadow-md' : 'border border-gray-100',
+          t.featured ? 'border-2 border-gray-400 shadow-md' : 'border border-gray-100',
         ]}>
           <div class="text-center mb-4">
             <span class={`inline-block px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold ${badgeColors[t.color] || badgeColors.green}`}>

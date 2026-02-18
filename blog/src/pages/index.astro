@@ -1,9 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BlogCard from '../components/BlogCard.astro';
+import BlogFilterPage from '../components/BlogFilterPage.tsx';
 import SearchBar from '../components/SearchBar.tsx';
 import { getCollection } from 'astro:content';
-import { SITE_TITLE, SITE_DESCRIPTION, SITE_URL, CATEGORIES } from '../utils/constants';
+import { SITE_TITLE, SITE_DESCRIPTION, SITE_URL, CATEGORIES, POSTS_PER_PAGE } from '../utils/constants';
+import { CITIES } from '../../scripts/cities';
 
 const allPosts = await getCollection('blog', ({ data }) => !data.draft);
 const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
@@ -22,15 +24,40 @@ const guidePosts = sortedPosts
   .filter(p => !selectedFeatured.some(f => f.slug === p.slug))
   .slice(0, 4);
 
-const searchData = allPosts.map(p => ({
+// Serialized posts for client-side filtering
+const postsData = allPosts.map(p => ({
   title: p.data.title,
   description: p.data.description,
   slug: p.slug,
   city: p.data.city,
   category: p.data.category,
-  tags: p.data.tags,
+  pubDate: p.data.pubDate.toISOString(),
+  heroImage: p.data.heroImage,
   readingTime: p.data.readingTime,
+  tags: p.data.tags,
+  keywords: p.data.keywords,
+  featured: p.data.featured,
 }));
+
+const searchData = postsData.map(p => ({
+  title: p.title,
+  description: p.description,
+  slug: p.slug,
+  city: p.city,
+  category: p.category,
+  tags: p.tags,
+  keywords: p.keywords,
+  featured: p.featured,
+  readingTime: p.readingTime,
+}));
+
+const categories = CATEGORIES.map(c => ({ id: c.id, label: c.label, icon: c.icon }));
+
+// Featured cities for carousel
+const featuredSlugs = ['dubai', 'singapore', 'delhi', 'bangkok', 'paris', 'london', 'tokyo', 'bali', 'istanbul', 'new-york'];
+const featuredCitiesList = featuredSlugs
+  .map(slug => CITIES.find(c => c.slug === slug))
+  .filter(Boolean);
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -40,45 +67,96 @@ const jsonLd = {
   url: SITE_URL,
   potentialAction: {
     '@type': 'SearchAction',
-    target: `${SITE_URL}/blog?q={search_term_string}`,
+    target: `${SITE_URL}/?q={search_term_string}`,
     'query-input': 'required name=search_term_string',
   },
 };
 ---
 
-<BaseLayout jsonLd={jsonLd}>
-  <!-- 1. Hero -->
-  <section class="relative h-[420px] sm:h-[500px] overflow-hidden">
-    <img
-      src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1920&h=600&fit=crop&q=80"
-      alt="Dubai skyline at sunset"
-      class="absolute inset-0 w-full h-full object-cover"
-      loading="eager"
-    />
-    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-black/10"></div>
-    <div class="container-wide relative h-full flex flex-col justify-end pb-12">
-      <h1 class="text-white text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight max-w-2xl mb-3">
-        Explore Our<br />Travel Guides
+<BaseLayout title="Home" jsonLd={jsonLd}>
+  <!-- 1. Hero Banner -->
+  <section class="relative h-[360px] md:h-[440px]">
+    <div class="absolute inset-0 overflow-hidden">
+      <img
+        src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1600&h=600&fit=crop&q=80"
+        alt="Travel destinations"
+        class="w-full h-full object-cover"
+        loading="eager"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20"></div>
+    </div>
+    <div class="container-wide relative h-full flex flex-col justify-center items-center text-center px-4">
+      <h1 class="text-white text-3xl md:text-5xl font-bold mb-6 max-w-3xl leading-tight font-heading">
+        Discover More: Insights, Stories,<br class="hidden sm:block" /> and Behind-the-Scenes Exclusives
       </h1>
-      <p class="text-white/80 text-sm sm:text-base max-w-lg mb-6">
-        Expert guides, insider tips, and comprehensive itineraries for {cities.length}+ destinations worldwide.
-      </p>
-      <div class="max-w-lg">
+      <div class="w-full max-w-2xl">
         <SearchBar articles={searchData} client:load />
       </div>
     </div>
   </section>
 
-  <!-- 2. Browse by Category (moved up for quick navigation) -->
-  <section class="bg-gray-50 py-10">
+  <!-- 2. Most Popular Travel Guide Carousel -->
+  <section class="bg-gray-50 py-10 md:py-14">
+    <div class="container-wide">
+      <div class="mb-6">
+        <h2 class="text-xl md:text-2xl font-bold text-gray-900">Most Popular Travel Guide</h2>
+      </div>
+
+      <div class="relative group">
+        <button
+          id="carousel-left"
+          class="absolute -left-3 md:left-0 top-1/2 -translate-y-1/2 z-10 w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-gray-50 transition-colors opacity-0 group-hover:opacity-100"
+          aria-label="Scroll left"
+        >
+          <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+
+        <div id="city-carousel" class="scroll-row gap-4">
+          {featuredCitiesList.map(city => (
+            <a
+              href={`/${city!.slug}-travel-guide`}
+              class="group/card relative w-48 sm:w-56 aspect-[4/5] rounded-2xl overflow-hidden flex-shrink-0"
+            >
+              <img
+                src={`https://images.unsplash.com/${city!.unsplashId}?w=400&h=500&fit=crop&q=70`}
+                alt={`${city!.name} Travel Guide`}
+                class="w-full h-full object-cover group-hover/card:scale-110 transition-transform duration-500"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+              <div class="absolute bottom-4 left-4 right-4">
+                <p class="text-white/70 text-xs font-medium uppercase tracking-wider mb-1">{city!.country}</p>
+                <h3 class="text-white font-bold text-base leading-snug">{city!.name}<br/>Travel Guide</h3>
+              </div>
+            </a>
+          ))}
+        </div>
+
+        <button
+          id="carousel-right"
+          class="absolute -right-3 md:right-0 top-1/2 -translate-y-1/2 z-10 w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-gray-50 transition-colors opacity-0 group-hover:opacity-100"
+          aria-label="Scroll right"
+        >
+          <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Browse by Category -->
+  <section class="bg-white py-10">
     <div class="container-wide">
       <h2 class="section-title mb-4">Browse by Category</h2>
       <div class="scroll-row gap-3">
         {CATEGORIES.slice(0, 10).map(cat => (
           <a
-            href={`/blog?category=${encodeURIComponent(cat.id)}`}
+            href={`/?category=${encodeURIComponent(cat.id)}#all-posts`}
             class="flex-shrink-0 flex items-center gap-2 px-4 py-2.5 bg-white rounded-full border border-gray-100
-                   hover:bg-orange-50 hover:border-orange-200 transition-colors text-sm text-gray-600 hover:text-orange-600"
+                   hover:bg-gray-100 hover:border-gray-300 transition-colors text-sm text-gray-600 hover:text-gray-900"
           >
             <span>{cat.icon}</span>
             <span class="font-medium">{cat.label}</span>
@@ -88,68 +166,56 @@ const jsonLd = {
     </div>
   </section>
 
-  <!-- 3. Featured Travel Posts (1 large + 3 horizontal) -->
+  <!-- 4. Featured Travel Posts -->
   <section class="py-10">
     <div class="container-wide">
       <div class="flex items-center justify-between mb-6">
         <h2 class="section-title">Featured Travel Posts</h2>
-        <a href="/blog" class="text-xs text-orange-500 font-medium hover:underline">View All</a>
       </div>
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {selectedFeatured.length > 0 && (
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+        {selectedFeatured.map(post => (
           <BlogCard
-            title={selectedFeatured[0].data.title}
-            description={selectedFeatured[0].data.description}
-            slug={selectedFeatured[0].slug}
-            city={selectedFeatured[0].data.city}
-            category={selectedFeatured[0].data.category}
-            pubDate={selectedFeatured[0].data.pubDate}
-            heroImage={selectedFeatured[0].data.heroImage}
-            readingTime={selectedFeatured[0].data.readingTime}
-            featured={true}
+            title={post.data.title}
+            description={post.data.description}
+            slug={post.slug}
+            city={post.data.city}
+            category={post.data.category}
+            pubDate={post.data.pubDate}
+            heroImage={post.data.heroImage}
+            readingTime={post.data.readingTime}
           />
-        )}
-        <div class="space-y-5">
-          {selectedFeatured.slice(1, 4).map(post => (
-            <BlogCard
-              title={post.data.title}
-              description={post.data.description}
-              slug={post.slug}
-              city={post.data.city}
-              category={post.data.category}
-              pubDate={post.data.pubDate}
-              heroImage={post.data.heroImage}
-              readingTime={post.data.readingTime}
-              variant="horizontal"
-            />
-          ))}
-        </div>
+        ))}
       </div>
     </div>
   </section>
 
-  <!-- 4. Explore Travel Guides (city grid) -->
+  <!-- 5. Explore Travel Guides (city grid) -->
   <section class="bg-gray-50 py-10">
     <div class="container-wide">
       <h2 class="section-title mb-1">Explore Travel Guides</h2>
       <p class="section-subtitle">Comprehensive city guides covering attractions, food, hotels, and more</p>
 
-      <div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-3">
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
         {cities.map(city => {
           const citySlug = city.toLowerCase().replace(/\s+/g, '-');
           const count = allPosts.filter(p => p.data.city === city).length;
+          const cityData = CITIES.find(c => c.slug === citySlug);
+          const unsplashId = cityData?.unsplashId || 'photo-1512453979798-5ea266f8880c';
           return (
-            <a href={`/${citySlug}-travel-guide`} class="group relative rounded-xl overflow-hidden aspect-[4/3]">
+            <a href={`/${citySlug}-travel-guide`} class="group relative rounded-2xl overflow-hidden aspect-[4/5]">
               <img
-                src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=300&h=225&fit=crop&q=70"
+                src={`https://images.unsplash.com/${unsplashId}?w=400&h=500&fit=crop&q=70`}
                 alt={city}
                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 loading="lazy"
               />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-              <div class="absolute bottom-2 left-2.5 right-2">
-                <h3 class="text-white font-bold text-sm">{city}</h3>
-                <p class="text-white/70 text-[10px]">{count} articles</p>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+              <div class="absolute bottom-4 left-4 right-4">
+                {cityData?.country && (
+                  <p class="text-white/60 text-[10px] font-medium uppercase tracking-wider mb-0.5">{cityData.country}</p>
+                )}
+                <h3 class="text-white font-bold text-base leading-snug">{city}</h3>
+                <p class="text-white/60 text-xs mt-0.5">{count} articles</p>
               </div>
             </a>
           );
@@ -158,41 +224,43 @@ const jsonLd = {
     </div>
   </section>
 
-  <!-- 5. Popular Travel Guides (1 large + 3 horizontal) -->
+  <!-- 6. Popular Travel Guides -->
   <section class="py-10">
     <div class="container-wide">
       <h2 class="section-title mb-1">Popular Travel Guides</h2>
       <p class="section-subtitle">Our most popular guides chosen by travelers</p>
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {guidePosts.length > 0 && (
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-5">
+        {guidePosts.map(post => (
           <BlogCard
-            title={guidePosts[0].data.title}
-            description={guidePosts[0].data.description}
-            slug={guidePosts[0].slug}
-            city={guidePosts[0].data.city}
-            category={guidePosts[0].data.category}
-            pubDate={guidePosts[0].data.pubDate}
-            heroImage={guidePosts[0].data.heroImage}
-            readingTime={guidePosts[0].data.readingTime}
-            featured={true}
+            title={post.data.title}
+            description={post.data.description}
+            slug={post.slug}
+            city={post.data.city}
+            category={post.data.category}
+            pubDate={post.data.pubDate}
+            heroImage={post.data.heroImage}
+            readingTime={post.data.readingTime}
           />
-        )}
-        <div class="space-y-5">
-          {guidePosts.slice(1, 4).map(post => (
-            <BlogCard
-              title={post.data.title}
-              description={post.data.description}
-              slug={post.slug}
-              city={post.data.city}
-              category={post.data.category}
-              pubDate={post.data.pubDate}
-              heroImage={post.data.heroImage}
-              readingTime={post.data.readingTime}
-              variant="horizontal"
-            />
-          ))}
-        </div>
+        ))}
       </div>
     </div>
   </section>
+
+  <!-- 7. All Blog Posts (filterable) -->
+  <BlogFilterPage
+    posts={postsData}
+    categories={categories}
+    postsPerPage={POSTS_PER_PAGE}
+    client:load
+  />
 </BaseLayout>
+
+<script>
+  const carousel = document.getElementById('city-carousel');
+  document.getElementById('carousel-left')?.addEventListener('click', () => {
+    carousel?.scrollBy({ left: -300, behavior: 'smooth' });
+  });
+  document.getElementById('carousel-right')?.addEventListener('click', () => {
+    carousel?.scrollBy({ left: 300, behavior: 'smooth' });
+  });
+</script>

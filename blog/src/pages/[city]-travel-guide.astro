@@ -11,6 +11,8 @@ import EssentialInfo from '../components/guide/EssentialInfo.astro';
 import { getCollection } from 'astro:content';
 import { CATEGORIES, SITE_URL } from '../utils/constants';
 import { getCityMeta, getCityGuideData } from '../utils/city-guide-data';
+import TourProductCards from '../components/TourProductCards.tsx';
+import { getCityConfig } from '../utils/city-products';
 
 export async function getStaticPaths() {
   const allPosts = await getCollection('blog', ({ data }) => !data.draft);
@@ -34,6 +36,7 @@ const citySlug = cityName.toLowerCase().replace(/\s+/g, '-');
 // City data
 const cityMeta = getCityMeta(citySlug);
 const guideData = getCityGuideData(citySlug);
+const cityProductConfig = getCityConfig(citySlug);
 
 // Group posts by category
 const postsByCategory = CATEGORIES.reduce((acc, cat) => {
@@ -131,7 +134,7 @@ const breadcrumbLd = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
-    { '@type': 'ListItem', position: 2, name: 'Travel Guides', item: `${SITE_URL}/blog` },
+    { '@type': 'ListItem', position: 2, name: 'Travel Guides', item: SITE_URL },
     { '@type': 'ListItem', position: 3, name: `${cityName} Travel Guide` },
   ],
 };
@@ -169,7 +172,7 @@ const attractionListLd = attractionPosts.length > 0 ? {
       <nav class="breadcrumb" aria-label="Breadcrumb">
         <a href="/">Home</a>
         <span class="sep">/</span>
-        <a href="/blog">Travel Guides</a>
+        <a href="/">Travel Guides</a>
         <span class="sep">/</span>
         <span class="text-gray-600">{cityName}</span>
       </nav>
@@ -211,7 +214,7 @@ const attractionListLd = attractionPosts.length > 0 ? {
           <a
             href={`#${cat.id.toLowerCase().replace(/\s+/g, '-').replace(/&/g, '')}`}
             class="guide-nav-pill flex-shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5
-                   rounded-full text-sm text-gray-600 hover:bg-orange-50 hover:text-orange-600
+                   rounded-full text-sm text-gray-600 hover:bg-gray-100 hover:text-gray-900
                    transition-colors whitespace-nowrap"
             data-section={cat.id.toLowerCase().replace(/\s+/g, '-').replace(/&/g, '')}
           >
@@ -223,6 +226,20 @@ const attractionListLd = attractionPosts.length > 0 ? {
       </nav>
     </div>
   </section>
+
+  <!-- Book Tours & Activities -->
+  {cityProductConfig && (
+    <section class="py-10 bg-white">
+      <div class="container-wide">
+        <TourProductCards
+          cityConfig={cityProductConfig}
+          limit={6}
+          heading={`Top Tours & Activities in ${cityName}`}
+          client:visible
+        />
+      </div>
+    </section>
+  )}
 
   <!-- Blog Posts by Category -->
   {postsByCategory.map((cat, index) => {
@@ -311,7 +328,7 @@ const attractionListLd = attractionPosts.length > 0 ? {
   {itineraryPosts.length > 0 && (
     <section id="itineraries" class="py-8 sm:py-12 scroll-mt-32">
       <div class="container-wide">
-        <p class="text-orange-500 text-xs sm:text-sm font-medium mb-2">Itineraries</p>
+        <p class="text-gray-900 text-xs sm:text-sm font-medium mb-2">Itineraries</p>
         <h2 class="text-xl sm:text-2xl font-bold text-gray-900 guide-section-header">
           Sample {cityName} Itineraries
         </h2>
@@ -342,18 +359,18 @@ const attractionListLd = attractionPosts.length > 0 ? {
   )}
 
   <!-- CTA Section -->
-  <section class="py-12 sm:py-16 bg-gradient-to-br from-orange-500 to-orange-600">
+  <section class="py-12 sm:py-16 bg-gradient-to-br from-gray-900 to-black">
     <div class="container-narrow text-center text-white">
       <h2 class="text-2xl sm:text-3xl font-bold mb-4">
         Ready to Explore {cityName}?
       </h2>
-      <p class="text-orange-100 mb-6 sm:mb-8 max-w-xl mx-auto">
+      <p class="text-gray-300 mb-6 sm:mb-8 max-w-xl mx-auto">
         Plan your perfect trip with our comprehensive guides covering every aspect of visiting {cityName}.
       </p>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
         <a
-          href={`/blog?city=${encodeURIComponent(cityName)}`}
-          class="bg-white text-orange-600 px-6 sm:px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors"
+          href={`/?city=${encodeURIComponent(cityName)}`}
+          class="bg-white text-gray-900 px-6 sm:px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors"
         >
           Browse All Articles
         </a>

@@ -10,11 +10,11 @@ const { activeCategory } = Astro.props;
 
 <div class="flex flex-wrap gap-2">
   <a
-    href="/blog"
+    href="/"
     class:list={[
       'inline-flex items-center px-4 py-2 rounded-full text-sm font-medium transition-colors',
       !activeCategory
-        ? 'bg-orange-500 text-white'
+        ? 'bg-gray-900 text-white'
         : 'bg-gray-100 text-gray-600 hover:bg-gray-200',
     ]}
   >
@@ -23,11 +23,11 @@ const { activeCategory } = Astro.props;
 
   {CATEGORIES.map(cat => (
     <a
-      href={`/blog?category=${encodeURIComponent(cat.id)}`}
+      href={`/?category=${encodeURIComponent(cat.id)}`}
       class:list={[
         'inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-colors',
         activeCategory === cat.id
-          ? 'bg-orange-500 text-white'
+          ? 'bg-gray-900 text-white'
           : 'bg-gray-100 text-gray-600 hover:bg-gray-200',
       ]}
     >

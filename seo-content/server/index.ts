@@ -39,7 +39,7 @@ app.get('/api/health', (_req, res) => {
 
 // In production, serve the built frontend
 if (process.env.NODE_ENV === 'production') {
-  const distDir = path.resolve(import.meta.dirname, '..', 'dist');
+  const distDir = path.resolve(import.meta.dirname, '..', 'client', 'dist');
   if (fs.existsSync(distDir)) {
     app.use(express.static(distDir));
     app.get('*', (_req, res) => {

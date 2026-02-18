@@ -13,7 +13,7 @@ const cities = [...new Set(allPosts.map(p => p.data.city))].sort();
 
 <div class="flex flex-wrap gap-2">
   <a
-    href="/blog"
+    href="/"
     class:list={[
       'inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium transition-colors',
       !activeCity
@@ -26,7 +26,7 @@ const cities = [...new Set(allPosts.map(p => p.data.city))].sort();
 
   {cities.map(city => (
     <a
-      href={`/blog?city=${encodeURIComponent(city)}`}
+      href={`/?city=${encodeURIComponent(city)}`}
       class:list={[
         'inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium transition-colors',
         activeCity === city

@@ -1,5 +1,5 @@
 ---
-title: Activities in Dubai for Non-Swimmerss / Non-Adventurerssssssssssss
+title: Activities in Dubai for Non-Swimmersss / Non-Adventurerssssssssssss
 description: >-
   Gentle activities in Dubai for those who prefer relaxation over adventure:
   cultural tours, dining, and easy-going experiences.
@@ -34,7 +34,7 @@ relatedSlugs:
 readingTime: 6
 featured: false
 draft: false
-updatedDate: '2026-02-12T16:03:18.003Z'
+updatedDate: '2026-02-12T16:58:39.712Z'
 ---
 
 # Discovering Dubai: A Non-Swimmer and Non-Adventurer's 

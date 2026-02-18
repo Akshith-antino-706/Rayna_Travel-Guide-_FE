@@ -17,13 +17,13 @@ const iconColors: Record<string, string> = {
   snowflake: 'text-blue-500',
   leaf: 'text-green-500',
   sun: 'text-yellow-500',
-  'cloud-sun': 'text-orange-500',
+  'cloud-sun': 'text-gray-900',
 };
 ---
 
 <section class="py-8 sm:py-12">
   <div class="container-wide">
-    <p class="text-orange-500 text-xs sm:text-sm font-medium mb-2">Climate</p>
+    <p class="text-gray-900 text-xs sm:text-sm font-medium mb-2">Climate</p>
     <h2 class="text-xl sm:text-2xl font-bold text-gray-900 guide-section-header">
       {cityName} Weather Guide
     </h2>
@@ -57,7 +57,7 @@ const iconColors: Record<string, string> = {
             )}
           </div>
           <h3 class="font-semibold text-gray-900 mb-1 text-sm sm:text-base">{s.season}</h3>
-          <p class="text-orange-500 font-semibold text-sm mb-2">{s.tempRange}</p>
+          <p class="text-gray-900 font-semibold text-sm mb-2">{s.tempRange}</p>
           <p class="text-xs sm:text-sm text-gray-500">{s.description}</p>
         </div>
       ))}

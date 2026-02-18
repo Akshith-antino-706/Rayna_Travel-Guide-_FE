@@ -1,6 +1,6 @@
 import type { City, ArticleSummary, ArticleDetail, HealthStatus } from './types';
 
-const BASE = '/api';
+const BASE = import.meta.env.VITE_API_URL || '/api';
 
 async function request<T>(url: string, options?: RequestInit): Promise<T> {
   const res = await fetch(`${BASE}${url}`, {
@@ -24,7 +24,7 @@ export const api = {
   getArticle: (city: string, slug: string) => request<ArticleDetail>(`/articles/${city}/${slug}`),
 
   saveArticle: (city: string, slug: string, frontmatter: Record<string, any>, body: string) =>
-    request<{ success: boolean; seoScore: number; seo: any; stats: any }>(
+    request<{ success: boolean; seoScore: number; seo: any; stats: any; git: { pushed: boolean; commitHash?: string; error?: string } }>(
       `/articles/${city}/${slug}`,
       { method: 'PUT', body: JSON.stringify({ frontmatter, body }) },
     ),
