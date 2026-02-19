@@ -7,7 +7,7 @@ category: "Essentials"
 topic: "staying-safe"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:23:05.155Z
-heroImage: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/tokyo/staying-safe-respecting-local-rules-tokyo.jpg"
 heroImageAlt: "Tokyo - Essentials"
 keywords: ["Tokyo travel","things to do in Tokyo","Tokyo guide","visit Tokyo","Japan"]
 tags: ["Essentials","Japan","Asia","top-destination"]

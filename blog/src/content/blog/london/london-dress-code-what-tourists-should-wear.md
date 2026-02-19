@@ -7,7 +7,7 @@ category: "Essentials"
 topic: "dress-code"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:16:02.954Z
-heroImage: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/london-dress-code-what-tourists-should-wear.jpg"
 heroImageAlt: "London - Essentials"
 keywords: ["London travel","things to do in London","London guide","visit London","United Kingdom"]
 tags: ["Essentials","United Kingdom","Europe","top-destination"]

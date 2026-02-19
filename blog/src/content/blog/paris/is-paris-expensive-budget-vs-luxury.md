@@ -7,7 +7,7 @@ category: "Essentials"
 topic: "is-expensive"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:05:50.227Z
-heroImage: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/is-paris-expensive-budget-vs-luxury.jpg"
 heroImageAlt: "Paris - Essentials"
 keywords: ["Paris travel","things to do in Paris","Paris guide","visit Paris","France"]
 tags: ["Essentials","France","Europe","top-destination"]

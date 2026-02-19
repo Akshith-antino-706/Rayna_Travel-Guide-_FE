@@ -7,7 +7,7 @@ category: "Booking & Experiences"
 topic: "combo-tours"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:03:09.666Z
-heroImage: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/combo-tours-activity-passes.jpg"
 heroImageAlt: "Dubai - Booking & Experiences"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","UAE"]
 tags: ["Booking & Experiences","UAE","Asia","top-destination"]

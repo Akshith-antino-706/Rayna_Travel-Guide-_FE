@@ -7,7 +7,7 @@ category: "Hotels & Accommodation"
 topic: "best-hotels"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:58:20.626Z
-heroImage: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/best-hotels-istanbul.jpg"
 heroImageAlt: "Istanbul - Hotels & Accommodation"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Hotels & Accommodation","Turkey","Europe","top-destination"]

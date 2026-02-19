@@ -7,7 +7,7 @@ category: "Trust & Conversion"
 topic: "refund-cancellation"
 author: "Travel Writer"
 pubDate: 2026-02-11T14:01:27.333Z
-heroImage: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/refund-cancellation-policies.jpg"
 heroImageAlt: "Istanbul - Trust & Conversion"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Trust & Conversion","Turkey","Europe","top-destination"]

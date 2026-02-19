@@ -7,7 +7,7 @@ category: "Things to Do"
 topic: "things-to-do-families"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:54:18.179Z
-heroImage: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/best-things-to-do-istanbul-families.jpg"
 heroImageAlt: "Istanbul - Things to Do"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Things to Do","Turkey","Europe","top-destination"]

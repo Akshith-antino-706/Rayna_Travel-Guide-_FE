@@ -7,7 +7,7 @@ category: "Practical Information"
 topic: "internet-sim"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:58:45.905Z
-heroImage: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/internet-sim-cards-istanbul.jpg"
 heroImageAlt: "Istanbul - Practical Information"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Practical Information","Turkey","Europe","top-destination"]

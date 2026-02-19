@@ -7,7 +7,7 @@ category: "Comparisons"
 topic: "dubai-vs-abu-dhabi-comparison"
 author: "Travel Writer"
 pubDate: 2026-01-25T17:15:00.000Z
-heroImage: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/dubai-vs-abu-dhabi-comparison.jpg"
 heroImageAlt: "Dubai - Comparisons"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","United Arab Emirates"]
 tags: ["Comparisons","United Arab Emirates","Asia","top-destination"]

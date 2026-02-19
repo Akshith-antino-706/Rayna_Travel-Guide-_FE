@@ -7,7 +7,7 @@ category: "Hotels & Accommodation"
 topic: "best-areas-to-stay"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:49:57.553Z
-heroImage: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/best-areas-to-stay-singapore.jpg"
 heroImageAlt: "Singapore - Hotels & Accommodation"
 keywords: ["Singapore travel","things to do in Singapore","Singapore guide","visit Singapore","Singapore"]
 tags: ["Hotels & Accommodation","Singapore","Asia","top-destination"]

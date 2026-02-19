@@ -7,7 +7,7 @@ category: "Special Guides"
 topic: "with-kids"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:39:58.483Z
-heroImage: "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/bangkok-kids-travel-guide.jpg"
 heroImageAlt: "Bangkok - Special Guides"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Special Guides","Thailand","Asia","top-destination"]

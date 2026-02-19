@@ -7,7 +7,7 @@ category: "Essentials"
 topic: "dress-code"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:23:01.674Z
-heroImage: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/tokyo/tokyo-dress-code-what-tourists-should-wear.jpg"
 heroImageAlt: "Tokyo - Essentials"
 keywords: ["Tokyo travel","things to do in Tokyo","Tokyo guide","visit Tokyo","Japan"]
 tags: ["Essentials","Japan","Asia","top-destination"]

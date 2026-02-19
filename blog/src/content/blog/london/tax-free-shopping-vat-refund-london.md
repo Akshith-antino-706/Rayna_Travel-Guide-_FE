@@ -7,7 +7,7 @@ category: "Shopping"
 topic: "tax-free-shopping"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:18:38.682Z
-heroImage: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/tax-free-shopping-vat-refund-london.jpg"
 heroImageAlt: "London - Shopping"
 keywords: ["London travel","things to do in London","London guide","visit London","United Kingdom"]
 tags: ["Shopping","United Kingdom","Europe","top-destination"]

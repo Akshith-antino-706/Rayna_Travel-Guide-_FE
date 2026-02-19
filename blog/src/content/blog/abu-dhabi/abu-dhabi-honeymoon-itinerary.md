@@ -7,7 +7,7 @@ category: "Itineraries"
 topic: "abu-dhabi-honeymoon-itinerary"
 author: "Travel Writer"
 pubDate: 2026-01-19T12:31:00.000Z
-heroImage: "https://images.unsplash.com/photo-1512100356356-de1b84283e18?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/abu-dhabi/abu-dhabi-honeymoon-itinerary.jpg"
 heroImageAlt: "Abu Dhabi - Itineraries"
 keywords: ["Abu Dhabi travel","things to do in Abu Dhabi","Abu Dhabi guide","visit Abu Dhabi","United Arab Emirates"]
 tags: ["Itineraries","United Arab Emirates","Asia","top-destination"]

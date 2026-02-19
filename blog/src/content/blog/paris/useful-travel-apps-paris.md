@@ -7,7 +7,7 @@ category: "Practical Information"
 topic: "travel-apps"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:13:21.982Z
-heroImage: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/useful-travel-apps-paris.jpg"
 heroImageAlt: "Paris - Practical Information"
 keywords: ["Paris travel","things to do in Paris","Paris guide","visit Paris","France"]
 tags: ["Practical Information","France","Europe","top-destination"]

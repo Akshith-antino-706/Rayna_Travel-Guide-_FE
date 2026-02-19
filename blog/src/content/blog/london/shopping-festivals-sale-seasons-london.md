@@ -7,7 +7,7 @@ category: "Shopping"
 topic: "shopping-festivals"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:18:30.838Z
-heroImage: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/shopping-festivals-sale-seasons-london.jpg"
 heroImageAlt: "London - Shopping"
 keywords: ["London travel","things to do in London","London guide","visit London","United Kingdom"]
 tags: ["Shopping","United Kingdom","Europe","top-destination"]

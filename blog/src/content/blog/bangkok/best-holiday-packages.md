@@ -7,7 +7,7 @@ category: "Holiday Packages"
 topic: "best-packages"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:43:33.382Z
-heroImage: "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/best-holiday-packages.jpg"
 heroImageAlt: "Bangkok - Holiday Packages"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Holiday Packages","Thailand","Asia","top-destination"]

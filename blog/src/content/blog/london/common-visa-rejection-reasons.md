@@ -7,7 +7,7 @@ category: "Visa & Entry"
 topic: "visa-rejection-reasons"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:21:15.753Z
-heroImage: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/common-visa-rejection-reasons.jpg"
 heroImageAlt: "London - Visa & Entry"
 keywords: ["London travel","things to do in London","London guide","visit London","United Kingdom"]
 tags: ["Visa & Entry","United Kingdom","Europe","top-destination"]

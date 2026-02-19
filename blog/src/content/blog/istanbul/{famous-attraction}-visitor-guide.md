@@ -7,7 +7,7 @@ category: "Attractions"
 topic: "famous-attraction-guide"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:54:53.363Z
-heroImage: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/{famous-attraction}-visitor-guide.jpg"
 heroImageAlt: "Istanbul - Attractions"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Attractions","Turkey","Europe","top-destination"]

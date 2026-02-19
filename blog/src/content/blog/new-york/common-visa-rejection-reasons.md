@@ -7,7 +7,7 @@ category: "Visa & Entry"
 topic: "visa-rejection-reasons"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:35:23.025Z
-heroImage: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/common-visa-rejection-reasons.jpg"
 heroImageAlt: "New York - Visa & Entry"
 keywords: ["New York travel","things to do in New York","New York guide","visit New York","USA"]
 tags: ["Visa & Entry","USA","North America","top-destination"]

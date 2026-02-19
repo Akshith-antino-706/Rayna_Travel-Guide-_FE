@@ -7,7 +7,7 @@ category: "Activities Planning"
 topic: "weather-wise-activities"
 author: "Travel Writer"
 pubDate: 2026-02-11T14:00:39.722Z
-heroImage: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/weather-wise-activity-guide.jpg"
 heroImageAlt: "Istanbul - Activities Planning"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Activities Planning","Turkey","Europe","top-destination"]

@@ -7,7 +7,7 @@ category: "Itineraries"
 topic: "5-day-itinerary"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:09:12.422Z
-heroImage: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/5-day-paris-itinerary.jpg"
 heroImageAlt: "Paris - Itineraries"
 keywords: ["Paris travel","things to do in Paris","Paris guide","visit Paris","France"]
 tags: ["Itineraries","France","Europe","top-destination"]

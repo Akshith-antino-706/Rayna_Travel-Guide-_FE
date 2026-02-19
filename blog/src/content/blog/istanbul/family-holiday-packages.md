@@ -7,7 +7,7 @@ category: "Holiday Packages"
 topic: "family-packages"
 author: "Travel Writer"
 pubDate: 2026-02-11T14:01:04.196Z
-heroImage: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/family-holiday-packages.jpg"
 heroImageAlt: "Istanbul - Holiday Packages"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Holiday Packages","Turkey","Europe","top-destination"]

@@ -13,27 +13,33 @@
     "generate:dry": "tsx scripts/generate-content.ts --dry-run",
     "generate:resume": "tsx scripts/generate-content.ts --resume",
     "generate:images": "tsx scripts/generate-images.ts",
+    "generate:blog-images": "tsx scripts/generate-blog-images.ts",
+    "generate:blog-images:dry": "tsx scripts/generate-blog-images.ts --dry-run",
+    "generate:blog-images:openai": "tsx scripts/generate-blog-images.ts --provider openai",
+    "generate:blog-images:gemini": "tsx scripts/generate-blog-images.ts --provider gemini",
+    "generate:blog-images:parallel": "tsx scripts/generate-blog-images.ts --provider openai --shard even & tsx scripts/generate-blog-images.ts --provider gemini --shard odd",
     "generate:all": "tsx scripts/generate-images.ts && tsx scripts/generate-content.ts",
     "dashboard": "cd dashboard && npm run dev"
   },
   "dependencies": {
-    "astro": "^5.2.0",
     "@astrojs/react": "^4.2.0",
-    "@astrojs/tailwind": "^6.0.0",
     "@astrojs/sitemap": "^3.3.0",
+    "@astrojs/tailwind": "^6.0.0",
+    "@google/genai": "^1.41.0",
+    "@tailwindcss/typography": "^0.5.0",
+    "astro": "^5.2.0",
+    "dotenv": "^16.4.0",
+    "fuse.js": "^7.0.0",
+    "openai": "^4.80.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "fuse.js": "^7.0.0",
-    "tailwindcss": "^3.4.0",
-    "@tailwindcss/typography": "^0.5.0",
-    "openai": "^4.80.0",
     "sharp": "^0.33.0",
-    "dotenv": "^16.4.0"
+    "tailwindcss": "^3.4.0"
   },
   "devDependencies": {
-    "typescript": "^5.9.0",
-    "tsx": "^4.21.0",
     "@types/react": "^19.0.0",
-    "@types/react-dom": "^19.0.0"
+    "@types/react-dom": "^19.0.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.0"
   }
 }

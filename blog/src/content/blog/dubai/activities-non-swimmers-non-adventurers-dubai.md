@@ -1,5 +1,5 @@
 ---
-title: Activities in Dubai for Non-Swimmersss / Non-Adventurerssssssssssss
+title: Activities in Dubai for Non-Swimmers / Non-Adventurers
 description: >-
   Gentle activities in Dubai for those who prefer relaxation over adventure:
   cultural tours, dining, and easy-going experiences.
@@ -9,8 +9,7 @@ category: Activities Planning
 topic: activities-non-swimmers-non-adventurers-dubai
 author: Travel Writer
 pubDate: '2026-01-24T09:51:00.000Z'
-heroImage: >-
-  https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&h=675&fit=crop
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/activities-non-swimmers-non-adventurers-dubai.jpg"
 heroImageAlt: Dubai - Activities Planning
 keywords:
   - Dubai travel
@@ -37,7 +36,7 @@ draft: false
 updatedDate: '2026-02-12T16:58:39.712Z'
 ---
 
-# Discovering Dubai: A Non-Swimmer and Non-Adventurer's 
+# Discovering Dubai: A Non-Swimmer and Non-Adventurer's Guide
 
 Dubai, with its towering skyscrapers and vibrant culture, is a destination that offers something for everyone, including those who prefer to keep their feet on solid ground. Whether you are a non-swimmer or not inclined toward adventurous activities, Dubai has an array of engaging experiences to offer. This guide will take you through the cultural landscapes, culinary delights, and serene experiences that make Dubai a perfect destination for a relaxed yet enriching visit.
 

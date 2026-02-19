@@ -7,7 +7,7 @@ category: "Booking & Experiences"
 topic: "combo-tours"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:29:05.528Z
-heroImage: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/tokyo/combo-tours-activity-passes.jpg"
 heroImageAlt: "Tokyo - Booking & Experiences"
 keywords: ["Tokyo travel","things to do in Tokyo","Tokyo guide","visit Tokyo","Japan"]
 tags: ["Booking & Experiences","Japan","Asia","top-destination"]

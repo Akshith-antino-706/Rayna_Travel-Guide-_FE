@@ -7,7 +7,7 @@ category: "Special Guides"
 topic: "with-kids"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:56:53.957Z
-heroImage: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/istanbul-kids-travel-guide.jpg"
 heroImageAlt: "Istanbul - Special Guides"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Special Guides","Turkey","Europe","top-destination"]

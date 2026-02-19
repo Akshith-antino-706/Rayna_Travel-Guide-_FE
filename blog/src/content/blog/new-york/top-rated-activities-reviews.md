@@ -7,7 +7,7 @@ category: "Booking & Experiences"
 topic: "top-rated-activities"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:36:00.479Z
-heroImage: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/top-rated-activities-reviews.jpg"
 heroImageAlt: "New York - Booking & Experiences"
 keywords: ["New York travel","things to do in New York","New York guide","visit New York","USA"]
 tags: ["Booking & Experiences","USA","North America","top-destination"]

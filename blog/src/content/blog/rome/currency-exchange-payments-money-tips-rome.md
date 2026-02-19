@@ -7,7 +7,7 @@ category: "Essentials"
 topic: "currency-exchange"
 author: "Travel Writer"
 pubDate: 2026-02-11T14:02:41.554Z
-heroImage: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/rome/currency-exchange-payments-money-tips-rome.jpg"
 heroImageAlt: "Rome - Essentials"
 keywords: ["Rome travel","things to do in Rome","Rome guide","visit Rome","Italy"]
 tags: ["Essentials","Italy","Europe","top-destination"]

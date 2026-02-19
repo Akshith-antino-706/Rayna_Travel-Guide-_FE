@@ -7,7 +7,7 @@ category: "Things to Do"
 topic: "Top Things to Do"
 author: "Travel Team"
 pubDate: 2026-02-04
-heroImage: 'https://images.unsplash.com/photo-1526495124232-a04e1849168c?w=800&h=450&fit=crop'
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/top-things-to-do-dubai.jpg"
 heroImageAlt: "Aerial view of Dubai Marina and coastline"
 keywords: ["things to do Dubai", "Dubai activities", "Dubai attractions", "what to do Dubai", "Dubai sightseeing"]
 tags: ["Dubai", "Things to Do", "Attractions", "Activities"]

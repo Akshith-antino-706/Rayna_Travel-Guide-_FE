@@ -7,7 +7,7 @@ category: "Things to Do"
 topic: "unique-luxury-experiences"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:37:22.986Z
-heroImage: "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/unique-luxury-experiences-bangkok.jpg"
 heroImageAlt: "Bangkok - Things to Do"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Things to Do","Thailand","Asia","top-destination"]

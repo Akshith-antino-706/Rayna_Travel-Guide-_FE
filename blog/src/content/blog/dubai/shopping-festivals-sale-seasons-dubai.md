@@ -7,7 +7,7 @@ category: "Shopping"
 topic: "shopping-festivals"
 author: "Travel Writer"
 pubDate: 2026-02-11T12:57:25.028Z
-heroImage: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/shopping-festivals-sale-seasons-dubai.jpg"
 heroImageAlt: "Dubai - Shopping"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","UAE"]
 tags: ["Shopping","UAE","Asia","top-destination"]

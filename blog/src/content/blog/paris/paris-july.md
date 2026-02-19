@@ -7,7 +7,7 @@ category: "Seasonal & Monthly"
 topic: "july"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:11:54.427Z
-heroImage: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/paris-july.jpg"
 heroImageAlt: "Paris - Seasonal & Monthly"
 keywords: ["Paris travel","things to do in Paris","Paris guide","visit Paris","France"]
 tags: ["Seasonal & Monthly","France","Europe","top-destination"]

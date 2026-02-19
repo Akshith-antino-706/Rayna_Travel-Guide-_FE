@@ -7,7 +7,7 @@ category: "Itineraries"
 topic: "2-day-itinerary"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:46:12.922Z
-heroImage: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/2-day-singapore-itinerary.jpg"
 heroImageAlt: "Singapore - Itineraries"
 keywords: ["Singapore travel","things to do in Singapore","Singapore guide","visit Singapore","Singapore"]
 tags: ["Itineraries","Singapore","Asia","top-destination"]

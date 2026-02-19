@@ -7,7 +7,7 @@ category: "Seasonal & Monthly"
 topic: "abu-dhabi-monsoon-rainy-season"
 author: "Travel Writer"
 pubDate: 2026-01-21T08:31:00.000Z
-heroImage: "https://images.unsplash.com/photo-1512100356356-de1b84283e18?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/abu-dhabi/abu-dhabi-monsoon-rainy-season.jpg"
 heroImageAlt: "Abu Dhabi - Seasonal & Monthly"
 keywords: ["Abu Dhabi travel","things to do in Abu Dhabi","Abu Dhabi guide","visit Abu Dhabi","United Arab Emirates"]
 tags: ["Seasonal & Monthly","United Arab Emirates","Asia","top-destination"]

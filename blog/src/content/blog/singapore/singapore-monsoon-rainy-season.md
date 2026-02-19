@@ -7,7 +7,7 @@ category: "Seasonal & Monthly"
 topic: "monsoon"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:48:17.543Z
-heroImage: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/singapore-monsoon-rainy-season.jpg"
 heroImageAlt: "Singapore - Seasonal & Monthly"
 keywords: ["Singapore travel","things to do in Singapore","Singapore guide","visit Singapore","Singapore"]
 tags: ["Seasonal & Monthly","Singapore","Asia","top-destination"]

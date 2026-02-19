@@ -7,7 +7,7 @@ category: "Things to Do"
 topic: "top-things-to-do-dubai-tourists"
 author: "Travel Writer"
 pubDate: 2026-01-15T13:15:00.000Z
-heroImage: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/top-things-to-do-dubai-tourists.jpg"
 heroImageAlt: "Dubai - Things to Do"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","United Arab Emirates"]
 tags: ["Things to Do","United Arab Emirates","Asia","top-destination"]

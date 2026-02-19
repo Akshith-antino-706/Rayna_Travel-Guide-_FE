@@ -7,7 +7,7 @@ category: "Practical Information"
 topic: "travel-apps"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:34:58.544Z
-heroImage: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/useful-travel-apps-new-york.jpg"
 heroImageAlt: "New York - Practical Information"
 keywords: ["New York travel","things to do in New York","New York guide","visit New York","USA"]
 tags: ["Practical Information","USA","North America","top-destination"]

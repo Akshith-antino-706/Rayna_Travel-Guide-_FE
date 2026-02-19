@@ -7,7 +7,7 @@ category: "Essentials"
 topic: "Complete Travel Guide"
 author: "Travel Team"
 pubDate: 2026-02-01
-heroImage: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&h=450&fit=crop'
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/complete-dubai-travel-guide.jpg"
 heroImageAlt: "Dubai skyline with Burj Khalifa at sunset"
 keywords: ["Dubai travel guide", "first time Dubai", "Dubai tips", "visiting Dubai", "Dubai weather"]
 tags: ["Dubai", "Travel Guide", "First-Time Visitors", "Essentials"]

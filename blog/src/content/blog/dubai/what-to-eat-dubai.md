@@ -7,7 +7,7 @@ category: "Food & Dining"
 topic: "Must-Try Local Dishes"
 author: "Travel Team"
 pubDate: 2026-02-07
-heroImage: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=450&fit=crop'
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/what-to-eat-dubai.jpg"
 heroImageAlt: "Spread of Arabic food including hummus, kebabs, and mezze"
 keywords: ["Dubai food", "what to eat Dubai", "Dubai restaurants", "Dubai street food", "Emirati cuisine"]
 tags: ["Dubai", "Food", "Dining", "Restaurants", "Local Cuisine"]

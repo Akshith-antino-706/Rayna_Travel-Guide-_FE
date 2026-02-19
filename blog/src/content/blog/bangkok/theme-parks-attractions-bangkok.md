@@ -7,7 +7,7 @@ category: "Experiences & Activities"
 topic: "theme-parks"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:38:07.366Z
-heroImage: "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/theme-parks-attractions-bangkok.jpg"
 heroImageAlt: "Bangkok - Experiences & Activities"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Experiences & Activities","Thailand","Asia","top-destination"]

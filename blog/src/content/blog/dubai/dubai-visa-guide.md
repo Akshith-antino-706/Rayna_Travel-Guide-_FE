@@ -7,7 +7,7 @@ category: "Visa & Entry"
 topic: "Tourist Visa Guide"
 author: "Travel Team"
 pubDate: 2026-02-11
-heroImage: 'https://images.unsplash.com/photo-1436491865332-7a61a109db05?w=800&h=450&fit=crop'
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/dubai-visa-guide.jpg"
 heroImageAlt: "Passport with UAE visa stamp and Dubai airport arrivals"
 keywords: ["Dubai visa", "UAE tourist visa", "Dubai visa on arrival", "Dubai visa requirements", "Dubai visa cost"]
 tags: ["Dubai", "Visa", "Entry", "Travel Documents"]

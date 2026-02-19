@@ -7,7 +7,7 @@ category: "Yacht & Cruise"
 topic: "yacht-routes"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:51:52.143Z
-heroImage: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/best-yacht-routes-sightseeing.jpg"
 heroImageAlt: "Singapore - Yacht & Cruise"
 keywords: ["Singapore travel","things to do in Singapore","Singapore guide","visit Singapore","Singapore"]
 tags: ["Yacht & Cruise","Singapore","Asia","top-destination"]

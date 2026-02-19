@@ -7,7 +7,7 @@ category: "Things to Do"
 topic: "best-things-to-do-abu-dhabi-families"
 author: "Travel Writer"
 pubDate: 2026-01-18T19:40:00.000Z
-heroImage: "https://images.unsplash.com/photo-1512100356356-de1b84283e18?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/abu-dhabi/best-things-to-do-abu-dhabi-families.jpg"
 heroImageAlt: "Abu Dhabi - Things to Do"
 keywords: ["Abu Dhabi travel","things to do in Abu Dhabi","Abu Dhabi guide","visit Abu Dhabi","United Arab Emirates"]
 tags: ["Things to Do","United Arab Emirates","Asia","top-destination"]

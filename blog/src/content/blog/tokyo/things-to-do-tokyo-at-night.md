@@ -7,7 +7,7 @@ category: "Things to Do"
 topic: "things-to-do-at-night"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:23:31.023Z
-heroImage: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/tokyo/things-to-do-tokyo-at-night.jpg"
 heroImageAlt: "Tokyo - Things to Do"
 keywords: ["Tokyo travel","things to do in Tokyo","Tokyo guide","visit Tokyo","Japan"]
 tags: ["Things to Do","Japan","Asia","top-destination"]

@@ -7,7 +7,7 @@ category: "Visa & Entry"
 topic: "when-should-you-apply-visa-dubai"
 author: "Travel Writer"
 pubDate: 2026-01-22T12:48:00.000Z
-heroImage: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/when-should-you-apply-visa-dubai.jpg"
 heroImageAlt: "Dubai - Visa & Entry"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","United Arab Emirates"]
 tags: ["Visa & Entry","United Arab Emirates","Asia","top-destination"]

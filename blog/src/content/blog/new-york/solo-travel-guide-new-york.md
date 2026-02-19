@@ -7,7 +7,7 @@ category: "Special Guides"
 topic: "solo-travel"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:33:02.895Z
-heroImage: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/solo-travel-guide-new-york.jpg"
 heroImageAlt: "New York - Special Guides"
 keywords: ["New York travel","things to do in New York","New York guide","visit New York","USA"]
 tags: ["Special Guides","USA","North America","top-destination"]

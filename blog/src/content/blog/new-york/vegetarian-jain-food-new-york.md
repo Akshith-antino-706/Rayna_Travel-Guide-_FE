@@ -7,7 +7,7 @@ category: "Food & Dining"
 topic: "vegetarian-jain-food"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:32:19.060Z
-heroImage: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=1200&h=675&fit=crop"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/vegetarian-jain-food-new-york.jpg"
 heroImageAlt: "New York - Food & Dining"
 keywords: ["New York travel","things to do in New York","New York guide","visit New York","USA"]
 tags: ["Food & Dining","USA","North America","top-destination"]
