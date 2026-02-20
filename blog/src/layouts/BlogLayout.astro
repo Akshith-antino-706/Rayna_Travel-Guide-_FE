@@ -132,11 +132,13 @@ const breadcrumbLd = {
 
         <!-- Hero Image -->
         {heroImage && (
-          <div class="mb-8">
+          <div class="mb-8 max-w-2xl mx-auto">
             <img
               src={heroImage}
               alt={heroImageAlt || title}
-              class="w-full rounded-xl aspect-[2/1] object-cover"
+              class="w-full rounded-xl aspect-[16/9] object-cover"
+              width="672"
+              height="378"
               loading="eager"
               onerror={`this.onerror=null;this.src='${fallbackImage}';`}
             />

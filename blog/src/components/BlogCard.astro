@@ -31,11 +31,13 @@ const onerrorHandler = `this.onerror=null;this.src='${fallbackSrc}';`;
 {/* Default card: Figma vertical card with rounded image */}
 {variant === 'default' && (
   <a href={`/blog/${slug}`} class:list={['group block', featured && 'md:col-span-2']}>
-    <div class:list={['relative overflow-hidden rounded-xl', featured ? 'aspect-[3/1]' : 'aspect-[5/2]']}>
+    <div class:list={['relative overflow-hidden rounded-xl', featured ? 'aspect-[3/1]' : 'aspect-[16/9]']}>
       <img
         src={imgSrc}
         alt={title}
         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+        width="400"
+        height="225"
         loading="lazy"
         onerror={onerrorHandler}
       />
