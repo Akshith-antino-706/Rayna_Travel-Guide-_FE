@@ -7,7 +7,7 @@ category: "Trust & Conversion"
 topic: "travel-insurance"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:22:28.627Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/travel-insurance-activities.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/travel-insurance-activities.webp"
 heroImageAlt: "London - Trust & Conversion"
 keywords: ["London travel","things to do in London","London guide","visit London","United Kingdom"]
 tags: ["Trust & Conversion","United Kingdom","Europe","top-destination"]

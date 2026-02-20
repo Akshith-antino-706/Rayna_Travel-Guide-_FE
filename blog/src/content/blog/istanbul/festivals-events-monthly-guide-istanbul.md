@@ -7,7 +7,7 @@ category: "Seasonal & Monthly"
 topic: "festivals-monthly"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:56:59.946Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/festivals-events-monthly-guide-istanbul.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/festivals-events-monthly-guide-istanbul.webp"
 heroImageAlt: "Istanbul - Seasonal & Monthly"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Seasonal & Monthly","Turkey","Europe","top-destination"]

@@ -7,7 +7,7 @@ category: "Things to Do"
 topic: "unique-luxury-experiences-abu-dhabi"
 author: "Travel Writer"
 pubDate: 2026-01-17T15:28:00.000Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/abu-dhabi/unique-luxury-experiences-abu-dhabi.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/abu-dhabi/unique-luxury-experiences-abu-dhabi.webp"
 heroImageAlt: "Abu Dhabi - Things to Do"
 keywords: ["Abu Dhabi travel","things to do in Abu Dhabi","Abu Dhabi guide","visit Abu Dhabi","United Arab Emirates"]
 tags: ["Things to Do","United Arab Emirates","Asia","top-destination"]

@@ -7,7 +7,7 @@ category: "Hotels & Accommodation"
 topic: "honeymoon-hotels"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:49:36.672Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/best-hotels-couples-honeymoon-singapore.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/best-hotels-couples-honeymoon-singapore.webp"
 heroImageAlt: "Singapore - Hotels & Accommodation"
 keywords: ["Singapore travel","things to do in Singapore","Singapore guide","visit Singapore","Singapore"]
 tags: ["Hotels & Accommodation","Singapore","Asia","top-destination"]

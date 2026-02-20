@@ -7,7 +7,7 @@ category: "Shopping"
 topic: "tax-free-shopping"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:39:38.785Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/tax-free-shopping-vat-refund-bangkok.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/tax-free-shopping-vat-refund-bangkok.webp"
 heroImageAlt: "Bangkok - Shopping"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Shopping","Thailand","Asia","top-destination"]

@@ -7,7 +7,7 @@ category: "Practical Information"
 topic: "cultural-etiquette"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:41:50.318Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/cultural-etiquette-local-customs-bangkok.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/cultural-etiquette-local-customs-bangkok.webp"
 heroImageAlt: "Bangkok - Practical Information"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Practical Information","Thailand","Asia","top-destination"]

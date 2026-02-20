@@ -7,7 +7,7 @@ category: "Things to Do"
 topic: "top-things-to-do"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:16:20.131Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/top-things-to-do-london-tourists.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/top-things-to-do-london-tourists.webp"
 heroImageAlt: "London - Things to Do"
 keywords: ["London travel","things to do in London","London guide","visit London","United Kingdom"]
 tags: ["Things to Do","United Kingdom","Europe","top-destination"]

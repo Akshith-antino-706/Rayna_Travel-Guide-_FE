@@ -7,7 +7,7 @@ category: "Special Guides"
 topic: "solo-travel"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:47:56.537Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/solo-travel-guide-singapore.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/solo-travel-guide-singapore.webp"
 heroImageAlt: "Singapore - Special Guides"
 keywords: ["Singapore travel","things to do in Singapore","Singapore guide","visit Singapore","Singapore"]
 tags: ["Special Guides","Singapore","Asia","top-destination"]

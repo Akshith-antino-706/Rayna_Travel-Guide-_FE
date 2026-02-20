@@ -7,7 +7,7 @@ category: "Essentials"
 topic: "staying-safe"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:37:01.297Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/staying-safe-respecting-local-rules-bangkok.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/staying-safe-respecting-local-rules-bangkok.webp"
 heroImageAlt: "Bangkok - Essentials"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Essentials","Thailand","Asia","top-destination"]

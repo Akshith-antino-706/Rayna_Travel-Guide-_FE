@@ -7,7 +7,7 @@ category: "Shopping"
 topic: "tax-free-shopping"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:56:30.335Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/tax-free-shopping-vat-refund-istanbul.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/tax-free-shopping-vat-refund-istanbul.webp"
 heroImageAlt: "Istanbul - Shopping"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Shopping","Turkey","Europe","top-destination"]

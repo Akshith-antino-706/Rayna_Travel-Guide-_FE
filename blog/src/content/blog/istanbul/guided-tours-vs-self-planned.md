@@ -7,7 +7,7 @@ category: "Comparisons"
 topic: "guided-vs-self"
 author: "Travel Writer"
 pubDate: 2026-02-11T14:01:53.513Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/guided-tours-vs-self-planned.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/guided-tours-vs-self-planned.webp"
 heroImageAlt: "Istanbul - Comparisons"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Comparisons","Turkey","Europe","top-destination"]

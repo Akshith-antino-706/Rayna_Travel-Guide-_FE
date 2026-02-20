@@ -7,7 +7,7 @@ category: "Activities Planning"
 topic: "non-adventurers"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:03:59.577Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/activities-non-swimmers-non-adventurers.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/activities-non-swimmers-non-adventurers.webp"
 heroImageAlt: "Dubai - Activities Planning"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","UAE"]
 tags: ["Activities Planning","UAE","Asia","top-destination"]

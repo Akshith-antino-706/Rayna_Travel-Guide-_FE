@@ -7,7 +7,7 @@ category: "Itineraries"
 topic: "honeymoon-itinerary"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:31:51.500Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/new-york-honeymoon-itinerary.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/new-york-honeymoon-itinerary.webp"
 heroImageAlt: "New York - Itineraries"
 keywords: ["New York travel","things to do in New York","New York guide","visit New York","USA"]
 tags: ["Itineraries","USA","North America","top-destination"]

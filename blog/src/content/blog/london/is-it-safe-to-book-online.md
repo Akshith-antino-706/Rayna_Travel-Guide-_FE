@@ -7,7 +7,7 @@ category: "Trust & Conversion"
 topic: "safe-to-book-online"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:22:25.647Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/is-it-safe-to-book-online.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/is-it-safe-to-book-online.webp"
 heroImageAlt: "London - Trust & Conversion"
 keywords: ["London travel","things to do in London","London guide","visit London","United Kingdom"]
 tags: ["Trust & Conversion","United Kingdom","Europe","top-destination"]

@@ -7,7 +7,7 @@ category: "Seasonal & Monthly"
 topic: "january"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:19:18.323Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/london-january.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/london-january.webp"
 heroImageAlt: "London - Seasonal & Monthly"
 keywords: ["London travel","things to do in London","London guide","visit London","United Kingdom"]
 tags: ["Seasonal & Monthly","United Kingdom","Europe","top-destination"]

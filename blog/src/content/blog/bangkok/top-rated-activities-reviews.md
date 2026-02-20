@@ -7,7 +7,7 @@ category: "Booking & Experiences"
 topic: "top-rated-activities"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:43:11.530Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/top-rated-activities-reviews.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/top-rated-activities-reviews.webp"
 heroImageAlt: "Bangkok - Booking & Experiences"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Booking & Experiences","Thailand","Asia","top-destination"]

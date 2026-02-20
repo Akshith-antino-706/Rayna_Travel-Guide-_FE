@@ -7,7 +7,7 @@ category: "Hotels & Accommodation"
 topic: "honeymoon-hotels"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:12:47.379Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/best-hotels-couples-honeymoon-paris.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/best-hotels-couples-honeymoon-paris.webp"
 heroImageAlt: "Paris - Hotels & Accommodation"
 keywords: ["Paris travel","things to do in Paris","Paris guide","visit Paris","France"]
 tags: ["Hotels & Accommodation","France","Europe","top-destination"]

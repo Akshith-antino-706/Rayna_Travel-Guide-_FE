@@ -7,7 +7,7 @@ category: "Booking & Experiences"
 topic: "last-minute-activities"
 author: "Travel Writer"
 pubDate: 2026-02-11T14:00:18.332Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/last-minute-activities.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/last-minute-activities.webp"
 heroImageAlt: "Istanbul - Booking & Experiences"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Booking & Experiences","Turkey","Europe","top-destination"]

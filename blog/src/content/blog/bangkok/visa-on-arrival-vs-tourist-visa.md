@@ -7,7 +7,7 @@ category: "Visa & Entry"
 topic: "visa-on-arrival"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:42:16.308Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/visa-on-arrival-vs-tourist-visa.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/visa-on-arrival-vs-tourist-visa.webp"
 heroImageAlt: "Bangkok - Visa & Entry"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Visa & Entry","Thailand","Asia","top-destination"]

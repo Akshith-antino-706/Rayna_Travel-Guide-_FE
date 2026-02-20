@@ -7,7 +7,7 @@ category: "Activities Planning"
 topic: "indoor-vs-outdoor"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:36:00.782Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/indoor-vs-outdoor-activities.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/indoor-vs-outdoor-activities.webp"
 heroImageAlt: "New York - Activities Planning"
 keywords: ["New York travel","things to do in New York","New York guide","visit New York","USA"]
 tags: ["Activities Planning","USA","North America","top-destination"]

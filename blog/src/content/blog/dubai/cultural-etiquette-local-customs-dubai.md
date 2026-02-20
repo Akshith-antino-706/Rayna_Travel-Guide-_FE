@@ -7,7 +7,7 @@ category: "Practical Information"
 topic: "cultural-etiquette"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:00:37.096Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/cultural-etiquette-local-customs-dubai.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/cultural-etiquette-local-customs-dubai.webp"
 heroImageAlt: "Dubai - Practical Information"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","UAE"]
 tags: ["Practical Information","UAE","Asia","top-destination"]

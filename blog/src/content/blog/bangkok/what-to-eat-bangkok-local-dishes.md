@@ -7,7 +7,7 @@ category: "Food & Dining"
 topic: "local-dishes"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:39:05.053Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/what-to-eat-bangkok-local-dishes.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/what-to-eat-bangkok-local-dishes.webp"
 heroImageAlt: "Bangkok - Food & Dining"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Food & Dining","Thailand","Asia","top-destination"]

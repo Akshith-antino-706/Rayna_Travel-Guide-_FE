@@ -7,7 +7,7 @@ category: "Itineraries"
 topic: "family-itinerary"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:55:32.620Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/istanbul-itinerary-families.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/istanbul-itinerary-families.webp"
 heroImageAlt: "Istanbul - Itineraries"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Itineraries","Turkey","Europe","top-destination"]

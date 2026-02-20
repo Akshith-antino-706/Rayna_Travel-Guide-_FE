@@ -7,7 +7,7 @@ category: "Experiences & Activities"
 topic: "abu-dhabi-signature-experience-guide"
 author: "Travel Writer"
 pubDate: 2026-01-18T20:43:00.000Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/abu-dhabi/abu-dhabi-signature-experience-guide.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/abu-dhabi/abu-dhabi-signature-experience-guide.webp"
 heroImageAlt: "Abu Dhabi - Experiences & Activities"
 keywords: ["Abu Dhabi travel","things to do in Abu Dhabi","Abu Dhabi guide","visit Abu Dhabi","United Arab Emirates"]
 tags: ["Experiences & Activities","United Arab Emirates","Asia","top-destination"]

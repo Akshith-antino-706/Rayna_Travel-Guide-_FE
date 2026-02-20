@@ -7,7 +7,7 @@ category: "Experiences & Activities"
 topic: "yacht-cruise-guide"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:38:01.034Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/bangkok-yacht-cruise-guide.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/bangkok-yacht-cruise-guide.webp"
 heroImageAlt: "Bangkok - Experiences & Activities"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Experiences & Activities","Thailand","Asia","top-destination"]

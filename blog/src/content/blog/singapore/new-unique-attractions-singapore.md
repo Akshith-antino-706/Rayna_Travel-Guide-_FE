@@ -7,7 +7,7 @@ category: "Attractions"
 topic: "new-attractions"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:45:59.541Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/new-unique-attractions-singapore.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/new-unique-attractions-singapore.webp"
 heroImageAlt: "Singapore - Attractions"
 keywords: ["Singapore travel","things to do in Singapore","Singapore guide","visit Singapore","Singapore"]
 tags: ["Attractions","Singapore","Asia","top-destination"]

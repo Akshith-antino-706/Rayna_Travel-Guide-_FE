@@ -7,7 +7,7 @@ category: "Booking & Experiences"
 topic: "combo-tours"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:14:49.654Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/combo-tours-activity-passes.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/combo-tours-activity-passes.webp"
 heroImageAlt: "Paris - Booking & Experiences"
 keywords: ["Paris travel","things to do in Paris","Paris guide","visit Paris","France"]
 tags: ["Booking & Experiences","France","Europe","top-destination"]

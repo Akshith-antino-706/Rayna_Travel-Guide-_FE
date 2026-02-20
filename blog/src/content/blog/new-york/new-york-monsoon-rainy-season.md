@@ -7,7 +7,7 @@ category: "Seasonal & Monthly"
 topic: "monsoon"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:33:21.052Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/new-york-monsoon-rainy-season.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/new-york-monsoon-rainy-season.webp"
 heroImageAlt: "New York - Seasonal & Monthly"
 keywords: ["New York travel","things to do in New York","New York guide","visit New York","USA"]
 tags: ["Seasonal & Monthly","USA","North America","top-destination"]

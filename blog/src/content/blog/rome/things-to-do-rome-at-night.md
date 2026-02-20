@@ -7,7 +7,7 @@ category: "Things to Do"
 topic: "things-to-do-at-night"
 author: "Travel Writer"
 pubDate: 2026-02-11T14:03:13.573Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/rome/things-to-do-rome-at-night.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/rome/things-to-do-rome-at-night.webp"
 heroImageAlt: "Rome - Things to Do"
 keywords: ["Rome travel","things to do in Rome","Rome guide","visit Rome","Italy"]
 tags: ["Things to Do","Italy","Europe","top-destination"]

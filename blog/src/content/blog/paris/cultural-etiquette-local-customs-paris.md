@@ -7,7 +7,7 @@ category: "Practical Information"
 topic: "cultural-etiquette"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:13:16.970Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/cultural-etiquette-local-customs-paris.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/cultural-etiquette-local-customs-paris.webp"
 heroImageAlt: "Paris - Practical Information"
 keywords: ["Paris travel","things to do in Paris","Paris guide","visit Paris","France"]
 tags: ["Practical Information","France","Europe","top-destination"]

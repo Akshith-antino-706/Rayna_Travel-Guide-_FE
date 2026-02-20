@@ -7,7 +7,7 @@ category: "Special Guides"
 topic: "solo-travel-guide-abu-dhabi"
 author: "Travel Writer"
 pubDate: 2026-01-22T03:16:00.000Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/abu-dhabi/solo-travel-guide-abu-dhabi.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/abu-dhabi/solo-travel-guide-abu-dhabi.webp"
 heroImageAlt: "Abu Dhabi - Special Guides"
 keywords: ["Abu Dhabi travel","things to do in Abu Dhabi","Abu Dhabi guide","visit Abu Dhabi","United Arab Emirates"]
 tags: ["Special Guides","United Arab Emirates","Asia","top-destination"]

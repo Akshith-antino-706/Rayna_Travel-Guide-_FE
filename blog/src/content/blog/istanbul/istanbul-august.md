@@ -7,7 +7,7 @@ category: "Seasonal & Monthly"
 topic: "august"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:57:51.947Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/istanbul-august.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/istanbul-august.webp"
 heroImageAlt: "Istanbul - Seasonal & Monthly"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Seasonal & Monthly","Turkey","Europe","top-destination"]

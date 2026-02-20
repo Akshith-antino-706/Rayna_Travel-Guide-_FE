@@ -7,7 +7,7 @@ category: "Holiday Packages"
 topic: "family-packages"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:15:10.106Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/family-holiday-packages.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/family-holiday-packages.webp"
 heroImageAlt: "Paris - Holiday Packages"
 keywords: ["Paris travel","things to do in Paris","Paris guide","visit Paris","France"]
 tags: ["Holiday Packages","France","Europe","top-destination"]

@@ -7,7 +7,7 @@ category: "Seasonal & Monthly"
 topic: "winter"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:57:10.470Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/istanbul-winter.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/istanbul-winter.webp"
 heroImageAlt: "Istanbul - Seasonal & Monthly"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Seasonal & Monthly","Turkey","Europe","top-destination"]

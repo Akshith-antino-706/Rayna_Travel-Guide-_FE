@@ -7,7 +7,7 @@ category: "Visa & Entry"
 topic: "common-visa-rejection-reasons-dubai"
 author: "Travel Writer"
 pubDate: 2026-01-22T14:54:00.000Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/common-visa-rejection-reasons-dubai.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/common-visa-rejection-reasons-dubai.webp"
 heroImageAlt: "Dubai - Visa & Entry"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","United Arab Emirates"]
 tags: ["Visa & Entry","United Arab Emirates","Asia","top-destination"]

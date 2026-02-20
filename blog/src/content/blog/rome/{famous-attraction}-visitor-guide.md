@@ -7,7 +7,7 @@ category: "Attractions"
 topic: "famous-attraction-guide"
 author: "Travel Writer"
 pubDate: 2026-02-11T14:03:40.721Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/rome/{famous-attraction}-visitor-guide.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/rome/{famous-attraction}-visitor-guide.webp"
 heroImageAlt: "Rome - Attractions"
 keywords: ["Rome travel","things to do in Rome","Rome guide","visit Rome","Italy"]
 tags: ["Attractions","Italy","Europe","top-destination"]

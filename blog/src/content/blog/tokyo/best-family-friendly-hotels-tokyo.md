@@ -7,7 +7,7 @@ category: "Hotels & Accommodation"
 topic: "family-hotels"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:27:25.932Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/tokyo/best-family-friendly-hotels-tokyo.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/tokyo/best-family-friendly-hotels-tokyo.webp"
 heroImageAlt: "Tokyo - Hotels & Accommodation"
 keywords: ["Tokyo travel","things to do in Tokyo","Tokyo guide","visit Tokyo","Japan"]
 tags: ["Hotels & Accommodation","Japan","Asia","top-destination"]

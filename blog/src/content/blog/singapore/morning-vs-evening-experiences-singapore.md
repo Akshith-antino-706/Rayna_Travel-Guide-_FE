@@ -7,7 +7,7 @@ category: "Experiences & Activities"
 topic: "morning-vs-evening"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:45:15.195Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/morning-vs-evening-experiences-singapore.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/morning-vs-evening-experiences-singapore.webp"
 heroImageAlt: "Singapore - Experiences & Activities"
 keywords: ["Singapore travel","things to do in Singapore","Singapore guide","visit Singapore","Singapore"]
 tags: ["Experiences & Activities","Singapore","Asia","top-destination"]

@@ -7,7 +7,7 @@ category: "Transport"
 topic: "getting-around"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:25:52.620Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/tokyo/how-to-get-around-tokyo-transport-guide.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/tokyo/how-to-get-around-tokyo-transport-guide.webp"
 heroImageAlt: "Tokyo - Transport"
 keywords: ["Tokyo travel","things to do in Tokyo","Tokyo guide","visit Tokyo","Japan"]
 tags: ["Transport","Japan","Asia","top-destination"]

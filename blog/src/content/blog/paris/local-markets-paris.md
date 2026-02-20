@@ -7,7 +7,7 @@ category: "Shopping"
 topic: "local-markets"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:10:13.045Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/local-markets-paris.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/local-markets-paris.webp"
 heroImageAlt: "Paris - Shopping"
 keywords: ["Paris travel","things to do in Paris","Paris guide","visit Paris","France"]
 tags: ["Shopping","France","Europe","top-destination"]

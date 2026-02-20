@@ -7,7 +7,7 @@ category: "Booking & Experiences"
 topic: "top-rated-activities"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:51:34.090Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/top-rated-activities-reviews.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/top-rated-activities-reviews.webp"
 heroImageAlt: "Singapore - Booking & Experiences"
 keywords: ["Singapore travel","things to do in Singapore","Singapore guide","visit Singapore","Singapore"]
 tags: ["Booking & Experiences","Singapore","Asia","top-destination"]

@@ -7,7 +7,7 @@ category: "Comparisons"
 topic: "package-vs-separate"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:22:43.877Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/package-holiday-vs-booking-separately.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/package-holiday-vs-booking-separately.webp"
 heroImageAlt: "London - Comparisons"
 keywords: ["London travel","things to do in London","London guide","visit London","United Kingdom"]
 tags: ["Comparisons","United Kingdom","Europe","top-destination"]

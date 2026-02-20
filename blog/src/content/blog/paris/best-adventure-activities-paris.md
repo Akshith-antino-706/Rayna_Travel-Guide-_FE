@@ -7,7 +7,7 @@ category: "Things to Do"
 topic: "adventure-activities"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:06:32.722Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/best-adventure-activities-paris.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/best-adventure-activities-paris.webp"
 heroImageAlt: "Paris - Things to Do"
 keywords: ["Paris travel","things to do in Paris","Paris guide","visit Paris","France"]
 tags: ["Things to Do","France","Europe","top-destination"]

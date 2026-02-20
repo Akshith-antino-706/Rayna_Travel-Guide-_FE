@@ -9,7 +9,7 @@ category: Money & Payments
 topic: atm-forex-money-exchange-dubai
 author: Travel Writer
 pubDate: '2026-01-23T19:09:00.000Z'
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/atm-forex-money-exchange-dubai.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/atm-forex-money-exchange-dubai.webp"
 heroImageAlt: Dubai - Money & Payments
 keywords:
   - Dubai travel

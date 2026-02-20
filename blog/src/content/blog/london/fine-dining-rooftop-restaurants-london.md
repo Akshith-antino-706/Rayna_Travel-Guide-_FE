@@ -7,7 +7,7 @@ category: "Food & Dining"
 topic: "fine-dining"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:18:04.388Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/fine-dining-rooftop-restaurants-london.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/fine-dining-rooftop-restaurants-london.webp"
 heroImageAlt: "London - Food & Dining"
 keywords: ["London travel","things to do in London","London guide","visit London","United Kingdom"]
 tags: ["Food & Dining","United Kingdom","Europe","top-destination"]

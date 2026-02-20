@@ -7,7 +7,7 @@ category: "Food & Dining"
 topic: "best-restaurants"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:39:16.125Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/best-restaurants-bangkok.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/best-restaurants-bangkok.webp"
 heroImageAlt: "Bangkok - Food & Dining"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Food & Dining","Thailand","Asia","top-destination"]

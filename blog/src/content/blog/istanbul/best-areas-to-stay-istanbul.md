@@ -7,7 +7,7 @@ category: "Hotels & Accommodation"
 topic: "best-areas-to-stay"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:58:41.435Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/best-areas-to-stay-istanbul.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/best-areas-to-stay-istanbul.webp"
 heroImageAlt: "Istanbul - Hotels & Accommodation"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Hotels & Accommodation","Turkey","Europe","top-destination"]

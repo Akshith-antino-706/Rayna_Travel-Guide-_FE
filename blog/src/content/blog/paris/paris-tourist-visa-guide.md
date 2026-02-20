@@ -7,7 +7,7 @@ category: "Visa & Entry"
 topic: "visa-guide"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:13:35.422Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/paris-tourist-visa-guide.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/paris-tourist-visa-guide.webp"
 heroImageAlt: "Paris - Visa & Entry"
 keywords: ["Paris travel","things to do in Paris","Paris guide","visit Paris","France"]
 tags: ["Visa & Entry","France","Europe","top-destination"]

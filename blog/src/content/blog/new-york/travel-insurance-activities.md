@@ -7,7 +7,7 @@ category: "Trust & Conversion"
 topic: "travel-insurance"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:36:39.695Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/travel-insurance-activities.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/travel-insurance-activities.webp"
 heroImageAlt: "New York - Trust & Conversion"
 keywords: ["New York travel","things to do in New York","New York guide","visit New York","USA"]
 tags: ["Trust & Conversion","USA","North America","top-destination"]

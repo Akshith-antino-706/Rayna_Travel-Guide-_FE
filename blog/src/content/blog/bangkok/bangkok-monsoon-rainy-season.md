@@ -7,7 +7,7 @@ category: "Seasonal & Monthly"
 topic: "monsoon"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:40:21.051Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/bangkok-monsoon-rainy-season.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/bangkok-monsoon-rainy-season.webp"
 heroImageAlt: "Bangkok - Seasonal & Monthly"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Seasonal & Monthly","Thailand","Asia","top-destination"]

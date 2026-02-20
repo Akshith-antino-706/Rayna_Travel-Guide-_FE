@@ -7,7 +7,7 @@ category: "Comparisons"
 topic: "guided-vs-self"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:22:45.998Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/guided-tours-vs-self-planned.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/guided-tours-vs-self-planned.webp"
 heroImageAlt: "London - Comparisons"
 keywords: ["London travel","things to do in London","London guide","visit London","United Kingdom"]
 tags: ["Comparisons","United Kingdom","Europe","top-destination"]

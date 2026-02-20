@@ -7,7 +7,7 @@ category: "Things to Do"
 topic: "things-to-do-families"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:07:05.666Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/best-things-to-do-paris-families.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/best-things-to-do-paris-families.webp"
 heroImageAlt: "Paris - Things to Do"
 keywords: ["Paris travel","things to do in Paris","Paris guide","visit Paris","France"]
 tags: ["Things to Do","France","Europe","top-destination"]

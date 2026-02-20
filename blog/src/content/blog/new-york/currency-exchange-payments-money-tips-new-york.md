@@ -7,7 +7,7 @@ category: "Essentials"
 topic: "currency-exchange"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:30:23.309Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/currency-exchange-payments-money-tips-new-york.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/currency-exchange-payments-money-tips-new-york.webp"
 heroImageAlt: "New York - Essentials"
 keywords: ["New York travel","things to do in New York","New York guide","visit New York","USA"]
 tags: ["Essentials","USA","North America","top-destination"]

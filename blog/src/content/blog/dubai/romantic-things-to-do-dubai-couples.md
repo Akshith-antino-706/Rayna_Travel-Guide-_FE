@@ -7,7 +7,7 @@ category: "Things to Do"
 topic: "romantic-things-to-do-dubai-couples"
 author: "Travel Writer"
 pubDate: 2026-01-16T18:30:00.000Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/romantic-things-to-do-dubai-couples.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/romantic-things-to-do-dubai-couples.webp"
 heroImageAlt: "Dubai - Things to Do"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","United Arab Emirates"]
 tags: ["Things to Do","United Arab Emirates","Asia","top-destination"]

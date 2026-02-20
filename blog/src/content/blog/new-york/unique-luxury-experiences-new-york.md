@@ -7,7 +7,7 @@ category: "Things to Do"
 topic: "unique-luxury-experiences"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:30:24.707Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/unique-luxury-experiences-new-york.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/unique-luxury-experiences-new-york.webp"
 heroImageAlt: "New York - Things to Do"
 keywords: ["New York travel","things to do in New York","New York guide","visit New York","USA"]
 tags: ["Things to Do","USA","North America","top-destination"]

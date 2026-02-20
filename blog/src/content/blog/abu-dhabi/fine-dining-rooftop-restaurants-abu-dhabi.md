@@ -7,7 +7,7 @@ category: "Food & Dining"
 topic: "fine-dining-rooftop-restaurants-abu-dhabi"
 author: "Travel Writer"
 pubDate: 2026-01-20T17:46:00.000Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/abu-dhabi/fine-dining-rooftop-restaurants-abu-dhabi.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/abu-dhabi/fine-dining-rooftop-restaurants-abu-dhabi.webp"
 heroImageAlt: "Abu Dhabi - Food & Dining"
 keywords: ["Abu Dhabi travel","things to do in Abu Dhabi","Abu Dhabi guide","visit Abu Dhabi","United Arab Emirates"]
 tags: ["Food & Dining","United Arab Emirates","Asia","top-destination"]

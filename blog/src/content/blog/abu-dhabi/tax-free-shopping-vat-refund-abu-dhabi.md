@@ -7,7 +7,7 @@ category: "Shopping"
 topic: "tax-free-shopping-vat-refund-abu-dhabi"
 author: "Travel Writer"
 pubDate: 2026-01-20T23:04:00.000Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/abu-dhabi/tax-free-shopping-vat-refund-abu-dhabi.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/abu-dhabi/tax-free-shopping-vat-refund-abu-dhabi.webp"
 heroImageAlt: "Abu Dhabi - Shopping"
 keywords: ["Abu Dhabi travel","things to do in Abu Dhabi","Abu Dhabi guide","visit Abu Dhabi","United Arab Emirates"]
 tags: ["Shopping","United Arab Emirates","Asia","top-destination"]

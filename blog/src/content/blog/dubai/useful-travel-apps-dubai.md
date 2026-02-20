@@ -7,7 +7,7 @@ category: "Practical Information"
 topic: "travel-apps"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:01:13.557Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/useful-travel-apps-dubai.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/useful-travel-apps-dubai.webp"
 heroImageAlt: "Dubai - Practical Information"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","UAE"]
 tags: ["Practical Information","UAE","Asia","top-destination"]

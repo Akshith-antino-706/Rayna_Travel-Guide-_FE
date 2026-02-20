@@ -7,7 +7,7 @@ category: "Attractions"
 topic: "seasonal-attractions"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:08:33.999Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/seasonal-attractions-events-paris.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/seasonal-attractions-events-paris.webp"
 heroImageAlt: "Paris - Attractions"
 keywords: ["Paris travel","things to do in Paris","Paris guide","visit Paris","France"]
 tags: ["Attractions","France","Europe","top-destination"]

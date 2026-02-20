@@ -7,7 +7,7 @@ category: "Itineraries"
 topic: "abu-dhabi-itinerary-families"
 author: "Travel Writer"
 pubDate: 2026-01-19T11:28:00.000Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/abu-dhabi/abu-dhabi-itinerary-families.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/abu-dhabi/abu-dhabi-itinerary-families.webp"
 heroImageAlt: "Abu Dhabi - Itineraries"
 keywords: ["Abu Dhabi travel","things to do in Abu Dhabi","Abu Dhabi guide","visit Abu Dhabi","United Arab Emirates"]
 tags: ["Itineraries","United Arab Emirates","Asia","top-destination"]

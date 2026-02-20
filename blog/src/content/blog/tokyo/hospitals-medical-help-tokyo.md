@@ -7,7 +7,7 @@ category: "Practical Information"
 topic: "hospitals-medical"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:27:48.505Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/tokyo/hospitals-medical-help-tokyo.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/tokyo/hospitals-medical-help-tokyo.webp"
 heroImageAlt: "Tokyo - Practical Information"
 keywords: ["Tokyo travel","things to do in Tokyo","Tokyo guide","visit Tokyo","Japan"]
 tags: ["Practical Information","Japan","Asia","top-destination"]

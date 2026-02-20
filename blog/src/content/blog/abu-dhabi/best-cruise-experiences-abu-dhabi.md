@@ -7,7 +7,7 @@ category: "Experiences & Activities"
 topic: "best-cruise-experiences-abu-dhabi"
 author: "Travel Writer"
 pubDate: 2026-01-18T23:52:00.000Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/abu-dhabi/best-cruise-experiences-abu-dhabi.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/abu-dhabi/best-cruise-experiences-abu-dhabi.webp"
 heroImageAlt: "Abu Dhabi - Experiences & Activities"
 keywords: ["Abu Dhabi travel","things to do in Abu Dhabi","Abu Dhabi guide","visit Abu Dhabi","United Arab Emirates"]
 tags: ["Experiences & Activities","United Arab Emirates","Asia","top-destination"]

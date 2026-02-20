@@ -7,7 +7,7 @@ category: "Practical Information"
 topic: "emergency-numbers"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:58:44.339Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/emergency-numbers-istanbul.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/emergency-numbers-istanbul.webp"
 heroImageAlt: "Istanbul - Practical Information"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Practical Information","Turkey","Europe","top-destination"]

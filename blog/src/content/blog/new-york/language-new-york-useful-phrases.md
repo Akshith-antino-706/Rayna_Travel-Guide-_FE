@@ -7,7 +7,7 @@ category: "Practical Information"
 topic: "language-phrases"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:35:01.025Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/language-new-york-useful-phrases.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/language-new-york-useful-phrases.webp"
 heroImageAlt: "New York - Practical Information"
 keywords: ["New York travel","things to do in New York","New York guide","visit New York","USA"]
 tags: ["Practical Information","USA","North America","top-destination"]

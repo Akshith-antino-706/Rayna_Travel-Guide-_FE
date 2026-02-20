@@ -7,7 +7,7 @@ category: "Seasonal & Monthly"
 topic: "may"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:40:40.252Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/bangkok-may.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/bangkok-may.webp"
 heroImageAlt: "Bangkok - Seasonal & Monthly"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Seasonal & Monthly","Thailand","Asia","top-destination"]

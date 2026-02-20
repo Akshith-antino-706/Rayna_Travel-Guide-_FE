@@ -7,7 +7,7 @@ category: "Essentials"
 topic: "dress-code"
 author: "Travel Writer"
 pubDate: 2026-02-11T14:02:26.645Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/rome/rome-dress-code-what-tourists-should-wear.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/rome/rome-dress-code-what-tourists-should-wear.webp"
 heroImageAlt: "Rome - Essentials"
 keywords: ["Rome travel","things to do in Rome","Rome guide","visit Rome","Italy"]
 tags: ["Essentials","Italy","Europe","top-destination"]

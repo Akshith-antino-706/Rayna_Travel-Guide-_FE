@@ -7,7 +7,7 @@ category: "Itineraries"
 topic: "1-day-itinerary"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:55:07.765Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/1-day-istanbul-itinerary.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/1-day-istanbul-itinerary.webp"
 heroImageAlt: "Istanbul - Itineraries"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Itineraries","Turkey","Europe","top-destination"]

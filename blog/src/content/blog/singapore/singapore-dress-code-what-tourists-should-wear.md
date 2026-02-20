@@ -7,7 +7,7 @@ category: "Essentials"
 topic: "dress-code"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:44:26.795Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/singapore-dress-code-what-tourists-should-wear.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/singapore-dress-code-what-tourists-should-wear.webp"
 heroImageAlt: "Singapore - Essentials"
 keywords: ["Singapore travel","things to do in Singapore","Singapore guide","visit Singapore","Singapore"]
 tags: ["Essentials","Singapore","Asia","top-destination"]

@@ -7,7 +7,7 @@ category: "Special Guides"
 topic: "travel-guide-indians"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:10:41.954Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/paris-travel-guide-indians.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/paris-travel-guide-indians.webp"
 heroImageAlt: "Paris - Special Guides"
 keywords: ["Paris travel","things to do in Paris","Paris guide","visit Paris","France"]
 tags: ["Special Guides","France","Europe","top-destination"]

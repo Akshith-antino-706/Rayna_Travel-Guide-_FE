@@ -7,7 +7,7 @@ category: "Seasonal & Monthly"
 topic: "june"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:19:41.575Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/london-june.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/london-june.webp"
 heroImageAlt: "London - Seasonal & Monthly"
 keywords: ["London travel","things to do in London","London guide","visit London","United Kingdom"]
 tags: ["Seasonal & Monthly","United Kingdom","Europe","top-destination"]

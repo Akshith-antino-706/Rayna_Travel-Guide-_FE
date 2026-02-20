@@ -7,7 +7,7 @@ category: "Holiday Packages"
 topic: "luxury-packages"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:43:39.580Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/luxury-holiday-packages.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/luxury-holiday-packages.webp"
 heroImageAlt: "Bangkok - Holiday Packages"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Holiday Packages","Thailand","Asia","top-destination"]

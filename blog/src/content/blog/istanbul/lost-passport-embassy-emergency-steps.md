@@ -7,7 +7,7 @@ category: "Visa & Entry"
 topic: "lost-passport"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:59:40.922Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/lost-passport-embassy-emergency-steps.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/lost-passport-embassy-emergency-steps.webp"
 heroImageAlt: "Istanbul - Visa & Entry"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Visa & Entry","Turkey","Europe","top-destination"]

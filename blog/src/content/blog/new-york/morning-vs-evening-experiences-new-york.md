@@ -7,7 +7,7 @@ category: "Experiences & Activities"
 topic: "morning-vs-evening"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:30:56.577Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/morning-vs-evening-experiences-new-york.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/morning-vs-evening-experiences-new-york.webp"
 heroImageAlt: "New York - Experiences & Activities"
 keywords: ["New York travel","things to do in New York","New York guide","visit New York","USA"]
 tags: ["Experiences & Activities","USA","North America","top-destination"]

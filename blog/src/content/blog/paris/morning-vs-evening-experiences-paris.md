@@ -7,7 +7,7 @@ category: "Experiences & Activities"
 topic: "morning-vs-evening"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:07:12.660Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/morning-vs-evening-experiences-paris.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/morning-vs-evening-experiences-paris.webp"
 heroImageAlt: "Paris - Experiences & Activities"
 keywords: ["Paris travel","things to do in Paris","Paris guide","visit Paris","France"]
 tags: ["Experiences & Activities","France","Europe","top-destination"]

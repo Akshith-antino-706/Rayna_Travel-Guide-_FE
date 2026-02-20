@@ -7,7 +7,7 @@ category: "Seasonal & Monthly"
 topic: "festivals-monthly"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:33:16.888Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/festivals-events-monthly-guide-new-york.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/festivals-events-monthly-guide-new-york.webp"
 heroImageAlt: "New York - Seasonal & Monthly"
 keywords: ["New York travel","things to do in New York","New York guide","visit New York","USA"]
 tags: ["Seasonal & Monthly","USA","North America","top-destination"]

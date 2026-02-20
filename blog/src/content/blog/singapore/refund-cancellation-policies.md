@@ -7,7 +7,7 @@ category: "Trust & Conversion"
 topic: "refund-cancellation"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:53:01.056Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/refund-cancellation-policies.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/refund-cancellation-policies.webp"
 heroImageAlt: "Singapore - Trust & Conversion"
 keywords: ["Singapore travel","things to do in Singapore","Singapore guide","visit Singapore","Singapore"]
 tags: ["Trust & Conversion","Singapore","Asia","top-destination"]

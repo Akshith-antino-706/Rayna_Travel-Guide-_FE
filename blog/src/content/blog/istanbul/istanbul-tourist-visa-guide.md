@@ -7,7 +7,7 @@ category: "Visa & Entry"
 topic: "visa-guide"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:59:02.727Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/istanbul-tourist-visa-guide.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/istanbul-tourist-visa-guide.webp"
 heroImageAlt: "Istanbul - Visa & Entry"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Visa & Entry","Turkey","Europe","top-destination"]

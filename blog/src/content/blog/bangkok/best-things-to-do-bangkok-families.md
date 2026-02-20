@@ -7,7 +7,7 @@ category: "Things to Do"
 topic: "things-to-do-families"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:37:44.150Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/best-things-to-do-bangkok-families.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/best-things-to-do-bangkok-families.webp"
 heroImageAlt: "Bangkok - Things to Do"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Things to Do","Thailand","Asia","top-destination"]

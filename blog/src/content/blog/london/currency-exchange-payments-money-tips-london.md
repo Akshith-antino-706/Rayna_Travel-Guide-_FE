@@ -7,7 +7,7 @@ category: "Essentials"
 topic: "currency-exchange"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:16:06.085Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/currency-exchange-payments-money-tips-london.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/currency-exchange-payments-money-tips-london.webp"
 heroImageAlt: "London - Essentials"
 keywords: ["London travel","things to do in London","London guide","visit London","United Kingdom"]
 tags: ["Essentials","United Kingdom","Europe","top-destination"]

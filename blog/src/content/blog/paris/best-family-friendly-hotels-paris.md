@@ -7,7 +7,7 @@ category: "Hotels & Accommodation"
 topic: "family-hotels"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:12:52.778Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/best-family-friendly-hotels-paris.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/best-family-friendly-hotels-paris.webp"
 heroImageAlt: "Paris - Hotels & Accommodation"
 keywords: ["Paris travel","things to do in Paris","Paris guide","visit Paris","France"]
 tags: ["Hotels & Accommodation","France","Europe","top-destination"]

@@ -7,7 +7,7 @@ category: "Things to Do"
 topic: "free-things-to-do-dubai"
 author: "Travel Writer"
 pubDate: 2026-01-15T14:18:00.000Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/free-things-to-do-dubai.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/free-things-to-do-dubai.webp"
 heroImageAlt: "Dubai - Things to Do"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","United Arab Emirates"]
 tags: ["Things to Do","United Arab Emirates","Asia","top-destination"]

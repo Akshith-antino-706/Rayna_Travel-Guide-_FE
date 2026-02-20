@@ -7,7 +7,7 @@ category: "Essentials"
 topic: "complete-travel-guide"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:22:47.410Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/tokyo/complete-tokyo-travel-guide.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/tokyo/complete-tokyo-travel-guide.webp"
 heroImageAlt: "Tokyo - Essentials"
 keywords: ["Tokyo travel","things to do in Tokyo","Tokyo guide","visit Tokyo","Japan"]
 tags: ["Essentials","Japan","Asia","top-destination"]

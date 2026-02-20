@@ -7,7 +7,7 @@ category: "Itineraries"
 topic: "family-itinerary"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:38:48.761Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/bangkok-itinerary-families.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/bangkok-itinerary-families.webp"
 heroImageAlt: "Bangkok - Itineraries"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Itineraries","Thailand","Asia","top-destination"]

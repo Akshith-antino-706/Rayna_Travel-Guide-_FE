@@ -7,7 +7,7 @@ category: "Attractions"
 topic: "must-visit-neighborhoods"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:38:26.576Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/must-visit-areas-neighborhoods-bangkok.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/must-visit-areas-neighborhoods-bangkok.webp"
 heroImageAlt: "Bangkok - Attractions"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Attractions","Thailand","Asia","top-destination"]

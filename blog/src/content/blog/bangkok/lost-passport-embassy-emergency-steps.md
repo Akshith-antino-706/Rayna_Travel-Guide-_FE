@@ -7,7 +7,7 @@ category: "Visa & Entry"
 topic: "lost-passport"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:42:37.673Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/lost-passport-embassy-emergency-steps.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/lost-passport-embassy-emergency-steps.webp"
 heroImageAlt: "Bangkok - Visa & Entry"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Visa & Entry","Thailand","Asia","top-destination"]

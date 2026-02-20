@@ -7,7 +7,7 @@ category: "Money & Payments"
 topic: "tipping-culture"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:21:28.759Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/tipping-culture-london.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/tipping-culture-london.webp"
 heroImageAlt: "London - Money & Payments"
 keywords: ["London travel","things to do in London","London guide","visit London","United Kingdom"]
 tags: ["Money & Payments","United Kingdom","Europe","top-destination"]

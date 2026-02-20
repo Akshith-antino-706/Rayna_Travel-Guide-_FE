@@ -7,7 +7,7 @@ category: "Special Guides"
 topic: "travel-guide-indians"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:48:03.557Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/singapore-travel-guide-indians.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/singapore-travel-guide-indians.webp"
 heroImageAlt: "Singapore - Special Guides"
 keywords: ["Singapore travel","things to do in Singapore","Singapore guide","visit Singapore","Singapore"]
 tags: ["Special Guides","Singapore","Asia","top-destination"]

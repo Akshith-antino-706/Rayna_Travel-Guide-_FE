@@ -7,7 +7,7 @@ category: "Practical Information"
 topic: "emergency-numbers"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:49:55.985Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/emergency-numbers-singapore.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/emergency-numbers-singapore.webp"
 heroImageAlt: "Singapore - Practical Information"
 keywords: ["Singapore travel","things to do in Singapore","Singapore guide","visit Singapore","Singapore"]
 tags: ["Practical Information","Singapore","Asia","top-destination"]

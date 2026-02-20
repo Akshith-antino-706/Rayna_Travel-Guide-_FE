@@ -7,7 +7,7 @@ category: "Special Guides"
 topic: "travel-guide-indians"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:18:54.921Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/london-travel-guide-indians.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/london-travel-guide-indians.webp"
 heroImageAlt: "London - Special Guides"
 keywords: ["London travel","things to do in London","London guide","visit London","United Kingdom"]
 tags: ["Special Guides","United Kingdom","Europe","top-destination"]

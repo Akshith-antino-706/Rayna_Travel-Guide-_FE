@@ -7,7 +7,7 @@ category: "Trust & Conversion"
 topic: "refund-cancellation"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:15:30.110Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/refund-cancellation-policies.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/refund-cancellation-policies.webp"
 heroImageAlt: "Paris - Trust & Conversion"
 keywords: ["Paris travel","things to do in Paris","Paris guide","visit Paris","France"]
 tags: ["Trust & Conversion","France","Europe","top-destination"]

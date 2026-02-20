@@ -7,7 +7,7 @@ category: "Essentials"
 topic: "complete-travel-guide"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:44:17.474Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/complete-singapore-travel-guide.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/complete-singapore-travel-guide.webp"
 heroImageAlt: "Singapore - Essentials"
 keywords: ["Singapore travel","things to do in Singapore","Singapore guide","visit Singapore","Singapore"]
 tags: ["Essentials","Singapore","Asia","top-destination"]

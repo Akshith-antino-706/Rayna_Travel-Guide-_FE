@@ -7,7 +7,7 @@ category: "Comparisons"
 topic: "package-vs-separate"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:15:45.234Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/package-holiday-vs-booking-separately.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/package-holiday-vs-booking-separately.webp"
 heroImageAlt: "Paris - Comparisons"
 keywords: ["Paris travel","things to do in Paris","Paris guide","visit Paris","France"]
 tags: ["Comparisons","France","Europe","top-destination"]

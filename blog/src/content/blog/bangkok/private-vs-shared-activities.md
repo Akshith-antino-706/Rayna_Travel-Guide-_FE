@@ -7,7 +7,7 @@ category: "Booking & Experiences"
 topic: "private-vs-shared"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:42:56.608Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/private-vs-shared-activities.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/private-vs-shared-activities.webp"
 heroImageAlt: "Bangkok - Booking & Experiences"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Booking & Experiences","Thailand","Asia","top-destination"]

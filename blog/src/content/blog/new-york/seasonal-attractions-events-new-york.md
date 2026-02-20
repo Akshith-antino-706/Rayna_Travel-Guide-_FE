@@ -7,7 +7,7 @@ category: "Attractions"
 topic: "seasonal-attractions"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:31:34.205Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/seasonal-attractions-events-new-york.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/seasonal-attractions-events-new-york.webp"
 heroImageAlt: "New York - Attractions"
 keywords: ["New York travel","things to do in New York","New York guide","visit New York","USA"]
 tags: ["Attractions","USA","North America","top-destination"]

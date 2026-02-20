@@ -7,7 +7,7 @@ category: "Booking & Experiences"
 topic: "private-vs-shared"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:51:33.519Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/private-vs-shared-activities.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/private-vs-shared-activities.webp"
 heroImageAlt: "Singapore - Booking & Experiences"
 keywords: ["Singapore travel","things to do in Singapore","Singapore guide","visit Singapore","Singapore"]
 tags: ["Booking & Experiences","Singapore","Asia","top-destination"]

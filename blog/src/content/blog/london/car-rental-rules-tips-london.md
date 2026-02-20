@@ -7,7 +7,7 @@ category: "Transport"
 topic: "car-rental"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:19:01.325Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/car-rental-rules-tips-london.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/car-rental-rules-tips-london.webp"
 heroImageAlt: "London - Transport"
 keywords: ["London travel","things to do in London","London guide","visit London","United Kingdom"]
 tags: ["Transport","United Kingdom","Europe","top-destination"]

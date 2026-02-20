@@ -7,7 +7,7 @@ category: "Food & Dining"
 topic: "street-food"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:39:09.003Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/best-street-food-bangkok.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/best-street-food-bangkok.webp"
 heroImageAlt: "Bangkok - Food & Dining"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Food & Dining","Thailand","Asia","top-destination"]

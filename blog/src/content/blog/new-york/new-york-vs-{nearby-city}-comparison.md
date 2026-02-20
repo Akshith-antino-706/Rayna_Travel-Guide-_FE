@@ -7,7 +7,7 @@ category: "Comparisons"
 topic: "city-comparison"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:36:45.895Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/new-york-vs-{nearby-city}-comparison.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/new-york-vs-{nearby-city}-comparison.webp"
 heroImageAlt: "New York - Comparisons"
 keywords: ["New York travel","things to do in New York","New York guide","visit New York","USA"]
 tags: ["Comparisons","USA","North America","top-destination"]

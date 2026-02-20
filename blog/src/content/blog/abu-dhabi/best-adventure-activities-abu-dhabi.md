@@ -7,7 +7,7 @@ category: "Things to Do"
 topic: "best-adventure-activities-abu-dhabi"
 author: "Travel Writer"
 pubDate: 2026-01-17T16:31:00.000Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/abu-dhabi/best-adventure-activities-abu-dhabi.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/abu-dhabi/best-adventure-activities-abu-dhabi.webp"
 heroImageAlt: "Abu Dhabi - Things to Do"
 keywords: ["Abu Dhabi travel","things to do in Abu Dhabi","Abu Dhabi guide","visit Abu Dhabi","United Arab Emirates"]
 tags: ["Things to Do","United Arab Emirates","Asia","top-destination"]

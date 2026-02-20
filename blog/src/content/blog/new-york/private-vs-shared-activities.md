@@ -7,7 +7,7 @@ category: "Booking & Experiences"
 topic: "private-vs-shared"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:35:40.845Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/private-vs-shared-activities.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/private-vs-shared-activities.webp"
 heroImageAlt: "New York - Booking & Experiences"
 keywords: ["New York travel","things to do in New York","New York guide","visit New York","USA"]
 tags: ["Booking & Experiences","USA","North America","top-destination"]

@@ -7,7 +7,7 @@ category: "Seasonal & Monthly"
 topic: "february"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:40:27.142Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/bangkok-february.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/bangkok-february.webp"
 heroImageAlt: "Bangkok - Seasonal & Monthly"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Seasonal & Monthly","Thailand","Asia","top-destination"]

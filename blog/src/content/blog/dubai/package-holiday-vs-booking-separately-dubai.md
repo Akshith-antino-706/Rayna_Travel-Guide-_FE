@@ -7,7 +7,7 @@ category: "Comparisons"
 topic: "package-holiday-vs-booking-separately-dubai"
 author: "Travel Writer"
 pubDate: 2026-01-25T19:21:00.000Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/package-holiday-vs-booking-separately-dubai.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/package-holiday-vs-booking-separately-dubai.webp"
 heroImageAlt: "Dubai - Comparisons"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","United Arab Emirates"]
 tags: ["Comparisons","United Arab Emirates","Asia","top-destination"]

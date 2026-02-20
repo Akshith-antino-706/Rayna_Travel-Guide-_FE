@@ -7,7 +7,7 @@ category: "Booking & Experiences"
 topic: "best-time-book"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:35:39.339Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/best-time-to-book-activities.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/best-time-to-book-activities.webp"
 heroImageAlt: "New York - Booking & Experiences"
 keywords: ["New York travel","things to do in New York","New York guide","visit New York","USA"]
 tags: ["Booking & Experiences","USA","North America","top-destination"]

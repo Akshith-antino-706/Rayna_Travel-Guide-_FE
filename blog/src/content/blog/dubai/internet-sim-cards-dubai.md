@@ -7,7 +7,7 @@ category: "Practical Information"
 topic: "internet-sim"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:00:31.124Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/internet-sim-cards-dubai.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/internet-sim-cards-dubai.webp"
 heroImageAlt: "Dubai - Practical Information"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","UAE"]
 tags: ["Practical Information","UAE","Asia","top-destination"]

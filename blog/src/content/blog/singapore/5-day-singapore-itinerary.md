@@ -7,7 +7,7 @@ category: "Itineraries"
 topic: "5-day-itinerary"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:46:27.421Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/5-day-singapore-itinerary.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/5-day-singapore-itinerary.webp"
 heroImageAlt: "Singapore - Itineraries"
 keywords: ["Singapore travel","things to do in Singapore","Singapore guide","visit Singapore","Singapore"]
 tags: ["Itineraries","Singapore","Asia","top-destination"]

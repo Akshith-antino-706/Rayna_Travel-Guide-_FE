@@ -7,7 +7,7 @@ category: "Essentials"
 topic: "currency-exchange"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:37:19.475Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/currency-exchange-payments-money-tips-bangkok.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/currency-exchange-payments-money-tips-bangkok.webp"
 heroImageAlt: "Bangkok - Essentials"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Essentials","Thailand","Asia","top-destination"]

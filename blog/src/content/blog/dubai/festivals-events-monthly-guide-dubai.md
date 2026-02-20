@@ -7,7 +7,7 @@ category: "Seasonal & Monthly"
 topic: "festivals-monthly"
 author: "Travel Writer"
 pubDate: 2026-02-11T12:58:27.940Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/festivals-events-monthly-guide-dubai.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/festivals-events-monthly-guide-dubai.webp"
 heroImageAlt: "Dubai - Seasonal & Monthly"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","UAE"]
 tags: ["Seasonal & Monthly","UAE","Asia","top-destination"]

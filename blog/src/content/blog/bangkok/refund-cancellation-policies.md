@@ -7,7 +7,7 @@ category: "Trust & Conversion"
 topic: "refund-cancellation"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:43:59.457Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/refund-cancellation-policies.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/refund-cancellation-policies.webp"
 heroImageAlt: "Bangkok - Trust & Conversion"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Trust & Conversion","Thailand","Asia","top-destination"]

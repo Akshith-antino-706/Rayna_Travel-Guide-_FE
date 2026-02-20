@@ -7,7 +7,7 @@ category: "Seasonal & Monthly"
 topic: "september"
 author: "Travel Writer"
 pubDate: 2026-02-11T12:59:18.405Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/dubai-september.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/dubai-september.webp"
 heroImageAlt: "Dubai - Seasonal & Monthly"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","UAE"]
 tags: ["Seasonal & Monthly","UAE","Asia","top-destination"]

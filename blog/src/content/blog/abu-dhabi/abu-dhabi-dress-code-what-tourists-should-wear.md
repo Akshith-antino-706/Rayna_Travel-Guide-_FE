@@ -7,7 +7,7 @@ category: "Essentials"
 topic: "abu-dhabi-dress-code-what-tourists-should-wear"
 author: "Travel Writer"
 pubDate: 2026-01-17T11:16:00.000Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/abu-dhabi/abu-dhabi-dress-code-what-tourists-should-wear.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/abu-dhabi/abu-dhabi-dress-code-what-tourists-should-wear.webp"
 heroImageAlt: "Abu Dhabi - Essentials"
 keywords: ["Abu Dhabi travel","things to do in Abu Dhabi","Abu Dhabi guide","visit Abu Dhabi","United Arab Emirates"]
 tags: ["Essentials","United Arab Emirates","Asia","top-destination"]

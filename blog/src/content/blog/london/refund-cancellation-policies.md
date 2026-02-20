@@ -7,7 +7,7 @@ category: "Trust & Conversion"
 topic: "refund-cancellation"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:22:34.048Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/refund-cancellation-policies.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/refund-cancellation-policies.webp"
 heroImageAlt: "London - Trust & Conversion"
 keywords: ["London travel","things to do in London","London guide","visit London","United Kingdom"]
 tags: ["Trust & Conversion","United Kingdom","Europe","top-destination"]

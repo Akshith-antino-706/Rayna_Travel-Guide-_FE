@@ -7,7 +7,7 @@ category: "Visa & Entry"
 topic: "lost-passport"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:21:15.312Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/lost-passport-embassy-emergency-steps.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/lost-passport-embassy-emergency-steps.webp"
 heroImageAlt: "London - Visa & Entry"
 keywords: ["London travel","things to do in London","London guide","visit London","United Kingdom"]
 tags: ["Visa & Entry","United Kingdom","Europe","top-destination"]

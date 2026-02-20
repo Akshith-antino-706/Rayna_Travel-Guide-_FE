@@ -7,7 +7,7 @@ category: "Itineraries"
 topic: "1-day-itinerary"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:08:27.346Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/1-day-paris-itinerary.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/1-day-paris-itinerary.webp"
 heroImageAlt: "Paris - Itineraries"
 keywords: ["Paris travel","things to do in Paris","Paris guide","visit Paris","France"]
 tags: ["Itineraries","France","Europe","top-destination"]

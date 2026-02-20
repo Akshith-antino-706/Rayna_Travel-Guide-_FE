@@ -7,7 +7,7 @@ category: "Special Guides"
 topic: "solo-travel"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:10:54.656Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/solo-travel-guide-paris.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/solo-travel-guide-paris.webp"
 heroImageAlt: "Paris - Special Guides"
 keywords: ["Paris travel","things to do in Paris","Paris guide","visit Paris","France"]
 tags: ["Special Guides","France","Europe","top-destination"]

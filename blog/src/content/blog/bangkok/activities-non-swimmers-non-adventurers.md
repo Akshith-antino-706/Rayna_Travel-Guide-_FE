@@ -7,7 +7,7 @@ category: "Activities Planning"
 topic: "non-adventurers"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:43:36.394Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/activities-non-swimmers-non-adventurers.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/activities-non-swimmers-non-adventurers.webp"
 heroImageAlt: "Bangkok - Activities Planning"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Activities Planning","Thailand","Asia","top-destination"]

@@ -7,7 +7,7 @@ category: "Essentials"
 topic: "complete-abu-dhabi-travel-guide"
 author: "Travel Writer"
 pubDate: 2026-01-17T08:07:00.000Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/abu-dhabi/complete-abu-dhabi-travel-guide.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/abu-dhabi/complete-abu-dhabi-travel-guide.webp"
 heroImageAlt: "Abu Dhabi - Essentials"
 keywords: ["Abu Dhabi travel","things to do in Abu Dhabi","Abu Dhabi guide","visit Abu Dhabi","United Arab Emirates"]
 tags: ["Essentials","United Arab Emirates","Asia","top-destination"]

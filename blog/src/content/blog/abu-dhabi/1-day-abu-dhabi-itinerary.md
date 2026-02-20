@@ -9,7 +9,7 @@ category: Itineraries
 topic: 1-day-abu-dhabi-itinerary
 author: Travel Writer
 pubDate: '2026-01-20T07:16:00.000Z'
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/abu-dhabi/1-day-abu-dhabi-itinerary.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/abu-dhabi/1-day-abu-dhabi-itinerary.webp"
 heroImageAlt: Abu Dhabi - Itineraries
 keywords:
   - Abu Dhabi travel

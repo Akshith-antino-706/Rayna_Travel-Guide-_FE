@@ -7,7 +7,7 @@ category: "Visa & Entry"
 topic: "lost-passport"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:51:07.528Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/lost-passport-embassy-emergency-steps.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/lost-passport-embassy-emergency-steps.webp"
 heroImageAlt: "Singapore - Visa & Entry"
 keywords: ["Singapore travel","things to do in Singapore","Singapore guide","visit Singapore","Singapore"]
 tags: ["Visa & Entry","Singapore","Asia","top-destination"]

@@ -7,7 +7,7 @@ category: "Essentials"
 topic: "staying-safe"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:16:01.182Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/staying-safe-respecting-local-rules-london.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/staying-safe-respecting-local-rules-london.webp"
 heroImageAlt: "London - Essentials"
 keywords: ["London travel","things to do in London","London guide","visit London","United Kingdom"]
 tags: ["Essentials","United Kingdom","Europe","top-destination"]

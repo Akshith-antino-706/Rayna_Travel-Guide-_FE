@@ -7,7 +7,7 @@ category: "Comparisons"
 topic: "city-comparison"
 author: "Travel Writer"
 pubDate: 2026-02-11T14:01:44.357Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/istanbul-vs-{nearby-city}-comparison.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/istanbul-vs-{nearby-city}-comparison.webp"
 heroImageAlt: "Istanbul - Comparisons"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Comparisons","Turkey","Europe","top-destination"]

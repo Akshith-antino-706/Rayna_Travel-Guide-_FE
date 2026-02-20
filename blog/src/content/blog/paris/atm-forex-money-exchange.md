@@ -7,7 +7,7 @@ category: "Money & Payments"
 topic: "atm-forex-exchange"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:14:18.651Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/atm-forex-money-exchange.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/atm-forex-money-exchange.webp"
 heroImageAlt: "Paris - Money & Payments"
 keywords: ["Paris travel","things to do in Paris","Paris guide","visit Paris","France"]
 tags: ["Money & Payments","France","Europe","top-destination"]

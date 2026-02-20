@@ -7,7 +7,7 @@ category: "Attractions"
 topic: "seasonal-attractions"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:17:31.020Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/seasonal-attractions-events-london.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/seasonal-attractions-events-london.webp"
 heroImageAlt: "London - Attractions"
 keywords: ["London travel","things to do in London","London guide","visit London","United Kingdom"]
 tags: ["Attractions","United Kingdom","Europe","top-destination"]

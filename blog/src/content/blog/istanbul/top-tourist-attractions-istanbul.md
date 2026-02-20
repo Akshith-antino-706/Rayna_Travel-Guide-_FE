@@ -7,7 +7,7 @@ category: "Attractions"
 topic: "top-attractions"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:54:45.050Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/top-tourist-attractions-istanbul.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/top-tourist-attractions-istanbul.webp"
 heroImageAlt: "Istanbul - Attractions"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Attractions","Turkey","Europe","top-destination"]

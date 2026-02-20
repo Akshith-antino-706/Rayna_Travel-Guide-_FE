@@ -7,7 +7,7 @@ category: "Things to Do"
 topic: "things-to-do-families"
 author: "Travel Writer"
 pubDate: 2026-02-11T14:03:11.445Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/rome/best-things-to-do-rome-families.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/rome/best-things-to-do-rome-families.webp"
 heroImageAlt: "Rome - Things to Do"
 keywords: ["Rome travel","things to do in Rome","Rome guide","visit Rome","Italy"]
 tags: ["Things to Do","Italy","Europe","top-destination"]

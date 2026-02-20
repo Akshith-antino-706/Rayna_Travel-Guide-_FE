@@ -7,7 +7,7 @@ category: "Essentials"
 topic: "currency-exchange"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:05:56.519Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/currency-exchange-payments-money-tips-paris.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/currency-exchange-payments-money-tips-paris.webp"
 heroImageAlt: "Paris - Essentials"
 keywords: ["Paris travel","things to do in Paris","Paris guide","visit Paris","France"]
 tags: ["Essentials","France","Europe","top-destination"]

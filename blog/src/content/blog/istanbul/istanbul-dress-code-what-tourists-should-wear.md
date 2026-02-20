@@ -7,7 +7,7 @@ category: "Essentials"
 topic: "dress-code"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:53:36.049Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/istanbul-dress-code-what-tourists-should-wear.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/istanbul-dress-code-what-tourists-should-wear.webp"
 heroImageAlt: "Istanbul - Essentials"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Essentials","Turkey","Europe","top-destination"]

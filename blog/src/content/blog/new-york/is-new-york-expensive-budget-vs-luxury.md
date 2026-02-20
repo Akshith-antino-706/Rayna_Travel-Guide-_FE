@@ -7,7 +7,7 @@ category: "Essentials"
 topic: "is-expensive"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:30:09.102Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/is-new-york-expensive-budget-vs-luxury.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/is-new-york-expensive-budget-vs-luxury.webp"
 heroImageAlt: "New York - Essentials"
 keywords: ["New York travel","things to do in New York","New York guide","visit New York","USA"]
 tags: ["Essentials","USA","North America","top-destination"]

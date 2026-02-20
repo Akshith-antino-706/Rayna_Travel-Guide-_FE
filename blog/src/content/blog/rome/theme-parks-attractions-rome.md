@@ -7,7 +7,7 @@ category: "Experiences & Activities"
 topic: "theme-parks"
 author: "Travel Writer"
 pubDate: 2026-02-11T14:03:39.851Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/rome/theme-parks-attractions-rome.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/rome/theme-parks-attractions-rome.webp"
 heroImageAlt: "Rome - Experiences & Activities"
 keywords: ["Rome travel","things to do in Rome","Rome guide","visit Rome","Italy"]
 tags: ["Experiences & Activities","Italy","Europe","top-destination"]

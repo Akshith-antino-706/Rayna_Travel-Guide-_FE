@@ -7,7 +7,7 @@ category: "Activities Planning"
 topic: "weather-wise-activities"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:52:15.251Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/weather-wise-activity-guide.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/weather-wise-activity-guide.webp"
 heroImageAlt: "Singapore - Activities Planning"
 keywords: ["Singapore travel","things to do in Singapore","Singapore guide","visit Singapore","Singapore"]
 tags: ["Activities Planning","Singapore","Asia","top-destination"]

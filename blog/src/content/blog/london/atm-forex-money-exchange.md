@@ -7,7 +7,7 @@ category: "Money & Payments"
 topic: "atm-forex-exchange"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:21:32.296Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/atm-forex-money-exchange.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/atm-forex-money-exchange.webp"
 heroImageAlt: "London - Money & Payments"
 keywords: ["London travel","things to do in London","London guide","visit London","United Kingdom"]
 tags: ["Money & Payments","United Kingdom","Europe","top-destination"]

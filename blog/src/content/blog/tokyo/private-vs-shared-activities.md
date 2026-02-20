@@ -7,7 +7,7 @@ category: "Booking & Experiences"
 topic: "private-vs-shared"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:28:58.444Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/tokyo/private-vs-shared-activities.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/tokyo/private-vs-shared-activities.webp"
 heroImageAlt: "Tokyo - Booking & Experiences"
 keywords: ["Tokyo travel","things to do in Tokyo","Tokyo guide","visit Tokyo","Japan"]
 tags: ["Booking & Experiences","Japan","Asia","top-destination"]

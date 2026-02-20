@@ -7,7 +7,7 @@ category: "Hotels & Accommodation"
 topic: "family-hotels"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:20:18.749Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/best-family-friendly-hotels-london.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/best-family-friendly-hotels-london.webp"
 heroImageAlt: "London - Hotels & Accommodation"
 keywords: ["London travel","things to do in London","London guide","visit London","United Kingdom"]
 tags: ["Hotels & Accommodation","United Kingdom","Europe","top-destination"]

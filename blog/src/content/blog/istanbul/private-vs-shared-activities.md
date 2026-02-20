@@ -7,7 +7,7 @@ category: "Booking & Experiences"
 topic: "private-vs-shared"
 author: "Travel Writer"
 pubDate: 2026-02-11T14:00:03.770Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/private-vs-shared-activities.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/private-vs-shared-activities.webp"
 heroImageAlt: "Istanbul - Booking & Experiences"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Booking & Experiences","Turkey","Europe","top-destination"]

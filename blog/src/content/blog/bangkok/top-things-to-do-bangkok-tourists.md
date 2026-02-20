@@ -7,7 +7,7 @@ category: "Things to Do"
 topic: "top-things-to-do"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:37:22.930Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/top-things-to-do-bangkok-tourists.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/top-things-to-do-bangkok-tourists.webp"
 heroImageAlt: "Bangkok - Things to Do"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Things to Do","Thailand","Asia","top-destination"]

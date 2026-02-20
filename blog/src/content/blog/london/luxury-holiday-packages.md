@@ -7,7 +7,7 @@ category: "Holiday Packages"
 topic: "luxury-packages"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:22:21.002Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/luxury-holiday-packages.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/luxury-holiday-packages.webp"
 heroImageAlt: "London - Holiday Packages"
 keywords: ["London travel","things to do in London","London guide","visit London","United Kingdom"]
 tags: ["Holiday Packages","United Kingdom","Europe","top-destination"]

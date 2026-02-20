@@ -7,7 +7,7 @@ category: "Trust & Conversion"
 topic: "travel-insurance"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:29:44.875Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/tokyo/travel-insurance-activities.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/tokyo/travel-insurance-activities.webp"
 heroImageAlt: "Tokyo - Trust & Conversion"
 keywords: ["Tokyo travel","things to do in Tokyo","Tokyo guide","visit Tokyo","Japan"]
 tags: ["Trust & Conversion","Japan","Asia","top-destination"]

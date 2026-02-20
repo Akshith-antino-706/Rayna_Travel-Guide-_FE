@@ -7,7 +7,7 @@ category: "Yacht & Cruise"
 topic: "yacht-rental"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:03:28.464Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/yacht-rental-private-vs-shared.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/yacht-rental-private-vs-shared.webp"
 heroImageAlt: "Dubai - Yacht & Cruise"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","UAE"]
 tags: ["Yacht & Cruise","UAE","Asia","top-destination"]

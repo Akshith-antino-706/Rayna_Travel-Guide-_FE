@@ -7,7 +7,7 @@ category: "Activities Planning"
 topic: "non-adventurers"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:36:26.459Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/activities-non-swimmers-non-adventurers.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/activities-non-swimmers-non-adventurers.webp"
 heroImageAlt: "New York - Activities Planning"
 keywords: ["New York travel","things to do in New York","New York guide","visit New York","USA"]
 tags: ["Activities Planning","USA","North America","top-destination"]

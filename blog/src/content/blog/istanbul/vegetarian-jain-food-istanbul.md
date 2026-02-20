@@ -7,7 +7,7 @@ category: "Food & Dining"
 topic: "vegetarian-jain-food"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:55:57.267Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/vegetarian-jain-food-istanbul.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/vegetarian-jain-food-istanbul.webp"
 heroImageAlt: "Istanbul - Food & Dining"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Food & Dining","Turkey","Europe","top-destination"]

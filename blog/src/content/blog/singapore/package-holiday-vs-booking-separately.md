@@ -7,7 +7,7 @@ category: "Comparisons"
 topic: "package-vs-separate"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:53:10.364Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/package-holiday-vs-booking-separately.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/package-holiday-vs-booking-separately.webp"
 heroImageAlt: "Singapore - Comparisons"
 keywords: ["Singapore travel","things to do in Singapore","Singapore guide","visit Singapore","Singapore"]
 tags: ["Comparisons","Singapore","Asia","top-destination"]

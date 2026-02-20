@@ -7,7 +7,7 @@ category: "Yacht & Cruise"
 topic: "best-time-yacht"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:03:26.756Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/best-time-yacht-cruise.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/best-time-yacht-cruise.webp"
 heroImageAlt: "Dubai - Yacht & Cruise"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","UAE"]
 tags: ["Yacht & Cruise","UAE","Asia","top-destination"]

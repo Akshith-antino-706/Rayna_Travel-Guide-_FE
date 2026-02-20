@@ -7,7 +7,7 @@ category: "Visa & Entry"
 topic: "lost-passport"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:13:56.747Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/lost-passport-embassy-emergency-steps.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/lost-passport-embassy-emergency-steps.webp"
 heroImageAlt: "Paris - Visa & Entry"
 keywords: ["Paris travel","things to do in Paris","Paris guide","visit Paris","France"]
 tags: ["Visa & Entry","France","Europe","top-destination"]

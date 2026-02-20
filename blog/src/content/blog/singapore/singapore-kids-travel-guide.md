@@ -7,7 +7,7 @@ category: "Special Guides"
 topic: "with-kids"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:47:48.923Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/singapore-kids-travel-guide.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/singapore-kids-travel-guide.webp"
 heroImageAlt: "Singapore - Special Guides"
 keywords: ["Singapore travel","things to do in Singapore","Singapore guide","visit Singapore","Singapore"]
 tags: ["Special Guides","Singapore","Asia","top-destination"]

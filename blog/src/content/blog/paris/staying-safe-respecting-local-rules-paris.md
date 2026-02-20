@@ -7,7 +7,7 @@ category: "Essentials"
 topic: "staying-safe"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:05:39.524Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/staying-safe-respecting-local-rules-paris.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/staying-safe-respecting-local-rules-paris.webp"
 heroImageAlt: "Paris - Essentials"
 keywords: ["Paris travel","things to do in Paris","Paris guide","visit Paris","France"]
 tags: ["Essentials","France","Europe","top-destination"]

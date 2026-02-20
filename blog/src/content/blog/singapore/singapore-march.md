@@ -7,7 +7,7 @@ category: "Seasonal & Monthly"
 topic: "march"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:48:30.945Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/singapore-march.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/singapore-march.webp"
 heroImageAlt: "Singapore - Seasonal & Monthly"
 keywords: ["Singapore travel","things to do in Singapore","Singapore guide","visit Singapore","Singapore"]
 tags: ["Seasonal & Monthly","Singapore","Asia","top-destination"]

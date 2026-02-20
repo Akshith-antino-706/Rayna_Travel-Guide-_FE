@@ -7,7 +7,7 @@ category: "Things to Do"
 topic: "unique-luxury-experiences"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:44:46.223Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/unique-luxury-experiences-singapore.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/unique-luxury-experiences-singapore.webp"
 heroImageAlt: "Singapore - Things to Do"
 keywords: ["Singapore travel","things to do in Singapore","Singapore guide","visit Singapore","Singapore"]
 tags: ["Things to Do","Singapore","Asia","top-destination"]

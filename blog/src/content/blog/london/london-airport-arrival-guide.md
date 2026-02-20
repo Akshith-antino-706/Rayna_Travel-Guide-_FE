@@ -7,7 +7,7 @@ category: "Visa & Entry"
 topic: "airport-arrival-guide"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:21:20.271Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/london-airport-arrival-guide.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/london-airport-arrival-guide.webp"
 heroImageAlt: "London - Visa & Entry"
 keywords: ["London travel","things to do in London","London guide","visit London","United Kingdom"]
 tags: ["Visa & Entry","United Kingdom","Europe","top-destination"]

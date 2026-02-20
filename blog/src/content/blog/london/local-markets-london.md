@@ -7,7 +7,7 @@ category: "Shopping"
 topic: "local-markets"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:18:33.940Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/local-markets-london.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/local-markets-london.webp"
 heroImageAlt: "London - Shopping"
 keywords: ["London travel","things to do in London","London guide","visit London","United Kingdom"]
 tags: ["Shopping","United Kingdom","Europe","top-destination"]

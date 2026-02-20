@@ -7,7 +7,7 @@ category: "Booking & Experiences"
 topic: "top-rated-activities-reviews-dubai"
 author: "Travel Writer"
 pubDate: 2026-01-23T23:21:00.000Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/top-rated-activities-reviews-dubai.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/top-rated-activities-reviews-dubai.webp"
 heroImageAlt: "Dubai - Booking & Experiences"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","United Arab Emirates"]
 tags: ["Booking & Experiences","United Arab Emirates","Asia","top-destination"]

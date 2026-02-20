@@ -7,7 +7,7 @@ category: "Visa & Entry"
 topic: "lost-passport"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:35:22.194Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/lost-passport-embassy-emergency-steps.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/lost-passport-embassy-emergency-steps.webp"
 heroImageAlt: "New York - Visa & Entry"
 keywords: ["New York travel","things to do in New York","New York guide","visit New York","USA"]
 tags: ["Visa & Entry","USA","North America","top-destination"]

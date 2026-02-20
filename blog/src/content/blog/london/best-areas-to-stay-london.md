@@ -7,7 +7,7 @@ category: "Hotels & Accommodation"
 topic: "best-areas-to-stay"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:20:33.913Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/best-areas-to-stay-london.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/best-areas-to-stay-london.webp"
 heroImageAlt: "London - Hotels & Accommodation"
 keywords: ["London travel","things to do in London","London guide","visit London","United Kingdom"]
 tags: ["Hotels & Accommodation","United Kingdom","Europe","top-destination"]

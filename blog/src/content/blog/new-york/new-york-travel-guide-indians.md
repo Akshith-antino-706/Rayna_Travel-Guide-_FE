@@ -7,7 +7,7 @@ category: "Special Guides"
 topic: "travel-guide-indians"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:32:58.504Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/new-york-travel-guide-indians.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/new-york-travel-guide-indians.webp"
 heroImageAlt: "New York - Special Guides"
 keywords: ["New York travel","things to do in New York","New York guide","visit New York","USA"]
 tags: ["Special Guides","USA","North America","top-destination"]

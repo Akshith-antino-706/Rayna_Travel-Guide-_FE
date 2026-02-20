@@ -7,7 +7,7 @@ category: "Experiences & Activities"
 topic: "theme-parks-attractions-dubai"
 author: "Travel Writer"
 pubDate: 2026-01-17T01:51:00.000Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/theme-parks-attractions-dubai.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/theme-parks-attractions-dubai.webp"
 heroImageAlt: "Dubai - Experiences & Activities"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","United Arab Emirates"]
 tags: ["Experiences & Activities","United Arab Emirates","Asia","top-destination"]

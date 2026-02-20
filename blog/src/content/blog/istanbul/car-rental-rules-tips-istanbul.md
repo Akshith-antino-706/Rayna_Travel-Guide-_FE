@@ -7,7 +7,7 @@ category: "Transport"
 topic: "car-rental"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:56:47.167Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/car-rental-rules-tips-istanbul.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/car-rental-rules-tips-istanbul.webp"
 heroImageAlt: "Istanbul - Transport"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Transport","Turkey","Europe","top-destination"]

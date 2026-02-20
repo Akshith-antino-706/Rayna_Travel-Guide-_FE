@@ -7,7 +7,7 @@ category: "Things to Do"
 topic: "adventure-activities"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:37:23.179Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/best-adventure-activities-bangkok.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/best-adventure-activities-bangkok.webp"
 heroImageAlt: "Bangkok - Things to Do"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Things to Do","Thailand","Asia","top-destination"]

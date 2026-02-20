@@ -7,7 +7,7 @@ category: "Comparisons"
 topic: "guided-tours-vs-self-planned-dubai"
 author: "Travel Writer"
 pubDate: 2026-01-25T18:18:00.000Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/guided-tours-vs-self-planned-dubai.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/guided-tours-vs-self-planned-dubai.webp"
 heroImageAlt: "Dubai - Comparisons"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","United Arab Emirates"]
 tags: ["Comparisons","United Arab Emirates","Asia","top-destination"]

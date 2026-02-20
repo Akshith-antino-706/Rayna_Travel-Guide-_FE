@@ -7,7 +7,7 @@ category: "Visa & Entry"
 topic: "immigration-customs"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:42:33.994Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/immigration-customs-rules.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/immigration-customs-rules.webp"
 heroImageAlt: "Bangkok - Visa & Entry"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Visa & Entry","Thailand","Asia","top-destination"]

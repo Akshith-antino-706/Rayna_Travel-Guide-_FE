@@ -7,7 +7,7 @@ category: "Attractions"
 topic: "{famous-attraction}-visitor-guide-dubai"
 author: "Travel Writer"
 pubDate: 2026-01-17T03:57:00.000Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/{famous-attraction}-visitor-guide-dubai.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/{famous-attraction}-visitor-guide-dubai.webp"
 heroImageAlt: "Dubai - Attractions"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","United Arab Emirates"]
 tags: ["Attractions","United Arab Emirates","Asia","top-destination"]

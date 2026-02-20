@@ -7,7 +7,7 @@ category: "Shopping"
 topic: "what-to-buy"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:25:33.883Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/tokyo/what-to-buy-tokyo.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/tokyo/what-to-buy-tokyo.webp"
 heroImageAlt: "Tokyo - Shopping"
 keywords: ["Tokyo travel","things to do in Tokyo","Tokyo guide","visit Tokyo","Japan"]
 tags: ["Shopping","Japan","Asia","top-destination"]

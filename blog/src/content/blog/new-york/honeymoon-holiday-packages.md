@@ -7,7 +7,7 @@ category: "Holiday Packages"
 topic: "honeymoon-packages"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:36:21.491Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/honeymoon-holiday-packages.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/honeymoon-holiday-packages.webp"
 heroImageAlt: "New York - Holiday Packages"
 keywords: ["New York travel","things to do in New York","New York guide","visit New York","USA"]
 tags: ["Holiday Packages","USA","North America","top-destination"]

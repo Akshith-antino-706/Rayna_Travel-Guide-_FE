@@ -7,7 +7,7 @@ category: "Visa & Entry"
 topic: "lost-passport"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:02:15.935Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/lost-passport-embassy-emergency-steps.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/lost-passport-embassy-emergency-steps.webp"
 heroImageAlt: "Dubai - Visa & Entry"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","UAE"]
 tags: ["Visa & Entry","UAE","Asia","top-destination"]

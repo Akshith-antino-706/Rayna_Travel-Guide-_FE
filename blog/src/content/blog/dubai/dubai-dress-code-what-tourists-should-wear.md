@@ -7,7 +7,7 @@ category: "Essentials"
 topic: "dubai-dress-code-what-tourists-should-wear"
 author: "Travel Writer"
 pubDate: 2026-01-15T11:09:00.000Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/dubai-dress-code-what-tourists-should-wear.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/dubai-dress-code-what-tourists-should-wear.webp"
 heroImageAlt: "Dubai - Essentials"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","United Arab Emirates"]
 tags: ["Essentials","United Arab Emirates","Asia","top-destination"]

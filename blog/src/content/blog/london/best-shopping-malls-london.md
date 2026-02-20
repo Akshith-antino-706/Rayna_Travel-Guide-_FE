@@ -7,7 +7,7 @@ category: "Shopping"
 topic: "shopping-malls"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:18:25.939Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/best-shopping-malls-london.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/best-shopping-malls-london.webp"
 heroImageAlt: "London - Shopping"
 keywords: ["London travel","things to do in London","London guide","visit London","United Kingdom"]
 tags: ["Shopping","United Kingdom","Europe","top-destination"]

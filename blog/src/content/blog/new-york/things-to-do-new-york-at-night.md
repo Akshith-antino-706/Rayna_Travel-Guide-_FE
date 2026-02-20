@@ -7,7 +7,7 @@ category: "Things to Do"
 topic: "things-to-do-at-night"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:30:48.860Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/things-to-do-new-york-at-night.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/things-to-do-new-york-at-night.webp"
 heroImageAlt: "New York - Things to Do"
 keywords: ["New York travel","things to do in New York","New York guide","visit New York","USA"]
 tags: ["Things to Do","USA","North America","top-destination"]

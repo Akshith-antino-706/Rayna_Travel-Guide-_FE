@@ -7,7 +7,7 @@ category: "Activities Planning"
 topic: "non-adventurers"
 author: "Travel Writer"
 pubDate: 2026-02-11T14:00:57.524Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/activities-non-swimmers-non-adventurers.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/activities-non-swimmers-non-adventurers.webp"
 heroImageAlt: "Istanbul - Activities Planning"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Activities Planning","Turkey","Europe","top-destination"]

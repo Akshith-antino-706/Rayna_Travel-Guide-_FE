@@ -7,7 +7,7 @@ category: "Transport"
 topic: "car-rental"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:10:39.587Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/car-rental-rules-tips-paris.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/car-rental-rules-tips-paris.webp"
 heroImageAlt: "Paris - Transport"
 keywords: ["Paris travel","things to do in Paris","Paris guide","visit Paris","France"]
 tags: ["Transport","France","Europe","top-destination"]

@@ -7,7 +7,7 @@ category: "Booking & Experiences"
 topic: "best-time-book"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:21:36.442Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/best-time-to-book-activities.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/best-time-to-book-activities.webp"
 heroImageAlt: "London - Booking & Experiences"
 keywords: ["London travel","things to do in London","London guide","visit London","United Kingdom"]
 tags: ["Booking & Experiences","United Kingdom","Europe","top-destination"]

@@ -7,7 +7,7 @@ category: "Itineraries"
 topic: "3-day-itinerary"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:38:44.369Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/3-day-bangkok-itinerary.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/3-day-bangkok-itinerary.webp"
 heroImageAlt: "Bangkok - Itineraries"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Itineraries","Thailand","Asia","top-destination"]

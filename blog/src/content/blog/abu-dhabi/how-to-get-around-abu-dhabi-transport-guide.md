@@ -7,7 +7,7 @@ category: "Transport"
 topic: "how-to-get-around-abu-dhabi-transport-guide"
 author: "Travel Writer"
 pubDate: 2026-01-22T00:07:00.000Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/abu-dhabi/how-to-get-around-abu-dhabi-transport-guide.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/abu-dhabi/how-to-get-around-abu-dhabi-transport-guide.webp"
 heroImageAlt: "Abu Dhabi - Transport"
 keywords: ["Abu Dhabi travel","things to do in Abu Dhabi","Abu Dhabi guide","visit Abu Dhabi","United Arab Emirates"]
 tags: ["Transport","United Arab Emirates","Asia","top-destination"]

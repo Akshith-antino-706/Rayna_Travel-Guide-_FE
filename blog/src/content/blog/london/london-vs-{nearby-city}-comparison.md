@@ -7,7 +7,7 @@ category: "Comparisons"
 topic: "city-comparison"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:22:43.048Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/london-vs-{nearby-city}-comparison.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/london-vs-{nearby-city}-comparison.webp"
 heroImageAlt: "London - Comparisons"
 keywords: ["London travel","things to do in London","London guide","visit London","United Kingdom"]
 tags: ["Comparisons","United Kingdom","Europe","top-destination"]

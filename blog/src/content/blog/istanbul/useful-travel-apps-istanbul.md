@@ -7,7 +7,7 @@ category: "Practical Information"
 topic: "travel-apps"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:59:03.972Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/useful-travel-apps-istanbul.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/useful-travel-apps-istanbul.webp"
 heroImageAlt: "Istanbul - Practical Information"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Practical Information","Turkey","Europe","top-destination"]

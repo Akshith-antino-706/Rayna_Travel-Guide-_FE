@@ -7,7 +7,7 @@ category: "Booking & Experiences"
 topic: "last-minute-activities"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:43:15.831Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/last-minute-activities.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/last-minute-activities.webp"
 heroImageAlt: "Bangkok - Booking & Experiences"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Booking & Experiences","Thailand","Asia","top-destination"]

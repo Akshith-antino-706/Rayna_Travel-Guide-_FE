@@ -9,7 +9,7 @@ category: Itineraries
 topic: 1-day-itinerary
 author: Travel Writer
 pubDate: '2026-02-11T12:55:52.420Z'
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/1-day-dubai-itinerary.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/1-day-dubai-itinerary.webp"
 heroImageAlt: Dubai - Itineraries
 keywords:
   - Dubai travel

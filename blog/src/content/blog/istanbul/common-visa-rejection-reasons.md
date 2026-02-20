@@ -7,7 +7,7 @@ category: "Visa & Entry"
 topic: "visa-rejection-reasons"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:59:35.342Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/common-visa-rejection-reasons.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/common-visa-rejection-reasons.webp"
 heroImageAlt: "Istanbul - Visa & Entry"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Visa & Entry","Turkey","Europe","top-destination"]

@@ -7,7 +7,7 @@ category: "Activities Planning"
 topic: "weather-wise-activities"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:14:58.052Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/weather-wise-activity-guide.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/weather-wise-activity-guide.webp"
 heroImageAlt: "Paris - Activities Planning"
 keywords: ["Paris travel","things to do in Paris","Paris guide","visit Paris","France"]
 tags: ["Activities Planning","France","Europe","top-destination"]

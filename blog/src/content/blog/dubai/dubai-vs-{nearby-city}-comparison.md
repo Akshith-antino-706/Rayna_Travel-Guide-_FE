@@ -7,7 +7,7 @@ category: "Comparisons"
 topic: "city-comparison"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:05:02.740Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/dubai-vs-{nearby-city}-comparison.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/dubai-vs-{nearby-city}-comparison.webp"
 heroImageAlt: "Dubai - Comparisons"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","UAE"]
 tags: ["Comparisons","UAE","Asia","top-destination"]

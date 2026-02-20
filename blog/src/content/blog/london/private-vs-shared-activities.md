@@ -7,7 +7,7 @@ category: "Booking & Experiences"
 topic: "private-vs-shared"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:21:38.410Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/private-vs-shared-activities.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/private-vs-shared-activities.webp"
 heroImageAlt: "London - Booking & Experiences"
 keywords: ["London travel","things to do in London","London guide","visit London","United Kingdom"]
 tags: ["Booking & Experiences","United Kingdom","Europe","top-destination"]

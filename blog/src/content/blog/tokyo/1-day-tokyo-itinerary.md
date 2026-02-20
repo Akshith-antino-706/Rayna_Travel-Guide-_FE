@@ -7,7 +7,7 @@ category: "Itineraries"
 topic: "1-day-itinerary"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:24:26.894Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/tokyo/1-day-tokyo-itinerary.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/tokyo/1-day-tokyo-itinerary.webp"
 heroImageAlt: "Tokyo - Itineraries"
 keywords: ["Tokyo travel","things to do in Tokyo","Tokyo guide","visit Tokyo","Japan"]
 tags: ["Itineraries","Japan","Asia","top-destination"]

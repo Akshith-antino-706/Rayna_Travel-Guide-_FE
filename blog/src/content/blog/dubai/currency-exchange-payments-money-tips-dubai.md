@@ -7,7 +7,7 @@ category: "Essentials"
 topic: "currency-exchange-payments-money-tips-dubai"
 author: "Travel Writer"
 pubDate: 2026-01-15T12:12:00.000Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/currency-exchange-payments-money-tips-dubai.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/currency-exchange-payments-money-tips-dubai.webp"
 heroImageAlt: "Dubai - Essentials"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","United Arab Emirates"]
 tags: ["Essentials","United Arab Emirates","Asia","top-destination"]

@@ -7,7 +7,7 @@ category: "Food & Dining"
 topic: "local-dishes"
 author: "Travel Writer"
 pubDate: 2026-02-11T12:56:53.416Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/what-to-eat-dubai-local-dishes.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/what-to-eat-dubai-local-dishes.webp"
 heroImageAlt: "Dubai - Food & Dining"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","UAE"]
 tags: ["Food & Dining","UAE","Asia","top-destination"]

@@ -7,7 +7,7 @@ category: "Essentials"
 topic: "staying-safe"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:53:28.844Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/staying-safe-respecting-local-rules-istanbul.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/staying-safe-respecting-local-rules-istanbul.webp"
 heroImageAlt: "Istanbul - Essentials"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Essentials","Turkey","Europe","top-destination"]

@@ -7,7 +7,7 @@ category: "Food & Dining"
 topic: "what-to-eat-abu-dhabi-local-dishes"
 author: "Travel Writer"
 pubDate: 2026-01-20T14:37:00.000Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/abu-dhabi/what-to-eat-abu-dhabi-local-dishes.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/abu-dhabi/what-to-eat-abu-dhabi-local-dishes.webp"
 heroImageAlt: "Abu Dhabi - Food & Dining"
 keywords: ["Abu Dhabi travel","things to do in Abu Dhabi","Abu Dhabi guide","visit Abu Dhabi","United Arab Emirates"]
 tags: ["Food & Dining","United Arab Emirates","Asia","top-destination"]

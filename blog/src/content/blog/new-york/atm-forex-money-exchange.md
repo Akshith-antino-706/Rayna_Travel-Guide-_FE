@@ -7,7 +7,7 @@ category: "Money & Payments"
 topic: "atm-forex-exchange"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:35:37.514Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/atm-forex-money-exchange.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/atm-forex-money-exchange.webp"
 heroImageAlt: "New York - Money & Payments"
 keywords: ["New York travel","things to do in New York","New York guide","visit New York","USA"]
 tags: ["Money & Payments","USA","North America","top-destination"]

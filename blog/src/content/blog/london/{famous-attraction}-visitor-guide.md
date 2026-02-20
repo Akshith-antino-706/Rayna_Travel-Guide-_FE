@@ -7,7 +7,7 @@ category: "Attractions"
 topic: "famous-attraction-guide"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:17:06.546Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/{famous-attraction}-visitor-guide.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/{famous-attraction}-visitor-guide.webp"
 heroImageAlt: "London - Attractions"
 keywords: ["London travel","things to do in London","London guide","visit London","United Kingdom"]
 tags: ["Attractions","United Kingdom","Europe","top-destination"]

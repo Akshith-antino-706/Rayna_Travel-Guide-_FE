@@ -7,7 +7,7 @@ category: "Things to Do"
 topic: "unique-luxury-experiences"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:53:58.083Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/unique-luxury-experiences-istanbul.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/unique-luxury-experiences-istanbul.webp"
 heroImageAlt: "Istanbul - Things to Do"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Things to Do","Turkey","Europe","top-destination"]

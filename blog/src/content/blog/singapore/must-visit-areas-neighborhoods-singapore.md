@@ -7,7 +7,7 @@ category: "Attractions"
 topic: "must-visit-neighborhoods"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:46:03.999Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/must-visit-areas-neighborhoods-singapore.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/must-visit-areas-neighborhoods-singapore.webp"
 heroImageAlt: "Singapore - Attractions"
 keywords: ["Singapore travel","things to do in Singapore","Singapore guide","visit Singapore","Singapore"]
 tags: ["Attractions","Singapore","Asia","top-destination"]

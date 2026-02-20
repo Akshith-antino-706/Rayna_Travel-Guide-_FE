@@ -7,7 +7,7 @@ category: "Yacht & Cruise"
 topic: "best-time-yacht"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:51:56.805Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/best-time-yacht-cruise.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/best-time-yacht-cruise.webp"
 heroImageAlt: "Singapore - Yacht & Cruise"
 keywords: ["Singapore travel","things to do in Singapore","Singapore guide","visit Singapore","Singapore"]
 tags: ["Yacht & Cruise","Singapore","Asia","top-destination"]

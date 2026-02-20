@@ -7,7 +7,7 @@ category: "Holiday Packages"
 topic: "honeymoon-packages"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:04:30.897Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/honeymoon-holiday-packages.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/honeymoon-holiday-packages.webp"
 heroImageAlt: "Dubai - Holiday Packages"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","UAE"]
 tags: ["Holiday Packages","UAE","Asia","top-destination"]

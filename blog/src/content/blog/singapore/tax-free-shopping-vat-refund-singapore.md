@@ -7,7 +7,7 @@ category: "Shopping"
 topic: "tax-free-shopping"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:47:24.715Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/tax-free-shopping-vat-refund-singapore.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/tax-free-shopping-vat-refund-singapore.webp"
 heroImageAlt: "Singapore - Shopping"
 keywords: ["Singapore travel","things to do in Singapore","Singapore guide","visit Singapore","Singapore"]
 tags: ["Shopping","Singapore","Asia","top-destination"]

@@ -7,7 +7,7 @@ category: "Food & Dining"
 topic: "street-food"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:09:39.741Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/best-street-food-paris.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/best-street-food-paris.webp"
 heroImageAlt: "Paris - Food & Dining"
 keywords: ["Paris travel","things to do in Paris","Paris guide","visit Paris","France"]
 tags: ["Food & Dining","France","Europe","top-destination"]

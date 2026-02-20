@@ -7,7 +7,7 @@ category: "Comparisons"
 topic: "package-vs-separate"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:36:57.675Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/package-holiday-vs-booking-separately.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/package-holiday-vs-booking-separately.webp"
 heroImageAlt: "New York - Comparisons"
 keywords: ["New York travel","things to do in New York","New York guide","visit New York","USA"]
 tags: ["Comparisons","USA","North America","top-destination"]

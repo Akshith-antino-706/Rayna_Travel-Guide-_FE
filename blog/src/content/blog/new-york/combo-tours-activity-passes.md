@@ -7,7 +7,7 @@ category: "Booking & Experiences"
 topic: "combo-tours"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:36:01.828Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/combo-tours-activity-passes.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/combo-tours-activity-passes.webp"
 heroImageAlt: "New York - Booking & Experiences"
 keywords: ["New York travel","things to do in New York","New York guide","visit New York","USA"]
 tags: ["Booking & Experiences","USA","North America","top-destination"]

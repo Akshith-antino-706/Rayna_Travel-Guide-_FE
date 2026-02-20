@@ -7,7 +7,7 @@ category: "Trust & Conversion"
 topic: "travel-insurance"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:15:23.150Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/travel-insurance-activities.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/travel-insurance-activities.webp"
 heroImageAlt: "Paris - Trust & Conversion"
 keywords: ["Paris travel","things to do in Paris","Paris guide","visit Paris","France"]
 tags: ["Trust & Conversion","France","Europe","top-destination"]

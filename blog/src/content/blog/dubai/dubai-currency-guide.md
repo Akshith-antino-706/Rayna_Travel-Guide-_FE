@@ -7,7 +7,7 @@ category: "Essentials"
 topic: "Currency & Payments"
 author: "Travel Team"
 pubDate: 2026-02-10
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/dubai-currency-guide.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/dubai-currency-guide.webp"
 heroImageAlt: "UAE Dirham banknotes and coins with Dubai skyline"
 keywords: ["Dubai currency", "UAE Dirham", "money exchange Dubai", "Dubai tipping", "Dubai payments"]
 tags: ["Dubai", "Currency", "Money", "Payments", "Essentials"]

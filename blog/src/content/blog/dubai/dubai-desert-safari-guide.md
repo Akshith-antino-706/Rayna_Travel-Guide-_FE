@@ -7,7 +7,7 @@ category: "Experiences & Activities"
 topic: "Signature Experience"
 author: "Travel Team"
 pubDate: 2026-02-05
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/dubai-desert-safari-guide.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/dubai-desert-safari-guide.webp"
 heroImageAlt: "SUV dune bashing in Dubai desert at sunset"
 keywords: ["Dubai desert safari", "desert safari Dubai", "dune bashing", "Dubai safari price", "evening desert safari"]
 tags: ["Dubai", "Desert Safari", "Adventure", "Experiences"]

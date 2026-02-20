@@ -7,7 +7,7 @@ category: "Visa & Entry"
 topic: "airport-arrival-guide"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:01:48.231Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/dubai-airport-arrival-guide.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/dubai-airport-arrival-guide.webp"
 heroImageAlt: "Dubai - Visa & Entry"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","UAE"]
 tags: ["Visa & Entry","UAE","Asia","top-destination"]

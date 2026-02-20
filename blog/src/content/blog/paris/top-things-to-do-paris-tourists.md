@@ -7,7 +7,7 @@ category: "Things to Do"
 topic: "top-things-to-do"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:06:27.648Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/top-things-to-do-paris-tourists.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/top-things-to-do-paris-tourists.webp"
 heroImageAlt: "Paris - Things to Do"
 keywords: ["Paris travel","things to do in Paris","Paris guide","visit Paris","France"]
 tags: ["Things to Do","France","Europe","top-destination"]

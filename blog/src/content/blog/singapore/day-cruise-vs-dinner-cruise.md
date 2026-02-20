@@ -7,7 +7,7 @@ category: "Yacht & Cruise"
 topic: "day-dinner-cruise"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:51:59.564Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/day-cruise-vs-dinner-cruise.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/day-cruise-vs-dinner-cruise.webp"
 heroImageAlt: "Singapore - Yacht & Cruise"
 keywords: ["Singapore travel","things to do in Singapore","Singapore guide","visit Singapore","Singapore"]
 tags: ["Yacht & Cruise","Singapore","Asia","top-destination"]

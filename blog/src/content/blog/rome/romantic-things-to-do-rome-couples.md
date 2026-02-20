@@ -7,7 +7,7 @@ category: "Things to Do"
 topic: "romantic-things-to-do"
 author: "Travel Writer"
 pubDate: 2026-02-11T14:03:07.393Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/rome/romantic-things-to-do-rome-couples.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/rome/romantic-things-to-do-rome-couples.webp"
 heroImageAlt: "Rome - Things to Do"
 keywords: ["Rome travel","things to do in Rome","Rome guide","visit Rome","Italy"]
 tags: ["Things to Do","Italy","Europe","top-destination"]

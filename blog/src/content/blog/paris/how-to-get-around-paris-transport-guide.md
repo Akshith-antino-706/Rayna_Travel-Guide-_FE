@@ -7,7 +7,7 @@ category: "Transport"
 topic: "getting-around"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:10:10.086Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/how-to-get-around-paris-transport-guide.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/how-to-get-around-paris-transport-guide.webp"
 heroImageAlt: "Paris - Transport"
 keywords: ["Paris travel","things to do in Paris","Paris guide","visit Paris","France"]
 tags: ["Transport","France","Europe","top-destination"]

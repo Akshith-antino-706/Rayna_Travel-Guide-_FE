@@ -7,7 +7,7 @@ category: "Trust & Conversion"
 topic: "travel-insurance-activities-dubai"
 author: "Travel Writer"
 pubDate: 2026-01-25T15:09:00.000Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/travel-insurance-activities-dubai.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/travel-insurance-activities-dubai.webp"
 heroImageAlt: "Dubai - Trust & Conversion"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","United Arab Emirates"]
 tags: ["Trust & Conversion","United Arab Emirates","Asia","top-destination"]

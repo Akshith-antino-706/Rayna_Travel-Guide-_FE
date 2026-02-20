@@ -7,7 +7,7 @@ category: "Things to Do"
 topic: "adventure-activities"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:23:17.613Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/tokyo/best-adventure-activities-tokyo.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/tokyo/best-adventure-activities-tokyo.webp"
 heroImageAlt: "Tokyo - Things to Do"
 keywords: ["Tokyo travel","things to do in Tokyo","Tokyo guide","visit Tokyo","Japan"]
 tags: ["Things to Do","Japan","Asia","top-destination"]

@@ -7,7 +7,7 @@ category: "Money & Payments"
 topic: "tipping-culture"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:28:46.486Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/tokyo/tipping-culture-tokyo.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/tokyo/tipping-culture-tokyo.webp"
 heroImageAlt: "Tokyo - Money & Payments"
 keywords: ["Tokyo travel","things to do in Tokyo","Tokyo guide","visit Tokyo","Japan"]
 tags: ["Money & Payments","Japan","Asia","top-destination"]

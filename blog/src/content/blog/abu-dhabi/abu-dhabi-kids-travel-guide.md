@@ -9,7 +9,7 @@ category: Special Guides
 topic: abu-dhabi-kids-travel-guide
 author: Travel Writer
 pubDate: '2026-01-22T02:13:00.000Z'
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/abu-dhabi/abu-dhabi-kids-travel-guide.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/abu-dhabi/abu-dhabi-kids-travel-guide.webp"
 heroImageAlt: Abu Dhabi - Special Guides
 keywords:
   - Abu Dhabi travel

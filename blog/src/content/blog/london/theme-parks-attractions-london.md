@@ -7,7 +7,7 @@ category: "Experiences & Activities"
 topic: "theme-parks"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:17:04.333Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/theme-parks-attractions-london.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/theme-parks-attractions-london.webp"
 heroImageAlt: "London - Experiences & Activities"
 keywords: ["London travel","things to do in London","London guide","visit London","United Kingdom"]
 tags: ["Experiences & Activities","United Kingdom","Europe","top-destination"]

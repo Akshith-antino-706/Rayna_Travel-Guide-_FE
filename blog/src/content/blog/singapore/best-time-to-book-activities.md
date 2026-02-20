@@ -7,7 +7,7 @@ category: "Booking & Experiences"
 topic: "best-time-book"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:51:27.740Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/best-time-to-book-activities.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/best-time-to-book-activities.webp"
 heroImageAlt: "Singapore - Booking & Experiences"
 keywords: ["Singapore travel","things to do in Singapore","Singapore guide","visit Singapore","Singapore"]
 tags: ["Booking & Experiences","Singapore","Asia","top-destination"]

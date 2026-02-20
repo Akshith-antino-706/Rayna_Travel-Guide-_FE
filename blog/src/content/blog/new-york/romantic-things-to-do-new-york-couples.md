@@ -7,7 +7,7 @@ category: "Things to Do"
 topic: "romantic-things-to-do"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:30:42.579Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/romantic-things-to-do-new-york-couples.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/romantic-things-to-do-new-york-couples.webp"
 heroImageAlt: "New York - Things to Do"
 keywords: ["New York travel","things to do in New York","New York guide","visit New York","USA"]
 tags: ["Things to Do","USA","North America","top-destination"]

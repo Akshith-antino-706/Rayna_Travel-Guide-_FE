@@ -7,7 +7,7 @@ category: "Experiences & Activities"
 topic: "signature-experience"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:54:18.971Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/istanbul-signature-experience-guide.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/istanbul-signature-experience-guide.webp"
 heroImageAlt: "Istanbul - Experiences & Activities"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Experiences & Activities","Turkey","Europe","top-destination"]

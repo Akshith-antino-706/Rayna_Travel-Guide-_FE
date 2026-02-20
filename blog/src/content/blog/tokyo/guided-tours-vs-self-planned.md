@@ -7,7 +7,7 @@ category: "Comparisons"
 topic: "guided-vs-self"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:29:49.585Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/tokyo/guided-tours-vs-self-planned.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/tokyo/guided-tours-vs-self-planned.webp"
 heroImageAlt: "Tokyo - Comparisons"
 keywords: ["Tokyo travel","things to do in Tokyo","Tokyo guide","visit Tokyo","Japan"]
 tags: ["Comparisons","Japan","Asia","top-destination"]

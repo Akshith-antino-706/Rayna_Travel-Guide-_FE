@@ -7,7 +7,7 @@ category: "Essentials"
 topic: "Budget vs Luxury"
 author: "Travel Team"
 pubDate: 2026-02-02
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/dubai-budget-vs-luxury-guide.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/dubai-budget-vs-luxury-guide.webp"
 heroImageAlt: "Contrast of Dubai souks and luxury hotel lobby"
 keywords: ["Dubai budget", "Dubai expensive", "Dubai cost", "cheap Dubai", "luxury Dubai"]
 tags: ["Dubai", "Budget", "Luxury", "Money Tips"]

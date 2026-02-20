@@ -7,7 +7,7 @@ category: "Things to Do"
 topic: "things-to-do-families"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:23:43.418Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/tokyo/best-things-to-do-tokyo-families.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/tokyo/best-things-to-do-tokyo-families.webp"
 heroImageAlt: "Tokyo - Things to Do"
 keywords: ["Tokyo travel","things to do in Tokyo","Tokyo guide","visit Tokyo","Japan"]
 tags: ["Things to Do","Japan","Asia","top-destination"]

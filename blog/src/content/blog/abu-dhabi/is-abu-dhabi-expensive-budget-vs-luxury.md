@@ -7,7 +7,7 @@ category: "Essentials"
 topic: "is-abu-dhabi-expensive-budget-vs-luxury"
 author: "Travel Writer"
 pubDate: 2026-01-17T09:10:00.000Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/abu-dhabi/is-abu-dhabi-expensive-budget-vs-luxury.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/abu-dhabi/is-abu-dhabi-expensive-budget-vs-luxury.webp"
 heroImageAlt: "Abu Dhabi - Essentials"
 keywords: ["Abu Dhabi travel","things to do in Abu Dhabi","Abu Dhabi guide","visit Abu Dhabi","United Arab Emirates"]
 tags: ["Essentials","United Arab Emirates","Asia","top-destination"]

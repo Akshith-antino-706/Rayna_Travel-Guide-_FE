@@ -7,7 +7,7 @@ category: "Essentials"
 topic: "complete-travel-guide"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:37:06.027Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/complete-bangkok-travel-guide.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/complete-bangkok-travel-guide.webp"
 heroImageAlt: "Bangkok - Essentials"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Essentials","Thailand","Asia","top-destination"]

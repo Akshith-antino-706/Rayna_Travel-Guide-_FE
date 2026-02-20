@@ -7,7 +7,7 @@ category: "Food & Dining"
 topic: "best-restaurants"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:47:00.725Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/best-restaurants-singapore.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/best-restaurants-singapore.webp"
 heroImageAlt: "Singapore - Food & Dining"
 keywords: ["Singapore travel","things to do in Singapore","Singapore guide","visit Singapore","Singapore"]
 tags: ["Food & Dining","Singapore","Asia","top-destination"]

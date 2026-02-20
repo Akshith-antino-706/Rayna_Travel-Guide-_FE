@@ -7,7 +7,7 @@ category: "Holiday Packages"
 topic: "luxury-packages"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:52:43.837Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/luxury-holiday-packages.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/luxury-holiday-packages.webp"
 heroImageAlt: "Singapore - Holiday Packages"
 keywords: ["Singapore travel","things to do in Singapore","Singapore guide","visit Singapore","Singapore"]
 tags: ["Holiday Packages","Singapore","Asia","top-destination"]

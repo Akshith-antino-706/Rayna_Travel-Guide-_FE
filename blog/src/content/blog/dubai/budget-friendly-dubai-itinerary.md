@@ -7,7 +7,7 @@ category: "Itineraries"
 topic: "budget-itinerary"
 author: "Travel Writer"
 pubDate: 2026-02-11T12:56:33.582Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/budget-friendly-dubai-itinerary.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/budget-friendly-dubai-itinerary.webp"
 heroImageAlt: "Dubai - Itineraries"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","UAE"]
 tags: ["Itineraries","UAE","Asia","top-destination"]

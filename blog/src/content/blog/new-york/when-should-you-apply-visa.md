@@ -7,7 +7,7 @@ category: "Visa & Entry"
 topic: "visa-application-timing"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:35:04.966Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/when-should-you-apply-visa.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/when-should-you-apply-visa.webp"
 heroImageAlt: "New York - Visa & Entry"
 keywords: ["New York travel","things to do in New York","New York guide","visit New York","USA"]
 tags: ["Visa & Entry","USA","North America","top-destination"]

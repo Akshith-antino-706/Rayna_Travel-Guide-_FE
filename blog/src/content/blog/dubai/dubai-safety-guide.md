@@ -7,7 +7,7 @@ category: "Essentials"
 topic: "Safety & Laws"
 author: "Travel Team"
 pubDate: 2026-02-03
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/dubai-safety-guide.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/dubai-safety-guide.webp"
 heroImageAlt: "Dubai police car with modern skyline"
 keywords: ["Dubai safety", "Dubai laws tourists", "Dubai rules", "safe in Dubai", "Dubai etiquette"]
 tags: ["Dubai", "Safety", "Laws", "Etiquette", "Essentials"]

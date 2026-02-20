@@ -7,7 +7,7 @@ category: "Booking & Experiences"
 topic: "private-vs-shared-activities-dubai"
 author: "Travel Writer"
 pubDate: 2026-01-23T22:18:00.000Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/private-vs-shared-activities-dubai.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/private-vs-shared-activities-dubai.webp"
 heroImageAlt: "Dubai - Booking & Experiences"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","United Arab Emirates"]
 tags: ["Booking & Experiences","United Arab Emirates","Asia","top-destination"]

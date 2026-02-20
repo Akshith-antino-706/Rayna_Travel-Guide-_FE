@@ -7,7 +7,7 @@ category: "Seasonal & Monthly"
 topic: "abu-dhabi-summer"
 author: "Travel Writer"
 pubDate: 2026-01-22T06:25:00.000Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/abu-dhabi/abu-dhabi-summer.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/abu-dhabi/abu-dhabi-summer.webp"
 heroImageAlt: "Abu Dhabi - Seasonal & Monthly"
 keywords: ["Abu Dhabi travel","things to do in Abu Dhabi","Abu Dhabi guide","visit Abu Dhabi","United Arab Emirates"]
 tags: ["Seasonal & Monthly","United Arab Emirates","Asia","top-destination"]

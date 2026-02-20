@@ -7,7 +7,7 @@ category: "Transport"
 topic: "car-rental"
 author: "Travel Writer"
 pubDate: 2026-02-11T12:57:58.465Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/car-rental-rules-tips-dubai.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/car-rental-rules-tips-dubai.webp"
 heroImageAlt: "Dubai - Transport"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","UAE"]
 tags: ["Transport","UAE","Asia","top-destination"]

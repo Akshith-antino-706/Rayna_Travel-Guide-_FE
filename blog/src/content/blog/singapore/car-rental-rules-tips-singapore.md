@@ -7,7 +7,7 @@ category: "Transport"
 topic: "car-rental"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:47:43.644Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/car-rental-rules-tips-singapore.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/car-rental-rules-tips-singapore.webp"
 heroImageAlt: "Singapore - Transport"
 keywords: ["Singapore travel","things to do in Singapore","Singapore guide","visit Singapore","Singapore"]
 tags: ["Transport","Singapore","Asia","top-destination"]

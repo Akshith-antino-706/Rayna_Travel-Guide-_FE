@@ -7,7 +7,7 @@ category: "Booking & Experiences"
 topic: "best-time-book"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:28:48.845Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/tokyo/best-time-to-book-activities.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/tokyo/best-time-to-book-activities.webp"
 heroImageAlt: "Tokyo - Booking & Experiences"
 keywords: ["Tokyo travel","things to do in Tokyo","Tokyo guide","visit Tokyo","Japan"]
 tags: ["Booking & Experiences","Japan","Asia","top-destination"]

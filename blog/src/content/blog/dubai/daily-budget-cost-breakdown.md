@@ -7,7 +7,7 @@ category: "Money & Payments"
 topic: "daily-budget"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:02:29.377Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/daily-budget-cost-breakdown.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/daily-budget-cost-breakdown.webp"
 heroImageAlt: "Dubai - Money & Payments"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","UAE"]
 tags: ["Money & Payments","UAE","Asia","top-destination"]

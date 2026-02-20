@@ -7,7 +7,7 @@ category: "Special Guides"
 topic: "with-kids"
 author: "Travel Writer"
 pubDate: 2026-02-11T12:57:52.955Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/dubai-kids-travel-guide.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/dubai-kids-travel-guide.webp"
 heroImageAlt: "Dubai - Special Guides"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","UAE"]
 tags: ["Special Guides","UAE","Asia","top-destination"]

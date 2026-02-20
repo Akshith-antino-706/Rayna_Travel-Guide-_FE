@@ -7,7 +7,7 @@ category: "Booking & Experiences"
 topic: "top-rated-activities"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:21:48.259Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/top-rated-activities-reviews.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/top-rated-activities-reviews.webp"
 heroImageAlt: "London - Booking & Experiences"
 keywords: ["London travel","things to do in London","London guide","visit London","United Kingdom"]
 tags: ["Booking & Experiences","United Kingdom","Europe","top-destination"]

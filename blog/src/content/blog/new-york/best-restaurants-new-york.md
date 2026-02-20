@@ -7,7 +7,7 @@ category: "Food & Dining"
 topic: "best-restaurants"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:32:24.545Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/best-restaurants-new-york.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/best-restaurants-new-york.webp"
 heroImageAlt: "New York - Food & Dining"
 keywords: ["New York travel","things to do in New York","New York guide","visit New York","USA"]
 tags: ["Food & Dining","USA","North America","top-destination"]

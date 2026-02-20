@@ -7,7 +7,7 @@ category: "Experiences & Activities"
 topic: "theme-parks"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:54:40.150Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/theme-parks-attractions-istanbul.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/theme-parks-attractions-istanbul.webp"
 heroImageAlt: "Istanbul - Experiences & Activities"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Experiences & Activities","Turkey","Europe","top-destination"]

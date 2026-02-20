@@ -7,7 +7,7 @@ category: "Money & Payments"
 topic: "daily-budget"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:59:55.585Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/daily-budget-cost-breakdown.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/daily-budget-cost-breakdown.webp"
 heroImageAlt: "Istanbul - Money & Payments"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Money & Payments","Turkey","Europe","top-destination"]

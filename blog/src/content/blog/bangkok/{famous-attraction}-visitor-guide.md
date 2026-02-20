@@ -7,7 +7,7 @@ category: "Attractions"
 topic: "famous-attraction-guide"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:38:03.202Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/{famous-attraction}-visitor-guide.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/{famous-attraction}-visitor-guide.webp"
 heroImageAlt: "Bangkok - Attractions"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Attractions","Thailand","Asia","top-destination"]

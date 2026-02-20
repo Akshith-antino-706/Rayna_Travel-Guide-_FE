@@ -7,7 +7,7 @@ category: "Holiday Packages"
 topic: "luxury-packages"
 author: "Travel Writer"
 pubDate: 2026-02-11T14:01:21.769Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/luxury-holiday-packages.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/luxury-holiday-packages.webp"
 heroImageAlt: "Istanbul - Holiday Packages"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Holiday Packages","Turkey","Europe","top-destination"]

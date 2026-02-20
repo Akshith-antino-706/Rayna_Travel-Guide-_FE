@@ -7,7 +7,7 @@ category: "Comparisons"
 topic: "guided-vs-self"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:36:43.880Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/guided-tours-vs-self-planned.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/guided-tours-vs-self-planned.webp"
 heroImageAlt: "New York - Comparisons"
 keywords: ["New York travel","things to do in New York","New York guide","visit New York","USA"]
 tags: ["Comparisons","USA","North America","top-destination"]

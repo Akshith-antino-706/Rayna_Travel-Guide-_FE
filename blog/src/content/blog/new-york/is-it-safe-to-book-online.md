@@ -7,7 +7,7 @@ category: "Trust & Conversion"
 topic: "safe-to-book-online"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:36:39.410Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/is-it-safe-to-book-online.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/is-it-safe-to-book-online.webp"
 heroImageAlt: "New York - Trust & Conversion"
 keywords: ["New York travel","things to do in New York","New York guide","visit New York","USA"]
 tags: ["Trust & Conversion","USA","North America","top-destination"]

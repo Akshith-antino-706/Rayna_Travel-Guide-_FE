@@ -7,7 +7,7 @@ category: "Seasonal & Monthly"
 topic: "winter"
 author: "Travel Writer"
 pubDate: 2026-02-11T12:58:21.712Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/dubai-winter.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/dubai-winter.webp"
 heroImageAlt: "Dubai - Seasonal & Monthly"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","UAE"]
 tags: ["Seasonal & Monthly","UAE","Asia","top-destination"]

@@ -7,7 +7,7 @@ category: "Experiences & Activities"
 topic: "yacht-cruise-guide"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:45:24.943Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/singapore-yacht-cruise-guide.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/singapore-yacht-cruise-guide.webp"
 heroImageAlt: "Singapore - Experiences & Activities"
 keywords: ["Singapore travel","things to do in Singapore","Singapore guide","visit Singapore","Singapore"]
 tags: ["Experiences & Activities","Singapore","Asia","top-destination"]

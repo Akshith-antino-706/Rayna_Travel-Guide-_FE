@@ -7,7 +7,7 @@ category: "Hotels & Accommodation"
 topic: "honeymoon-hotels"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:00:02.933Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/best-hotels-couples-honeymoon-dubai.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/best-hotels-couples-honeymoon-dubai.webp"
 heroImageAlt: "Dubai - Hotels & Accommodation"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","UAE"]
 tags: ["Hotels & Accommodation","UAE","Asia","top-destination"]

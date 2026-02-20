@@ -7,7 +7,7 @@ category: "Things to Do"
 topic: "free-things-to-do"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:37:26.655Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/free-things-to-do-bangkok.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/free-things-to-do-bangkok.webp"
 heroImageAlt: "Bangkok - Things to Do"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Things to Do","Thailand","Asia","top-destination"]

@@ -7,7 +7,7 @@ category: "Things to Do"
 topic: "adventure-activities"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:44:54.512Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/best-adventure-activities-singapore.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/best-adventure-activities-singapore.webp"
 heroImageAlt: "Singapore - Things to Do"
 keywords: ["Singapore travel","things to do in Singapore","Singapore guide","visit Singapore","Singapore"]
 tags: ["Things to Do","Singapore","Asia","top-destination"]

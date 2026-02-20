@@ -7,7 +7,7 @@ category: "Money & Payments"
 topic: "daily-budget"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:51:05.297Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/daily-budget-cost-breakdown.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/daily-budget-cost-breakdown.webp"
 heroImageAlt: "Singapore - Money & Payments"
 keywords: ["Singapore travel","things to do in Singapore","Singapore guide","visit Singapore","Singapore"]
 tags: ["Money & Payments","Singapore","Asia","top-destination"]

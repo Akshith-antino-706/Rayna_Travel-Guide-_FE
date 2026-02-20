@@ -7,7 +7,7 @@ category: "Hotels & Accommodation"
 topic: "luxury-hotels"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:20:16.276Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/best-luxury-hotels-london.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/best-luxury-hotels-london.webp"
 heroImageAlt: "London - Hotels & Accommodation"
 keywords: ["London travel","things to do in London","London guide","visit London","United Kingdom"]
 tags: ["Hotels & Accommodation","United Kingdom","Europe","top-destination"]

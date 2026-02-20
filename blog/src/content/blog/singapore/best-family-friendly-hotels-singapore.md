@@ -7,7 +7,7 @@ category: "Hotels & Accommodation"
 topic: "family-hotels"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:49:42.354Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/best-family-friendly-hotels-singapore.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/best-family-friendly-hotels-singapore.webp"
 heroImageAlt: "Singapore - Hotels & Accommodation"
 keywords: ["Singapore travel","things to do in Singapore","Singapore guide","visit Singapore","Singapore"]
 tags: ["Hotels & Accommodation","Singapore","Asia","top-destination"]

@@ -7,7 +7,7 @@ category: "Special Guides"
 topic: "solo-travel"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:39:55.133Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/solo-travel-guide-bangkok.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/solo-travel-guide-bangkok.webp"
 heroImageAlt: "Bangkok - Special Guides"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Special Guides","Thailand","Asia","top-destination"]

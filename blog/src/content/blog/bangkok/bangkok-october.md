@@ -7,7 +7,7 @@ category: "Seasonal & Monthly"
 topic: "october"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:41:00.840Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/bangkok-october.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/bangkok-october.webp"
 heroImageAlt: "Bangkok - Seasonal & Monthly"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Seasonal & Monthly","Thailand","Asia","top-destination"]

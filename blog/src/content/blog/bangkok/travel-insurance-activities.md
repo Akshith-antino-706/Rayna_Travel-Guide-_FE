@@ -7,7 +7,7 @@ category: "Trust & Conversion"
 topic: "travel-insurance"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:43:57.362Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/travel-insurance-activities.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/travel-insurance-activities.webp"
 heroImageAlt: "Bangkok - Trust & Conversion"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Trust & Conversion","Thailand","Asia","top-destination"]

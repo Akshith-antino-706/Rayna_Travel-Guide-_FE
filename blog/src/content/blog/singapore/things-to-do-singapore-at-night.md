@@ -7,7 +7,7 @@ category: "Things to Do"
 topic: "things-to-do-at-night"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:45:05.112Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/things-to-do-singapore-at-night.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/things-to-do-singapore-at-night.webp"
 heroImageAlt: "Singapore - Things to Do"
 keywords: ["Singapore travel","things to do in Singapore","Singapore guide","visit Singapore","Singapore"]
 tags: ["Things to Do","Singapore","Asia","top-destination"]

@@ -7,7 +7,7 @@ category: "Seasonal & Monthly"
 topic: "january"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:11:26.478Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/paris-january.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/paris-january.webp"
 heroImageAlt: "Paris - Seasonal & Monthly"
 keywords: ["Paris travel","things to do in Paris","Paris guide","visit Paris","France"]
 tags: ["Seasonal & Monthly","France","Europe","top-destination"]

@@ -7,7 +7,7 @@ category: "Trust & Conversion"
 topic: "travel-insurance"
 author: "Travel Writer"
 pubDate: 2026-02-11T14:01:33.337Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/travel-insurance-activities.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/travel-insurance-activities.webp"
 heroImageAlt: "Istanbul - Trust & Conversion"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Trust & Conversion","Turkey","Europe","top-destination"]

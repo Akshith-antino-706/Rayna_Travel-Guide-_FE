@@ -7,7 +7,7 @@ category: "Things to Do"
 topic: "top-things-to-do"
 author: "Travel Writer"
 pubDate: 2026-02-11T14:02:38.845Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/rome/top-things-to-do-rome-tourists.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/rome/top-things-to-do-rome-tourists.webp"
 heroImageAlt: "Rome - Things to Do"
 keywords: ["Rome travel","things to do in Rome","Rome guide","visit Rome","Italy"]
 tags: ["Things to Do","Italy","Europe","top-destination"]

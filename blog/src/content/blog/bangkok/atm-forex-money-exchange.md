@@ -7,7 +7,7 @@ category: "Money & Payments"
 topic: "atm-forex-exchange"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:42:49.510Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/atm-forex-money-exchange.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/atm-forex-money-exchange.webp"
 heroImageAlt: "Bangkok - Money & Payments"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Money & Payments","Thailand","Asia","top-destination"]

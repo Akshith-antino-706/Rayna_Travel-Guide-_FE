@@ -7,7 +7,7 @@ category: "Things to Do"
 topic: "top-things-to-do"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:53:42.483Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/top-things-to-do-istanbul-tourists.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/top-things-to-do-istanbul-tourists.webp"
 heroImageAlt: "Istanbul - Things to Do"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Things to Do","Turkey","Europe","top-destination"]

@@ -7,7 +7,7 @@ category: "Booking & Experiences"
 topic: "combo-tours"
 author: "Travel Writer"
 pubDate: 2026-02-11T14:00:22.639Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/combo-tours-activity-passes.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/combo-tours-activity-passes.webp"
 heroImageAlt: "Istanbul - Booking & Experiences"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Booking & Experiences","Turkey","Europe","top-destination"]

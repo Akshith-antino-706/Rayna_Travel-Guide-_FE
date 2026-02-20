@@ -7,7 +7,7 @@ category: "Trust & Conversion"
 topic: "safe-to-book-online"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:52:42.314Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/is-it-safe-to-book-online.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/singapore/is-it-safe-to-book-online.webp"
 heroImageAlt: "Singapore - Trust & Conversion"
 keywords: ["Singapore travel","things to do in Singapore","Singapore guide","visit Singapore","Singapore"]
 tags: ["Trust & Conversion","Singapore","Asia","top-destination"]

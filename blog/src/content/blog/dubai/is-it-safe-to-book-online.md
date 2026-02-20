@@ -7,7 +7,7 @@ category: "Trust & Conversion"
 topic: "safe-to-book-online"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:04:34.552Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/is-it-safe-to-book-online.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/is-it-safe-to-book-online.webp"
 heroImageAlt: "Dubai - Trust & Conversion"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","UAE"]
 tags: ["Trust & Conversion","UAE","Asia","top-destination"]

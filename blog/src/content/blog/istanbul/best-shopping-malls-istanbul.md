@@ -7,7 +7,7 @@ category: "Shopping"
 topic: "shopping-malls"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:56:09.803Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/best-shopping-malls-istanbul.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/istanbul/best-shopping-malls-istanbul.webp"
 heroImageAlt: "Istanbul - Shopping"
 keywords: ["Istanbul travel","things to do in Istanbul","Istanbul guide","visit Istanbul","Turkey"]
 tags: ["Shopping","Turkey","Europe","top-destination"]

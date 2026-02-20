@@ -7,7 +7,7 @@ category: "Trust & Conversion"
 topic: "safe-to-book-online"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:43:54.993Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/is-it-safe-to-book-online.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/bangkok/is-it-safe-to-book-online.webp"
 heroImageAlt: "Bangkok - Trust & Conversion"
 keywords: ["Bangkok travel","things to do in Bangkok","Bangkok guide","visit Bangkok","Thailand"]
 tags: ["Trust & Conversion","Thailand","Asia","top-destination"]

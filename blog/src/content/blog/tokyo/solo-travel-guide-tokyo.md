@@ -7,7 +7,7 @@ category: "Special Guides"
 topic: "solo-travel"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:25:56.254Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/tokyo/solo-travel-guide-tokyo.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/tokyo/solo-travel-guide-tokyo.webp"
 heroImageAlt: "Tokyo - Special Guides"
 keywords: ["Tokyo travel","things to do in Tokyo","Tokyo guide","visit Tokyo","Japan"]
 tags: ["Special Guides","Japan","Asia","top-destination"]

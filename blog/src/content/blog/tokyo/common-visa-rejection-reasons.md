@@ -7,7 +7,7 @@ category: "Visa & Entry"
 topic: "visa-rejection-reasons"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:28:23.608Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/tokyo/common-visa-rejection-reasons.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/tokyo/common-visa-rejection-reasons.webp"
 heroImageAlt: "Tokyo - Visa & Entry"
 keywords: ["Tokyo travel","things to do in Tokyo","Tokyo guide","visit Tokyo","Japan"]
 tags: ["Visa & Entry","Japan","Asia","top-destination"]

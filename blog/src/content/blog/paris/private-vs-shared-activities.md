@@ -7,7 +7,7 @@ category: "Booking & Experiences"
 topic: "private-vs-shared"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:14:31.533Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/private-vs-shared-activities.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/private-vs-shared-activities.webp"
 heroImageAlt: "Paris - Booking & Experiences"
 keywords: ["Paris travel","things to do in Paris","Paris guide","visit Paris","France"]
 tags: ["Booking & Experiences","France","Europe","top-destination"]

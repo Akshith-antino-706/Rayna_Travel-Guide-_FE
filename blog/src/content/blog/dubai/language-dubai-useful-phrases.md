@@ -7,7 +7,7 @@ category: "Practical Information"
 topic: "language-phrases"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:01:00.961Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/language-dubai-useful-phrases.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/language-dubai-useful-phrases.webp"
 heroImageAlt: "Dubai - Practical Information"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","UAE"]
 tags: ["Practical Information","UAE","Asia","top-destination"]

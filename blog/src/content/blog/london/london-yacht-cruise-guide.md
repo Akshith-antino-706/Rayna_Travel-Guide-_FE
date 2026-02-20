@@ -7,7 +7,7 @@ category: "Experiences & Activities"
 topic: "yacht-cruise-guide"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:16:55.895Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/london-yacht-cruise-guide.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/london/london-yacht-cruise-guide.webp"
 heroImageAlt: "London - Experiences & Activities"
 keywords: ["London travel","things to do in London","London guide","visit London","United Kingdom"]
 tags: ["Experiences & Activities","United Kingdom","Europe","top-destination"]

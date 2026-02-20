@@ -7,7 +7,7 @@ category: "Shopping"
 topic: "what-to-buy"
 author: "Travel Writer"
 pubDate: 2026-02-11T12:57:28.203Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/what-to-buy-dubai.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/dubai/what-to-buy-dubai.webp"
 heroImageAlt: "Dubai - Shopping"
 keywords: ["Dubai travel","things to do in Dubai","Dubai guide","visit Dubai","UAE"]
 tags: ["Shopping","UAE","Asia","top-destination"]

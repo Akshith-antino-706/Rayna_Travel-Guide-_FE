@@ -7,7 +7,7 @@ category: "Essentials"
 topic: "complete-travel-guide"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:05:47.218Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/complete-paris-travel-guide.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/paris/complete-paris-travel-guide.webp"
 heroImageAlt: "Paris - Essentials"
 keywords: ["Paris travel","things to do in Paris","Paris guide","visit Paris","France"]
 tags: ["Essentials","France","Europe","top-destination"]

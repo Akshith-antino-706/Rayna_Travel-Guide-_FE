@@ -7,7 +7,7 @@ category: "Holiday Packages"
 topic: "best-packages"
 author: "Travel Writer"
 pubDate: 2026-02-11T13:36:19.783Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/best-holiday-packages.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/new-york/best-holiday-packages.webp"
 heroImageAlt: "New York - Holiday Packages"
 keywords: ["New York travel","things to do in New York","New York guide","visit New York","USA"]
 tags: ["Holiday Packages","USA","North America","top-destination"]

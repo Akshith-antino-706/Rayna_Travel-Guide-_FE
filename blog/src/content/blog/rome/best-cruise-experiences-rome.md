@@ -7,7 +7,7 @@ category: "Experiences & Activities"
 topic: "best-cruise-experiences"
 author: "Travel Writer"
 pubDate: 2026-02-11T14:03:42.975Z
-heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/rome/best-cruise-experiences-rome.jpg"
+heroImage: "https://rayna-tours.s3.eu-north-1.amazonaws.com/images/rome/best-cruise-experiences-rome.webp"
 heroImageAlt: "Rome - Experiences & Activities"
 keywords: ["Rome travel","things to do in Rome","Rome guide","visit Rome","Italy"]
 tags: ["Experiences & Activities","Italy","Europe","top-destination"]
