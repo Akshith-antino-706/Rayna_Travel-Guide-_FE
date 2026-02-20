@@ -229,7 +229,7 @@ export default function TourProductCards({
           </p>
         </div>
         <a
-          href={`https://www.raynatours.com/${cityPath}`}
+          href={`https://www.raynatours.com/${cityPath}-activities`}
           target="_blank"
           rel="noopener noreferrer sponsored"
           className="text-xs text-gray-500 hover:text-gray-900 transition-colors shrink-0 mt-1"
