@@ -172,7 +172,7 @@ const jsonLd = {
       <div class="flex items-center justify-between mb-5">
         <h2 class="section-title">Featured Travel Posts</h2>
       </div>
-      <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-4">
         {selectedFeatured.map(post => {
           const imgSrc = post.data.heroImage ||
             'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&h=800&fit=crop&q=70';
@@ -211,7 +211,7 @@ const jsonLd = {
       <h2 class="section-title mb-1">Explore Travel Guides</h2>
       <p class="section-subtitle">Comprehensive city guides covering attractions, food, hotels, and more</p>
 
-      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2.5 sm:gap-4">
         {cities.map(city => {
           const citySlug = city.toLowerCase().replace(/\s+/g, '-');
           const count = allPosts.filter(p => p.data.city === city).length;
@@ -245,7 +245,7 @@ const jsonLd = {
     <div class="container-wide">
       <h2 class="section-title mb-1">Popular Travel Guides</h2>
       <p class="section-subtitle">Our most popular guides chosen by travelers</p>
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-5">
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-5">
         {guidePosts.map(post => (
           <BlogCard
             title={post.data.title}

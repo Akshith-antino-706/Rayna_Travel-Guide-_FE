@@ -29,7 +29,7 @@ const related = [...sameCityCategory, ...sameCity].slice(0, limit);
     <h2 class="font-heading text-2xl font-bold text-gray-900 mb-6">
       More About {city}
     </h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 sm:gap-6">
       {related.map(post => (
         <BlogCard
           title={post.data.title}

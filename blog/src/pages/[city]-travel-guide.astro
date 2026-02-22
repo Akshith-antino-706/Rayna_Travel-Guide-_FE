@@ -291,7 +291,7 @@ const attractionListLd = attractionPosts.length > 0 ? {
           </div>
 
           {index === 0 && cat.posts.length >= 4 ? (
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5 sm:gap-4">
               {cat.posts.slice(0, 8).map(post => (
                 <BlogCard
                   title={post.data.title}
@@ -306,20 +306,18 @@ const attractionListLd = attractionPosts.length > 0 ? {
               ))}
             </div>
           ) : (
-            <div class="scroll-row sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-6 sm:overflow-visible sm:pb-0">
+            <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 sm:gap-6">
               {cat.posts.slice(0, 6).map(post => (
-                <div class="min-w-[280px] sm:min-w-0">
-                  <BlogCard
-                    title={post.data.title}
-                    description={post.data.description}
-                    slug={post.slug}
-                    city={post.data.city}
-                    category={post.data.category}
-                    pubDate={post.data.pubDate}
-                    heroImage={post.data.heroImage}
-                    readingTime={post.data.readingTime}
-                  />
-                </div>
+                <BlogCard
+                  title={post.data.title}
+                  description={post.data.description}
+                  slug={post.slug}
+                  city={post.data.city}
+                  category={post.data.category}
+                  pubDate={post.data.pubDate}
+                  heroImage={post.data.heroImage}
+                  readingTime={post.data.readingTime}
+                />
               ))}
             </div>
           )}
@@ -351,9 +349,8 @@ const attractionListLd = attractionPosts.length > 0 ? {
           Sample {cityName} Itineraries
         </h2>
 
-        <div class="scroll-row sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-6 sm:overflow-visible sm:pb-0">
+        <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 sm:gap-6">
           {itineraryPosts.slice(0, 6).map(post => (
-            <div class="min-w-[280px] sm:min-w-0">
               <BlogCard
                 title={post.data.title}
                 description={post.data.description}
@@ -364,7 +361,6 @@ const attractionListLd = attractionPosts.length > 0 ? {
                 heroImage={post.data.heroImage}
                 readingTime={post.data.readingTime}
               />
-            </div>
           ))}
         </div>
       </div>
