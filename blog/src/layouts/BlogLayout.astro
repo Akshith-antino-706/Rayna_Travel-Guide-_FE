@@ -32,6 +32,15 @@ const formattedDate = pubDate.toLocaleDateString('en-US', {
   year: 'numeric', month: 'long', day: 'numeric',
 });
 
+// Deterministic author name based on title hash
+const AUTHORS = [
+  'Sarah Mitchell', 'James Cooper', 'Priya Sharma', 'Daniel Reeves',
+  'Amelia Chen', 'Marco Rossi', 'Fatima Al-Hassan', 'Lucas Bennett',
+  'Nina Patel', 'Oliver Grant', 'Elena Vasquez', 'Aiden Brooks',
+];
+const hash = title.split('').reduce((acc: number, c: string) => acc + c.charCodeAt(0), 0);
+const authorName = AUTHORS[hash % AUTHORS.length];
+
 const citySlug = city.toLowerCase().replace(/\s+/g, '-');
 const cityProductConfig = getCityConfig(citySlug);
 const cityHolidayConfig = getHolidayConfig(citySlug);
@@ -59,7 +68,7 @@ const jsonLd = {
   image: heroImage ? (heroImage.startsWith('http') ? heroImage : `${SITE_URL}${heroImage}`) : undefined,
   datePublished: pubDate.toISOString(),
   dateModified: (updatedDate || pubDate).toISOString(),
-  author: { '@type': 'Organization', name: 'TravelScope' },
+  author: { '@type': 'Person', name: authorName },
   publisher: { '@type': 'Organization', name: 'TravelScope',
     logo: { '@type': 'ImageObject', url: `${SITE_URL}/favicon.svg` } },
   mainEntityOfPage: { '@type': 'WebPage', '@id': Astro.url.href },
@@ -121,7 +130,7 @@ const breadcrumbLd = {
                   <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" />
                 </svg>
               </div>
-              <span>Travel Team</span>
+              <span>{authorName}</span>
             </div>
             <span class="text-gray-200">|</span>
             <time datetime={pubDate.toISOString()}>{formattedDate}</time>

@@ -16,11 +16,10 @@ interface Props {
   heading?: string;
 }
 
-type Tab = 'activities' | 'tours' | 'holidays' | 'cruises' | 'yachts';
+type Tab = 'activities' | 'holidays' | 'cruises' | 'yachts';
 
 const TAB_LABELS: Record<Tab, string> = {
   activities: 'Activities',
-  tours:      'Tours',
   holidays:   'Holidays',
   cruises:    'Cruises',
   yachts:     'Yachts',
@@ -154,7 +153,7 @@ export default function TourProductCards({
 }: Props) {
   // Build ordered tab list based on which configs are provided
   const tabs: Tab[] = [];
-  if (tourConfig)    tabs.push('activities', 'tours');
+  if (tourConfig)    tabs.push('activities');
   if (holidayConfig) tabs.push('holidays');
   if (cruiseConfig)  tabs.push('cruises');
   if (yachtConfig)   tabs.push('yachts');
@@ -168,11 +167,6 @@ export default function TourProductCards({
   const activitiesData = useTabProducts(
     tourConfig ?? { cityId: 0, cityName: '', countryName: '' },
     'activities',
-    limit,
-  );
-  const toursData = useTabProducts(
-    tourConfig ?? { cityId: 0, cityName: '', countryName: '' },
-    'tour',
     limit,
   );
   const holidaysData = useTabProducts(
@@ -196,7 +190,6 @@ export default function TourProductCards({
   // Map each tab to its fetched data
   const dataMap: Record<Tab, ReturnType<typeof useTabProducts>> = {
     activities: activitiesData,
-    tours:      toursData,
     holidays:   holidaysData,
     cruises:    cruisesData,
     yachts:     yachtsData,
