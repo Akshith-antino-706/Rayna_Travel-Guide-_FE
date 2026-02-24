@@ -116,7 +116,7 @@ const jsonLd = {
         <div id="city-carousel" class="scroll-row gap-4">
           {featuredCitiesList.map(city => (
             <a
-              href={`/${city!.slug}-travel-guide`}
+              href={`/${city!.slug}-rayna-guide`}
               class="group/card relative w-36 sm:w-44 aspect-[4/5] rounded-2xl overflow-hidden flex-shrink-0"
             >
               <img
@@ -218,7 +218,7 @@ const jsonLd = {
           const cityData = CITIES.find(c => c.slug === citySlug);
           const unsplashId = cityData?.unsplashId || 'photo-1512453979798-5ea266f8880c';
           return (
-            <a href={`/${citySlug}-travel-guide`} class="group relative rounded-2xl overflow-hidden aspect-[3/4]">
+            <a href={`/${citySlug}-rayna-guide`} class="group relative rounded-2xl overflow-hidden aspect-[3/4]">
               <img
                 src={`https://images.unsplash.com/${unsplashId}?w=400&h=500&fit=crop&q=70`}
                 alt={city}
