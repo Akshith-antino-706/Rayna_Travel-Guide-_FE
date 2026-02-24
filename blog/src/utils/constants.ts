@@ -1,4 +1,4 @@
-export const SITE_TITLE = 'TravelScope';
+export const SITE_TITLE = 'Rayna Tours';
 export const SITE_DESCRIPTION = 'Your ultimate travel guide to cities around the world. Discover things to do, where to eat, where to stay, and practical tips for 200+ destinations.';
 export const SITE_URL = 'https://yourdomain.com';
 

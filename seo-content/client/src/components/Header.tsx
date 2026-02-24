@@ -35,7 +35,7 @@ export default function Header({
               </svg>
             </div>
             <h1 className="text-lg font-bold tracking-tight">
-              <span className="text-gradient">TravelScope</span>
+              <span className="text-gradient">Rayna Tours</span>
               <span className="ml-1.5 font-normal text-gray-400">Dashboard</span>
             </h1>
           </div>
