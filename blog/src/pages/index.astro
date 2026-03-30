@@ -4,7 +4,7 @@ import BlogCard from '../components/BlogCard.astro';
 import BlogFilterPage from '../components/BlogFilterPage.tsx';
 import SearchBar from '../components/SearchBar.tsx';
 import { getCollection } from 'astro:content';
-import { SITE_TITLE, SITE_DESCRIPTION, SITE_URL, CATEGORIES, POSTS_PER_PAGE } from '../utils/constants';
+import { SITE_TITLE, SITE_DESCRIPTION, SITE_URL, CATEGORIES, POSTS_PER_PAGE, BASE, url } from '../utils/constants';
 import { CITIES } from '../../scripts/cities';
 
 const allPosts = await getCollection('blog', ({ data }) => !data.draft);
@@ -116,7 +116,7 @@ const jsonLd = {
         <div id="city-carousel" class="scroll-row gap-4">
           {featuredCitiesList.map(city => (
             <a
-              href={`/${city!.slug}-rayna-guide`}
+              href={url(`${city!.slug}-rayna-guide`)}
               class="group/card relative w-36 sm:w-44 aspect-[4/5] rounded-2xl overflow-hidden flex-shrink-0"
             >
               <img
@@ -154,7 +154,7 @@ const jsonLd = {
       <div class="scroll-row gap-3">
         {CATEGORIES.slice(0, 10).map(cat => (
           <a
-            href={`/?category=${encodeURIComponent(cat.id)}#all-posts`}
+            href={url(`?category=${encodeURIComponent(cat.id)}#all-posts`)}
             class="flex-shrink-0 flex items-center gap-2 px-4 py-2.5 bg-white rounded-full border border-gray-100
                    hover:bg-gray-100 hover:border-gray-300 transition-colors text-sm text-gray-600 hover:text-gray-900"
           >
@@ -178,7 +178,7 @@ const jsonLd = {
             'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&h=800&fit=crop&q=70';
           return (
             <a
-              href={`/blog/${post.slug}`}
+              href={url(`blog/${post.slug}`)}
               class="group relative block rounded-2xl overflow-hidden aspect-[2/3]"
             >
               <img
@@ -218,7 +218,7 @@ const jsonLd = {
           const cityData = CITIES.find(c => c.slug === citySlug);
           const unsplashId = cityData?.unsplashId || 'photo-1512453979798-5ea266f8880c';
           return (
-            <a href={`/${citySlug}-rayna-guide`} class="group relative rounded-2xl overflow-hidden aspect-[3/4]">
+            <a href={url(`${citySlug}-rayna-guide`)} class="group relative rounded-2xl overflow-hidden aspect-[3/4]">
               <img
                 src={`https://images.unsplash.com/${unsplashId}?w=400&h=500&fit=crop&q=70`}
                 alt={city}

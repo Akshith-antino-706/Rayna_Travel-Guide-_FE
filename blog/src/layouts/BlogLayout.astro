@@ -3,7 +3,7 @@ import BaseLayout from './BaseLayout.astro';
 import TableOfContents from '../components/TableOfContents.astro';
 import RelatedArticles from '../components/RelatedArticles.astro';
 import TourProductCards from '../components/TourProductCards.tsx';
-import { SITE_URL } from '../utils/constants';
+import { SITE_URL, BASE, url } from '../utils/constants';
 import { getCityConfig, getHolidayConfig, getCruiseConfig, getYachtConfig } from '../utils/city-products';
 
 interface Props {
@@ -100,11 +100,11 @@ const breadcrumbLd = {
   <article class="container-wide py-6">
     <!-- Breadcrumb -->
     <nav class="breadcrumb mb-5" aria-label="Breadcrumb">
-      <a href="/">Home</a>
+      <a href={BASE}>Home</a>
       <span class="sep">&rsaquo;</span>
-      <a href="/">Home</a>
+      <a href={BASE}>Rayna Guides</a>
       <span class="sep">&rsaquo;</span>
-      <a href={`/${citySlug}-rayna-guide`}>{city}</a>
+      <a href={url(`${citySlug}-rayna-guide`)}>{city}</a>
       <span class="sep">&rsaquo;</span>
       <span class="text-gray-600 text-xs truncate max-w-[200px]">{title}</span>
     </nav>
@@ -173,7 +173,7 @@ const breadcrumbLd = {
             <div class="flex flex-wrap gap-2">
               {tags.map(tag => (
                 <a
-                  href={`/?q=${encodeURIComponent(tag)}`}
+                  href={url(`?q=${encodeURIComponent(tag)}`)}
                   class="text-xs bg-gray-50 text-gray-500 px-3 py-1.5 rounded-full border border-gray-100
                          hover:bg-gray-100 hover:text-gray-900 hover:border-gray-300 transition-colors"
                 >
@@ -210,7 +210,7 @@ const breadcrumbLd = {
 
           <!-- City badge -->
           <a
-            href={`/${citySlug}-rayna-guide`}
+            href={url(`${citySlug}-rayna-guide`)}
             class="block p-4 bg-gray-100 rounded-xl hover:bg-gray-200 transition-colors"
           >
             <p class="text-xs text-gray-900 font-semibold mb-1">Explore more</p>

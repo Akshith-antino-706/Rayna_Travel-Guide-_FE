@@ -11,7 +11,7 @@ import EssentialInfo from '../components/guide/EssentialInfo.astro';
 import ActivitiesSection from '../components/guide/ActivitiesSection.astro';
 import LocationSpotsSection from '../components/guide/LocationSpotsSection.astro';
 import { getCollection } from 'astro:content';
-import { CATEGORIES, SITE_URL } from '../utils/constants';
+import { CATEGORIES, SITE_URL, BASE, url } from '../utils/constants';
 import { getCityMeta, getCityGuideData } from '../utils/city-guide-data';
 import TourProductCards from '../components/TourProductCards.tsx';
 import { getCityConfig, getHolidayConfig, getCruiseConfig, getYachtConfig } from '../utils/city-products';
@@ -103,7 +103,7 @@ const essentialCards = essentialTopics
     description: t.description,
     icon: t.icon,
     color: t.color,
-    href: postSlugs.has(t.slug) ? `/blog/${citySlug}/${t.slug}` : undefined,
+    href: postSlugs.has(t.slug) ? url(`blog/${citySlug}/${t.slug}`) : undefined,
   }))
   .filter(c => c.href);
 
@@ -175,9 +175,9 @@ const attractionListLd = attractionPosts.length > 0 ? {
   <div class="bg-gray-50 border-b border-gray-100">
     <div class="container-wide py-3">
       <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="/">Home</a>
+        <a href={BASE}>Home</a>
         <span class="sep">/</span>
-        <a href="/">Rayna Guides</a>
+        <a href={BASE}>Rayna Guides</a>
         <span class="sep">/</span>
         <span class="text-gray-600">{cityName}</span>
       </nav>
@@ -383,7 +383,7 @@ const attractionListLd = attractionPosts.length > 0 ? {
       </p>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
         <a
-          href={`/?city=${encodeURIComponent(cityName)}`}
+          href={url(`?city=${encodeURIComponent(cityName)}`)}
           class="bg-white text-gray-900 px-6 sm:px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors"
         >
           Browse All Articles

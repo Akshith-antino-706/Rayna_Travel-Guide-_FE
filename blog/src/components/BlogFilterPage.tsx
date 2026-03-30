@@ -1,5 +1,6 @@
 import { useState, useMemo, useCallback, useEffect } from 'react';
 import Fuse from 'fuse.js';
+import { BASE, url } from '../utils/constants';
 
 interface Category {
   id: string;
@@ -39,7 +40,7 @@ function FeaturedBlogCard({ post }: { post: PostData }) {
   const imgSrc = post.heroImage || PLACEHOLDER_IMAGE;
 
   return (
-    <a href={`/blog/${post.slug}`} className="group flex gap-3 sm:gap-4 items-start">
+    <a href={url(`blog/${post.slug}`)} className="group flex gap-3 sm:gap-4 items-start">
       <div className="w-24 h-16 sm:w-32 sm:h-[84px] flex-shrink-0 rounded-lg overflow-hidden">
         <img
           src={imgSrc}
@@ -74,7 +75,7 @@ function CompactBlogCard({ post }: { post: PostData }) {
   const imgSrc = post.heroImage || PLACEHOLDER_IMAGE;
 
   return (
-    <a href={`/blog/${post.slug}`} className="group flex gap-3 items-start">
+    <a href={url(`blog/${post.slug}`)} className="group flex gap-3 items-start">
       <div className="w-24 h-[68px] flex-shrink-0 rounded-lg overflow-hidden">
         <img
           src={imgSrc}
@@ -144,7 +145,7 @@ export default function BlogFilterPage({ posts, categories, postsPerPage }: Prop
     if (categoryFilter) params.set('category', categoryFilter);
     if (currentPage > 1) params.set('page', String(currentPage));
     const qs = params.toString();
-    const newUrl = qs ? `/?${qs}` : '/';
+    const newUrl = qs ? `${BASE}?${qs}` : BASE;
     window.history.replaceState(null, '', newUrl);
   }, [searchQuery, cityFilter, categoryFilter, currentPage]);
 

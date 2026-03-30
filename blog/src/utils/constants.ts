@@ -1,3 +1,6 @@
+export const BASE = import.meta.env.BASE_URL;          // e.g. "/blogs/"
+export const url = (path: string = '') => `${BASE}${path}`;  // url('singapore-rayna-guide') → "/blogs/singapore-rayna-guide"
+
 export const SITE_TITLE = 'Rayna Tours';
 export const SITE_DESCRIPTION = 'Your ultimate travel guide to cities around the world. Discover things to do, where to eat, where to stay, and practical tips for 200+ destinations.';
 export const SITE_URL = 'https://yourdomain.com';

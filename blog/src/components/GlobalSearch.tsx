@@ -1,6 +1,7 @@
 import { useState, useMemo, useCallback, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import Fuse from 'fuse.js';
+import { url } from '../utils/constants';
 
 interface ArticleData {
   title: string;
@@ -148,7 +149,7 @@ export default function GlobalSearch({ articles }: Props) {
                     {results.map(({ item }) => (
                       <a
                         key={item.slug}
-                        href={`/blog/${item.slug}`}
+                        href={url(`blog/${item.slug}`)}
                         className="flex items-start gap-3 p-4 hover:bg-gray-50 transition-colors border-b border-gray-100 last:border-0"
                       >
                         <div className="flex-1 min-w-0">

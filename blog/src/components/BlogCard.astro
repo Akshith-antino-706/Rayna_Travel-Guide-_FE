@@ -12,6 +12,8 @@ interface Props {
   variant?: 'default' | 'horizontal' | 'compact';
 }
 
+import { url } from '../utils/constants';
+
 const {
   title, description, slug, city, category, pubDate,
   heroImage, readingTime, featured, variant = 'default'
@@ -30,7 +32,7 @@ const onerrorHandler = `this.onerror=null;this.src='${fallbackSrc}';`;
 
 {/* Default card: Figma vertical card with rounded image */}
 {variant === 'default' && (
-  <a href={`/blog/${slug}`} class:list={['group block', featured && 'md:col-span-2']}>
+  <a href={url(`blog/${slug}`)} class:list={['group block', featured && 'md:col-span-2']}>
     <div class:list={['relative overflow-hidden rounded-lg sm:rounded-xl', featured ? 'aspect-[3/1]' : 'aspect-[3/2] sm:aspect-[16/9]']}>
       <img
         src={imgSrc}
@@ -57,7 +59,7 @@ const onerrorHandler = `this.onerror=null;this.src='${fallbackSrc}';`;
 
 {/* Horizontal card: Figma row layout with image left, text right */}
 {variant === 'horizontal' && (
-  <a href={`/blog/${slug}`} class="group flex gap-4 items-start">
+  <a href={url(`blog/${slug}`)} class="group flex gap-4 items-start">
     <div class="flex-shrink-0 w-28 h-20 sm:w-36 sm:h-24 rounded-xl overflow-hidden">
       <img
         src={imgSrc}
@@ -83,7 +85,7 @@ const onerrorHandler = `this.onerror=null;this.src='${fallbackSrc}';`;
 
 {/* Compact card: Figma small square card */}
 {variant === 'compact' && (
-  <a href={`/blog/${slug}`} class="group block w-32 flex-shrink-0">
+  <a href={url(`blog/${slug}`)} class="group block w-32 flex-shrink-0">
     <div class="w-32 h-20 rounded-xl overflow-hidden mb-1.5">
       <img
         src={imgSrc}
