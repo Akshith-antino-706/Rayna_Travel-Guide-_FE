@@ -20,7 +20,7 @@ export interface CityProductConfig {
 
 export type ProductType = 'tour' | 'activities' | 'holiday' | 'cruise' | 'yacht';
 
-const PRODUCTS_API = 'https://earnest-panda-e8edbd.netlify.app/api/all-products';
+const PRODUCTS_API = 'https://data-projects-flax.vercel.app/api/all-products';
 
 // ─── Tour & Activities ────────────────────────────────────────────────────────
 /** City slug → config for productType=tour and productType=activities */
