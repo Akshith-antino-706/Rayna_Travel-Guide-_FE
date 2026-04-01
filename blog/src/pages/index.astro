@@ -99,7 +99,7 @@ const jsonLd = {
   <section class="bg-gray-50 py-10 md:py-14">
     <div class="container-wide">
       <div class="mb-6">
-        <h2 class="text-xl md:text-2xl font-bold text-gray-900">Most Popular Rayna Guide</h2>
+        <h2 class="text-xl md:text-2xl font-bold text-gray-900">Most Popular Travel Guide</h2>
       </div>
 
       <div class="relative group">
@@ -121,14 +121,14 @@ const jsonLd = {
             >
               <img
                 src={`https://images.unsplash.com/${city!.unsplashId}?w=400&h=500&fit=crop&q=70`}
-                alt={`${city!.name} Rayna Guide`}
+                alt={`${city!.name} Travel Guide`}
                 class="w-full h-full object-cover group-hover/card:scale-110 transition-transform duration-500"
                 loading="lazy"
               />
               <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
               <div class="absolute bottom-4 left-4 right-4">
                 <p class="text-white/70 text-xs font-medium uppercase tracking-wider mb-1">{city!.country}</p>
-                <h3 class="text-white font-bold text-base leading-snug">{city!.name}<br/>Rayna Guide</h3>
+                <h3 class="text-white font-bold text-base leading-snug">{city!.name}<br/>Travel Guide</h3>
               </div>
             </a>
           ))}
@@ -208,7 +208,7 @@ const jsonLd = {
   <!-- 5. Explore Travel Guides (city grid) -->
   <section class="bg-gray-50 py-10">
     <div class="container-wide">
-      <h2 class="section-title mb-1">Explore Rayna Guides</h2>
+      <h2 class="section-title mb-1">Explore Travel Guides</h2>
       <p class="section-subtitle">Comprehensive city guides covering attractions, food, hotels, and more</p>
 
       <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2.5 sm:gap-4">
@@ -243,7 +243,7 @@ const jsonLd = {
   <!-- 6. Popular Travel Guides -->
   <section class="py-10">
     <div class="container-wide">
-      <h2 class="section-title mb-1">Popular Rayna Guides</h2>
+      <h2 class="section-title mb-1">Popular Travel Guides</h2>
       <p class="section-subtitle">Our most popular guides chosen by travelers</p>
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-5">
         {guidePosts.map(post => (

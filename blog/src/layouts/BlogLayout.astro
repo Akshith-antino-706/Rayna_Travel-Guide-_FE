@@ -80,7 +80,7 @@ const breadcrumbLd = {
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
     { '@type': 'ListItem', position: 2, name: 'Home', item: SITE_URL },
-    { '@type': 'ListItem', position: 3, name: `${city} Rayna Guide`, item: `${SITE_URL}/${citySlug}-rayna-guide` },
+    { '@type': 'ListItem', position: 3, name: `${city} Travel Guide`, item: `${SITE_URL}/${citySlug}-rayna-guide` },
     { '@type': 'ListItem', position: 4, name: title },
   ],
 };
@@ -102,7 +102,7 @@ const breadcrumbLd = {
     <nav class="breadcrumb mb-5" aria-label="Breadcrumb">
       <a href={BASE}>Home</a>
       <span class="sep">&rsaquo;</span>
-      <a href={BASE}>Rayna Guides</a>
+      <a href={BASE}>Travel Guides</a>
       <span class="sep">&rsaquo;</span>
       <a href={url(`${citySlug}-rayna-guide`)}>{city}</a>
       <span class="sep">&rsaquo;</span>
@@ -214,7 +214,7 @@ const breadcrumbLd = {
             class="block p-4 bg-gray-100 rounded-xl hover:bg-gray-200 transition-colors"
           >
             <p class="text-xs text-gray-900 font-semibold mb-1">Explore more</p>
-            <p class="text-sm font-bold text-gray-900">{city} Rayna Guide</p>
+            <p class="text-sm font-bold text-gray-900">{city} Travel Guide</p>
             <p class="text-xs text-gray-500 mt-1">View all {city} articles</p>
           </a>
         </div>

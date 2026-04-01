@@ -4,8 +4,7 @@ import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://yourdomain.com',
-  base: '/blogs/',
+  site: 'https://ranyablogss.netlify.app',
   output: 'static',
   integrations: [
     react(),
