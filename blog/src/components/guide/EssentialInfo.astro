@@ -15,8 +15,8 @@ interface Props {
 const { cards, cityName } = Astro.props;
 
 const bgColors: Record<string, string> = {
-  green: 'bg-green-100',
-  blue: 'bg-blue-100',
+  green: 'bg-emerald-100',
+  blue: 'bg-[#E8F2F8]',
   red: 'bg-red-100',
   purple: 'bg-purple-100',
   cyan: 'bg-cyan-100',
@@ -24,8 +24,8 @@ const bgColors: Record<string, string> = {
 };
 
 const textColors: Record<string, string> = {
-  green: 'text-green-600',
-  blue: 'text-blue-600',
+  green: 'text-emerald-600',
+  blue: 'text-[#0EA5E9]',
   red: 'text-red-600',
   purple: 'text-purple-600',
   cyan: 'text-cyan-600',
@@ -33,9 +33,10 @@ const textColors: Record<string, string> = {
 };
 ---
 
-<section class="py-8 sm:py-12">
+<section class="py-16 sm:py-20 bg-[#F0F9FF]">
   <div class="container-wide">
-    <h2 class="text-xl sm:text-2xl font-bold text-gray-900 guide-section-header">
+    <p class="text-[#0EA5E9] text-xs sm:text-sm font-semibold uppercase tracking-wider mb-2">Essentials</p>
+    <h2 class="text-2xl sm:text-3xl font-bold text-[#0C4A6E] font-heading guide-section-header">
       Essential Information
     </h2>
 
@@ -46,12 +47,12 @@ const textColors: Record<string, string> = {
           <Tag
             href={card.href}
             class:list={[
-              'bg-white rounded-xl p-4 sm:p-5 border border-gray-100 hover:border-gray-300 hover:shadow-sm transition-all group',
+              'bg-white rounded-2xl p-5 sm:p-6 border border-[#BAE6FD] hover:border-[#0EA5E9] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group',
               card.href && 'cursor-pointer',
             ]}
           >
-            <div class="flex items-center gap-3 mb-3">
-              <div class={`w-10 h-10 ${bgColors[card.color] || 'bg-gray-100'} rounded-full flex items-center justify-center`}>
+            <div class="flex items-center gap-3.5 mb-4">
+              <div class={`w-11 h-11 ${bgColors[card.color] || 'bg-[#E8F2F8]'} rounded-xl flex items-center justify-center`}>
                 {card.icon === 'money' && (
                   <svg class={`w-5 h-5 ${textColors[card.color]}`} fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
@@ -83,11 +84,16 @@ const textColors: Record<string, string> = {
                   </svg>
                 )}
               </div>
-              <h3 class="font-semibold text-gray-900 text-sm sm:text-base group-hover:text-gray-900 transition-colors">{card.title}</h3>
+              <h3 class="font-bold text-[#0C4A6E] text-sm sm:text-base group-hover:text-[#0EA5E9] transition-colors duration-200">{card.title}</h3>
             </div>
-            <p class="text-xs sm:text-sm text-gray-500 leading-relaxed">{card.description}</p>
+            <p class="text-xs sm:text-sm text-[#0C4A6E]/70 leading-relaxed">{card.description}</p>
             {card.href && (
-              <p class="text-xs text-gray-900 mt-2 font-medium">Read full guide →</p>
+              <p class="text-xs text-[#0EA5E9] mt-3 font-semibold inline-flex items-center gap-1 group-hover:gap-2 transition-all duration-300">
+                Read full guide
+                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </p>
             )}
           </Tag>
         );

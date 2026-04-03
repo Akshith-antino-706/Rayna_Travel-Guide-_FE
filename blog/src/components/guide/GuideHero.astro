@@ -17,21 +17,21 @@ const img2 = heroImages?.[1] || fallbackImage || 'https://images.unsplash.com/ph
 const citySlug = cityName.toLowerCase().replace(/\s+/g, '-');
 ---
 
-<section class="py-8 sm:py-12">
+<section class="py-16 sm:py-20 bg-gradient-to-b from-[#F0F9FF] to-white">
   <div class="container-wide">
-    <div class="grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
+    <div class="grid lg:grid-cols-2 gap-8 lg:gap-14 items-center">
       <!-- Text Column -->
       <div class="order-2 lg:order-1">
         {tagline && (
-          <p class="text-gray-900 text-xs sm:text-sm font-medium mb-2">{tagline}</p>
+          <p class="text-[#0EA5E9] text-xs sm:text-sm font-semibold uppercase tracking-wider mb-3">{tagline}</p>
         )}
-        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#0C4A6E] mb-5 leading-[1.1]" style="font-family: 'Playfair Display', Georgia, serif;">
           The Ultimate<br />{cityName} Travel Guide
         </h1>
-        <p class="text-gray-500 mb-6 leading-relaxed text-sm sm:text-base">
+        <p class="text-[#0C4A6E]/70 mb-8 leading-relaxed text-sm sm:text-base max-w-lg">
           {description}
         </p>
-        <div class="flex flex-wrap items-center gap-3 mb-6">
+        <div class="flex flex-wrap items-center gap-3 mb-8">
           <a
             href={`https://www.raynatours.com/${citySlug}-activities`}
             target="_blank"
@@ -44,47 +44,54 @@ const citySlug = cityName.toLowerCase().replace(/\s+/g, '-');
             </svg>
           </a>
         </div>
-        <div class="flex items-center gap-4 text-sm text-gray-400">
+        <div class="flex items-center gap-4 text-sm text-[#0C4A6E]/70">
           <span class="flex items-center gap-1.5">
-            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <svg class="w-4 h-4 text-[#0EA5E9]" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
             </svg>
-            {postCount} Expert Articles
+            <span class="font-semibold text-[#0C4A6E]">{postCount}</span> Expert Articles
           </span>
-          <span class="text-gray-300">|</span>
-          <span>{categoryCount} Categories</span>
-          <span class="text-gray-300">|</span>
-          <span>{country}</span>
+          <span class="w-px h-4 bg-[#BAE6FD]"></span>
+          <span><span class="font-semibold text-[#0C4A6E]">{categoryCount}</span> Categories</span>
+          <span class="w-px h-4 bg-[#BAE6FD]"></span>
+          <span class="font-medium text-[#0C4A6E]">{country}</span>
         </div>
       </div>
 
       <!-- Image Column -->
       <div class="relative order-1 lg:order-2">
-        <div class="grid grid-cols-2 gap-3 sm:gap-4">
-          <img
-            src={img1}
-            alt={`${cityName} skyline`}
-            class="rounded-2xl w-full h-36 sm:h-48 lg:h-56 object-cover"
-            loading="eager"
-          />
-          <img
-            src={img2}
-            alt={`${cityName} landmark`}
-            class="rounded-2xl w-full h-36 sm:h-48 lg:h-56 object-cover mt-4 sm:mt-8"
-            loading="eager"
-          />
+        <div class="grid grid-cols-2 gap-3 sm:gap-5">
+          <div class="rounded-2xl overflow-hidden shadow-lg">
+            <img
+              src={img1}
+              alt={`${cityName} skyline`}
+              class="w-full h-40 sm:h-52 lg:h-64 object-cover transition-transform duration-500 hover:scale-105"
+              loading="eager"
+            />
+          </div>
+          <div class="rounded-2xl overflow-hidden shadow-lg mt-6 sm:mt-10">
+            <img
+              src={img2}
+              alt={`${cityName} landmark`}
+              class="w-full h-40 sm:h-52 lg:h-64 object-cover transition-transform duration-500 hover:scale-105"
+              loading="eager"
+            />
+          </div>
         </div>
         <!-- Floating info card -->
-        <div class="absolute -bottom-3 sm:-bottom-5 left-0 sm:-left-4 bg-white p-3 sm:p-4 rounded-xl shadow-lg max-w-[200px] sm:max-w-none z-10">
-          <p class="text-xs sm:text-sm text-gray-500 mb-1">Everything you need to know about</p>
-          <p class="font-semibold text-gray-900 text-sm sm:text-base">{cityName}, {country}</p>
+        <div class="absolute -bottom-4 sm:-bottom-6 left-0 sm:-left-6 bg-white p-4 sm:p-5 rounded-xl max-w-[220px] sm:max-w-none z-10 border-l-4 border-[#EA580C]" style="box-shadow: 0 8px 30px rgba(12, 74, 110, 0.12), 0 2px 8px rgba(12, 74, 110, 0.06);">
+          <p class="text-xs sm:text-sm text-[#0C4A6E]/70 mb-1">Everything you need to know about</p>
+          <p class="font-bold text-[#0C4A6E] text-sm sm:text-base">{cityName}, {country}</p>
           <a
             href={`https://www.raynatours.com/${citySlug}-activities`}
             target="_blank"
             rel="noopener noreferrer sponsored"
-            class="text-gray-900 text-xs sm:text-sm mt-1 inline-block hover:underline"
+            class="text-[#0EA5E9] text-xs sm:text-sm mt-2 inline-flex items-center gap-1 font-semibold hover:text-[#0284C7] transition-colors duration-200"
           >
-            Start exploring →
+            Start exploring
+            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
           </a>
         </div>
       </div>

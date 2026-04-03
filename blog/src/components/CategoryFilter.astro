@@ -15,8 +15,8 @@ const { activeCategory } = Astro.props;
     class:list={[
       'inline-flex items-center px-4 py-2 rounded-full text-sm font-medium transition-colors',
       !activeCategory
-        ? 'bg-gray-900 text-white'
-        : 'bg-gray-100 text-gray-600 hover:bg-gray-200',
+        ? 'bg-[#0EA5E9] text-white'
+        : 'bg-[#E8F2F8] text-[#0C4A6E] hover:bg-[#BAE6FD]',
     ]}
   >
     All
@@ -28,8 +28,8 @@ const { activeCategory } = Astro.props;
       class:list={[
         'inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-colors',
         activeCategory === cat.id
-          ? 'bg-gray-900 text-white'
-          : 'bg-gray-100 text-gray-600 hover:bg-gray-200',
+          ? 'bg-[#0EA5E9] text-white'
+          : 'bg-[#E8F2F8] text-[#0C4A6E] hover:bg-[#BAE6FD]',
       ]}
     >
       <span class="text-sm">{cat.icon}</span>

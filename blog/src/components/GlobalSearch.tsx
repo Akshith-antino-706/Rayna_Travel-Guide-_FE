@@ -96,7 +96,7 @@ export default function GlobalSearch({ articles }: Props) {
             onClick={close}
           >
             {/* Backdrop */}
-            <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" />
+            <div className="absolute inset-0 bg-[#0C4A6E]/60 backdrop-blur-md" />
 
             {/* Modal */}
             <div
@@ -106,7 +106,7 @@ export default function GlobalSearch({ articles }: Props) {
               {/* Search input */}
               <div className="relative">
                 <svg
-                  className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400"
+                  className="absolute left-5 top-1/2 -translate-y-1/2 w-6 h-6 text-[#0EA5E9]"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -124,12 +124,13 @@ export default function GlobalSearch({ articles }: Props) {
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
                   placeholder="Search articles... (e.g., 'Dubai food', 'visa guide')"
-                  className="w-full pl-12 pr-12 py-4 bg-white rounded-xl text-gray-900
-                             placeholder-gray-400 focus:outline-none shadow-2xl text-base"
+                  className="w-full pl-14 pr-14 py-5 bg-white rounded-2xl text-[#0C4A6E] text-lg
+                             placeholder-[#0C4A6E]/35 focus:outline-none focus:ring-2 focus:ring-[#0EA5E9]
+                             shadow-[0_12px_40px_rgba(14,165,233,0.15)] font-[Inter]"
                 />
                 <button
                   onClick={close}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
+                  className="absolute right-5 top-1/2 -translate-y-1/2 text-[#0C4A6E]/40 hover:text-[#0C4A6E]/70 transition-colors"
                 >
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path
@@ -144,32 +145,32 @@ export default function GlobalSearch({ articles }: Props) {
 
               {/* Results */}
               {results.length > 0 && (
-                <div className="mt-2 bg-white rounded-xl shadow-xl overflow-hidden">
-                  <div className="overflow-y-auto max-h-80 overscroll-contain">
+                <div className="mt-3 bg-white rounded-2xl shadow-[0_12px_40px_rgba(14,165,233,0.15)] border border-[#BAE6FD] overflow-hidden">
+                  <div className="overflow-y-auto max-h-96 overscroll-contain">
                     {results.map(({ item }) => (
                       <a
                         key={item.slug}
                         href={url(`blog/${item.slug}`)}
-                        className="flex items-start gap-3 p-4 hover:bg-gray-50 transition-colors border-b border-gray-100 last:border-0"
+                        className="flex items-start gap-4 p-4 hover:bg-[#E8F2F8] transition-colors border-b border-[#BAE6FD]/30 last:border-0"
                       >
                         <div className="flex-1 min-w-0">
-                          <h4 className="text-sm font-semibold text-gray-900 truncate">
+                          <h4 className="text-sm font-semibold text-[#0C4A6E] truncate font-[Inter]">
                             {item.title}
                           </h4>
-                          <p className="text-xs text-gray-500 mt-0.5 truncate">
+                          <p className="text-xs text-[#0C4A6E]/60 mt-1 truncate font-[Inter]">
                             {item.description}
                           </p>
-                          <div className="flex items-center gap-2 mt-1.5">
-                            <span className="text-xs bg-gray-200 text-gray-900 px-2 py-0.5 rounded-full">
+                          <div className="flex items-center gap-2 mt-2">
+                            <span className="text-xs bg-[#0EA5E9]/10 text-[#0EA5E9] px-2.5 py-0.5 rounded-full font-medium">
                               {item.city}
                             </span>
-                            <span className="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full">
+                            <span className="text-xs bg-[#EA580C]/10 text-[#EA580C] px-2.5 py-0.5 rounded-full font-medium">
                               {item.category}
                             </span>
                           </div>
                         </div>
                         <svg
-                          className="w-4 h-4 text-gray-300 mt-1 flex-shrink-0"
+                          className="w-4 h-4 text-[#0EA5E9]/40 mt-1 flex-shrink-0"
                           fill="none"
                           stroke="currentColor"
                           viewBox="0 0 24 24"
@@ -188,9 +189,9 @@ export default function GlobalSearch({ articles }: Props) {
               )}
 
               {query.trim() && results.length === 0 && (
-                <div className="mt-2 bg-white rounded-xl shadow-xl p-6 text-center">
-                  <p className="text-gray-500 text-sm">No articles found for "{query}"</p>
-                  <p className="text-gray-400 text-xs mt-1">
+                <div className="mt-3 bg-white rounded-2xl shadow-[0_12px_40px_rgba(14,165,233,0.15)] border border-[#BAE6FD] p-8 text-center">
+                  <p className="text-[#0C4A6E]/70 text-sm font-medium font-[Inter]">No articles found for "{query}"</p>
+                  <p className="text-[#0C4A6E]/40 text-xs mt-2 font-[Inter]">
                     Try searching by city name, topic, or category
                   </p>
                 </div>
@@ -205,10 +206,10 @@ export default function GlobalSearch({ articles }: Props) {
     <>
       <button
         onClick={open}
-        className="p-2 rounded-full hover:bg-gray-50 transition-colors"
+        className="p-2 rounded-full hover:bg-[#E8F2F8] transition-colors"
         aria-label="Search"
       >
-        <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-5 h-5 text-[#0EA5E9]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"

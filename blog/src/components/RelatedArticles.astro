@@ -26,10 +26,13 @@ const related = [...sameCityCategory, ...sameCity].slice(0, limit);
 
 {related.length > 0 && (
   <section>
-    <h2 class="font-heading text-2xl font-bold text-gray-900 mb-6">
-      More About {city}
-    </h2>
-    <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 sm:gap-6">
+    <div class="mb-8">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-2" style="font-family:'Playfair Display',serif; color:#0C4A6E;">
+        More About {city}
+      </h2>
+      <div class="w-16 h-1 rounded-full" style="background-color:#EA580C;"></div>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
       {related.map(post => (
         <BlogCard
           title={post.data.title}

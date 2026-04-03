@@ -5,6 +5,7 @@ import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   site: 'https://ranyablogss.netlify.app',
+  base: '/blogs/',
   output: 'static',
   integrations: [
     react(),

@@ -172,14 +172,14 @@ const attractionListLd = attractionPosts.length > 0 ? {
   )}
 
   <!-- Breadcrumb Strip -->
-  <div class="bg-gray-50 border-b border-gray-100">
+  <div class="bg-[#F0F9FF] border-b border-[#BAE6FD]">
     <div class="container-wide py-3">
       <nav class="breadcrumb" aria-label="Breadcrumb">
         <a href={BASE}>Home</a>
         <span class="sep">/</span>
         <a href={BASE}>Travel Guides</a>
         <span class="sep">/</span>
-        <span class="text-gray-600">{cityName}</span>
+        <span class="text-[#0C4A6E] font-medium">{cityName}</span>
       </nav>
     </div>
   </div>
@@ -235,20 +235,20 @@ const attractionListLd = attractionPosts.length > 0 ? {
   )}
 
   <!-- Sticky Quick Navigation -->
-  <section class="bg-white border-b border-gray-200 sticky top-14 z-40">
+  <section class="bg-white/95 backdrop-blur-md border-b border-[#BAE6FD] sticky top-14 z-40 shadow-sm">
     <div class="container-wide">
-      <nav class="scroll-row py-3 gap-1 !pb-3" id="guide-nav">
+      <nav class="scroll-row py-3 gap-2 !pb-3" id="guide-nav">
         {postsByCategory.map(cat => (
           <a
             href={`#${cat.id.toLowerCase().replace(/\s+/g, '-').replace(/&/g, '')}`}
-            class="guide-nav-pill flex-shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5
-                   rounded-full text-sm text-gray-600 hover:bg-gray-100 hover:text-gray-900
-                   transition-colors whitespace-nowrap"
+            class="guide-nav-pill flex-shrink-0 inline-flex items-center gap-1.5 px-4 py-2
+                   rounded-full text-sm font-medium text-[#0C4A6E] hover:bg-[#E8F2F8] hover:text-[#0284C7]
+                   transition-all duration-200 whitespace-nowrap"
             data-section={cat.id.toLowerCase().replace(/\s+/g, '-').replace(/&/g, '')}
           >
             <span>{cat.icon}</span>
             {cat.label}
-            <span class="text-xs text-gray-400 ml-0.5">({cat.posts.length})</span>
+            <span class="text-xs text-[#0EA5E9] font-semibold ml-0.5">({cat.posts.length})</span>
           </a>
         ))}
       </nav>
@@ -257,7 +257,7 @@ const attractionListLd = attractionPosts.length > 0 ? {
 
   <!-- Tours, Activities, Holidays, Cruises & Yachts -->
   {(cityProductConfig || cityHolidayConfig || cityCruiseConfig || cityYachtConfig) && (
-    <section class="py-10 bg-white">
+    <section class="py-16 sm:py-20 bg-white">
       <div class="container-wide">
         <TourProductCards
           tourConfig={cityProductConfig ?? undefined}
@@ -279,19 +279,22 @@ const attractionListLd = attractionPosts.length > 0 ? {
       <section
         id={catSlug}
         class:list={[
-          'py-10 sm:py-12 scroll-mt-32',
-          index % 2 === 1 ? 'bg-gray-50' : 'bg-white',
+          'py-16 sm:py-20 scroll-mt-32',
+          index % 2 === 1 ? 'bg-[#F0F9FF]' : 'bg-white',
         ]}
       >
         <div class="container-wide">
-          <div class="flex items-center gap-3 mb-6">
+          <div class="flex items-center gap-3 mb-3">
             <span class="text-2xl">{cat.icon}</span>
-            <h2 class="text-xl sm:text-2xl font-bold text-gray-900">{cat.label}</h2>
+            <p class="text-[#0EA5E9] text-xs sm:text-sm font-semibold uppercase tracking-wider">{cat.label}</p>
             <span class="badge-category">{cat.posts.length} articles</span>
           </div>
+          <h2 class="text-2xl sm:text-3xl font-bold text-[#0C4A6E] font-heading guide-section-header">
+            {cat.label} in {cityName}
+          </h2>
 
           {index === 0 && cat.posts.length >= 4 ? (
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5 sm:gap-4">
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-5">
               {cat.posts.slice(0, 8).map(post => (
                 <BlogCard
                   title={post.data.title}
@@ -306,7 +309,7 @@ const attractionListLd = attractionPosts.length > 0 ? {
               ))}
             </div>
           ) : (
-            <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 sm:gap-6">
+            <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
               {cat.posts.slice(0, 6).map(post => (
                 <BlogCard
                   title={post.data.title}
@@ -342,14 +345,14 @@ const attractionListLd = attractionPosts.length > 0 ? {
 
   <!-- Sample Itineraries -->
   {itineraryPosts.length > 0 && (
-    <section id="itineraries" class="py-8 sm:py-12 scroll-mt-32">
+    <section id="itineraries" class="py-16 sm:py-20 scroll-mt-32 bg-white">
       <div class="container-wide">
-        <p class="text-gray-900 text-xs sm:text-sm font-medium mb-2">Itineraries</p>
-        <h2 class="text-xl sm:text-2xl font-bold text-gray-900 guide-section-header">
+        <p class="text-[#0EA5E9] text-xs sm:text-sm font-semibold uppercase tracking-wider mb-2">Itineraries</p>
+        <h2 class="text-2xl sm:text-3xl font-bold text-[#0C4A6E] font-heading guide-section-header">
           Sample {cityName} Itineraries
         </h2>
 
-        <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 sm:gap-6">
+        <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
           {itineraryPosts.slice(0, 6).map(post => (
               <BlogCard
                 title={post.data.title}
@@ -373,18 +376,18 @@ const attractionListLd = attractionPosts.length > 0 ? {
   )}
 
   <!-- CTA Section -->
-  <section class="py-12 sm:py-16 bg-gradient-to-br from-gray-900 to-black">
+  <section class="py-16 sm:py-20 bg-gradient-to-br from-[#0C4A6E] via-[#0284C7] to-[#0EA5E9]">
     <div class="container-narrow text-center text-white">
-      <h2 class="text-2xl sm:text-3xl font-bold mb-4">
+      <h2 class="text-2xl sm:text-4xl font-bold mb-4" style="font-family: 'Playfair Display', Georgia, serif;">
         Ready to Explore {cityName}?
       </h2>
-      <p class="text-gray-300 mb-6 sm:mb-8 max-w-xl mx-auto">
+      <p class="text-sky-100 mb-8 sm:mb-10 max-w-xl mx-auto text-base sm:text-lg leading-relaxed">
         Plan your perfect trip with our comprehensive guides covering every aspect of visiting {cityName}.
       </p>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
         <a
           href={url(`?city=${encodeURIComponent(cityName)}`)}
-          class="bg-white text-gray-900 px-6 sm:px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors"
+          class="bg-white text-[#0C4A6E] px-8 sm:px-10 py-3.5 rounded-full font-semibold hover:bg-[#F0F9FF] transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
         >
           Browse All Articles
         </a>

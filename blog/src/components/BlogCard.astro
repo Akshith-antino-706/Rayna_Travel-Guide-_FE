@@ -30,74 +30,126 @@ const fallbackSrc = placeholderImage;
 const onerrorHandler = `this.onerror=null;this.src='${fallbackSrc}';`;
 ---
 
-{/* Default card: Figma vertical card with rounded image */}
+{/* Default card: Editorial magazine vertical card */}
 {variant === 'default' && (
-  <a href={url(`blog/${slug}`)} class:list={['group block', featured && 'md:col-span-2']}>
-    <div class:list={['relative overflow-hidden rounded-lg sm:rounded-xl', featured ? 'aspect-[3/1]' : 'aspect-[3/2] sm:aspect-[16/9]']}>
-      <img
-        src={imgSrc}
-        alt={title}
-        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-        width="400"
-        height="225"
-        loading="lazy"
-        onerror={onerrorHandler}
-      />
-    </div>
-    <div class="pt-1.5 sm:pt-2.5">
-      <div class="flex items-center gap-1.5 sm:gap-2 mb-0.5 sm:mb-1">
-        <span class="text-[10px] sm:text-[11px] text-gray-500 font-medium">{category}</span>
-        <span class="text-gray-200">&middot;</span>
-        <span class="text-[10px] sm:text-[11px] text-gray-400">{readingTime} min read</span>
+  <a href={url(`blog/${slug}`)} class:list={['blog-card group block', featured && 'md:col-span-2']}>
+    <div class:list={[
+      'relative bg-white rounded-2xl shadow-[0_1px_3px_rgba(12,74,110,0.06),0_4px_12px_rgba(12,74,110,0.04)] overflow-hidden',
+      'transition-all duration-300 hover:shadow-[0_4px_16px_rgba(12,74,110,0.1),0_8px_32px_rgba(12,74,110,0.06)] hover:-translate-y-1'
+    ]}>
+      {/* Image container */}
+      <div class:list={['relative overflow-hidden', featured ? 'aspect-[3/1]' : 'aspect-[16/9]']}>
+        <img
+          src={imgSrc}
+          alt={title}
+          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          width="400"
+          height="225"
+          loading="lazy"
+          onerror={onerrorHandler}
+        />
+        {/* Category badge */}
+        <div class="absolute top-3 left-3">
+          <span class="inline-block px-2.5 py-1 bg-[#0EA5E9] text-white text-[10px] sm:text-[11px] font-semibold uppercase tracking-wider rounded-md">
+            {category}
+          </span>
+        </div>
       </div>
-      <h3 class="text-xs sm:text-sm font-bold text-gray-900 group-hover:text-gray-900 transition-colors leading-snug line-clamp-2">
-        {title}
-      </h3>
+
+      {/* Content */}
+      <div class="p-4 sm:p-5">
+        <h3 class="font-['Playfair_Display',serif] text-sm sm:text-base font-bold text-[#0C4A6E] group-hover:text-[#0EA5E9] transition-colors duration-300 leading-snug line-clamp-2">
+          {title}
+        </h3>
+        {description && (
+          <p class="mt-2 text-xs sm:text-sm text-[#0C4A6E]/60 font-['Inter',sans-serif] leading-relaxed line-clamp-2">
+            {description}
+          </p>
+        )}
+        <div class="flex items-center gap-1.5 mt-3 text-[10px] sm:text-xs font-['Inter',sans-serif] text-[#0C4A6E]/50">
+          <time datetime={pubDate.toISOString()}>{formattedDate}</time>
+          <span class="inline-block w-1 h-1 rounded-full bg-[#0C4A6E]/30"></span>
+          <span>{readingTime} min read</span>
+        </div>
+      </div>
+
+      {/* Bottom gradient line on hover */}
+      <div class="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#0EA5E9] to-[#EA580C] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
     </div>
   </a>
 )}
 
-{/* Horizontal card: Figma row layout with image left, text right */}
+{/* Horizontal card: Editorial row layout with image left, content right */}
 {variant === 'horizontal' && (
-  <a href={url(`blog/${slug}`)} class="group flex gap-4 items-start">
-    <div class="flex-shrink-0 w-28 h-20 sm:w-36 sm:h-24 rounded-xl overflow-hidden">
-      <img
-        src={imgSrc}
-        alt={title}
-        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-        loading="lazy"
-        onerror={onerrorHandler}
-      />
-    </div>
-    <div class="flex-1 min-w-0">
-      <span class="text-xs text-gray-900 font-medium">{category}</span>
-      <h3 class="text-sm font-bold text-gray-900 group-hover:text-gray-900 transition-colors leading-snug line-clamp-2 mt-0.5 mb-1">
-        {title}
-      </h3>
-      <div class="flex items-center gap-2 text-xs text-gray-400">
-        <time datetime={pubDate.toISOString()}>{formattedDate}</time>
-        <span>&middot;</span>
-        <span>{readingTime} min</span>
+  <a href={url(`blog/${slug}`)} class="blog-card group block">
+    <div class="relative flex bg-white rounded-2xl shadow-[0_1px_3px_rgba(12,74,110,0.06),0_4px_12px_rgba(12,74,110,0.04)] overflow-hidden transition-all duration-300 hover:shadow-[0_4px_16px_rgba(12,74,110,0.1),0_8px_32px_rgba(12,74,110,0.06)] hover:-translate-y-0.5">
+      {/* Image */}
+      <div class="flex-shrink-0 w-32 sm:w-44 overflow-hidden">
+        <div class="relative w-full h-full aspect-[4/3]">
+          <img
+            src={imgSrc}
+            alt={title}
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            loading="lazy"
+            onerror={onerrorHandler}
+          />
+        </div>
       </div>
+
+      {/* Content */}
+      <div class="flex-1 min-w-0 p-3.5 sm:p-5 flex flex-col justify-center">
+        <span class="inline-block self-start px-2 py-0.5 bg-[#0EA5E9] text-white text-[10px] sm:text-[11px] font-semibold uppercase tracking-wider rounded-md mb-2">
+          {category}
+        </span>
+        <h3 class="font-['Playfair_Display',serif] text-sm sm:text-base font-bold text-[#0C4A6E] group-hover:text-[#0EA5E9] transition-colors duration-300 leading-snug line-clamp-2">
+          {title}
+        </h3>
+        {description && (
+          <p class="mt-1.5 text-xs text-[#0C4A6E]/60 font-['Inter',sans-serif] leading-relaxed line-clamp-2 hidden sm:block">
+            {description}
+          </p>
+        )}
+        <div class="flex items-center gap-1.5 mt-2.5 text-[10px] sm:text-xs font-['Inter',sans-serif] text-[#0C4A6E]/50">
+          <time datetime={pubDate.toISOString()}>{formattedDate}</time>
+          <span class="inline-block w-1 h-1 rounded-full bg-[#0C4A6E]/30"></span>
+          <span>{readingTime} min</span>
+        </div>
+      </div>
+
+      {/* Bottom gradient line on hover */}
+      <div class="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#0EA5E9] to-[#EA580C] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
     </div>
   </a>
 )}
 
-{/* Compact card: Figma small square card */}
+{/* Compact card: Editorial sidebar card */}
 {variant === 'compact' && (
-  <a href={url(`blog/${slug}`)} class="group block w-32 flex-shrink-0">
-    <div class="w-32 h-20 rounded-xl overflow-hidden mb-1.5">
-      <img
-        src={imgSrc}
-        alt={title}
-        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-        loading="lazy"
-        onerror={onerrorHandler}
-      />
+  <a href={url(`blog/${slug}`)} class="blog-card group block w-36 flex-shrink-0">
+    <div class="relative overflow-hidden rounded-xl shadow-[0_1px_2px_rgba(12,74,110,0.05)] transition-all duration-300 hover:shadow-[0_2px_8px_rgba(12,74,110,0.1)] hover:-translate-y-0.5">
+      {/* Image */}
+      <div class="w-full h-[5.5rem] overflow-hidden">
+        <img
+          src={imgSrc}
+          alt={title}
+          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          loading="lazy"
+          onerror={onerrorHandler}
+        />
+      </div>
+      {/* Content */}
+      <div class="bg-white p-2.5">
+        <span class="inline-block text-[9px] font-semibold uppercase tracking-wider text-[#0EA5E9] font-['Inter',sans-serif] mb-1">
+          {category}
+        </span>
+        <h3 class="font-['Playfair_Display',serif] text-[11px] sm:text-xs font-bold text-[#0C4A6E] group-hover:text-[#0EA5E9] transition-colors duration-300 leading-snug line-clamp-2">
+          {title}
+        </h3>
+        <span class="block mt-1 text-[9px] font-['Inter',sans-serif] text-[#0C4A6E]/45">{readingTime} min read</span>
+      </div>
+
+      {/* Bottom gradient line on hover */}
+      <div class="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-[#0EA5E9] to-[#EA580C] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
     </div>
-    <h3 class="text-xs font-semibold text-gray-900 group-hover:text-gray-900 transition-colors leading-snug line-clamp-2">
-      {title}
-    </h3>
   </a>
 )}
 

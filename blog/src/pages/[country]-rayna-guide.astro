@@ -94,20 +94,20 @@ const breadcrumbLd = {
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
 
   <!-- Breadcrumb -->
-  <div class="bg-gray-50 border-b border-gray-100">
-    <div class="container-wide py-3">
-      <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href={BASE}>Home</a>
-        <span class="sep">/</span>
-        <span class="text-gray-500">Country Guides</span>
-        <span class="sep">/</span>
-        <span class="text-gray-600">{countryName}</span>
+  <div class="bg-[#F0F9FF] border-b border-[#BAE6FD]">
+    <div class="container-wide py-4">
+      <nav class="flex items-center gap-2 text-sm" aria-label="Breadcrumb">
+        <a href={BASE} class="text-[#0EA5E9] hover:text-[#0C4A6E] font-medium transition-colors">Home</a>
+        <svg class="w-4 h-4 text-[#BAE6FD]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+        <span class="text-[#0EA5E9] font-medium">Country Guides</span>
+        <svg class="w-4 h-4 text-[#BAE6FD]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+        <span class="text-[#0C4A6E] font-semibold">{countryName}</span>
       </nav>
     </div>
   </div>
 
   <!-- Hero -->
-  <section class="relative h-[300px] md:h-[380px]">
+  <section class="relative h-[360px] md:h-[460px] animate-fade-in">
     <div class="absolute inset-0 overflow-hidden">
       <img
         src={heroImage}
@@ -115,33 +115,45 @@ const breadcrumbLd = {
         class="w-full h-full object-cover"
         loading="eager"
       />
-      <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/40 to-black/10"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0C4A6E]/90 via-[#0C4A6E]/50 to-sky-900/10"></div>
     </div>
-    <div class="container-wide relative h-full flex flex-col justify-end pb-10 px-4">
-      <p class="text-white/60 text-sm font-medium uppercase tracking-widest mb-2">{continent} · Country Guide</p>
-      <h1 class="text-white text-3xl md:text-5xl font-bold leading-tight mb-3">{countryName}</h1>
-      <div class="flex items-center gap-6 text-white/70 text-sm">
-        <span>{posts.length} articles</span>
-        <span>·</span>
-        <span>{citiesWithContent.length} {citiesWithContent.length === 1 ? 'city' : 'cities'}</span>
+    <div class="container-wide relative h-full flex flex-col justify-end pb-12 px-4">
+      <p class="text-sky-200 text-sm font-semibold uppercase tracking-[0.2em] mb-3" style="font-family: 'Inter', sans-serif;">{continent} &middot; Country Guide</p>
+      <h1 class="text-white text-4xl md:text-6xl font-bold leading-tight mb-4" style="font-family: 'Playfair Display', serif;">{countryName}</h1>
+      <p class="text-sky-100/80 text-base md:text-lg max-w-2xl leading-relaxed mb-4" style="font-family: 'Inter', sans-serif;">
+        Your complete editorial guide to exploring {countryName} — curated city guides, insider tips, and local secrets.
+      </p>
+      <div class="flex items-center gap-4 text-sky-200/90 text-sm font-medium" style="font-family: 'Inter', sans-serif;">
+        <span class="flex items-center gap-1.5">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path></svg>
+          {posts.length} articles
+        </span>
+        <span class="w-1 h-1 rounded-full bg-sky-300/60"></span>
+        <span class="flex items-center gap-1.5">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+          {citiesWithContent.length} {citiesWithContent.length === 1 ? 'city' : 'cities'}
+        </span>
       </div>
     </div>
   </section>
 
   <!-- City Guides -->
   {citiesWithContent.length > 0 && (
-    <section class="py-10 bg-white">
+    <section class="py-16 md:py-20 bg-white animate-fade-in">
       <div class="container-wide">
-        <h2 class="text-xl md:text-2xl font-bold text-gray-900 mb-6">
-          Cities in {countryName}
-        </h2>
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div class="mb-10">
+          <h2 class="text-2xl md:text-3xl font-bold text-[#0C4A6E] mb-2" style="font-family: 'Playfair Display', serif;">
+            Cities in {countryName}
+          </h2>
+          <div class="w-16 h-1 bg-[#EA580C] rounded-full"></div>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-6">
           {citiesWithContent.map(city => {
             const count = sortedPosts.filter(p => p.data.city === city.name).length;
             return (
               <a
                 href={url(`${city.slug}-rayna-guide`)}
-                class="group relative rounded-2xl overflow-hidden aspect-[4/5]"
+                class="group relative rounded-2xl overflow-hidden aspect-[4/5] shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
               >
                 <img
                   src={`https://images.unsplash.com/${city.unsplashId}?w=400&h=500&fit=crop&q=70`}
@@ -149,10 +161,10 @@ const breadcrumbLd = {
                   class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   loading="lazy"
                 />
-                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
-                <div class="absolute bottom-4 left-4 right-4">
-                  <h3 class="text-white font-bold text-base leading-snug">{city.name}</h3>
-                  <p class="text-white/60 text-xs mt-0.5">{count} articles</p>
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0C4A6E]/80 via-[#0C4A6E]/20 to-transparent"></div>
+                <div class="absolute bottom-5 left-5 right-5">
+                  <h3 class="text-white font-bold text-lg leading-snug" style="font-family: 'Playfair Display', serif;">{city.name}</h3>
+                  <p class="text-sky-200/70 text-xs mt-1 font-medium" style="font-family: 'Inter', sans-serif;">{count} {count === 1 ? 'article' : 'articles'}</p>
                 </div>
               </a>
             );
@@ -164,18 +176,23 @@ const breadcrumbLd = {
 
   <!-- Posts by City -->
   {postsByCity.map((group, index) => (
-    <section class:list={['py-10', index % 2 === 0 ? 'bg-gray-50' : 'bg-white']}>
+    <section class:list={['py-16 md:py-20 animate-fade-in', index % 2 === 0 ? 'bg-[#F0F9FF]' : 'bg-white']}>
       <div class="container-wide">
-        <div class="flex items-center justify-between mb-6">
-          <h2 class="text-xl font-bold text-gray-900">{group.city.name}</h2>
+        <div class="flex items-end justify-between mb-8 pb-4 border-b border-[#BAE6FD]">
+          <div>
+            <h2 class="text-2xl md:text-3xl font-bold text-[#0C4A6E]" style="font-family: 'Playfair Display', serif;">{group.city.name}</h2>
+            <div class="w-12 h-1 bg-[#EA580C] rounded-full mt-2"></div>
+          </div>
           <a
             href={url(`${group.city.slug}-rayna-guide`)}
-            class="text-sm text-gray-500 hover:text-gray-900 transition-colors"
+            class="text-sm font-semibold text-[#0EA5E9] hover:text-[#0284C7] transition-colors flex items-center gap-1"
+            style="font-family: 'Inter', sans-serif;"
           >
-            Full guide →
+            Full guide
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
           </a>
         </div>
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-6">
           {group.posts.slice(0, 8).map(post => (
             <BlogCard
               title={post.data.title}
@@ -194,20 +211,35 @@ const breadcrumbLd = {
   ))}
 
   <!-- CTA -->
-  <section class="py-12 bg-gradient-to-br from-gray-900 to-black">
+  <section class="py-16 md:py-20 bg-gradient-to-br from-[#0EA5E9] via-[#0284C7] to-[#0C4A6E] animate-fade-in">
     <div class="container-narrow text-center text-white">
-      <h2 class="text-2xl sm:text-3xl font-bold mb-4">
+      <h2 class="text-3xl sm:text-4xl font-bold mb-5" style="font-family: 'Playfair Display', serif;">
         Plan Your {countryName} Trip
       </h2>
-      <p class="text-gray-300 mb-8 max-w-xl mx-auto">
+      <p class="text-sky-100/90 text-lg mb-10 max-w-xl mx-auto leading-relaxed" style="font-family: 'Inter', sans-serif;">
         Browse all our {countryName} travel articles for tips, itineraries, visa guides, and more.
       </p>
       <a
         href={BASE}
-        class="bg-white text-gray-900 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors"
+        class="inline-block bg-white text-[#0C4A6E] px-10 py-3.5 rounded-full font-bold text-base hover:bg-[#F0F9FF] hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
+        style="font-family: 'Inter', sans-serif;"
       >
         Explore All Articles
       </a>
     </div>
   </section>
+
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+      animation: fadeIn 0.6s ease-out both;
+    }
+    section.animate-fade-in:nth-child(2) { animation-delay: 0s; }
+    section.animate-fade-in:nth-child(3) { animation-delay: 0.1s; }
+    section.animate-fade-in:nth-child(4) { animation-delay: 0.15s; }
+    section.animate-fade-in:nth-child(5) { animation-delay: 0.2s; }
+  </style>
 </BaseLayout>

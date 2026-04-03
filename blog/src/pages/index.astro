@@ -75,60 +75,72 @@ const jsonLd = {
 
 <BaseLayout title="Home" jsonLd={jsonLd}>
   <!-- 1. Hero Banner -->
-  <section class="relative h-[360px] md:h-[440px]">
-    <div class="absolute inset-0 overflow-hidden">
+  <section class="relative h-[480px] md:h-[580px] overflow-hidden">
+    <div class="absolute inset-0">
       <img
-        src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1600&h=600&fit=crop&q=80"
+        src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1600&h=700&fit=crop&q=80"
         alt="Travel destinations"
-        class="w-full h-full object-cover"
+        class="w-full h-full object-cover scale-105"
         loading="eager"
       />
-      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30"></div>
     </div>
     <div class="container-wide relative h-full flex flex-col justify-center items-center text-center px-4">
-      <h1 class="text-white text-3xl md:text-5xl font-bold mb-6 max-w-3xl leading-tight font-heading">
+      <p class="text-primary-300 font-medium text-sm md:text-base uppercase tracking-[0.2em] mb-4 animate-fade-in">
+        Your Journey Starts Here
+      </p>
+      <h1 class="text-white text-4xl md:text-6xl lg:text-7xl font-bold mb-6 max-w-4xl leading-[1.1] font-heading animate-slide-up"
+          style="text-shadow: 0 2px 16px rgba(0,0,0,0.4);">
         Discover More: Insights, Stories,<br class="hidden sm:block" /> and Behind-the-Scenes Exclusives
       </h1>
-      <div class="w-full max-w-2xl">
-        <SearchBar articles={searchData} client:load />
+      <p class="text-white/70 text-base md:text-lg max-w-2xl mb-8 leading-relaxed animate-slide-up" style="animation-delay: 0.1s;">
+        Curated travel guides, local secrets, and expert recommendations for the world's most captivating destinations.
+      </p>
+      <div class="w-full max-w-2xl animate-slide-up" style="animation-delay: 0.2s;">
+        <div class="backdrop-blur-md bg-white/10 rounded-2xl p-3 border border-white/20 shadow-editorial-xl">
+          <SearchBar articles={searchData} client:load />
+        </div>
       </div>
     </div>
   </section>
 
   <!-- 2. Most Popular Travel Guide Carousel -->
-  <section class="bg-gray-50 py-10 md:py-14">
+  <section class="bg-[#F0F9FF] py-16 md:py-20">
     <div class="container-wide">
-      <div class="mb-6">
-        <h2 class="text-xl md:text-2xl font-bold text-gray-900">Most Popular Travel Guide</h2>
+      <div class="mb-8 animate-fade-in">
+        <h2 class="text-2xl md:text-3xl font-bold text-foreground font-heading tracking-tight">
+          Most Popular Travel Guide
+        </h2>
+        <div class="w-16 h-1 bg-accent-500 rounded-full mt-3"></div>
       </div>
 
       <div class="relative group">
         <button
           id="carousel-left"
-          class="absolute -left-3 md:left-0 top-1/2 -translate-y-1/2 z-10 w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-gray-50 transition-colors opacity-0 group-hover:opacity-100"
+          class="absolute -left-3 md:-left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-primary-500 text-white rounded-full shadow-editorial flex items-center justify-center hover:bg-primary-600 hover:shadow-editorial-lg hover:scale-110 transition-all duration-300 opacity-0 group-hover:opacity-100"
           aria-label="Scroll left"
         >
-          <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
           </svg>
         </button>
 
-        <div id="city-carousel" class="scroll-row gap-4">
+        <div id="city-carousel" class="scroll-row gap-5">
           {featuredCitiesList.map(city => (
             <a
               href={url(`${city!.slug}-rayna-guide`)}
-              class="group/card relative w-36 sm:w-44 aspect-[4/5] rounded-2xl overflow-hidden flex-shrink-0"
+              class="group/card relative w-40 sm:w-48 aspect-[4/5] rounded-2xl overflow-hidden flex-shrink-0 shadow-editorial hover:shadow-editorial-lg transition-all duration-500 hover:-translate-y-2"
             >
               <img
                 src={`https://images.unsplash.com/${city!.unsplashId}?w=400&h=500&fit=crop&q=70`}
                 alt={`${city!.name} Travel Guide`}
-                class="w-full h-full object-cover group-hover/card:scale-110 transition-transform duration-500"
+                class="w-full h-full object-cover group-hover/card:scale-110 transition-transform duration-700"
                 loading="lazy"
               />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
               <div class="absolute bottom-4 left-4 right-4">
-                <p class="text-white/70 text-xs font-medium uppercase tracking-wider mb-1">{city!.country}</p>
-                <h3 class="text-white font-bold text-base leading-snug">{city!.name}<br/>Travel Guide</h3>
+                <p class="text-primary-300 text-[10px] font-semibold uppercase tracking-[0.15em] mb-1">{city!.country}</p>
+                <h3 class="text-white font-bold text-lg leading-snug font-heading">{city!.name}<br/>Travel Guide</h3>
               </div>
             </a>
           ))}
@@ -136,11 +148,11 @@ const jsonLd = {
 
         <button
           id="carousel-right"
-          class="absolute -right-3 md:right-0 top-1/2 -translate-y-1/2 z-10 w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-gray-50 transition-colors opacity-0 group-hover:opacity-100"
+          class="absolute -right-3 md:-right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-primary-500 text-white rounded-full shadow-editorial flex items-center justify-center hover:bg-primary-600 hover:shadow-editorial-lg hover:scale-110 transition-all duration-300 opacity-0 group-hover:opacity-100"
           aria-label="Scroll right"
         >
-          <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
           </svg>
         </button>
       </div>
@@ -148,55 +160,64 @@ const jsonLd = {
   </section>
 
   <!-- 3. Browse by Category -->
-  <section class="bg-white py-10">
+  <section class="bg-white py-16 md:py-20 border-b border-border">
     <div class="container-wide">
-      <h2 class="section-title mb-4">Browse by Category</h2>
-      <div class="scroll-row gap-3">
+      <div class="mb-6">
+        <h2 class="text-2xl md:text-3xl font-bold text-foreground font-heading tracking-tight">Browse by Category</h2>
+        <div class="w-16 h-1 bg-accent-500 rounded-full mt-3"></div>
+      </div>
+      <div class="scroll-row gap-3 pb-2">
         {CATEGORIES.slice(0, 10).map(cat => (
           <a
             href={url(`?category=${encodeURIComponent(cat.id)}#all-posts`)}
-            class="flex-shrink-0 flex items-center gap-2 px-4 py-2.5 bg-white rounded-full border border-gray-100
-                   hover:bg-gray-100 hover:border-gray-300 transition-colors text-sm text-gray-600 hover:text-gray-900"
+            class="flex-shrink-0 flex items-center gap-2.5 px-5 py-3 bg-primary-50 rounded-full border border-primary-200
+                   hover:bg-primary-500 hover:text-white hover:border-primary-500 hover:shadow-editorial
+                   transition-all duration-300 text-sm text-foreground group/pill"
           >
-            <span>{cat.icon}</span>
-            <span class="font-medium">{cat.label}</span>
+            <span class="text-base">{cat.icon}</span>
+            <span class="font-semibold whitespace-nowrap">{cat.label}</span>
           </a>
         ))}
       </div>
     </div>
   </section>
 
-  <!-- 4. Featured Travel Posts — Overlay Cards -->
-  <section class="py-10">
+  <!-- 4. Featured Travel Posts — Asymmetric Editorial Grid -->
+  <section class="py-16 md:py-20 bg-white">
     <div class="container-wide">
-      <div class="flex items-center justify-between mb-5">
-        <h2 class="section-title">Featured Travel Posts</h2>
+      <div class="flex items-end justify-between mb-8">
+        <div>
+          <h2 class="text-2xl md:text-3xl font-bold text-foreground font-heading tracking-tight">Featured Travel Posts</h2>
+          <div class="w-16 h-1 bg-accent-500 rounded-full mt-3"></div>
+        </div>
       </div>
-      <div class="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-4">
-        {selectedFeatured.map(post => {
+      <div class="grid grid-cols-2 lg:grid-cols-12 gap-3 sm:gap-5">
+        {selectedFeatured.map((post, idx) => {
           const imgSrc = post.data.heroImage ||
             'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&h=800&fit=crop&q=70';
+          /* Asymmetric: row 1 = 7+5, row 2 = 5+7 */
+          const colClass = idx === 0 ? 'lg:col-span-7 aspect-[16/10]' : idx === 1 ? 'lg:col-span-5 aspect-[4/5]' : idx === 2 ? 'lg:col-span-5 aspect-[4/5]' : 'lg:col-span-7 aspect-[16/10]';
           return (
             <a
               href={url(`blog/${post.slug}`)}
-              class="group relative block rounded-2xl overflow-hidden aspect-[2/3]"
+              class={`group relative block rounded-2xl overflow-hidden shadow-editorial hover:shadow-editorial-xl transition-all duration-500 hover:-translate-y-1 ${colClass}`}
             >
               <img
                 src={imgSrc}
                 alt={post.data.title}
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 loading="lazy"
                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&h=800&fit=crop&q=70';"
               />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent" />
-              <div class="absolute bottom-0 left-0 right-0 p-3 sm:p-4">
-                <span class="inline-block text-[10px] font-semibold uppercase tracking-wider text-white/70 mb-1">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-90 group-hover:opacity-100 transition-opacity duration-300" />
+              <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
+                <span class="inline-block text-[11px] font-bold uppercase tracking-[0.15em] text-accent-400 mb-2">
                   {post.data.category}
                 </span>
-                <h3 class="text-white font-bold text-xs sm:text-sm leading-snug line-clamp-3 mb-1.5">
+                <h3 class="text-white font-bold text-sm sm:text-lg leading-snug line-clamp-3 mb-2 font-heading">
                   {post.data.title}
                 </h3>
-                <span class="text-white/50 text-[10px]">{post.data.readingTime} min read</span>
+                <span class="text-white/50 text-xs font-medium">{post.data.readingTime} min read</span>
               </div>
             </a>
           );
@@ -206,32 +227,39 @@ const jsonLd = {
   </section>
 
   <!-- 5. Explore Travel Guides (city grid) -->
-  <section class="bg-gray-50 py-10">
+  <section class="bg-[#F0F9FF] py-16 md:py-20">
     <div class="container-wide">
-      <h2 class="section-title mb-1">Explore Travel Guides</h2>
-      <p class="section-subtitle">Comprehensive city guides covering attractions, food, hotels, and more</p>
+      <div class="mb-8">
+        <h2 class="text-2xl md:text-3xl font-bold text-foreground font-heading tracking-tight">Explore Travel Guides</h2>
+        <div class="w-16 h-1 bg-accent-500 rounded-full mt-3"></div>
+        <p class="text-foreground/60 text-sm md:text-base mt-3">Comprehensive city guides covering attractions, food, hotels, and more</p>
+      </div>
 
-      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2.5 sm:gap-4">
-        {cities.map(city => {
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-5">
+        {cities.map((city, idx) => {
           const citySlug = city.toLowerCase().replace(/\s+/g, '-');
           const count = allPosts.filter(p => p.data.city === city).length;
           const cityData = CITIES.find(c => c.slug === citySlug);
           const unsplashId = cityData?.unsplashId || 'photo-1512453979798-5ea266f8880c';
+          const isWide = idx === 0 || idx === 3;
           return (
-            <a href={url(`${citySlug}-rayna-guide`)} class="group relative rounded-2xl overflow-hidden aspect-[3/4]">
+            <a
+              href={url(`${citySlug}-rayna-guide`)}
+              class={`group relative rounded-2xl overflow-hidden shadow-editorial hover:shadow-editorial-xl transition-all duration-500 hover:-translate-y-2 ${isWide ? 'sm:col-span-2 lg:col-span-2 aspect-[16/10]' : 'aspect-[3/4]'}`}
+            >
               <img
-                src={`https://images.unsplash.com/${unsplashId}?w=400&h=500&fit=crop&q=70`}
+                src={`https://images.unsplash.com/${unsplashId}?w=500&h=600&fit=crop&q=70`}
                 alt={city}
-                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 loading="lazy"
               />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
-              <div class="absolute bottom-4 left-4 right-4">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+              <div class="absolute bottom-5 left-5 right-5">
                 {cityData?.country && (
-                  <p class="text-white/60 text-[10px] font-medium uppercase tracking-wider mb-0.5">{cityData.country}</p>
+                  <p class="text-primary-300 text-[10px] font-bold uppercase tracking-[0.15em] mb-1">{cityData.country}</p>
                 )}
-                <h3 class="text-white font-bold text-base leading-snug">{city}</h3>
-                <p class="text-white/60 text-xs mt-0.5">{count} articles</p>
+                <h3 class="text-white font-bold text-xl leading-snug font-heading">{city}</h3>
+                <p class="text-white/50 text-xs mt-1 font-medium">{count} articles</p>
               </div>
             </a>
           );
@@ -241,11 +269,14 @@ const jsonLd = {
   </section>
 
   <!-- 6. Popular Travel Guides -->
-  <section class="py-10">
+  <section class="py-16 md:py-20 bg-white">
     <div class="container-wide">
-      <h2 class="section-title mb-1">Popular Travel Guides</h2>
-      <p class="section-subtitle">Our most popular guides chosen by travelers</p>
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-5">
+      <div class="mb-8">
+        <h2 class="text-2xl md:text-3xl font-bold text-foreground font-heading tracking-tight">Popular Travel Guides</h2>
+        <div class="w-16 h-1 bg-accent-500 rounded-full mt-3"></div>
+        <p class="text-foreground/60 text-sm md:text-base mt-3">Our most popular guides chosen by travelers</p>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-6">
         {guidePosts.map(post => (
           <BlogCard
             title={post.data.title}
@@ -263,12 +294,14 @@ const jsonLd = {
   </section>
 
   <!-- 7. All Blog Posts (filterable) -->
-  <BlogFilterPage
-    posts={postsData}
-    categories={categories}
-    postsPerPage={POSTS_PER_PAGE}
-    client:load
-  />
+  <div class="bg-[#F0F9FF]">
+    <BlogFilterPage
+      posts={postsData}
+      categories={categories}
+      postsPerPage={POSTS_PER_PAGE}
+      client:load
+    />
+  </div>
 </BaseLayout>
 
 <script>

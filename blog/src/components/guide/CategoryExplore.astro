@@ -15,32 +15,32 @@ interface Props {
 const { categories, cityName } = Astro.props;
 ---
 
-<section id="explore" class="py-8 sm:py-12 bg-gray-50">
+<section id="explore" class="py-16 sm:py-20 bg-[#F0F9FF]">
   <div class="container-wide">
-    <p class="text-gray-900 text-xs sm:text-sm font-semibold uppercase tracking-wider mb-2">Categories</p>
-    <h2 class="text-xl sm:text-2xl font-bold text-gray-900 guide-section-header">
+    <p class="text-[#0EA5E9] text-xs sm:text-sm font-semibold uppercase tracking-wider mb-2">Categories</p>
+    <h2 class="text-2xl sm:text-3xl font-bold text-[#0C4A6E] font-heading guide-section-header">
       There's plenty to explore in {cityName}
     </h2>
-    <p class="text-gray-500 mb-6 sm:mb-8 text-sm sm:text-base">
+    <p class="text-[#0C4A6E]/70 mb-8 sm:mb-10 text-sm sm:text-base max-w-2xl">
       Discover {cityName}'s culture, heritage, and attractions. Adventure awaits at every corner.
     </p>
 
-    <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
       {categories.map((cat) => (
         <a
           href={`#${cat.anchor}`}
-          class="relative rounded-xl overflow-hidden h-36 sm:h-48 category-card cursor-pointer group block"
+          class="relative rounded-2xl overflow-hidden h-40 sm:h-52 category-card cursor-pointer group block transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
         >
           <img
             src={cat.image}
             alt={cat.label}
-            class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
             loading="lazy"
           />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-          <div class="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 text-white">
-            <p class="font-semibold text-sm sm:text-base">{cat.icon} {cat.label}</p>
-            <p class="text-xs opacity-80">{cat.count} articles</p>
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0C4A6E]/80 via-[#0C4A6E]/30 to-transparent"></div>
+          <div class="absolute bottom-3 sm:bottom-5 left-3 sm:left-5 text-white">
+            <p class="font-bold text-sm sm:text-lg mb-0.5" style="font-family: 'Playfair Display', Georgia, serif;">{cat.icon} {cat.label}</p>
+            <p class="text-xs text-sky-200 font-medium">{cat.count} articles</p>
           </div>
         </a>
       ))}

@@ -97,85 +97,91 @@ const breadcrumbLd = {
 >
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
 
-  <article class="container-wide py-6">
+  <article class="container-wide py-8" style="background-color:#F0F9FF; min-height:100vh;">
     <!-- Breadcrumb -->
-    <nav class="breadcrumb mb-5" aria-label="Breadcrumb">
-      <a href={BASE}>Home</a>
-      <span class="sep">&rsaquo;</span>
-      <a href={BASE}>Travel Guides</a>
-      <span class="sep">&rsaquo;</span>
-      <a href={url(`${citySlug}-rayna-guide`)}>{city}</a>
-      <span class="sep">&rsaquo;</span>
-      <span class="text-gray-600 text-xs truncate max-w-[200px]">{title}</span>
+    <nav class="mb-6 flex items-center flex-wrap gap-1.5 text-sm" aria-label="Breadcrumb">
+      <a href={BASE} class="font-medium transition-colors hover:underline" style="color:#0EA5E9;">Home</a>
+      <svg class="w-3.5 h-3.5 flex-shrink-0" style="color:#BAE6FD;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+      <a href={BASE} class="font-medium transition-colors hover:underline" style="color:#0EA5E9;">Travel Guides</a>
+      <svg class="w-3.5 h-3.5 flex-shrink-0" style="color:#BAE6FD;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+      <a href={url(`${citySlug}-rayna-guide`)} class="font-medium transition-colors hover:underline" style="color:#0EA5E9;">{city}</a>
+      <svg class="w-3.5 h-3.5 flex-shrink-0" style="color:#BAE6FD;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+      <span class="truncate max-w-[220px]" style="color:#0C4A6E;">{title}</span>
     </nav>
 
-    <!-- Figma layout: Content left + Image sidebar right -->
-    <div class="grid grid-cols-1 lg:grid-cols-[1fr_260px] gap-8">
+    <!-- Article header -->
+    <header class="mb-8">
+      <h1 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-4" style="font-family:'Playfair Display',serif; color:#0C4A6E;">
+        {title}
+      </h1>
+
+      <p class="text-base sm:text-lg leading-relaxed mb-5" style="color:#0C4A6E; opacity:0.7;">
+        {description}
+      </p>
+
+      <div class="flex items-center flex-wrap gap-4 text-sm" style="color:#0C4A6E; opacity:0.6;">
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-full flex items-center justify-center" style="background-color:#E8F2F8;">
+            <svg class="w-4 h-4" style="color:#0EA5E9;" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" />
+            </svg>
+          </div>
+          <span class="font-medium" style="color:#0C4A6E;">{authorName}</span>
+        </div>
+        <span style="color:#BAE6FD;">|</span>
+        <time datetime={pubDate.toISOString()}>{formattedDate}</time>
+        <span style="color:#BAE6FD;">|</span>
+        <span>{readingTime} min read</span>
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+    {heroImage && (
+      <div class="mb-10">
+        <img
+          src={heroImage}
+          alt={heroImageAlt || title}
+          class="w-full rounded-2xl aspect-[16/9] object-cover"
+          style="box-shadow:0 4px 24px rgba(14,165,233,0.12);"
+          width="1200"
+          height="675"
+          loading="eager"
+          onerror={`this.onerror=null;this.src='${fallbackImage}';`}
+        />
+      </div>
+    )}
+
+    <!-- Two-column layout: Content left + Sidebar right -->
+    <div class="grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-10">
       <!-- Left: Article Content -->
       <div>
-        <!-- Header -->
-        <header class="mb-8">
-          <h1 class="text-2xl sm:text-3xl font-bold text-gray-900 leading-tight mb-3">
-            {title}
-          </h1>
-
-          <p class="text-gray-500 text-sm leading-relaxed mb-4">
-            {description}
-          </p>
-
-          <div class="flex items-center gap-3 text-xs text-gray-400">
-            <div class="flex items-center gap-2">
-              <div class="w-6 h-6 bg-gray-200 rounded-full flex items-center justify-center">
-                <svg class="w-3 h-3 text-gray-900" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" />
-                </svg>
-              </div>
-              <span>{authorName}</span>
-            </div>
-            <span class="text-gray-200">|</span>
-            <time datetime={pubDate.toISOString()}>{formattedDate}</time>
-            <span class="text-gray-200">|</span>
-            <span>{readingTime} min read</span>
+        <!-- Article Body wrapped in white editorial card -->
+        <div class="rounded-2xl p-6 sm:p-10" style="background-color:#FFFFFF; border:1px solid #BAE6FD;">
+          <div class="prose prose-sm sm:prose-base lg:prose-lg max-w-none
+                      prose-headings:font-bold
+                      prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-5
+                      prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-4
+                      prose-p:leading-relaxed
+                      prose-a:no-underline hover:prose-a:underline
+                      prose-img:rounded-xl
+                      prose-table:text-sm prose-th:text-left prose-th:px-4 prose-th:py-2.5
+                      prose-td:px-4 prose-td:py-2.5 prose-td:border-t"
+               style="--tw-prose-headings:#0C4A6E; --tw-prose-body:#0C4A6E; --tw-prose-links:#0EA5E9; --tw-prose-bold:#0C4A6E; --tw-prose-th-bg:#E8F2F8; --tw-prose-td-borders:#BAE6FD; font-family:'Inter',sans-serif;">
+            <slot />
           </div>
-        </header>
-
-        <!-- Hero Image -->
-        {heroImage && (
-          <div class="mb-8 max-w-2xl mx-auto">
-            <img
-              src={heroImage}
-              alt={heroImageAlt || title}
-              class="w-full rounded-xl aspect-[16/9] object-cover"
-              width="672"
-              height="378"
-              loading="eager"
-              onerror={`this.onerror=null;this.src='${fallbackImage}';`}
-            />
-          </div>
-        )}
-
-        <!-- Article Body -->
-        <div class="prose prose-sm sm:prose max-w-none
-                    prose-headings:font-bold prose-headings:text-gray-900
-                    prose-h2:text-xl prose-h2:mt-8 prose-h2:mb-4
-                    prose-h3:text-lg prose-h3:mt-6 prose-h3:mb-3
-                    prose-p:text-gray-600 prose-p:leading-relaxed
-                    prose-a:text-gray-900 prose-a:no-underline hover:prose-a:underline
-                    prose-img:rounded-xl
-                    prose-table:text-sm prose-th:bg-gray-50 prose-th:text-left prose-th:px-3 prose-th:py-2
-                    prose-td:px-3 prose-td:py-2 prose-td:border-t prose-td:border-gray-100">
-          <slot />
         </div>
 
         <!-- Tags -->
         {tags.length > 0 && (
-          <div class="mt-10 pt-6 border-t border-gray-100">
-            <div class="flex flex-wrap gap-2">
+          <div class="mt-8 pt-6" style="border-top:1px solid #BAE6FD;">
+            <div class="flex flex-wrap gap-2.5">
               {tags.map(tag => (
                 <a
                   href={url(`?q=${encodeURIComponent(tag)}`)}
-                  class="text-xs bg-gray-50 text-gray-500 px-3 py-1.5 rounded-full border border-gray-100
-                         hover:bg-gray-100 hover:text-gray-900 hover:border-gray-300 transition-colors"
+                  class="text-sm font-medium px-4 py-2 rounded-full transition-all duration-200"
+                  style="background-color:#E8F2F8; color:#0EA5E9; border:1px solid #BAE6FD;"
+                  onmouseenter="this.style.backgroundColor='#0EA5E9';this.style.color='#FFFFFF';this.style.borderColor='#0EA5E9';"
+                  onmouseleave="this.style.backgroundColor='#E8F2F8';this.style.color='#0EA5E9';this.style.borderColor='#BAE6FD';"
                 >
                   {tag}
                 </a>
@@ -185,23 +191,23 @@ const breadcrumbLd = {
         )}
       </div>
 
-      <!-- Right: Figma Image Gallery Sidebar -->
+      <!-- Right: Sidebar -->
       <aside class="hidden lg:block">
         <div class="sticky top-20 space-y-6">
-          <!-- Table of Contents (moved above gallery for better UX) -->
+          <!-- Table of Contents -->
           {headings.length > 0 && (
             <TableOfContents headings={headings} />
           )}
 
-          <!-- Image Gallery Grid (reduced to 4 images, 2x2) -->
-          <div>
-            <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">Gallery</h4>
+          <!-- Image Gallery Grid (2x2) -->
+          <div class="rounded-2xl p-5" style="background-color:#FFFFFF; border:1px solid #BAE6FD;">
+            <h4 class="text-xs font-semibold uppercase tracking-wider mb-3" style="color:#0C4A6E; font-family:'Playfair Display',serif;">Gallery</h4>
             <div class="image-grid-sidebar">
               {sidebarImages.map((img, i) => (
                 <img
                   src={img}
                   alt={`${city} photo ${i + 1}`}
-                  class="w-full aspect-square object-cover rounded-lg"
+                  class="w-full aspect-square object-cover rounded-xl"
                   loading="lazy"
                 />
               ))}
@@ -211,11 +217,14 @@ const breadcrumbLd = {
           <!-- City badge -->
           <a
             href={url(`${citySlug}-rayna-guide`)}
-            class="block p-4 bg-gray-100 rounded-xl hover:bg-gray-200 transition-colors"
+            class="block p-5 rounded-2xl transition-all duration-200"
+            style="background-color:#FFFFFF; border:1px solid #BAE6FD;"
+            onmouseenter="this.style.borderColor='#0EA5E9';this.style.boxShadow='0 4px 16px rgba(14,165,233,0.1)';"
+            onmouseleave="this.style.borderColor='#BAE6FD';this.style.boxShadow='none';"
           >
-            <p class="text-xs text-gray-900 font-semibold mb-1">Explore more</p>
-            <p class="text-sm font-bold text-gray-900">{city} Travel Guide</p>
-            <p class="text-xs text-gray-500 mt-1">View all {city} articles</p>
+            <p class="text-xs font-semibold mb-1" style="color:#0EA5E9;">Explore more</p>
+            <p class="text-base font-bold" style="color:#0C4A6E; font-family:'Playfair Display',serif;">{city} Travel Guide</p>
+            <p class="text-xs mt-1.5" style="color:#0C4A6E; opacity:0.6;">View all {city} articles</p>
           </a>
         </div>
       </aside>
@@ -223,7 +232,7 @@ const breadcrumbLd = {
 
     <!-- Tours, Activities, Holidays, Cruises & Yachts for this city -->
     {(cityProductConfig || cityHolidayConfig || cityCruiseConfig || cityYachtConfig) && (
-      <div class="mt-10">
+      <div class="mt-12">
         <TourProductCards
           tourConfig={cityProductConfig ?? undefined}
           holidayConfig={cityHolidayConfig ?? undefined}
@@ -235,8 +244,8 @@ const breadcrumbLd = {
       </div>
     )}
 
-    <!-- Related Articles (horizontal scroll like Figma) -->
-    <div class="mt-10">
+    <!-- Related Articles -->
+    <div class="mt-12">
       <RelatedArticles city={city} category={category} currentSlug={currentSlug} />
     </div>
   </article>

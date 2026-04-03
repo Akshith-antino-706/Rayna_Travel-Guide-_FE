@@ -30,17 +30,17 @@ const TAB_LABELS: Record<Tab, string> = {
 function PriceTag({ normal, sale, currency }: { normal: number; sale: number; currency: string }) {
   if (sale === 0 && normal === 0) {
     return (
-      <span className="text-sm font-semibold text-gray-600 italic">Get Quote</span>
+      <span className="text-sm font-semibold text-[#0C4A6E]/60 italic font-[Inter]">Get Quote</span>
     );
   }
   const hasDiscount = sale < normal;
   return (
     <div className="flex items-baseline gap-2">
-      <span className="text-base font-bold text-gray-900">
+      <span className="text-base font-bold text-[#0C4A6E] font-[Inter]">
         {currency} {sale.toLocaleString()}
       </span>
       {hasDiscount && (
-        <span className="text-xs text-gray-400 line-through">
+        <span className="text-xs text-[#0C4A6E]/35 line-through font-[Inter]">
           {currency} {normal.toLocaleString()}
         </span>
       )}
@@ -59,10 +59,10 @@ function ProductCard({ product }: { product: Product }) {
       href={product.url}
       target="_blank"
       rel="noopener noreferrer sponsored"
-      className="group flex flex-col bg-white rounded-xl border border-gray-100 overflow-hidden
-                 hover:border-gray-300 hover:shadow-md transition-all duration-200"
+      className="group flex flex-col bg-white rounded-xl border border-[#BAE6FD]/40 overflow-hidden
+                 hover:border-[#0EA5E9]/30 hover:shadow-[0_8px_30px_rgba(14,165,233,0.12)] hover:-translate-y-1 transition-all duration-300"
     >
-      <div className="relative aspect-[4/3] overflow-hidden bg-gray-100">
+      <div className="relative aspect-[4/3] overflow-hidden bg-[#E8F2F8]">
         <img
           src={product.image}
           alt={product.name}
@@ -71,22 +71,22 @@ function ProductCard({ product }: { product: Product }) {
           onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
         />
         {hasDiscount && (
-          <span className="absolute top-2 left-2 bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">
+          <span className="absolute top-2 left-2 bg-[#EA580C] text-white text-[10px] font-bold px-2 py-0.5 rounded-full">
             {discountPct}% OFF
           </span>
         )}
       </div>
 
       <div className="p-3 flex flex-col flex-1">
-        <p className="text-[10px] text-gray-400 uppercase tracking-wider mb-1 font-medium">
+        <p className="text-[10px] text-[#0C4A6E]/40 uppercase tracking-wider mb-1 font-medium font-[Inter]">
           {product.item_group_id.replace(/-/g, ' ')}
         </p>
-        <h4 className="text-sm font-semibold text-gray-900 leading-snug line-clamp-2 mb-2 flex-1">
+        <h4 className="text-sm font-semibold text-[#0C4A6E] leading-snug line-clamp-2 mb-2 flex-1 font-[Inter]">
           {product.name}
         </h4>
-        <div className="flex items-center justify-between mt-auto pt-2 border-t border-gray-50">
+        <div className="flex items-center justify-between mt-auto pt-2 border-t border-[#BAE6FD]/30">
           <PriceTag normal={product.normalPrice} sale={product.salePrice} currency={product.currency} />
-          <span className="text-xs text-gray-900 font-medium group-hover:underline">Book →</span>
+          <span className="text-xs text-[#0EA5E9] font-semibold group-hover:underline font-[Inter]">Book →</span>
         </div>
       </div>
     </a>
@@ -95,13 +95,13 @@ function ProductCard({ product }: { product: Product }) {
 
 function SkeletonCard() {
   return (
-    <div className="flex flex-col bg-white rounded-xl border border-gray-100 overflow-hidden animate-pulse">
-      <div className="aspect-[4/3] bg-gray-100" />
+    <div className="flex flex-col bg-white rounded-xl border border-[#BAE6FD]/30 overflow-hidden animate-pulse">
+      <div className="aspect-[4/3] bg-[#E8F2F8]" />
       <div className="p-3 space-y-2">
-        <div className="h-3 bg-gray-100 rounded w-1/2" />
-        <div className="h-4 bg-gray-100 rounded w-full" />
-        <div className="h-4 bg-gray-100 rounded w-3/4" />
-        <div className="h-3 bg-gray-100 rounded w-1/3 mt-3" />
+        <div className="h-3 bg-[#E8F2F8] rounded w-1/2" />
+        <div className="h-4 bg-[#E8F2F8] rounded w-full" />
+        <div className="h-4 bg-[#E8F2F8] rounded w-3/4" />
+        <div className="h-3 bg-[#E8F2F8] rounded w-1/3 mt-3" />
       </div>
     </div>
   );
@@ -212,12 +212,12 @@ export default function TourProductCards({
   const cityPath = primaryConfig.cityName.toLowerCase().replace(/\s+/g, '-').replace('-city', '');
 
   return (
-    <section className="py-8 border-t border-gray-100">
+    <section className="py-8 border-t border-[#BAE6FD]/30">
       {/* Header */}
       <div className="flex items-start justify-between mb-4">
         <div>
-          <h3 className="text-lg font-bold text-gray-900">{title}</h3>
-          <p className="text-xs text-gray-400 mt-0.5">
+          <h3 className="text-lg font-bold text-[#0C4A6E] font-['Playfair_Display']">{title}</h3>
+          <p className="text-xs text-[#0C4A6E]/40 mt-0.5 font-[Inter]">
             Powered by Rayna Tours
           </p>
         </div>
@@ -225,23 +225,23 @@ export default function TourProductCards({
           href={`https://www.raynatours.com/${cityPath}-activities`}
           target="_blank"
           rel="noopener noreferrer sponsored"
-          className="text-xs text-gray-500 hover:text-gray-900 transition-colors shrink-0 mt-1"
+          className="text-xs text-[#0EA5E9] hover:text-[#0EA5E9]/80 font-medium transition-colors shrink-0 mt-1 font-[Inter]"
         >
           View all →
         </a>
       </div>
 
-      {/* Tabs — only show if more than one available */}
+      {/* Tabs -- only show if more than one available */}
       {availableTabs.length > 1 && (
         <div className="flex gap-2 mb-5 flex-wrap">
           {availableTabs.map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
+              className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors font-[Inter] ${
                 currentTab === tab
-                  ? 'bg-gray-900 text-white'
-                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                  ? 'bg-[#0EA5E9] text-white shadow-md'
+                  : 'bg-[#E8F2F8] text-[#0C4A6E]/70 hover:bg-[#BAE6FD]/40'
               }`}
             >
               {TAB_LABELS[tab]}

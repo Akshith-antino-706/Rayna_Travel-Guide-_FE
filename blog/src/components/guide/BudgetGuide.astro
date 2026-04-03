@@ -15,35 +15,45 @@ interface Props {
 const { tiers, cityName } = Astro.props;
 
 const badgeColors: Record<string, string> = {
-  green: 'bg-green-100 text-green-700',
-  orange: 'bg-gray-900 text-white',
-  purple: 'bg-purple-100 text-purple-700',
+  green: 'bg-emerald-100 text-emerald-700',
+  orange: 'bg-[#E8F2F8] text-[#0EA5E9]',
+  purple: 'bg-orange-100 text-[#EA580C]',
+};
+
+const borderColors: Record<string, string> = {
+  green: 'border-emerald-200',
+  orange: 'border-[#0EA5E9]',
+  purple: 'border-[#EA580C]',
 };
 ---
 
-<section class="py-8 sm:py-12 bg-gray-50">
+<section class="py-16 sm:py-20 bg-[#F0F9FF]">
   <div class="container-wide">
-    <p class="text-gray-900 text-xs sm:text-sm font-medium mb-2">Budget</p>
-    <h2 class="text-xl sm:text-2xl font-bold text-gray-900 guide-section-header">
+    <p class="text-[#0EA5E9] text-xs sm:text-sm font-semibold uppercase tracking-wider mb-2">Budget</p>
+    <h2 class="text-2xl sm:text-3xl font-bold text-[#0C4A6E] font-heading guide-section-header">
       {cityName} Budget Guide
     </h2>
 
-    <div class="scroll-row sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-4 lg:gap-6 sm:overflow-visible sm:pb-0">
+    <div class="scroll-row sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-5 lg:gap-6 sm:overflow-visible sm:pb-0">
       {tiers.map((t) => (
         <div class:list={[
-          'bg-white rounded-2xl p-5 sm:p-6 min-w-[260px] sm:min-w-0',
-          t.featured ? 'border-2 border-gray-400 shadow-md' : 'border border-gray-100',
+          'bg-white rounded-2xl p-5 sm:p-7 min-w-[260px] sm:min-w-0 hover:shadow-lg hover:-translate-y-1 transition-all duration-300',
+          t.featured
+            ? `border-2 ${borderColors[t.color] || 'border-[#0EA5E9]'} shadow-md`
+            : 'border border-[#BAE6FD]',
         ]}>
-          <div class="text-center mb-4">
-            <span class={`inline-block px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold ${badgeColors[t.color] || badgeColors.green}`}>
+          <div class="text-center mb-5">
+            <span class={`inline-block px-5 py-2 rounded-full text-xs sm:text-sm font-bold ${badgeColors[t.color] || badgeColors.green}`}>
               {t.tier}
             </span>
           </div>
-          <p class="text-xl sm:text-2xl font-bold text-center text-gray-900 mb-4">{t.dailyCost}</p>
-          <ul class="text-xs sm:text-sm text-gray-500 space-y-2">
+          <p class="text-2xl sm:text-3xl font-bold text-center text-[#0C4A6E] mb-5" style="font-family: 'Playfair Display', Georgia, serif;">{t.dailyCost}</p>
+          <ul class="text-xs sm:text-sm text-[#0C4A6E]/70 space-y-3">
             {t.items.map((item) => (
-              <li class="flex items-start gap-2">
-                <span class="text-gray-300 mt-0.5">•</span>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-[#0EA5E9] mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                </svg>
                 <span>{item}</span>
               </li>
             ))}

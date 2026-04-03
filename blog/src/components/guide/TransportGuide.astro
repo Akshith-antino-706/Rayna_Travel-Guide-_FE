@@ -29,29 +29,29 @@ const iconText: Record<string, string> = {
 };
 ---
 
-<section class="py-8 sm:py-12 bg-gray-50">
+<section class="py-16 sm:py-20 bg-[#F0F9FF]">
   <div class="container-wide">
-    <p class="text-gray-900 text-xs sm:text-sm font-medium mb-2">Getting Around</p>
-    <h2 class="text-xl sm:text-2xl font-bold text-gray-900 guide-section-header">
+    <p class="text-[#0EA5E9] text-xs sm:text-sm font-semibold uppercase tracking-wider mb-2">Getting Around</p>
+    <h2 class="text-2xl sm:text-3xl font-bold text-[#0C4A6E] font-heading guide-section-header">
       Best ways to explore {cityName}
     </h2>
-    <p class="text-gray-500 mb-6 sm:mb-8 text-sm sm:text-base">
+    <p class="text-[#0C4A6E]/70 mb-8 sm:mb-10 text-sm sm:text-base max-w-2xl">
       {cityName} has excellent transport options. Here's how to get around efficiently.
     </p>
 
-    <div class="grid lg:grid-cols-2 gap-6 lg:gap-8">
-      <div class="space-y-3 sm:space-y-4">
+    <div class="grid lg:grid-cols-2 gap-8 lg:gap-10">
+      <div class="space-y-4">
         {modes.map((m, i) => (
-          <div class="flex gap-3 sm:gap-4 p-3 sm:p-4 bg-white rounded-xl border border-gray-100">
-            <div class={`w-10 h-10 sm:w-12 sm:h-12 ${iconBg[m.color] || 'bg-gray-100'} rounded-full flex items-center justify-center flex-shrink-0`}>
-              <span class={`text-sm font-bold ${iconText[m.color] || 'text-gray-500'}`}>{i + 1}</span>
+          <div class="flex gap-4 p-4 sm:p-5 bg-white rounded-xl border border-[#BAE6FD] hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+            <div class="w-11 h-11 sm:w-12 sm:h-12 bg-[#0EA5E9] rounded-full flex items-center justify-center flex-shrink-0 shadow-sm">
+              <span class="text-sm font-bold text-white">{i + 1}</span>
             </div>
             <div class="min-w-0">
-              <div class="flex items-center gap-2 mb-1">
-                <h4 class="font-semibold text-gray-900 text-sm sm:text-base">{m.mode}</h4>
-                <span class="text-xs text-gray-900 font-medium">{m.cost}</span>
+              <div class="flex items-center gap-2.5 mb-1.5">
+                <h4 class="font-bold text-[#0C4A6E] text-sm sm:text-base">{m.mode}</h4>
+                <span class="text-xs text-[#0EA5E9] font-semibold bg-[#E8F2F8] px-2 py-0.5 rounded-full">{m.cost}</span>
               </div>
-              <p class="text-xs sm:text-sm text-gray-500">{m.description}</p>
+              <p class="text-xs sm:text-sm text-[#0C4A6E]/70 leading-relaxed">{m.description}</p>
             </div>
           </div>
         ))}
@@ -60,7 +60,8 @@ const iconText: Record<string, string> = {
         <img
           src={cityImage}
           alt={`Getting around ${cityName}`}
-          class="rounded-2xl w-full h-full object-cover"
+          class="rounded-2xl w-full h-full object-cover shadow-lg"
+          style="box-shadow: 0 8px 30px rgba(12, 74, 110, 0.12), 0 2px 8px rgba(12, 74, 110, 0.06);"
           loading="lazy"
         />
       </div>

@@ -18,8 +18,8 @@ const cities = [...new Set(allPosts.map(p => p.data.city))].sort();
     class:list={[
       'inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium transition-colors',
       !activeCity
-        ? 'bg-accent-500 text-white'
-        : 'bg-gray-100 text-gray-600 hover:bg-gray-200',
+        ? 'bg-[#0EA5E9] text-white'
+        : 'bg-[#E8F2F8] text-[#0C4A6E] hover:bg-[#BAE6FD]',
     ]}
   >
     All Cities
@@ -31,8 +31,8 @@ const cities = [...new Set(allPosts.map(p => p.data.city))].sort();
       class:list={[
         'inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium transition-colors',
         activeCity === city
-          ? 'bg-accent-500 text-white'
-          : 'bg-gray-100 text-gray-600 hover:bg-gray-200',
+          ? 'bg-[#0EA5E9] text-white'
+          : 'bg-[#E8F2F8] text-[#0C4A6E] hover:bg-[#BAE6FD]',
       ]}
     >
       {city}

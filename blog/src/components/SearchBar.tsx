@@ -70,7 +70,7 @@ export default function SearchBar({ articles }: Props) {
     <div className="relative w-full max-w-2xl mx-auto">
       <div className="relative">
         <svg
-          className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400"
+          className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#0EA5E9]"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -89,14 +89,14 @@ export default function SearchBar({ articles }: Props) {
           onFocus={() => setIsOpen(true)}
           onBlur={() => setTimeout(() => setIsOpen(false), 200)}
           placeholder="Search articles... (e.g., 'Dubai food', 'visa guide')"
-          className="w-full pl-12 pr-4 py-3.5 bg-white border border-gray-300 rounded-xl
-                     text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2
-                     focus:ring-gray-900 focus:border-gray-900 shadow-sm text-base"
+          className="w-full pl-12 pr-4 py-3.5 bg-white border border-[#BAE6FD] rounded-xl
+                     text-[#0C4A6E] placeholder-[#0C4A6E]/40 focus:outline-none focus:ring-2
+                     focus:ring-[#0EA5E9] focus:border-[#0EA5E9] shadow-sm text-base font-[Inter]"
         />
         {query && (
           <button
             onClick={() => { setQuery(''); setIsOpen(false); }}
-            className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
+            className="absolute right-4 top-1/2 -translate-y-1/2 text-[#0C4A6E]/40 hover:text-[#0C4A6E]/70"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -107,31 +107,31 @@ export default function SearchBar({ articles }: Props) {
 
       {/* Dropdown Results */}
       {isOpen && results.length > 0 && (
-        <div className="absolute top-full mt-2 w-full bg-white border border-gray-200 rounded-xl shadow-xl z-50 overflow-hidden flex flex-col">
+        <div className="absolute top-full mt-2 w-full bg-white border border-[#BAE6FD] rounded-xl shadow-[0_8px_30px_rgba(14,165,233,0.12)] z-50 overflow-hidden flex flex-col">
           <div className="overflow-y-auto max-h-80 overscroll-contain">
             {results.map(({ item }) => (
               <a
                 key={item.slug}
                 href={url(`blog/${item.slug}`)}
-                className="flex items-start gap-3 p-4 hover:bg-gray-50 transition-colors border-b border-gray-100 last:border-0"
+                className="flex items-start gap-3 p-4 hover:bg-[#E8F2F8] transition-colors border-b border-[#BAE6FD]/30 last:border-0"
               >
                 <div className="flex-1 min-w-0">
-                  <h4 className="text-sm font-semibold text-gray-900 truncate">
+                  <h4 className="text-sm font-semibold text-[#0C4A6E] truncate font-[Inter]">
                     {item.title}
                   </h4>
-                  <p className="text-xs text-gray-500 mt-0.5 truncate">
+                  <p className="text-xs text-[#0C4A6E]/60 mt-0.5 truncate font-[Inter]">
                     {item.description}
                   </p>
                   <div className="flex items-center gap-2 mt-1.5">
-                    <span className="text-xs bg-gray-200 text-gray-900 px-2 py-0.5 rounded-full">
+                    <span className="text-xs bg-[#0EA5E9]/10 text-[#0EA5E9] px-2 py-0.5 rounded-full font-medium">
                       {item.city}
                     </span>
-                    <span className="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full">
+                    <span className="text-xs bg-[#EA580C]/10 text-[#EA580C] px-2 py-0.5 rounded-full font-medium">
                       {item.category}
                     </span>
                   </div>
                 </div>
-                <svg className="w-4 h-4 text-gray-300 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 text-[#0EA5E9]/40 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </a>
@@ -141,9 +141,9 @@ export default function SearchBar({ articles }: Props) {
       )}
 
       {isOpen && query.trim() && results.length === 0 && (
-        <div className="absolute top-full mt-2 w-full bg-white border border-gray-200 rounded-xl shadow-xl z-50 p-6 text-center">
-          <p className="text-gray-500 text-sm">No articles found for "{query}"</p>
-          <p className="text-gray-400 text-xs mt-1">Try searching by city name, topic, or category</p>
+        <div className="absolute top-full mt-2 w-full bg-white border border-[#BAE6FD] rounded-xl shadow-[0_8px_30px_rgba(14,165,233,0.12)] z-50 p-6 text-center">
+          <p className="text-[#0C4A6E]/70 text-sm font-[Inter]">No articles found for "{query}"</p>
+          <p className="text-[#0C4A6E]/40 text-xs mt-1 font-[Inter]">Try searching by city name, topic, or category</p>
         </div>
       )}
     </div>

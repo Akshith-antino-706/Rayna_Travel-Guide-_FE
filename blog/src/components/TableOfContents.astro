@@ -8,20 +8,23 @@ const filteredHeadings = headings.filter(h => h.depth >= 2 && h.depth <= 3);
 ---
 
 {filteredHeadings.length > 0 && (
-  <div class="bg-gray-50 rounded-xl p-5">
-    <h4 class="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">
+  <div class="rounded-2xl p-5" style="background-color:#FFFFFF; border:1px solid #BAE6FD;">
+    <h4 class="text-sm font-bold uppercase tracking-wider mb-4" style="font-family:'Playfair Display',serif; color:#0C4A6E;">
       In This Article
     </h4>
     <nav>
-      <ul class="space-y-1">
+      <ul class="space-y-0.5">
         {filteredHeadings.map(heading => (
           <li>
             <a
               href={`#${heading.slug}`}
               class:list={[
-                'toc-link',
-                heading.depth === 3 && 'pl-8 text-xs',
+                'toc-link block py-1.5 text-sm transition-all duration-200 rounded-md',
+                heading.depth === 3 ? 'pl-7 text-xs' : 'pl-3',
               ]}
+              style="color:#0C4A6E; border-left:2px solid transparent;"
+              onmouseenter="this.style.color='#0EA5E9';this.style.borderLeftColor='#0EA5E9';this.style.backgroundColor='#F0F9FF';"
+              onmouseleave="this.style.color='#0C4A6E';this.style.borderLeftColor='transparent';this.style.backgroundColor='transparent';"
             >
               {heading.text}
             </a>
