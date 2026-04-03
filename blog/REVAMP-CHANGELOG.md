@@ -2,10 +2,41 @@
 
 ## Design System: Editorial Magazine for Travel/Tourism
 
-**Style**: Editorial Grid / Magazine
-**Color Palette**: Travel/Tourism Agency
-**Typography**: Classic Elegant (Playfair Display + Inter)
-**Tool Used**: UI/UX Pro Max Skill v2.5.0
+### Theme & Source
+
+| Layer | Choice | Source Database |
+|-------|--------|-----------------|
+| **UI Style** | Editorial Grid / Magazine | `styles.csv` — magazine layout, asymmetric grid, editorial typography, pull quotes, drop caps, print-inspired |
+| **Color Palette** | Travel/Tourism Agency | `colors.csv` — sky blue + adventure orange, WCAG 3:1 compliant |
+| **Typography** | Classic Elegant (Serif + Sans) | `typography.csv` — Playfair Display (headings) + Inter (body) |
+| **Landing Pattern** | Scroll-Triggered Storytelling | `landing.csv` — immersive hero, progressive chapter sections |
+| **UX Guidelines** | Image Optimization, Responsive Scaling | `ux-guidelines.csv` — WebP, srcset, lazy loading |
+
+**Tool Used**: [UI/UX Pro Max Skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) v2.5.0
+**Stack**: Astro (searched via `--stack astro`)
+**Design Reference**: [Kittl - 60+ Graphic Design Styles Guide](https://www.kittl.com/blogs/design-styles-name-stl/)
+
+### CSS Design System Variables
+
+```css
+:root {
+  --color-primary: #0EA5E9;
+  --color-primary-dark: #0284C7;
+  --color-primary-light: #38BDF8;
+  --color-accent: #EA580C;
+  --color-accent-light: #FB923C;
+  --color-background: #F0F9FF;
+  --color-foreground: #0C4A6E;
+  --color-card: #FFFFFF;
+  --color-card-foreground: #0C4A6E;
+  --color-muted: #E8F2F8;
+  --color-muted-foreground: #64748B;
+  --color-border: #BAE6FD;
+  --color-ring: #0EA5E9;
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+}
+```
 
 ---
 
@@ -78,9 +109,17 @@
 7. **Gradient Accents** - Primary-to-accent gradient top bar, gradient CTA sections
 8. **Frosted Glass** - Hero search bar with backdrop-blur
 
+## Content Added
+
+- **50 Delhi blog posts** — itineraries, hotels, food, transport, seasonal, visa, activities, and more
+- **50 Bali blog posts** — temples, beaches, surfing, rice terraces, yoga, nightlife, and more
+- New city guide pages: `/delhi-rayna-guide/`, `/bali-rayna-guide/`
+- New country guide pages: `/india-rayna-guide/`, `/indonesia-rayna-guide/`
+
 ## Build Status
 
-- Pages: 928
+- **Pages: 1032** (928 original + 104 new from Delhi/Bali content)
 - Errors: 0
 - Warnings: 1 (pre-existing Singapore city/country route conflict)
 - Iterations: 10 (initial build + 9 audit/fix cycles)
+- Playwright crawl: 894 pages tested, 0 real 404s
